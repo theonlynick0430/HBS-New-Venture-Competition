@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		586DAE24215317C900C35A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE23215317C900C35A5A /* AppDelegate.swift */; };
+		586DAE26215317C900C35A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE25215317C900C35A5A /* ViewController.swift */; };
+		586DAE29215317C900C35A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586DAE27215317C900C35A5A /* Main.storyboard */; };
+		586DAE2C215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE2A215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld */; };
+		586DAE2E215317CB00C35A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586DAE2D215317CB00C35A5A /* Assets.xcassets */; };
+		586DAE31215317CB00C35A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586DAE2F215317CB00C35A5A /* LaunchScreen.storyboard */; };
+		586DAE3C215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE3B215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift */; };
+		586DAE47215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE46215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift */; };
+		75220667E1666D2D2580ADFC /* Pods_HBS_New_Venture_Competition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		586DAE38215317CB00C35A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 586DAE18215317C900C35A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 586DAE1F215317C900C35A5A;
+			remoteInfo = "HBS New Venture Competition";
+		};
+		586DAE43215317CB00C35A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 586DAE18215317C900C35A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 586DAE1F215317C900C35A5A;
+			remoteInfo = "HBS New Venture Competition";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25ED82D829ABBE4E22D7A19D /* Pods-HBS New Venture Competition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBS New Venture Competition.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition.release.xcconfig"; sourceTree = "<group>"; };
+		586DAE20215317C900C35A5A /* HBS New Venture Competition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HBS New Venture Competition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		586DAE23215317C900C35A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		586DAE25215317C900C35A5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		586DAE28215317C900C35A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		586DAE2B215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HBS_New_Venture_Competition.xcdatamodel; sourceTree = "<group>"; };
+		586DAE2D215317CB00C35A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		586DAE30215317CB00C35A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		586DAE32215317CB00C35A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		586DAE37215317CB00C35A5A /* HBS New Venture CompetitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HBS New Venture CompetitionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		586DAE3B215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBS_New_Venture_CompetitionTests.swift; sourceTree = "<group>"; };
+		586DAE3D215317CB00C35A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		586DAE42215317CB00C35A5A /* HBS New Venture CompetitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HBS New Venture CompetitionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		586DAE46215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBS_New_Venture_CompetitionUITests.swift; sourceTree = "<group>"; };
+		586DAE48215317CB00C35A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF488D4864C78ED917DD4C9 /* Pods-HBS New Venture Competition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBS New Venture Competition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBS_New_Venture_Competition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		586DAE1D215317C900C35A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75220667E1666D2D2580ADFC /* Pods_HBS_New_Venture_Competition.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586DAE34215317CB00C35A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586DAE3F215317CB00C35A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		586DAE17215317C900C35A5A = {
+			isa = PBXGroup;
+			children = (
+				586DAE22215317C900C35A5A /* HBS New Venture Competition */,
+				586DAE3A215317CB00C35A5A /* HBS New Venture CompetitionTests */,
+				586DAE45215317CB00C35A5A /* HBS New Venture CompetitionUITests */,
+				586DAE21215317C900C35A5A /* Products */,
+				B72267E9B201670AF5EDD875 /* Pods */,
+				AE57729582C64C730E47E2BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		586DAE21215317C900C35A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				586DAE20215317C900C35A5A /* HBS New Venture Competition.app */,
+				586DAE37215317CB00C35A5A /* HBS New Venture CompetitionTests.xctest */,
+				586DAE42215317CB00C35A5A /* HBS New Venture CompetitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		586DAE22215317C900C35A5A /* HBS New Venture Competition */ = {
+			isa = PBXGroup;
+			children = (
+				586DAE23215317C900C35A5A /* AppDelegate.swift */,
+				586DAE25215317C900C35A5A /* ViewController.swift */,
+				586DAE27215317C900C35A5A /* Main.storyboard */,
+				586DAE2D215317CB00C35A5A /* Assets.xcassets */,
+				586DAE2F215317CB00C35A5A /* LaunchScreen.storyboard */,
+				586DAE32215317CB00C35A5A /* Info.plist */,
+				586DAE2A215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld */,
+			);
+			path = "HBS New Venture Competition";
+			sourceTree = "<group>";
+		};
+		586DAE3A215317CB00C35A5A /* HBS New Venture CompetitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				586DAE3B215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift */,
+				586DAE3D215317CB00C35A5A /* Info.plist */,
+			);
+			path = "HBS New Venture CompetitionTests";
+			sourceTree = "<group>";
+		};
+		586DAE45215317CB00C35A5A /* HBS New Venture CompetitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				586DAE46215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift */,
+				586DAE48215317CB00C35A5A /* Info.plist */,
+			);
+			path = "HBS New Venture CompetitionUITests";
+			sourceTree = "<group>";
+		};
+		AE57729582C64C730E47E2BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B72267E9B201670AF5EDD875 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CF488D4864C78ED917DD4C9 /* Pods-HBS New Venture Competition.debug.xcconfig */,
+				25ED82D829ABBE4E22D7A19D /* Pods-HBS New Venture Competition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		586DAE1F215317C900C35A5A /* HBS New Venture Competition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 586DAE4B215317CB00C35A5A /* Build configuration list for PBXNativeTarget "HBS New Venture Competition" */;
+			buildPhases = (
+				CEF2BDB594B24396FEEA8D51 /* [CP] Check Pods Manifest.lock */,
+				586DAE1C215317C900C35A5A /* Sources */,
+				586DAE1D215317C900C35A5A /* Frameworks */,
+				586DAE1E215317C900C35A5A /* Resources */,
+				B9499C5D503B2F9BE93F7C71 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HBS New Venture Competition";
+			productName = "HBS New Venture Competition";
+			productReference = 586DAE20215317C900C35A5A /* HBS New Venture Competition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		586DAE36215317CB00C35A5A /* HBS New Venture CompetitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 586DAE4E215317CB00C35A5A /* Build configuration list for PBXNativeTarget "HBS New Venture CompetitionTests" */;
+			buildPhases = (
+				586DAE33215317CB00C35A5A /* Sources */,
+				586DAE34215317CB00C35A5A /* Frameworks */,
+				586DAE35215317CB00C35A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				586DAE39215317CB00C35A5A /* PBXTargetDependency */,
+			);
+			name = "HBS New Venture CompetitionTests";
+			productName = "HBS New Venture CompetitionTests";
+			productReference = 586DAE37215317CB00C35A5A /* HBS New Venture CompetitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		586DAE41215317CB00C35A5A /* HBS New Venture CompetitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 586DAE51215317CB00C35A5A /* Build configuration list for PBXNativeTarget "HBS New Venture CompetitionUITests" */;
+			buildPhases = (
+				586DAE3E215317CB00C35A5A /* Sources */,
+				586DAE3F215317CB00C35A5A /* Frameworks */,
+				586DAE40215317CB00C35A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				586DAE44215317CB00C35A5A /* PBXTargetDependency */,
+			);
+			name = "HBS New Venture CompetitionUITests";
+			productName = "HBS New Venture CompetitionUITests";
+			productReference = 586DAE42215317CB00C35A5A /* HBS New Venture CompetitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		586DAE18215317C900C35A5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = HBS;
+				TargetAttributes = {
+					586DAE1F215317C900C35A5A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					586DAE36215317CB00C35A5A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 586DAE1F215317C900C35A5A;
+					};
+					586DAE41215317CB00C35A5A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 586DAE1F215317C900C35A5A;
+					};
+				};
+			};
+			buildConfigurationList = 586DAE1B215317C900C35A5A /* Build configuration list for PBXProject "HBS New Venture Competition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 586DAE17215317C900C35A5A;
+			productRefGroup = 586DAE21215317C900C35A5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				586DAE1F215317C900C35A5A /* HBS New Venture Competition */,
+				586DAE36215317CB00C35A5A /* HBS New Venture CompetitionTests */,
+				586DAE41215317CB00C35A5A /* HBS New Venture CompetitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		586DAE1E215317C900C35A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586DAE31215317CB00C35A5A /* LaunchScreen.storyboard in Resources */,
+				586DAE2E215317CB00C35A5A /* Assets.xcassets in Resources */,
+				586DAE29215317C900C35A5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586DAE35215317CB00C35A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586DAE40215317CB00C35A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9499C5D503B2F9BE93F7C71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEF2BDB594B24396FEEA8D51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HBS New Venture Competition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		586DAE1C215317C900C35A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586DAE26215317C900C35A5A /* ViewController.swift in Sources */,
+				586DAE24215317C900C35A5A /* AppDelegate.swift in Sources */,
+				586DAE2C215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586DAE33215317CB00C35A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586DAE3C215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586DAE3E215317CB00C35A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586DAE47215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		586DAE39215317CB00C35A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 586DAE1F215317C900C35A5A /* HBS New Venture Competition */;
+			targetProxy = 586DAE38215317CB00C35A5A /* PBXContainerItemProxy */;
+		};
+		586DAE44215317CB00C35A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 586DAE1F215317C900C35A5A /* HBS New Venture Competition */;
+			targetProxy = 586DAE43215317CB00C35A5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		586DAE27215317C900C35A5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				586DAE28215317C900C35A5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		586DAE2F215317CB00C35A5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				586DAE30215317CB00C35A5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		586DAE49215317CB00C35A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		586DAE4A215317CB00C35A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		586DAE4C215317CB00C35A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF488D4864C78ED917DD4C9 /* Pods-HBS New Venture Competition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = "HBS New Venture Competition/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-Competition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		586DAE4D215317CB00C35A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25ED82D829ABBE4E22D7A19D /* Pods-HBS New Venture Competition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = "HBS New Venture Competition/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-Competition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		586DAE4F215317CB00C35A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = "HBS New Venture CompetitionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HBS New Venture Competition.app/HBS New Venture Competition";
+			};
+			name = Debug;
+		};
+		586DAE50215317CB00C35A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = "HBS New Venture CompetitionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HBS New Venture Competition.app/HBS New Venture Competition";
+			};
+			name = Release;
+		};
+		586DAE52215317CB00C35A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = "HBS New Venture CompetitionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HBS New Venture Competition";
+			};
+			name = Debug;
+		};
+		586DAE53215317CB00C35A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = "HBS New Venture CompetitionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HBS New Venture Competition";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		586DAE1B215317C900C35A5A /* Build configuration list for PBXProject "HBS New Venture Competition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				586DAE49215317CB00C35A5A /* Debug */,
+				586DAE4A215317CB00C35A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		586DAE4B215317CB00C35A5A /* Build configuration list for PBXNativeTarget "HBS New Venture Competition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				586DAE4C215317CB00C35A5A /* Debug */,
+				586DAE4D215317CB00C35A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		586DAE4E215317CB00C35A5A /* Build configuration list for PBXNativeTarget "HBS New Venture CompetitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				586DAE4F215317CB00C35A5A /* Debug */,
+				586DAE50215317CB00C35A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		586DAE51215317CB00C35A5A /* Build configuration list for PBXNativeTarget "HBS New Venture CompetitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				586DAE52215317CB00C35A5A /* Debug */,
+				586DAE53215317CB00C35A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		586DAE2A215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				586DAE2B215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodel */,
+			);
+			currentVersion = 586DAE2B215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodel */;
+			path = HBS_New_Venture_Competition.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 586DAE18215317C900C35A5A /* Project object */;
+}
