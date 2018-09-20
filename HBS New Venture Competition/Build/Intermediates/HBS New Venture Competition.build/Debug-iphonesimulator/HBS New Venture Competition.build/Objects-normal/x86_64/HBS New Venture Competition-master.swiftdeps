@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "fb02725afce117111307d8b4ff730a60"
+build_time: [1537403112, 62201000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/ViewController.swift": [1537400905, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/AppDelegate.swift": [1537402949, 0]

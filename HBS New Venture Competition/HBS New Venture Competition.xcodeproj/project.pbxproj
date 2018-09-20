@@ -15,6 +15,7 @@
 		586DAE31215317CB00C35A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586DAE2F215317CB00C35A5A /* LaunchScreen.storyboard */; };
 		586DAE3C215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE3B215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift */; };
 		586DAE47215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE46215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift */; };
+		5884F65C21531FA700CEA744 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5884F65B21531FA600CEA744 /* GoogleService-Info.plist */; };
 		75220667E1666D2D2580ADFC /* Pods_HBS_New_Venture_Competition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		586DAE42215317CB00C35A5A /* HBS New Venture CompetitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HBS New Venture CompetitionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		586DAE46215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBS_New_Venture_CompetitionUITests.swift; sourceTree = "<group>"; };
 		586DAE48215317CB00C35A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5884F65B21531FA600CEA744 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CF488D4864C78ED917DD4C9 /* Pods-HBS New Venture Competition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBS New Venture Competition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBS_New_Venture_Competition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 				586DAE2D215317CB00C35A5A /* Assets.xcassets */,
 				586DAE2F215317CB00C35A5A /* LaunchScreen.storyboard */,
 				586DAE32215317CB00C35A5A /* Info.plist */,
+				5884F65B21531FA600CEA744 /* GoogleService-Info.plist */,
 				586DAE2A215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld */,
 			);
 			path = "HBS New Venture Competition";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586DAE31215317CB00C35A5A /* LaunchScreen.storyboard in Resources */,
+				5884F65C21531FA700CEA744 /* GoogleService-Info.plist in Resources */,
 				586DAE2E215317CB00C35A5A /* Assets.xcassets in Resources */,
 				586DAE29215317C900C35A5A /* Main.storyboard in Resources */,
 			);
@@ -521,7 +525,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture Competition/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-Competition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -537,7 +544,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture Competition/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-Competition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -553,7 +563,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture CompetitionTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -570,7 +584,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture CompetitionTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -586,7 +604,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture CompetitionUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -602,7 +624,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture CompetitionUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
