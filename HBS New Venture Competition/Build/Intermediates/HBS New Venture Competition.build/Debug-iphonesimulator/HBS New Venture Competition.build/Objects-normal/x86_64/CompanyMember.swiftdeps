@@ -1,11 +1,31 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "CompanyMember"
 provides-nominal:
+- "27HBS_New_Venture_Competition13CompanyMemberC"
 provides-member:
+- ["27HBS_New_Venture_Competition13CompanyMemberC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- "CompanyMember"
+- "String"
+- "URL"
 depends-member:
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "String"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "URL"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "deinit"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "education"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "email"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "firstName"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "init"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "lastName"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "linkedInURL"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "phoneNumber"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "position"]
+- ["27HBS_New_Venture_Competition13CompanyMemberC", "profileImageURL"]
 depends-nominal:
+- "27HBS_New_Venture_Competition13CompanyMemberC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -111,4 +131,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "50f43481432852ed580907c46f05024b"

@@ -13,15 +13,15 @@ class Judge{
     var firstName: String
     var lastName: String
     var profileImageURL: String
-    var email: String
+    var linkedInURL: URL
     var description: String
     
     //initializer
-    init(firstName: String, lastName: String, profileImageURL: String, email: String, description: String) {
+    init(firstName: String, lastName: String, profileImageURL: String, linkedInURL: URL, description: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.profileImageURL = profileImageURL
-        self.email = email
+        self.linkedInURL = linkedInURL
         self.description = description
     }
     

@@ -1,11 +1,29 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Coordinator"
 provides-nominal:
+- "27HBS_New_Venture_Competition11CoordinatorC"
 provides-member:
+- ["27HBS_New_Venture_Competition11CoordinatorC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- "Coordinator"
+- "String"
+- "URL"
 depends-member:
+- ["27HBS_New_Venture_Competition11CoordinatorC", "String"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "URL"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "deinit"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "firstName"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "init"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "lastName"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "linkedInURL"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "organization"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "position"]
+- ["27HBS_New_Venture_Competition11CoordinatorC", "profileImageURL"]
 depends-nominal:
+- "27HBS_New_Venture_Competition11CoordinatorC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -111,4 +129,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "14dcf73278bd59e0d2d134e9df80dba2"

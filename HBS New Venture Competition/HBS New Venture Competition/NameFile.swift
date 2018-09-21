@@ -21,6 +21,7 @@ struct NameFile {
             static let logoImageURL = "LogoImageURL"
             static let order = "Order"
                     //members <collection>
+            static let members = "Members"
                         //member <document> - randomID
             static let firstName = "FirstName"
             static let lastName = "LastName"
@@ -47,7 +48,7 @@ struct NameFile {
             static let firstName = "FirstName"
             static let lastName = "LastName"
             static let profileImageURL = "ProfileImageURL"
-            static let email = "Email"
+            static let linkedInURL = "LinkedInURL"
             static let description = "Description"
         }
         

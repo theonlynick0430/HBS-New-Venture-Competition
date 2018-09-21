@@ -1,11 +1,28 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Judge"
 provides-nominal:
+- "27HBS_New_Venture_Competition5JudgeC"
 provides-member:
+- ["27HBS_New_Venture_Competition5JudgeC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- "Judge"
+- "String"
+- "URL"
 depends-member:
+- ["27HBS_New_Venture_Competition5JudgeC", "String"]
+- ["27HBS_New_Venture_Competition5JudgeC", "URL"]
+- ["27HBS_New_Venture_Competition5JudgeC", "deinit"]
+- ["27HBS_New_Venture_Competition5JudgeC", "description"]
+- ["27HBS_New_Venture_Competition5JudgeC", "firstName"]
+- ["27HBS_New_Venture_Competition5JudgeC", "init"]
+- ["27HBS_New_Venture_Competition5JudgeC", "lastName"]
+- ["27HBS_New_Venture_Competition5JudgeC", "linkedInURL"]
+- ["27HBS_New_Venture_Competition5JudgeC", "profileImageURL"]
 depends-nominal:
+- "27HBS_New_Venture_Competition5JudgeC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -111,4 +128,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "b9f1dc2f4889c71e7f440a9c68d502fd"

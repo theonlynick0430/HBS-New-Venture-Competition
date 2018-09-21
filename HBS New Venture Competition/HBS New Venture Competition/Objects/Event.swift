@@ -7,16 +7,17 @@
 //
 
 import Foundation
+import Firebase
 
 class Event{
     
-    var time: String
-    var event: String
+    var time: Timestamp
+    var description: String
     
     //initializer
-    init(time: String, event: String) {
+    init(time: Timestamp, description: String) {
         self.time = time
-        self.event = event
+        self.description = description
     }
     
 }

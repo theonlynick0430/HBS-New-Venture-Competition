@@ -14,19 +14,17 @@ class Sponsor{
     var description: String
     var logoImageURL: String
     var prize: String
-    var phoneNumber: String
     var website: URL
     var repFirstName: String
     var repLastName: String
     var repEmail: String
     
     //initializer
-    init(name: String, description: String, logoImageURL: String, prize: String, phoneNumber: String, website: URL, repFirstName: String, repLastName: String, repEmail: String) {
+    init(name: String, description: String, logoImageURL: String, prize: String, website: URL, repFirstName: String, repLastName: String, repEmail: String) {
         self.name = name
         self.description = description
         self.logoImageURL = logoImageURL
         self.prize = prize
-        self.phoneNumber = phoneNumber
         self.website = website
         self.repFirstName = repFirstName
         self.repLastName = repLastName

@@ -34,6 +34,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "lastName"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "linkedInURL"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "logoImageURL"]
+- ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "members"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "name"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "order"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "phoneNumber"]
@@ -70,11 +71,11 @@ depends-member:
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV", "init"]
 - ["s8HashableP", "init"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7JudgeDBV", "description"]
-- ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7JudgeDBV", "email"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7JudgeDBV", "firstName"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7JudgeDBV", "init"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7JudgeDBV", "judges"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7JudgeDBV", "lastName"]
+- ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7JudgeDBV", "linkedInURL"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7JudgeDBV", "profileImageURL"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
@@ -246,4 +247,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "96fc79deb7bed2048c2226c5fab67c82"
+interface-hash: "71031c8c779463d3144e9d2ceddb11f2"
