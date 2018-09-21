@@ -12,13 +12,14 @@ struct NameFile {
     
     struct Firebase{
         
-        struct Companies{
+        struct CompanyDB{
             //companies <collection>
             static let companies = "Companies"
                 //company <document> - random ID
             static let name = "Name"
             static let description = "Description"
             static let logoImageURL = "LogoImageURL"
+            static let order = "Order"
                     //members <collection>
                         //member <document> - randomID
             static let firstName = "FirstName"
@@ -29,10 +30,9 @@ struct NameFile {
             static let linkedInURL = "LinkedInURL"
             static let education = "Education"
             static let position = "Position"
-            static let order = "Order"
         }
         
-        struct Events{
+        struct EventDB{
             //events <collection>
             static let events = "Events"
                 //event <document> - random ID
@@ -40,7 +40,7 @@ struct NameFile {
             static let description = "Description"
         }
         
-        struct Judges{
+        struct JudgeDB{
             //judges <collection>
             static let judges = "Judges"
                 //judge <document> - random ID
@@ -51,7 +51,7 @@ struct NameFile {
             static let description = "Description"
         }
         
-        struct Sponsors{
+        struct SponsorDB{
             //sponsors <collection>
             static let sponsors = "Sponsors"
                 //sponsor <document> - random ID
@@ -65,7 +65,7 @@ struct NameFile {
             static let repEmail = "RepEmail"
         }
         
-        struct Coordinators {
+        struct CoordinatorDB{
             //coordinators <collection>
             static let coordinators = "Coordinators"
                 //coordinator <document> - random ID

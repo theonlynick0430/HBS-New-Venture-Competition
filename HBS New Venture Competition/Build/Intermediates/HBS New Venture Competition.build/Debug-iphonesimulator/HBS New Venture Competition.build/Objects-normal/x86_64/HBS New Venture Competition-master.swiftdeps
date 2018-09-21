@@ -1,7 +1,14 @@
 version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
 options: "fb02725afce117111307d8b4ff730a60"
-build_time: [1537403609, 268579000]
+build_time: [1537486047, 443542000]
 inputs:
   "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/ViewController.swift": [1537400905, 0]
   "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/AppDelegate.swift": [1537402949, 0]
-  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/NameFile.swift": [9223372036, 854775807]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects/Coordinator.swift": [1537485023, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/FirebaseManager.swift": [1537484975, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects/Sponsor.swift": [1537485012, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/NameFile.swift": [1537484681, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects/CompanyMember.swift": [9223372036, 854775807]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects/Judge.swift": [1537485004, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects/Event.swift": [1537484994, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects/Company.swift": [1537486006, 0]
