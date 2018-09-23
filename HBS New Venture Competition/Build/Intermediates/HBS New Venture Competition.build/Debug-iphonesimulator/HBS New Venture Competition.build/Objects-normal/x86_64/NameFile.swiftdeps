@@ -27,6 +27,7 @@ depends-member:
 - ["s10CollectionP", "init"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "companies"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "description"]
+- ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "deviceID"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "education"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "email"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "firstName"]
@@ -40,6 +41,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "phoneNumber"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "position"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "profileImageURL"]
+- ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "votes"]
 - ["s10ComparableP", "init"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV13CoordinatorDBV", "coordinators"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV13CoordinatorDBV", "firstName"]
@@ -247,4 +249,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "71031c8c779463d3144e9d2ceddb11f2"
+interface-hash: "8efb47c2db4b46c42b3402e6d64faaaf"

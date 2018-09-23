@@ -15,14 +15,16 @@ class Company{
     var description: String
     var logoImageURL: String
     var order: Int
+    var isVoted: Bool
     
     //initializer
-    init(companyID: String, name: String, description: String, logoImageURL: String, order: Int) {
+    init(companyID: String, name: String, description: String, logoImageURL: String, order: Int, isVoted: Bool) {
         self.companyID = companyID
         self.name = name
         self.description = description
         self.logoImageURL = logoImageURL
         self.order = order
+        self.isVoted = isVoted
     }
     
 }

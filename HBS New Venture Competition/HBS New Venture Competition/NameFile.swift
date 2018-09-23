@@ -31,6 +31,10 @@ struct NameFile {
             static let linkedInURL = "LinkedInURL"
             static let education = "Education"
             static let position = "Position"
+                    //votes <collection>
+            static let votes = "Votes"
+                        //vote <document> - deviceID
+            static let deviceID = "DeviceID"
         }
         
         struct EventDB{
