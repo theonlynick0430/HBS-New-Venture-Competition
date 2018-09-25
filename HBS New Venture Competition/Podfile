@@ -7,9 +7,15 @@ target 'HBS New Venture Competition' do
 
   # Pods for HBS New Venture Competition
 
+    # Database
     pod 'Firebase/Core'
     pod 'Firebase/Firestore'
     pod 'Firebase/Storage'
     pod 'Firebase/Auth'
+    
+    # UI
+    pod 'FasterVerificationCode'
+    pod 'SVProgressHUD'
+    pod 'PopupDialog', '~> 0.8'
 
 end

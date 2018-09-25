@@ -5,6 +5,8 @@ PODS:
   - BoringSSL/Implementation (10.0.6):
     - BoringSSL/Interface (= 10.0.6)
   - BoringSSL/Interface (10.0.6)
+  - DynamicBlurView (2.0.2)
+  - FasterVerificationCode (0.1.0)
   - Firebase/Auth (5.6.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.3)
@@ -107,17 +109,25 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - PopupDialog (0.8.1):
+    - DynamicBlurView (~> 2.0)
   - Protobuf (3.6.1)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - FasterVerificationCode
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
   - Firebase/Storage
+  - PopupDialog (~> 0.8)
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BoringSSL
+    - DynamicBlurView
+    - FasterVerificationCode
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -135,10 +145,14 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - PopupDialog
     - Protobuf
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  FasterVerificationCode: 1cf0ba4be4d4fe595107367a7b8c042b2403395c
   Firebase: 75ea9e232eefa158c1049028030b8f661a2ccb62
   FirebaseAnalytics: 993577e91157feb40945abedd6ab346d8a4b6ac8
   FirebaseAuth: 657a25e4be044d2d333663ebf515a861c5a59cd7
@@ -156,8 +170,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  PopupDialog: 3d4e8e0795c3a614f407d730986c9b9af9781123
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: c65b67e9f0e433e1bb965d116c89a3c9033d888d
+PODFILE CHECKSUM: db80333d0a4d638d85ab154a8ccc5989be8555f5
 
 COCOAPODS: 1.5.3

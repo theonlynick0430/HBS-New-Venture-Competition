@@ -10,7 +10,19 @@ import Foundation
 
 struct NameFile {
     
+    struct UserDefaults{
+        static let eventCode = "EventCode"
+    }
+    
     struct Firebase{
+        
+        struct CodeDB{
+            //codes <collection>
+            static let codes = "Codes"
+            static let eventCode = "EventCode"
+                //event code <document> - constant
+            static let code = "Code"
+        }
         
         struct CompanyDB{
             //companies <collection>

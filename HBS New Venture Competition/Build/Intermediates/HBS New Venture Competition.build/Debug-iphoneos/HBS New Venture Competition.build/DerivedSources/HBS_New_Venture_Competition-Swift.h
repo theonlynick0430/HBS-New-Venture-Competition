@@ -164,6 +164,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import FasterVerificationCode;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -196,15 +197,21 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class VerificationCodeView;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC27HBS_New_Venture_Competition14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC27HBS_New_Venture_Competition11EventCodeVC")
+@interface EventCodeVC : UIViewController
+@property (nonatomic, strong) IBOutlet VerificationCodeView * _Null_unspecified verificationCodeView;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface EventCodeVC (SWIFT_EXTENSION(HBS_New_Venture_Competition)) <VerificationCodeViewDelegate>
+- (void)verificationCodeInserted:(NSString * _Nonnull)text isComplete:(BOOL)isComplete;
 @end
 
 #if __has_attribute(external_source_symbol)
