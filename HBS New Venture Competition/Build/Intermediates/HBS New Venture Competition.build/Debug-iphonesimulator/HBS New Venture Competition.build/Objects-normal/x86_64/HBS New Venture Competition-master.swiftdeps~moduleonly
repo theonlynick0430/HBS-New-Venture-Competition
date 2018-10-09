@@ -1,0 +1,17 @@
+version: "Apple Swift version 4.2 (swiftlang-1000.11.37.1 clang-1000.11.45.1)"
+options: "52086c686ec1dc2b72b78ea226577a50"
+build_time: [1538871773, 869142000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/AppDelegate.swift": [1538871773, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/Coordinator.swift": [1537491790, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Database/FirebaseManager.swift": [1537826187, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/Sponsor.swift": [1537505060, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/NameFile.swift": [1537836219, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/CompanyMember.swift": [1537491679, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Intro/EventCodeVC.swift": [1538867451, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Extensions.swift": [1537835907, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/Judge.swift": [1537506942, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/AppStorage.swift": [1537836318, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/Event.swift": [1537504113, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/Company.swift": [1537727925, 0]
+  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/AsyncImageView.swift": [1537835924, 0]

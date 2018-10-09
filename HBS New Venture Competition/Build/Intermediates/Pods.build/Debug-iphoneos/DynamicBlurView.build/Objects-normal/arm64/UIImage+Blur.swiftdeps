@@ -13,16 +13,18 @@ depends-top-level:
 - !private "=="
 - "CGBlendMode"
 - "CGFloat"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "UIColor"
 - "UIImage"
 - !private "UInt32"
 - !private "||"
 depends-member:
-- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["So7CGImageC", "area"]
-- !private ["So7CGImageC", "blurred"]
+- !private ["So10CGImageRefa", "area"]
+- !private ["So10CGImageRefa", "blurred"]
 - !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UInt32"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
@@ -30,7 +32,7 @@ depends-member:
 - !private ["s7CVarArgP", "imageOrientation"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "scale"]
-- !private ["s10ComparableP", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UInt32"]
 - !private ["s28CustomDebugStringConvertibleP", "cgImage"]
@@ -50,35 +52,36 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "imageOrientation"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "scale"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "map"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "map"]
-- !private ["s9EquatableP", "UIImage"]
-- !private ["s9EquatableP", "UInt32"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "area"]
-- !private ["s9EquatableP", "blurred"]
-- !private ["s9EquatableP", "cgImage"]
-- !private ["s9EquatableP", "imageOrientation"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "map"]
-- !private ["s9EquatableP", "scale"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SQ", "UIImage"]
+- !private ["SQ", "UInt32"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "area"]
+- !private ["SQ", "blurred"]
+- !private ["SQ", "cgImage"]
+- !private ["SQ", "imageOrientation"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["SQ", "scale"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "map"]
 - !private ["s17FixedWidthIntegerP", "init"]
-- !private ["s8HashableP", "UIImage"]
-- !private ["s8HashableP", "UInt32"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "area"]
-- !private ["s8HashableP", "blurred"]
-- !private ["s8HashableP", "cgImage"]
-- !private ["s8HashableP", "imageOrientation"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "scale"]
+- !private ["SH", "UIImage"]
+- !private ["SH", "UInt32"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "area"]
+- !private ["SH", "blurred"]
+- !private ["SH", "cgImage"]
+- !private ["SH", "imageOrientation"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "scale"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["So8NSCodingP", "UIImage"]
@@ -108,22 +111,23 @@ depends-member:
 - ["So8NSObjectC", "blurred"]
 - !private ["So8NSObjectC", "cgImage"]
 - !private ["So8NSObjectC", "imageOrientation"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "scale"]
-- !private ["So16NSObjectProtocolP", "UIImage"]
-- !private ["So16NSObjectProtocolP", "UInt32"]
-- !private ["So16NSObjectProtocolP", "cgImage"]
-- !private ["So16NSObjectProtocolP", "imageOrientation"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "scale"]
+- !private ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "UInt32"]
+- !private ["So8NSObjectP", "cgImage"]
+- !private ["So8NSObjectP", "imageOrientation"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "scale"]
 - !private ["So14NSSecureCodingP", "UIImage"]
 - !private ["So14NSSecureCodingP", "UInt32"]
 - !private ["So14NSSecureCodingP", "cgImage"]
 - !private ["So14NSSecureCodingP", "imageOrientation"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "scale"]
-- !private ["s7NumericP", "init"]
+- !private ["Sj", "init"]
 - !private ["Sq", "map"]
-- !private ["s10StrideableP", "init"]
+- !private ["Sx", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "UIImage"]
 - !private ["So29UIAccessibilityIdentificationP", "UInt32"]
 - !private ["So29UIAccessibilityIdentificationP", "cgImage"]
@@ -148,7 +152,7 @@ depends-member:
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "scale"]
 - !private ["s6UInt32V", "init"]
-- !private ["s15UnsignedIntegerP", "init"]
+- !private ["SU", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["14CoreFoundation9_CFObjectP", "area"]
 - !private ["14CoreFoundation9_CFObjectP", "blurred"]
@@ -160,6 +164,7 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "imageOrientation"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "scale"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt32"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgImage"]
@@ -170,48 +175,48 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 depends-nominal:
-- !private "s13BinaryIntegerP"
+- !private "Sz"
 - !private "Sb"
-- !private "So7CGImageC"
+- !private "So10CGImageRefa"
 - !private "s7CVarArgP"
-- !private "s10ComparableP"
+- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s17FixedWidthIntegerP"
-- !private "s8HashableP"
+- !private "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "So8NSCodingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "s7NumericP"
+- !private "Sj"
 - !private "Sq"
-- !private "s10StrideableP"
+- !private "Sx"
 - !private "So29UIAccessibilityIdentificationP"
 - "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "s6UInt32V"
-- !private "s15UnsignedIntegerP"
+- !private "SU"
 - !private "s18_BitwiseOperationsP"
 - !private "14CoreFoundation9_CFObjectP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -228,17 +233,19 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/DynamicBlurView.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/DynamicBlurView.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "53bb5b00d2a666cdca39380ab2e40cca"

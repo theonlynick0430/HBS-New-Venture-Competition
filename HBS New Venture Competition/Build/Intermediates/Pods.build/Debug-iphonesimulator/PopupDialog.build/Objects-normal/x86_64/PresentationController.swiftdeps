@@ -11,6 +11,8 @@ provides-dynamic-lookup:
 - "presentationTransitionWillBegin"
 depends-top-level:
 - "AssignmentPrecedence"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "PopupDialogOverlayView"
 - "PresentationController"
 - "UIPresentationController"
@@ -23,7 +25,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "insertSubview"]
 - !private ["So15CALayerDelegateP", "refresh"]
-- !private ["SC6CGRectV", "zero"]
+- !private ["So6CGRectV", "zero"]
 - !private ["s7CVarArgP", "PopupDialogOverlayView"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
@@ -33,6 +35,7 @@ depends-member:
 - !private ["s7CVarArgP", "containerView"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "frameOfPresentedViewInContainerView"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "insertSubview"]
 - !private ["s7CVarArgP", "overlay"]
@@ -48,6 +51,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "containerView"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "frameOfPresentedViewInContainerView"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "insertSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "overlay"]
@@ -70,51 +74,54 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "frameOfPresentedViewInContainerView"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "insertSubview"]
 - !private ["s23CustomStringConvertibleP", "overlay"]
 - !private ["s23CustomStringConvertibleP", "presentedView"]
 - !private ["s23CustomStringConvertibleP", "presentedViewController"]
 - !private ["s23CustomStringConvertibleP", "refresh"]
 - !private ["s23CustomStringConvertibleP", "transitionCoordinator"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "zero"]
 - !private ["15DynamicBlurViewAAC", "refresh"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "PopupDialogOverlayView"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "alpha"]
-- !private ["s9EquatableP", "blurView"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "containerView"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "frameOfPresentedViewInContainerView"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "insertSubview"]
-- !private ["s9EquatableP", "overlay"]
-- !private ["s9EquatableP", "presentedView"]
-- !private ["s9EquatableP", "presentedViewController"]
-- !private ["s9EquatableP", "refresh"]
-- !private ["s9EquatableP", "transitionCoordinator"]
-- !private ["s9EquatableP", "zero"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "zero"]
+- !private ["SQ", "PopupDialogOverlayView"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "alpha"]
+- !private ["SQ", "blurView"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "containerView"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "frameOfPresentedViewInContainerView"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "insertSubview"]
+- !private ["SQ", "overlay"]
+- !private ["SQ", "presentedView"]
+- !private ["SQ", "presentedViewController"]
+- !private ["SQ", "refresh"]
+- !private ["SQ", "transitionCoordinator"]
+- !private ["SQ", "zero"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "PopupDialogOverlayView"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "alpha"]
-- !private ["s8HashableP", "blurView"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "containerView"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "frameOfPresentedViewInContainerView"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "insertSubview"]
-- !private ["s8HashableP", "overlay"]
-- !private ["s8HashableP", "presentedView"]
-- !private ["s8HashableP", "presentedViewController"]
-- !private ["s8HashableP", "refresh"]
-- !private ["s8HashableP", "transitionCoordinator"]
+- !private ["SH", "PopupDialogOverlayView"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "alpha"]
+- !private ["SH", "blurView"]
+- !private ["SH", "bounds"]
+- !private ["SH", "containerView"]
+- !private ["SH", "frame"]
+- !private ["SH", "frameOfPresentedViewInContainerView"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "insertSubview"]
+- !private ["SH", "overlay"]
+- !private ["SH", "presentedView"]
+- !private ["SH", "presentedViewController"]
+- !private ["SH", "refresh"]
+- !private ["SH", "transitionCoordinator"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["So8NSCodingP", "alpha"]
 - !private ["So8NSCodingP", "blurView"]
@@ -135,6 +142,7 @@ depends-member:
 - !private ["So8NSObjectC", "frame"]
 - !private ["So8NSObjectC", "frameOfPresentedViewInContainerView"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "insertSubview"]
 - ["So8NSObjectC", "overlay"]
 - ["So8NSObjectC", "overlay.storage"]
@@ -143,30 +151,31 @@ depends-member:
 - !private ["So8NSObjectC", "presentedViewController"]
 - !private ["So8NSObjectC", "refresh"]
 - !private ["So8NSObjectC", "transitionCoordinator"]
-- !private ["So16NSObjectProtocolP", "PopupDialogOverlayView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "alpha"]
-- !private ["So16NSObjectProtocolP", "animate"]
-- !private ["So16NSObjectProtocolP", "blurView"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "containerView"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "frameOfPresentedViewInContainerView"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "insertSubview"]
-- !private ["So16NSObjectProtocolP", "overlay"]
-- !private ["So16NSObjectProtocolP", "presentedView"]
-- !private ["So16NSObjectProtocolP", "presentedViewController"]
-- !private ["So16NSObjectProtocolP", "refresh"]
-- !private ["So16NSObjectProtocolP", "transitionCoordinator"]
+- !private ["So8NSObjectP", "PopupDialogOverlayView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "alpha"]
+- !private ["So8NSObjectP", "animate"]
+- !private ["So8NSObjectP", "blurView"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "containerView"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "frameOfPresentedViewInContainerView"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "insertSubview"]
+- !private ["So8NSObjectP", "overlay"]
+- !private ["So8NSObjectP", "presentedView"]
+- !private ["So8NSObjectP", "presentedViewController"]
+- !private ["So8NSObjectP", "refresh"]
+- !private ["So8NSObjectP", "transitionCoordinator"]
 - !private ["11PopupDialog0aB11OverlayViewC", "alpha"]
 - !private ["11PopupDialog0aB11OverlayViewC", "blurView"]
+- !private ["11PopupDialog0aB11OverlayViewC", "deinit"]
 - !private ["11PopupDialog0aB11OverlayViewC", "frame"]
 - !private ["11PopupDialog0aB11OverlayViewC", "init"]
 - ["11PopupDialog22PresentationControllerC", "PopupDialogOverlayView"]
 - !private ["11PopupDialog22PresentationControllerC", "containerView"]
 - ["11PopupDialog22PresentationControllerC", "containerViewWillLayoutSubviews"]
-- ["11PopupDialog22PresentationControllerC", "deinit"]
 - ["11PopupDialog22PresentationControllerC", "dismissalTransitionWillBegin"]
 - !private ["11PopupDialog22PresentationControllerC", "frameOfPresentedViewInContainerView"]
 - ["11PopupDialog22PresentationControllerC", "init"]
@@ -198,6 +207,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "frameOfPresentedViewInContainerView"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "insertSubview"]
 - !private ["So21UIAppearanceContainerP", "overlay"]
 - !private ["So21UIAppearanceContainerP", "presentedView"]
@@ -208,6 +218,7 @@ depends-member:
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "containerView"]
 - !private ["So18UIContentContainerP", "frameOfPresentedViewInContainerView"]
+- !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "overlay"]
 - !private ["So18UIContentContainerP", "presentedView"]
@@ -236,6 +247,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "frameOfPresentedViewInContainerView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "insertSubview"]
 - !private ["So18UIFocusEnvironmentP", "overlay"]
 - !private ["So18UIFocusEnvironmentP", "presentedView"]
@@ -249,6 +261,13 @@ depends-member:
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "insertSubview"]
 - !private ["So11UIFocusItemP", "refresh"]
+- !private ["So20UIFocusItemContainerP", "alpha"]
+- !private ["So20UIFocusItemContainerP", "blurView"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "insertSubview"]
+- !private ["So20UIFocusItemContainerP", "refresh"]
 - !private ["So30UIPasteConfigurationSupportingP", "alpha"]
 - !private ["So30UIPasteConfigurationSupportingP", "blurView"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
@@ -264,6 +283,7 @@ depends-member:
 - ["So24UIPresentationControllerC", "dismissalTransitionWillBegin"]
 - !private ["So24UIPresentationControllerC", "frameOfPresentedViewInContainerView"]
 - ["So24UIPresentationControllerC", "init"]
+- !private ["So24UIPresentationControllerC", "init"]
 - ["So24UIPresentationControllerC", "overlay"]
 - ["So24UIPresentationControllerC", "overlay.storage"]
 - ["So24UIPresentationControllerC", "presentationTransitionWillBegin"]
@@ -295,12 +315,21 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "frameOfPresentedViewInContainerView"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "insertSubview"]
 - !private ["So18UITraitEnvironmentP", "overlay"]
 - !private ["So18UITraitEnvironmentP", "presentedView"]
 - !private ["So18UITraitEnvironmentP", "presentedViewController"]
 - !private ["So18UITraitEnvironmentP", "refresh"]
 - !private ["So18UITraitEnvironmentP", "transitionCoordinator"]
+- !private ["So23UIUserActivityRestoringP", "alpha"]
+- !private ["So23UIUserActivityRestoringP", "blurView"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "insertSubview"]
+- !private ["So23UIUserActivityRestoringP", "refresh"]
+- !private ["So23UIUserActivityRestoringP", "transitionCoordinator"]
 - !private ["So6UIViewC", "alpha"]
 - !private ["So6UIViewC", "blurView"]
 - !private ["So6UIViewC", "bounds"]
@@ -328,6 +357,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frameOfPresentedViewInContainerView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "insertSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "overlay"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "presentedView"]
@@ -339,23 +369,23 @@ depends-member:
 depends-nominal:
 - !private "Sb"
 - !private "So15CALayerDelegateP"
-- !private "SC6CGRectV"
+- !private "So6CGRectV"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - !private "15DynamicBlurViewAAC"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "11PopupDialog0aB11OverlayViewC"
 - "11PopupDialog22PresentationControllerC"
 - !private "So29UIAccessibilityIdentificationP"
@@ -366,12 +396,14 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So30UIPasteConfigurationSupportingP"
 - "So24UIPresentationControllerC"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - !private "So16UIViewControllerC"
 - !private "So37UIViewControllerTransitionCoordinatorP"
@@ -382,7 +414,6 @@ depends-nominal:
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/x86_64.swiftmodule"
@@ -406,14 +437,16 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/PopupDialog.build/unextended-module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/DynamicBlurView.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "60233f1fe859e680810c8b8c797931e4"

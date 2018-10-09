@@ -32,6 +32,8 @@ depends-top-level:
 - "CGRect"
 - "CGSize"
 - "CastingPrecedence"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "String"
 - "StringLiteralType"
 - "UIImage"
@@ -41,10 +43,14 @@ depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "forEach"]
 - !private ["Sa", "reversed"]
-- !private ["s23BidirectionalCollectionP", "append"]
-- !private ["s23BidirectionalCollectionP", "forEach"]
-- ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "reversed"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "forEach"]
+- !private ["s13ArrayProtocolP", "reversed"]
+- !private ["SK", "append"]
+- !private ["SK", "forEach"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["SK", "reversed"]
 - !private ["15DynamicBlurView0B5LayerC", "BlurLayer"]
 - ["15DynamicBlurView0B5LayerC", "Bool"]
 - ["15DynamicBlurView0B5LayerC", "CAAction"]
@@ -66,7 +72,6 @@ depends-member:
 - !private ["15DynamicBlurView0B5LayerC", "contentsRect"]
 - !private ["15DynamicBlurView0B5LayerC", "contentsScale"]
 - !private ["15DynamicBlurView0B5LayerC", "convert"]
-- ["15DynamicBlurView0B5LayerC", "deinit"]
 - ["15DynamicBlurView0B5LayerC", "draw"]
 - !private ["15DynamicBlurView0B5LayerC", "fromBlurRadius"]
 - !private ["15DynamicBlurView0B5LayerC", "hideOverlappingLayers"]
@@ -114,6 +119,7 @@ depends-member:
 - ["So7CALayerC", "fromBlurRadius"]
 - ["So7CALayerC", "hideOverlappingLayers"]
 - ["So7CALayerC", "init"]
+- !private ["So7CALayerC", "init"]
 - ["So7CALayerC", "isHang"]
 - !private ["So7CALayerC", "isHidden"]
 - ["So7CALayerC", "needsDisplay"]
@@ -141,6 +147,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "fromValue"]
 - !private ["So13CAMediaTimingP", "hideOverlappingLayers"]
 - !private ["So13CAMediaTimingP", "init"]
+- !private ["So13CAMediaTimingP", "init"]
 - !private ["So13CAMediaTimingP", "isHang"]
 - !private ["So13CAMediaTimingP", "isHidden"]
 - !private ["So13CAMediaTimingP", "keyPath"]
@@ -153,16 +160,16 @@ depends-member:
 - !private ["So19CAPropertyAnimationC", "fromValue"]
 - !private ["So19CAPropertyAnimationC", "keyPath"]
 - !private ["So19CAPropertyAnimationC", "toValue"]
-- !private ["SC7CGPointV", "x"]
-- !private ["SC7CGPointV", "y"]
-- ["SC6CGRectV", "CGRect"]
-- ["SC6CGRectV", "CGSize"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "origin"]
-- !private ["SC6CGRectV", "rectangle"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGSizeV", "height"]
-- !private ["SC6CGSizeV", "width"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- ["So6CGRectV", "CGRect"]
+- ["So6CGRectV", "CGSize"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "origin"]
+- !private ["So6CGRectV", "rectangle"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "width"]
 - !private ["s7CVarArgP", "BlurLayer"]
 - !private ["s7CVarArgP", "UIView"]
 - ["s7CVarArgP", ""]
@@ -184,6 +191,7 @@ depends-member:
 - !private ["s7CVarArgP", "fromValue"]
 - !private ["s7CVarArgP", "hideOverlappingLayers"]
 - ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isHang"]
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "keyPath"]
@@ -197,11 +205,13 @@ depends-member:
 - !private ["s7CVarArgP", "sublayers"]
 - !private ["s7CVarArgP", "superlayer"]
 - !private ["s7CVarArgP", "toValue"]
-- !private ["s10CollectionP", "append"]
-- !private ["s10CollectionP", "forEach"]
-- ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "reversed"]
-- ["s10ComparableP", "init"]
+- !private ["Sl", "append"]
+- !private ["Sl", "forEach"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "reversed"]
+- ["SL", "init"]
+- ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "BlurLayer"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
@@ -223,6 +233,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "fromValue"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "hideOverlappingLayers"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isHang"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
@@ -246,6 +257,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "origin"]
 - !private ["s29CustomPlaygroundQuickLookableP", "rectangle"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
@@ -258,6 +270,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "blurRadius"]
 - !private ["s17CustomReflectableP", "forEach"]
 - !private ["s17CustomReflectableP", "height"]
+- ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "origin"]
 - !private ["s17CustomReflectableP", "rectangle"]
@@ -287,6 +300,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "fromValue"]
 - !private ["s23CustomStringConvertibleP", "hideOverlappingLayers"]
 - ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isHang"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "keyPath"]
@@ -300,120 +314,132 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "sublayers"]
 - !private ["s23CustomStringConvertibleP", "superlayer"]
 - !private ["s23CustomStringConvertibleP", "toValue"]
-- !private ["s9DecodableP", "CGRect"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "append"]
-- !private ["s9DecodableP", "blurRadius"]
-- !private ["s9DecodableP", "forEach"]
-- !private ["s9DecodableP", "height"]
-- ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "origin"]
-- !private ["s9DecodableP", "rectangle"]
-- !private ["s9DecodableP", "reversed"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9DecodableP", "x"]
-- !private ["s9DecodableP", "y"]
-- !private ["s9EncodableP", "CGRect"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "append"]
-- !private ["s9EncodableP", "blurRadius"]
-- !private ["s9EncodableP", "forEach"]
-- !private ["s9EncodableP", "height"]
-- ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "origin"]
-- !private ["s9EncodableP", "rectangle"]
-- !private ["s9EncodableP", "reversed"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "width"]
-- !private ["s9EncodableP", "x"]
-- !private ["s9EncodableP", "y"]
-- !private ["s9EquatableP", "BlurLayer"]
-- !private ["s9EquatableP", "CGRect"]
-- !private ["s9EquatableP", "UIView"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "action"]
-- !private ["s9EquatableP", "append"]
-- !private ["s9EquatableP", "blurLayout"]
-- !private ["s9EquatableP", "blurLayoutKey"]
-- !private ["s9EquatableP", "blurRadius"]
-- !private ["s9EquatableP", "blurRadiusKey"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "cgImage"]
-- !private ["s9EquatableP", "contents"]
-- !private ["s9EquatableP", "contentsRect"]
-- !private ["s9EquatableP", "contentsScale"]
-- !private ["s9EquatableP", "convert"]
-- !private ["s9EquatableP", "forEach"]
-- !private ["s9EquatableP", "fromBlurRadius"]
-- !private ["s9EquatableP", "fromValue"]
-- !private ["s9EquatableP", "height"]
-- !private ["s9EquatableP", "hideOverlappingLayers"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isHang"]
-- !private ["s9EquatableP", "isHidden"]
-- !private ["s9EquatableP", "keyPath"]
-- !private ["s9EquatableP", "needsDisplay"]
-- !private ["s9EquatableP", "origin"]
-- !private ["s9EquatableP", "performWithoutAnimation"]
-- !private ["s9EquatableP", "presentation"]
-- !private ["s9EquatableP", "rectangle"]
-- !private ["s9EquatableP", "render"]
-- !private ["s9EquatableP", "reversed"]
-- !private ["s9EquatableP", "scale"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "sublayers"]
-- !private ["s9EquatableP", "superlayer"]
-- !private ["s9EquatableP", "toValue"]
-- !private ["s9EquatableP", "width"]
-- !private ["s9EquatableP", "x"]
-- !private ["s9EquatableP", "y"]
+- !private ["Se", "CGRect"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "blurRadius"]
+- !private ["Se", "forEach"]
+- !private ["Se", "height"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "origin"]
+- !private ["Se", "rectangle"]
+- !private ["Se", "reversed"]
+- !private ["Se", "size"]
+- !private ["Se", "width"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["SE", "CGRect"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "blurRadius"]
+- !private ["SE", "forEach"]
+- !private ["SE", "height"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "origin"]
+- !private ["SE", "rectangle"]
+- !private ["SE", "reversed"]
+- !private ["SE", "size"]
+- !private ["SE", "width"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["SQ", "BlurLayer"]
+- !private ["SQ", "CGRect"]
+- !private ["SQ", "UIView"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "action"]
+- !private ["SQ", "append"]
+- !private ["SQ", "blurLayout"]
+- !private ["SQ", "blurLayoutKey"]
+- !private ["SQ", "blurRadius"]
+- !private ["SQ", "blurRadiusKey"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "cgImage"]
+- !private ["SQ", "contents"]
+- !private ["SQ", "contentsRect"]
+- !private ["SQ", "contentsScale"]
+- !private ["SQ", "convert"]
+- !private ["SQ", "forEach"]
+- !private ["SQ", "fromBlurRadius"]
+- !private ["SQ", "fromValue"]
+- !private ["SQ", "height"]
+- !private ["SQ", "hideOverlappingLayers"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "isHang"]
+- !private ["SQ", "isHidden"]
+- !private ["SQ", "keyPath"]
+- !private ["SQ", "needsDisplay"]
+- !private ["SQ", "origin"]
+- !private ["SQ", "performWithoutAnimation"]
+- !private ["SQ", "presentation"]
+- !private ["SQ", "rectangle"]
+- !private ["SQ", "render"]
+- !private ["SQ", "reversed"]
+- !private ["SQ", "scale"]
+- !private ["SQ", "size"]
+- !private ["SQ", "sublayers"]
+- !private ["SQ", "superlayer"]
+- !private ["SQ", "toValue"]
+- !private ["SQ", "width"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "forEach"]
 - !private ["s25ExpressibleByArrayLiteralP", "reversed"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "blurRadius"]
 - ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "BlurLayer"]
-- !private ["s8HashableP", "UIView"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "action"]
-- !private ["s8HashableP", "blurLayout"]
-- !private ["s8HashableP", "blurLayoutKey"]
-- !private ["s8HashableP", "blurRadius"]
-- !private ["s8HashableP", "blurRadiusKey"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "cgImage"]
-- !private ["s8HashableP", "contents"]
-- !private ["s8HashableP", "contentsRect"]
-- !private ["s8HashableP", "contentsScale"]
-- !private ["s8HashableP", "convert"]
-- !private ["s8HashableP", "fromBlurRadius"]
-- !private ["s8HashableP", "fromValue"]
-- !private ["s8HashableP", "hideOverlappingLayers"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "isHang"]
-- !private ["s8HashableP", "isHidden"]
-- !private ["s8HashableP", "keyPath"]
-- !private ["s8HashableP", "needsDisplay"]
-- !private ["s8HashableP", "performWithoutAnimation"]
-- !private ["s8HashableP", "presentation"]
-- !private ["s8HashableP", "render"]
-- !private ["s8HashableP", "scale"]
-- !private ["s8HashableP", "size"]
-- !private ["s8HashableP", "sublayers"]
-- !private ["s8HashableP", "superlayer"]
-- !private ["s8HashableP", "toValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "BlurLayer"]
+- !private ["SH", "UIView"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "action"]
+- !private ["SH", "append"]
+- !private ["SH", "blurLayout"]
+- !private ["SH", "blurLayoutKey"]
+- !private ["SH", "blurRadius"]
+- !private ["SH", "blurRadiusKey"]
+- !private ["SH", "bounds"]
+- !private ["SH", "cgImage"]
+- !private ["SH", "contents"]
+- !private ["SH", "contentsRect"]
+- !private ["SH", "contentsScale"]
+- !private ["SH", "convert"]
+- !private ["SH", "forEach"]
+- !private ["SH", "fromBlurRadius"]
+- !private ["SH", "fromValue"]
+- !private ["SH", "hideOverlappingLayers"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "isHang"]
+- !private ["SH", "isHidden"]
+- !private ["SH", "keyPath"]
+- !private ["SH", "needsDisplay"]
+- !private ["SH", "performWithoutAnimation"]
+- !private ["SH", "presentation"]
+- !private ["SH", "render"]
+- !private ["SH", "reversed"]
+- !private ["SH", "scale"]
+- !private ["SH", "size"]
+- !private ["SH", "sublayers"]
+- !private ["SH", "superlayer"]
+- !private ["SH", "toValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "append"]
-- !private ["s17MutableCollectionP", "forEach"]
-- !private ["s17MutableCollectionP", "reversed"]
+- ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "forEach"]
+- !private ["SM", "reversed"]
 - !private ["So8NSCodingP", "BlurLayer"]
 - !private ["So8NSCodingP", "UIView"]
 - ["So8NSCodingP", ""]
@@ -431,6 +457,7 @@ depends-member:
 - !private ["So8NSCodingP", "fromBlurRadius"]
 - !private ["So8NSCodingP", "fromValue"]
 - !private ["So8NSCodingP", "hideOverlappingLayers"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isHang"]
 - !private ["So8NSCodingP", "isHidden"]
@@ -480,6 +507,7 @@ depends-member:
 - !private ["So8NSObjectC", "fromValue"]
 - ["So8NSObjectC", "hideOverlappingLayers"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "isHang"]
 - !private ["So8NSObjectC", "isHidden"]
 - !private ["So8NSObjectC", "keyPath"]
@@ -494,36 +522,37 @@ depends-member:
 - !private ["So8NSObjectC", "sublayers"]
 - !private ["So8NSObjectC", "superlayer"]
 - !private ["So8NSObjectC", "toValue"]
-- !private ["So16NSObjectProtocolP", "BlurLayer"]
-- !private ["So16NSObjectProtocolP", "UIView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "action"]
-- !private ["So16NSObjectProtocolP", "blurLayout"]
-- !private ["So16NSObjectProtocolP", "blurLayoutKey"]
-- !private ["So16NSObjectProtocolP", "blurRadius"]
-- !private ["So16NSObjectProtocolP", "blurRadiusKey"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "cgImage"]
-- !private ["So16NSObjectProtocolP", "contents"]
-- !private ["So16NSObjectProtocolP", "contentsRect"]
-- !private ["So16NSObjectProtocolP", "contentsScale"]
-- !private ["So16NSObjectProtocolP", "convert"]
-- !private ["So16NSObjectProtocolP", "fromBlurRadius"]
-- !private ["So16NSObjectProtocolP", "fromValue"]
-- !private ["So16NSObjectProtocolP", "hideOverlappingLayers"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isHang"]
-- !private ["So16NSObjectProtocolP", "isHidden"]
-- !private ["So16NSObjectProtocolP", "keyPath"]
-- !private ["So16NSObjectProtocolP", "needsDisplay"]
-- !private ["So16NSObjectProtocolP", "performWithoutAnimation"]
-- !private ["So16NSObjectProtocolP", "presentation"]
-- !private ["So16NSObjectProtocolP", "render"]
-- !private ["So16NSObjectProtocolP", "scale"]
-- !private ["So16NSObjectProtocolP", "size"]
-- !private ["So16NSObjectProtocolP", "sublayers"]
-- !private ["So16NSObjectProtocolP", "superlayer"]
-- !private ["So16NSObjectProtocolP", "toValue"]
+- !private ["So8NSObjectP", "BlurLayer"]
+- !private ["So8NSObjectP", "UIView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "action"]
+- !private ["So8NSObjectP", "blurLayout"]
+- !private ["So8NSObjectP", "blurLayoutKey"]
+- !private ["So8NSObjectP", "blurRadius"]
+- !private ["So8NSObjectP", "blurRadiusKey"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "cgImage"]
+- !private ["So8NSObjectP", "contents"]
+- !private ["So8NSObjectP", "contentsRect"]
+- !private ["So8NSObjectP", "contentsScale"]
+- !private ["So8NSObjectP", "convert"]
+- !private ["So8NSObjectP", "fromBlurRadius"]
+- !private ["So8NSObjectP", "fromValue"]
+- !private ["So8NSObjectP", "hideOverlappingLayers"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isHang"]
+- !private ["So8NSObjectP", "isHidden"]
+- !private ["So8NSObjectP", "keyPath"]
+- !private ["So8NSObjectP", "needsDisplay"]
+- !private ["So8NSObjectP", "performWithoutAnimation"]
+- !private ["So8NSObjectP", "presentation"]
+- !private ["So8NSObjectP", "render"]
+- !private ["So8NSObjectP", "scale"]
+- !private ["So8NSObjectP", "size"]
+- !private ["So8NSObjectP", "sublayers"]
+- !private ["So8NSObjectP", "superlayer"]
+- !private ["So8NSObjectP", "toValue"]
 - !private ["So14NSSecureCodingP", "BlurLayer"]
 - !private ["So14NSSecureCodingP", "UIView"]
 - ["So14NSSecureCodingP", ""]
@@ -542,6 +571,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "fromValue"]
 - !private ["So14NSSecureCodingP", "hideOverlappingLayers"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "isHang"]
 - !private ["So14NSSecureCodingP", "isHidden"]
 - !private ["So14NSSecureCodingP", "keyPath"]
@@ -554,20 +584,26 @@ depends-member:
 - !private ["So14NSSecureCodingP", "superlayer"]
 - !private ["So14NSSecureCodingP", "toValue"]
 - !private ["Sq", "blurRadius"]
-- !private ["s22RandomAccessCollectionP", "append"]
-- !private ["s22RandomAccessCollectionP", "forEach"]
-- !private ["s22RandomAccessCollectionP", "reversed"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
-- !private ["s26RangeReplaceableCollectionP", "forEach"]
-- ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "reversed"]
-- !private ["s8SequenceP", "append"]
-- !private ["s8SequenceP", "forEach"]
-- ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "reversed"]
+- !private ["Sk", "append"]
+- !private ["Sk", "forEach"]
+- !private ["Sk", "reversed"]
+- !private ["Sm", "append"]
+- !private ["Sm", "forEach"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["Sm", "reversed"]
+- !private ["ST", "append"]
+- !private ["ST", "forEach"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["ST", "reversed"]
 - ["SS", "init"]
-- ["s14StringProtocolP", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
 - ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "cgImage"]
 - !private ["So29UIAccessibilityIdentificationP", "performWithoutAnimation"]
@@ -579,6 +615,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "performWithoutAnimation"]
 - !private ["So18UIFocusEnvironmentP", "performWithoutAnimation"]
 - !private ["So11UIFocusItemP", "performWithoutAnimation"]
+- !private ["So20UIFocusItemContainerP", "performWithoutAnimation"]
 - !private ["So7UIImageC", "cgImage"]
 - !private ["So7UIImageC", "scale"]
 - !private ["So7UIImageC", "size"]
@@ -589,23 +626,29 @@ depends-member:
 - !private ["So11UIResponderC", "performWithoutAnimation"]
 - !private ["So30UIResponderStandardEditActionsP", "performWithoutAnimation"]
 - !private ["So18UITraitEnvironmentP", "performWithoutAnimation"]
+- !private ["So23UIUserActivityRestoringP", "performWithoutAnimation"]
 - !private ["So6UIViewC", "performWithoutAnimation"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "forEach"]
-- !private ["s14_ArrayProtocolP", "reversed"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "performWithoutAnimation"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "forEach"]
 - !private ["s24_DestructorSafeContainerP", "reversed"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "cgImage"]
 - !private ["s26_ExpressibleByImageLiteralP", "scale"]
 - !private ["s26_ExpressibleByImageLiteralP", "size"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reversed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "BlurLayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -623,6 +666,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fromBlurRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fromValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideOverlappingLayers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHang"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
@@ -643,6 +687,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "origin"]
 - !private ["s21_ObjectiveCBridgeableP", "rectangle"]
 - !private ["s21_ObjectiveCBridgeableP", "reversed"]
@@ -651,9 +696,11 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
 - ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
-- "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- "SK"
 - "15DynamicBlurView0B5LayerC"
 - !private "Sb"
 - !private "So8CAActionP"
@@ -663,42 +710,42 @@ depends-nominal:
 - !private "So15CALayerDelegateP"
 - "So13CAMediaTimingP"
 - !private "So19CAPropertyAnimationC"
-- !private "SC7CGPointV"
-- "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So7CGPointV"
+- "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- "Sl"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "s9DecodableP"
-- "s9EncodableP"
-- "s9EquatableP"
+- "Se"
+- "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "Sq"
-- !private "s22RandomAccessCollectionP"
-- "s26RangeReplaceableCollectionP"
-- "s8SequenceP"
+- !private "Sk"
+- "Sm"
+- "ST"
 - "SS"
-- "s14StringProtocolP"
+- "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
@@ -708,14 +755,15 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
-- !private "s14_ArrayProtocolP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -725,12 +773,12 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -750,14 +798,16 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/DynamicBlurView.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "acb19f2048c5de859e15f87a33d859e7"

@@ -23,6 +23,8 @@ depends-top-level:
 - "CGFloat"
 - "CGRect"
 - "DynamicBlurView"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "NSCoder"
 - "PopupDialogOverlayView"
 - !private "StringLiteralType"
@@ -30,7 +32,10 @@ depends-top-level:
 - "UIView"
 - !private "fatalError"
 depends-member:
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So18UIViewAutoresizingV", "flexibleHeight"]
+- !private ["So18UIViewAutoresizingV", "flexibleWidth"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "DynamicBlurView"]
 - !private ["So15CALayerDelegateP", "UIView"]
@@ -50,7 +55,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "setupView"]
 - !private ["So15CALayerDelegateP", "tintColor"]
 - !private ["So15CALayerDelegateP", "trackingMode"]
-- !private ["SC6CGRectV", "zero"]
+- !private ["So6CGRectV", "zero"]
 - !private ["s7CVarArgP", "DynamicBlurView"]
 - !private ["s7CVarArgP", "UIView"]
 - ["s7CVarArgP", ""]
@@ -65,6 +70,7 @@ depends-member:
 - !private ["s7CVarArgP", "clear"]
 - !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isDeepRendering"]
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "liveBlurEnabled"]
@@ -72,8 +78,10 @@ depends-member:
 - !private ["s7CVarArgP", "setupView"]
 - !private ["s7CVarArgP", "tintColor"]
 - !private ["s7CVarArgP", "trackingMode"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "DynamicBlurView"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -87,6 +95,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "clear"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isDeepRendering"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "liveBlurEnabled"]
@@ -97,10 +106,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "black"]
 - !private ["s17CustomReflectableP", "clear"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", "DynamicBlurView"]
@@ -118,6 +129,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "common"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isDeepRendering"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "liveBlurEnabled"]
@@ -126,11 +138,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setupView"]
 - !private ["s23CustomStringConvertibleP", "tintColor"]
 - !private ["s23CustomStringConvertibleP", "trackingMode"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "black"]
-- !private ["s9DecodableP", "clear"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "black"]
+- !private ["Se", "clear"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "zero"]
 - !private ["15DynamicBlurViewAAC", "autoresizingMask"]
 - !private ["15DynamicBlurViewAAC", "blurRadius"]
 - !private ["15DynamicBlurViewAAC", "init"]
@@ -138,71 +151,78 @@ depends-member:
 - !private ["15DynamicBlurViewAAC", "isHidden"]
 - !private ["15DynamicBlurViewAAC", "tintColor"]
 - !private ["15DynamicBlurViewAAC", "trackingMode"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "black"]
-- !private ["s9EncodableP", "clear"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "DynamicBlurView"]
-- !private ["s9EquatableP", "UIView"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "alpha"]
-- !private ["s9EquatableP", "autoresizingMask"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "black"]
-- !private ["s9EquatableP", "blurRadius"]
-- !private ["s9EquatableP", "blurView"]
-- !private ["s9EquatableP", "clear"]
-- !private ["s9EquatableP", "common"]
-- !private ["s9EquatableP", "fatalError"]
-- !private ["s9EquatableP", "flexibleHeight"]
-- !private ["s9EquatableP", "flexibleWidth"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isDeepRendering"]
-- !private ["s9EquatableP", "isHidden"]
-- !private ["s9EquatableP", "liveBlurEnabled"]
-- !private ["s9EquatableP", "none"]
-- !private ["s9EquatableP", "overlay"]
-- !private ["s9EquatableP", "setupView"]
-- !private ["s9EquatableP", "tintColor"]
-- !private ["s9EquatableP", "trackingMode"]
-- !private ["s9EquatableP", "zero"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "black"]
+- !private ["SE", "clear"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "zero"]
+- !private ["SQ", "DynamicBlurView"]
+- !private ["SQ", "UIView"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "alpha"]
+- !private ["SQ", "autoresizingMask"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "black"]
+- !private ["SQ", "blurRadius"]
+- !private ["SQ", "blurView"]
+- !private ["SQ", "clear"]
+- !private ["SQ", "common"]
+- !private ["SQ", "fatalError"]
+- !private ["SQ", "flexibleHeight"]
+- !private ["SQ", "flexibleWidth"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isDeepRendering"]
+- !private ["SQ", "isHidden"]
+- !private ["SQ", "liveBlurEnabled"]
+- !private ["SQ", "none"]
+- !private ["SQ", "overlay"]
+- !private ["SQ", "setupView"]
+- !private ["SQ", "tintColor"]
+- !private ["SQ", "trackingMode"]
+- !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "flexibleHeight"]
 - !private ["s25ExpressibleByArrayLiteralP", "flexibleWidth"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "black"]
 - !private ["s23ExpressibleByNilLiteralP", "clear"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "DynamicBlurView"]
-- !private ["s8HashableP", "UIView"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "alpha"]
-- !private ["s8HashableP", "autoresizingMask"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "black"]
-- !private ["s8HashableP", "blurRadius"]
-- !private ["s8HashableP", "blurView"]
-- !private ["s8HashableP", "clear"]
-- !private ["s8HashableP", "common"]
-- !private ["s8HashableP", "fatalError"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isDeepRendering"]
-- !private ["s8HashableP", "isHidden"]
-- !private ["s8HashableP", "liveBlurEnabled"]
-- !private ["s8HashableP", "none"]
-- !private ["s8HashableP", "overlay"]
-- !private ["s8HashableP", "setupView"]
-- !private ["s8HashableP", "tintColor"]
-- !private ["s8HashableP", "trackingMode"]
-- !private ["SQ", "clear"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "DynamicBlurView"]
+- !private ["SH", "UIView"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "alpha"]
+- !private ["SH", "autoresizingMask"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "black"]
+- !private ["SH", "blurRadius"]
+- !private ["SH", "blurView"]
+- !private ["SH", "clear"]
+- !private ["SH", "common"]
+- !private ["SH", "fatalError"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isDeepRendering"]
+- !private ["SH", "isHidden"]
+- !private ["SH", "liveBlurEnabled"]
+- !private ["SH", "none"]
+- !private ["SH", "overlay"]
+- !private ["SH", "setupView"]
+- !private ["SH", "tintColor"]
+- !private ["SH", "trackingMode"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "DynamicBlurView"]
 - !private ["So8NSCodingP", "UIView"]
@@ -260,26 +280,26 @@ depends-member:
 - ["So8NSObjectC", "setupView"]
 - !private ["So8NSObjectC", "tintColor"]
 - !private ["So8NSObjectC", "trackingMode"]
-- !private ["So16NSObjectProtocolP", "DynamicBlurView"]
-- !private ["So16NSObjectProtocolP", "UIView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "alpha"]
-- !private ["So16NSObjectProtocolP", "autoresizingMask"]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "black"]
-- !private ["So16NSObjectProtocolP", "blurRadius"]
-- !private ["So16NSObjectProtocolP", "blurView"]
-- !private ["So16NSObjectProtocolP", "clear"]
-- !private ["So16NSObjectProtocolP", "fatalError"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isDeepRendering"]
-- !private ["So16NSObjectProtocolP", "isHidden"]
-- !private ["So16NSObjectProtocolP", "liveBlurEnabled"]
-- !private ["So16NSObjectProtocolP", "overlay"]
-- !private ["So16NSObjectProtocolP", "setupView"]
-- !private ["So16NSObjectProtocolP", "tintColor"]
-- !private ["So16NSObjectProtocolP", "trackingMode"]
+- !private ["So8NSObjectP", "DynamicBlurView"]
+- !private ["So8NSObjectP", "UIView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "alpha"]
+- !private ["So8NSObjectP", "autoresizingMask"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "black"]
+- !private ["So8NSObjectP", "blurRadius"]
+- !private ["So8NSObjectP", "blurView"]
+- !private ["So8NSObjectP", "clear"]
+- !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isDeepRendering"]
+- !private ["So8NSObjectP", "isHidden"]
+- !private ["So8NSObjectP", "liveBlurEnabled"]
+- !private ["So8NSObjectP", "overlay"]
+- !private ["So8NSObjectP", "setupView"]
+- !private ["So8NSObjectP", "tintColor"]
+- !private ["So8NSObjectP", "trackingMode"]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "clear"]
 - !private ["s9OptionSetP", "flexibleHeight"]
@@ -302,7 +322,6 @@ depends-member:
 - ["11PopupDialog0aB11OverlayViewC", "blurView"]
 - !private ["11PopupDialog0aB11OverlayViewC", "blurView.storage"]
 - ["11PopupDialog0aB11OverlayViewC", "color"]
-- ["11PopupDialog0aB11OverlayViewC", "deinit"]
 - !private ["11PopupDialog0aB11OverlayViewC", "fatalError"]
 - ["11PopupDialog0aB11OverlayViewC", "init"]
 - ["11PopupDialog0aB11OverlayViewC", "liveBlur"]
@@ -311,16 +330,23 @@ depends-member:
 - ["11PopupDialog0aB11OverlayViewC", "overlay"]
 - !private ["11PopupDialog0aB11OverlayViewC", "overlay.storage"]
 - !private ["11PopupDialog0aB11OverlayViewC", "setupView"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "flexibleHeight"]
-- !private ["s16RawRepresentableP", "flexibleWidth"]
-- !private ["s8SequenceP", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "flexibleHeight"]
+- !private ["SY", "flexibleWidth"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["s10SetAlgebraP", "flexibleHeight"]
 - !private ["s10SetAlgebraP", "flexibleWidth"]
 - !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["15DynamicBlurView12TrackingModeO", "common"]
 - !private ["15DynamicBlurView12TrackingModeO", "none"]
@@ -452,6 +478,24 @@ depends-member:
 - !private ["So11UIFocusItemP", "setupView"]
 - !private ["So11UIFocusItemP", "tintColor"]
 - !private ["So11UIFocusItemP", "trackingMode"]
+- !private ["So20UIFocusItemContainerP", "DynamicBlurView"]
+- !private ["So20UIFocusItemContainerP", "UIView"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "alpha"]
+- !private ["So20UIFocusItemContainerP", "autoresizingMask"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "blurRadius"]
+- !private ["So20UIFocusItemContainerP", "blurView"]
+- !private ["So20UIFocusItemContainerP", "fatalError"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isDeepRendering"]
+- !private ["So20UIFocusItemContainerP", "isHidden"]
+- !private ["So20UIFocusItemContainerP", "liveBlurEnabled"]
+- !private ["So20UIFocusItemContainerP", "overlay"]
+- !private ["So20UIFocusItemContainerP", "setupView"]
+- !private ["So20UIFocusItemContainerP", "tintColor"]
+- !private ["So20UIFocusItemContainerP", "trackingMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "DynamicBlurView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIView"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -534,6 +578,24 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setupView"]
 - !private ["So18UITraitEnvironmentP", "tintColor"]
 - !private ["So18UITraitEnvironmentP", "trackingMode"]
+- !private ["So23UIUserActivityRestoringP", "DynamicBlurView"]
+- !private ["So23UIUserActivityRestoringP", "UIView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "alpha"]
+- !private ["So23UIUserActivityRestoringP", "autoresizingMask"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "blurRadius"]
+- !private ["So23UIUserActivityRestoringP", "blurView"]
+- !private ["So23UIUserActivityRestoringP", "fatalError"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isDeepRendering"]
+- !private ["So23UIUserActivityRestoringP", "isHidden"]
+- !private ["So23UIUserActivityRestoringP", "liveBlurEnabled"]
+- !private ["So23UIUserActivityRestoringP", "overlay"]
+- !private ["So23UIUserActivityRestoringP", "setupView"]
+- !private ["So23UIUserActivityRestoringP", "tintColor"]
+- !private ["So23UIUserActivityRestoringP", "trackingMode"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "CGRect"]
@@ -563,8 +625,6 @@ depends-member:
 - ["So6UIViewC", "setupView"]
 - !private ["So6UIViewC", "tintColor"]
 - !private ["So6UIViewC", "trackingMode"]
-- !private ["SC18UIViewAutoresizingV", "flexibleHeight"]
-- !private ["SC18UIViewAutoresizingV", "flexibleWidth"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "DynamicBlurView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIView"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
@@ -585,11 +645,16 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "trackingMode"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "clear"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DynamicBlurView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
@@ -615,32 +680,34 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "black"]
 - !private ["s21_ObjectiveCBridgeableP", "clear"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- !private "s23BidirectionalCollectionP"
+- !private "So18UIViewAutoresizingV"
+- !private "SK"
 - !private "Sb"
 - "So15CALayerDelegateP"
-- !private "SC6CGRectV"
+- !private "So6CGRectV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - !private "15DynamicBlurViewAAC"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
-- !private "SQ"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
@@ -648,18 +715,18 @@ depends-nominal:
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "s9OptionSetP"
 - !private "Sq"
 - "11PopupDialog0aB11OverlayViewC"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
 - !private "s10SetAlgebraP"
 - !private "s12StaticStringV"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "15DynamicBlurView12TrackingModeO"
@@ -671,12 +738,13 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "SC18UIViewAutoresizingV"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -690,10 +758,9 @@ depends-nominal:
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/arm64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -708,20 +775,22 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/PopupDialog/PopupDialog-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-Swift.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/PopupDialog.build/unextended-module.modulemap"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/DynamicBlurView.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/PopupDialog/PopupDialog-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-Swift.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/PopupDialog.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/DynamicBlurView.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "02740ea7e2eb51583a65cbc5bd41a2f1"

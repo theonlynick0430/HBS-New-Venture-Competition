@@ -20,6 +20,8 @@ depends-top-level:
 - "CGRect"
 - "CastingPrecedence"
 - !private "Dictionary"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "NSCoder"
 - "NSLayoutConstraint"
 - "NSTextAlignment"
@@ -35,8 +37,12 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "init"]
-- !private ["s23BidirectionalCollectionP", "append"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["So17NSLayoutAttributeV", "height"]
+- !private ["SK", "append"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "NSLayoutConstraint"]
 - !private ["So15CALayerDelegateP", "UIColor"]
@@ -58,7 +64,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "titleLabel"]
 - !private ["So15CALayerDelegateP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["SC6CGRectV", "zero"]
+- !private ["So6CGRectV", "zero"]
 - !private ["s7CVarArgP", "NSLayoutConstraint"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIImageView"]
@@ -77,6 +83,7 @@ depends-member:
 - !private ["s7CVarArgP", "imageHeightConstraint"]
 - !private ["s7CVarArgP", "imageView"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "messageLabel"]
 - !private ["s7CVarArgP", "numberOfLines"]
 - !private ["s7CVarArgP", "setupViews"]
@@ -85,9 +92,12 @@ depends-member:
 - !private ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "titleLabel"]
 - !private ["s7CVarArgP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s10CollectionP", "append"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "append"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["So17UIViewContentModeV", "scaleAspectFill"]
 - !private ["s28CustomDebugStringConvertibleP", "NSLayoutConstraint"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImageView"]
@@ -105,6 +115,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "imageHeightConstraint"]
 - !private ["s28CustomDebugStringConvertibleP", "imageView"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "messageLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "numberOfLines"]
 - !private ["s28CustomDebugStringConvertibleP", "setupViews"]
@@ -116,10 +127,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "boldSystemFont"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "systemFont"]
 - !private ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", "NSLayoutConstraint"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
@@ -139,6 +154,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "imageHeightConstraint"]
 - !private ["s23CustomStringConvertibleP", "imageView"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "messageLabel"]
 - !private ["s23CustomStringConvertibleP", "numberOfLines"]
 - !private ["s23CustomStringConvertibleP", "setupViews"]
@@ -147,89 +163,101 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "textColor"]
 - !private ["s23CustomStringConvertibleP", "titleLabel"]
 - !private ["s23CustomStringConvertibleP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "append"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "zero"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "append"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "NSLayoutConstraint"]
-- !private ["s9EquatableP", "UIColor"]
-- !private ["s9EquatableP", "UIImageView"]
-- !private ["s9EquatableP", "UILabel"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "activate"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "append"]
-- !private ["s9EquatableP", "boldSystemFont"]
-- !private ["s9EquatableP", "center"]
-- !private ["s9EquatableP", "clipsToBounds"]
-- !private ["s9EquatableP", "constraints"]
-- !private ["s9EquatableP", "contentMode"]
-- !private ["s9EquatableP", "equal"]
-- !private ["s9EquatableP", "fatalError"]
-- !private ["s9EquatableP", "font"]
-- !private ["s9EquatableP", "height"]
-- !private ["s9EquatableP", "imageHeightConstraint"]
-- !private ["s9EquatableP", "imageView"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "messageLabel"]
-- !private ["s9EquatableP", "numberOfLines"]
-- !private ["s9EquatableP", "scaleAspectFill"]
-- !private ["s9EquatableP", "setupViews"]
-- !private ["s9EquatableP", "systemFont"]
-- !private ["s9EquatableP", "textAlignment"]
-- !private ["s9EquatableP", "textColor"]
-- !private ["s9EquatableP", "titleLabel"]
-- !private ["s9EquatableP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s9EquatableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "boldSystemFont"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "systemFont"]
+- !private ["Se", "zero"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "boldSystemFont"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "systemFont"]
+- !private ["SE", "zero"]
+- !private ["SQ", "NSLayoutConstraint"]
+- !private ["SQ", "UIColor"]
+- !private ["SQ", "UIImageView"]
+- !private ["SQ", "UILabel"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "activate"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "append"]
+- !private ["SQ", "boldSystemFont"]
+- !private ["SQ", "center"]
+- !private ["SQ", "clipsToBounds"]
+- !private ["SQ", "constraints"]
+- !private ["SQ", "contentMode"]
+- !private ["SQ", "equal"]
+- !private ["SQ", "fatalError"]
+- !private ["SQ", "font"]
+- !private ["SQ", "height"]
+- !private ["SQ", "imageHeightConstraint"]
+- !private ["SQ", "imageView"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "messageLabel"]
+- !private ["SQ", "numberOfLines"]
+- !private ["SQ", "scaleAspectFill"]
+- !private ["SQ", "setupViews"]
+- !private ["SQ", "systemFont"]
+- !private ["SQ", "textAlignment"]
+- !private ["SQ", "textColor"]
+- !private ["SQ", "titleLabel"]
+- !private ["SQ", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "boldSystemFont"]
 - !private ["s23ExpressibleByNilLiteralP", "systemFont"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "NSLayoutConstraint"]
-- !private ["s8HashableP", "UIColor"]
-- !private ["s8HashableP", "UIImageView"]
-- !private ["s8HashableP", "UILabel"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "activate"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "boldSystemFont"]
-- !private ["s8HashableP", "center"]
-- !private ["s8HashableP", "clipsToBounds"]
-- !private ["s8HashableP", "constraints"]
-- !private ["s8HashableP", "contentMode"]
-- !private ["s8HashableP", "equal"]
-- !private ["s8HashableP", "fatalError"]
-- !private ["s8HashableP", "font"]
-- !private ["s8HashableP", "height"]
-- !private ["s8HashableP", "imageHeightConstraint"]
-- !private ["s8HashableP", "imageView"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "messageLabel"]
-- !private ["s8HashableP", "numberOfLines"]
-- !private ["s8HashableP", "scaleAspectFill"]
-- !private ["s8HashableP", "setupViews"]
-- !private ["s8HashableP", "systemFont"]
-- !private ["s8HashableP", "textAlignment"]
-- !private ["s8HashableP", "textColor"]
-- !private ["s8HashableP", "titleLabel"]
-- !private ["s8HashableP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["SQ", "boldSystemFont"]
-- !private ["SQ", "systemFont"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "NSLayoutConstraint"]
+- !private ["SH", "UIColor"]
+- !private ["SH", "UIImageView"]
+- !private ["SH", "UILabel"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "activate"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "append"]
+- !private ["SH", "boldSystemFont"]
+- !private ["SH", "center"]
+- !private ["SH", "clipsToBounds"]
+- !private ["SH", "constraints"]
+- !private ["SH", "contentMode"]
+- !private ["SH", "equal"]
+- !private ["SH", "fatalError"]
+- !private ["SH", "font"]
+- !private ["SH", "height"]
+- !private ["SH", "imageHeightConstraint"]
+- !private ["SH", "imageView"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "messageLabel"]
+- !private ["SH", "numberOfLines"]
+- !private ["SH", "scaleAspectFill"]
+- !private ["SH", "setupViews"]
+- !private ["SH", "systemFont"]
+- !private ["SH", "textAlignment"]
+- !private ["SH", "textColor"]
+- !private ["SH", "titleLabel"]
+- !private ["SH", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "append"]
-- !private ["s17MutableCollectionP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "init"]
 - !private ["So8NSCodingP", "NSLayoutConstraint"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIImageView"]
@@ -255,11 +283,9 @@ depends-member:
 - !private ["So9NSCopyingP", "systemFont"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
-- !private ["SC17NSLayoutAttributeO", "height"]
 - !private ["So18NSLayoutConstraintC", "activate"]
 - !private ["So18NSLayoutConstraintC", "constraints"]
 - !private ["So18NSLayoutConstraintC", "init"]
-- !private ["SC16NSLayoutRelationO", "equal"]
 - ["So8NSObjectC", "CGRect"]
 - ["So8NSObjectC", "NSCoder"]
 - ["So8NSObjectC", "NSLayoutConstraint"]
@@ -297,32 +323,34 @@ depends-member:
 - ["So8NSObjectC", "titleLabel.storage"]
 - ["So8NSObjectC", "titleTextAlignment"]
 - !private ["So8NSObjectC", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So16NSObjectProtocolP", "NSLayoutConstraint"]
-- !private ["So16NSObjectProtocolP", "UIColor"]
-- !private ["So16NSObjectProtocolP", "UIImageView"]
-- !private ["So16NSObjectProtocolP", "UILabel"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "activate"]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "boldSystemFont"]
-- !private ["So16NSObjectProtocolP", "clipsToBounds"]
-- !private ["So16NSObjectProtocolP", "constraints"]
-- !private ["So16NSObjectProtocolP", "contentMode"]
-- !private ["So16NSObjectProtocolP", "fatalError"]
-- !private ["So16NSObjectProtocolP", "font"]
-- !private ["So16NSObjectProtocolP", "imageHeightConstraint"]
-- !private ["So16NSObjectProtocolP", "imageView"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "messageLabel"]
-- !private ["So16NSObjectProtocolP", "numberOfLines"]
-- !private ["So16NSObjectProtocolP", "setupViews"]
-- !private ["So16NSObjectProtocolP", "systemFont"]
-- !private ["So16NSObjectProtocolP", "textAlignment"]
-- !private ["So16NSObjectProtocolP", "textColor"]
-- !private ["So16NSObjectProtocolP", "titleLabel"]
-- !private ["So16NSObjectProtocolP", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["So8NSObjectP", "NSLayoutConstraint"]
+- !private ["So8NSObjectP", "UIColor"]
+- !private ["So8NSObjectP", "UIImageView"]
+- !private ["So8NSObjectP", "UILabel"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "activate"]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "boldSystemFont"]
+- !private ["So8NSObjectP", "clipsToBounds"]
+- !private ["So8NSObjectP", "constraints"]
+- !private ["So8NSObjectP", "contentMode"]
+- !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "font"]
+- !private ["So8NSObjectP", "imageHeightConstraint"]
+- !private ["So8NSObjectP", "imageView"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "messageLabel"]
+- !private ["So8NSObjectP", "numberOfLines"]
+- !private ["So8NSObjectP", "setupViews"]
+- !private ["So8NSObjectP", "systemFont"]
+- !private ["So8NSObjectP", "textAlignment"]
+- !private ["So8NSObjectP", "textColor"]
+- !private ["So8NSObjectP", "titleLabel"]
+- !private ["So8NSObjectP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So14NSSecureCodingP", "init"]
-- !private ["SC15NSTextAlignmentO", "center"]
+- !private ["So15NSTextAlignmentV", "center"]
+- !private ["Sq", "boldSystemFont"]
+- !private ["Sq", "systemFont"]
 - ["11PopupDialog0aB11DefaultViewC", "CGRect"]
 - ["11PopupDialog0aB11DefaultViewC", "NSCoder"]
 - ["11PopupDialog0aB11DefaultViewC", "NSLayoutConstraint"]
@@ -333,7 +361,6 @@ depends-member:
 - ["11PopupDialog0aB11DefaultViewC", "UIImageView"]
 - ["11PopupDialog0aB11DefaultViewC", "UILabel"]
 - !private ["11PopupDialog0aB11DefaultViewC", "addSubview"]
-- ["11PopupDialog0aB11DefaultViewC", "deinit"]
 - !private ["11PopupDialog0aB11DefaultViewC", "fatalError"]
 - ["11PopupDialog0aB11DefaultViewC", "imageHeightConstraint"]
 - ["11PopupDialog0aB11DefaultViewC", "imageView"]
@@ -351,20 +378,28 @@ depends-member:
 - !private ["11PopupDialog0aB11DefaultViewC", "titleLabel.storage"]
 - ["11PopupDialog0aB11DefaultViewC", "titleTextAlignment"]
 - !private ["11PopupDialog0aB11DefaultViewC", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s22RandomAccessCollectionP", "append"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "center"]
-- !private ["s16RawRepresentableP", "equal"]
-- !private ["s16RawRepresentableP", "height"]
-- !private ["s16RawRepresentableP", "scaleAspectFill"]
-- !private ["s8SequenceP", "append"]
-- !private ["s8SequenceP", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "init"]
+- !private ["Sm", "append"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "center"]
+- !private ["SY", "equal"]
+- !private ["SY", "height"]
+- !private ["SY", "scaleAspectFill"]
+- !private ["So16NSLayoutRelationV", "equal"]
+- !private ["ST", "append"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "clipsToBounds"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentMode"]
@@ -517,6 +552,26 @@ depends-member:
 - !private ["So11UIFocusItemP", "textColor"]
 - !private ["So11UIFocusItemP", "titleLabel"]
 - !private ["So11UIFocusItemP", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["So20UIFocusItemContainerP", "NSLayoutConstraint"]
+- !private ["So20UIFocusItemContainerP", "UIColor"]
+- !private ["So20UIFocusItemContainerP", "UIImageView"]
+- !private ["So20UIFocusItemContainerP", "UILabel"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "clipsToBounds"]
+- !private ["So20UIFocusItemContainerP", "contentMode"]
+- !private ["So20UIFocusItemContainerP", "fatalError"]
+- !private ["So20UIFocusItemContainerP", "font"]
+- !private ["So20UIFocusItemContainerP", "imageHeightConstraint"]
+- !private ["So20UIFocusItemContainerP", "imageView"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "messageLabel"]
+- !private ["So20UIFocusItemContainerP", "numberOfLines"]
+- !private ["So20UIFocusItemContainerP", "setupViews"]
+- !private ["So20UIFocusItemContainerP", "textAlignment"]
+- !private ["So20UIFocusItemContainerP", "textColor"]
+- !private ["So20UIFocusItemContainerP", "titleLabel"]
+- !private ["So20UIFocusItemContainerP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So6UIFontC", "boldSystemFont"]
 - !private ["So6UIFontC", "systemFont"]
 - !private ["So11UIImageViewC", "clipsToBounds"]
@@ -622,6 +677,26 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textColor"]
 - !private ["So18UITraitEnvironmentP", "titleLabel"]
 - !private ["So18UITraitEnvironmentP", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["So23UIUserActivityRestoringP", "NSLayoutConstraint"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
+- !private ["So23UIUserActivityRestoringP", "UIImageView"]
+- !private ["So23UIUserActivityRestoringP", "UILabel"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "clipsToBounds"]
+- !private ["So23UIUserActivityRestoringP", "contentMode"]
+- !private ["So23UIUserActivityRestoringP", "fatalError"]
+- !private ["So23UIUserActivityRestoringP", "font"]
+- !private ["So23UIUserActivityRestoringP", "imageHeightConstraint"]
+- !private ["So23UIUserActivityRestoringP", "imageView"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "messageLabel"]
+- !private ["So23UIUserActivityRestoringP", "numberOfLines"]
+- !private ["So23UIUserActivityRestoringP", "setupViews"]
+- !private ["So23UIUserActivityRestoringP", "textAlignment"]
+- !private ["So23UIUserActivityRestoringP", "textColor"]
+- !private ["So23UIUserActivityRestoringP", "titleLabel"]
+- !private ["So23UIUserActivityRestoringP", "translatesAutoresizingMaskIntoConstraints"]
 - ["So6UIViewC", "CGRect"]
 - ["So6UIViewC", "NSCoder"]
 - ["So6UIViewC", "NSLayoutConstraint"]
@@ -656,9 +731,6 @@ depends-member:
 - ["So6UIViewC", "titleLabel.storage"]
 - ["So6UIViewC", "titleTextAlignment"]
 - !private ["So6UIViewC", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["SC17UIViewContentModeO", "scaleAspectFill"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "NSLayoutConstraint"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIImageView"]
@@ -683,11 +755,18 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSLayoutConstraint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
@@ -716,55 +795,59 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "boldSystemFont"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "systemFont"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "So17NSLayoutAttributeV"
+- !private "SK"
 - !private "Sb"
 - "So15CALayerDelegateP"
-- !private "SC6CGRectV"
+- !private "So6CGRectV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
+- !private "So17UIViewContentModeV"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
-- !private "SQ"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
-- !private "SC17NSLayoutAttributeO"
 - !private "So18NSLayoutConstraintC"
-- !private "SC16NSLayoutRelationO"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "SC15NSTextAlignmentO"
+- !private "So15NSTextAlignmentV"
+- !private "Sq"
 - "11PopupDialog0aB11DefaultViewC"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "So16NSLayoutRelationV"
+- !private "ST"
 - !private "s12StaticStringV"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -777,6 +860,7 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - !private "So6UIFontC"
 - !private "So11UIImageViewC"
 - !private "So7UILabelC"
@@ -784,9 +868,8 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "SC17UIViewContentModeO"
-- !private "s14_ArrayProtocolP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -796,15 +879,15 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/arm64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -819,20 +902,22 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/PopupDialog/PopupDialog-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-Swift.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/PopupDialog.build/unextended-module.modulemap"
-- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/DynamicBlurView.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/PopupDialog/PopupDialog-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-Swift.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/PopupDialog.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/DynamicBlurView.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "db7bf2099bf912f03ce4664afe4ae2b4"

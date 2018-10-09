@@ -52,13 +52,14 @@ depends-member:
 - !private ["So15CALayerDelegateP", "titleFont"]
 - !private ["So15CALayerDelegateP", "titleLabel"]
 - !private ["So15CALayerDelegateP", "titleTextAlignment"]
-- !private ["SC6CGRectV", "zero"]
+- !private ["So6CGRectV", "zero"]
 - !private ["s7CVarArgP", "PopupDialogDefaultView"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "constant"]
 - !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "imageHeightConstraint"]
 - !private ["s7CVarArgP", "imageView"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "loadView"]
 - !private ["s7CVarArgP", "messageColor"]
@@ -82,6 +83,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "imageHeightConstraint"]
 - !private ["s28CustomDebugStringConvertibleP", "imageView"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "loadView"]
 - !private ["s28CustomDebugStringConvertibleP", "messageColor"]
@@ -109,6 +111,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "imageHeightConstraint"]
 - !private ["s23CustomStringConvertibleP", "imageView"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "loadView"]
 - !private ["s23CustomStringConvertibleP", "messageColor"]
 - !private ["s23CustomStringConvertibleP", "messageFont"]
@@ -125,60 +128,63 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "titleTextAlignment"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLayoutSubviews"]
-- !private ["s9DecodableP", "zero"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "PopupDialogDefaultView"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "constant"]
-- !private ["s9EquatableP", "image"]
-- !private ["s9EquatableP", "imageHeightConstraint"]
-- !private ["s9EquatableP", "imageView"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "loadView"]
-- !private ["s9EquatableP", "messageColor"]
-- !private ["s9EquatableP", "messageFont"]
-- !private ["s9EquatableP", "messageLabel"]
-- !private ["s9EquatableP", "messageTextAlignment"]
-- !private ["s9EquatableP", "pv_heightForImageView"]
-- !private ["s9EquatableP", "pv_layoutIfNeededAnimated"]
-- !private ["s9EquatableP", "standardView"]
-- !private ["s9EquatableP", "text"]
-- !private ["s9EquatableP", "textColor"]
-- !private ["s9EquatableP", "titleColor"]
-- !private ["s9EquatableP", "titleFont"]
-- !private ["s9EquatableP", "titleLabel"]
-- !private ["s9EquatableP", "titleTextAlignment"]
-- !private ["s9EquatableP", "view"]
-- !private ["s9EquatableP", "viewDidLayoutSubviews"]
-- !private ["s9EquatableP", "zero"]
-- !private ["s8HashableP", "PopupDialogDefaultView"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "constant"]
-- !private ["s8HashableP", "image"]
-- !private ["s8HashableP", "imageHeightConstraint"]
-- !private ["s8HashableP", "imageView"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "loadView"]
-- !private ["s8HashableP", "messageColor"]
-- !private ["s8HashableP", "messageFont"]
-- !private ["s8HashableP", "messageLabel"]
-- !private ["s8HashableP", "messageTextAlignment"]
-- !private ["s8HashableP", "pv_heightForImageView"]
-- !private ["s8HashableP", "pv_layoutIfNeededAnimated"]
-- !private ["s8HashableP", "standardView"]
-- !private ["s8HashableP", "text"]
-- !private ["s8HashableP", "textColor"]
-- !private ["s8HashableP", "titleColor"]
-- !private ["s8HashableP", "titleFont"]
-- !private ["s8HashableP", "titleLabel"]
-- !private ["s8HashableP", "titleTextAlignment"]
-- !private ["s8HashableP", "view"]
-- !private ["s8HashableP", "viewDidLayoutSubviews"]
+- !private ["Se", "zero"]
+- !private ["SE", "zero"]
+- !private ["SQ", "PopupDialogDefaultView"]
+- ["SQ", ""]
+- !private ["SQ", "constant"]
+- !private ["SQ", "image"]
+- !private ["SQ", "imageHeightConstraint"]
+- !private ["SQ", "imageView"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "loadView"]
+- !private ["SQ", "messageColor"]
+- !private ["SQ", "messageFont"]
+- !private ["SQ", "messageLabel"]
+- !private ["SQ", "messageTextAlignment"]
+- !private ["SQ", "pv_heightForImageView"]
+- !private ["SQ", "pv_layoutIfNeededAnimated"]
+- !private ["SQ", "standardView"]
+- !private ["SQ", "text"]
+- !private ["SQ", "textColor"]
+- !private ["SQ", "titleColor"]
+- !private ["SQ", "titleFont"]
+- !private ["SQ", "titleLabel"]
+- !private ["SQ", "titleTextAlignment"]
+- !private ["SQ", "view"]
+- !private ["SQ", "viewDidLayoutSubviews"]
+- !private ["SQ", "zero"]
+- !private ["SH", "PopupDialogDefaultView"]
+- ["SH", ""]
+- !private ["SH", "constant"]
+- !private ["SH", "image"]
+- !private ["SH", "imageHeightConstraint"]
+- !private ["SH", "imageView"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "loadView"]
+- !private ["SH", "messageColor"]
+- !private ["SH", "messageFont"]
+- !private ["SH", "messageLabel"]
+- !private ["SH", "messageTextAlignment"]
+- !private ["SH", "pv_heightForImageView"]
+- !private ["SH", "pv_layoutIfNeededAnimated"]
+- !private ["SH", "standardView"]
+- !private ["SH", "text"]
+- !private ["SH", "textColor"]
+- !private ["SH", "titleColor"]
+- !private ["SH", "titleFont"]
+- !private ["SH", "titleLabel"]
+- !private ["SH", "titleTextAlignment"]
+- !private ["SH", "view"]
+- !private ["SH", "viewDidLayoutSubviews"]
 - !private ["So8NSCodingP", "PopupDialogDefaultView"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageHeightConstraint"]
 - !private ["So8NSCodingP", "imageView"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "loadView"]
 - !private ["So8NSCodingP", "messageColor"]
@@ -199,6 +205,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "PopupDialogDefaultView"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "loadView"]
 - !private ["So26NSExtensionRequestHandlingP", "standardView"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
@@ -215,6 +222,7 @@ depends-member:
 - !private ["So8NSObjectC", "imageHeightConstraint"]
 - !private ["So8NSObjectC", "imageView"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "loadView"]
 - ["So8NSObjectC", "messageColor"]
 - ["So8NSObjectC", "messageFont"]
@@ -233,29 +241,31 @@ depends-member:
 - ["So8NSObjectC", "titleTextAlignment"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLayoutSubviews"]
-- !private ["So16NSObjectProtocolP", "PopupDialogDefaultView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "constant"]
-- !private ["So16NSObjectProtocolP", "image"]
-- !private ["So16NSObjectProtocolP", "imageHeightConstraint"]
-- !private ["So16NSObjectProtocolP", "imageView"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "loadView"]
-- !private ["So16NSObjectProtocolP", "messageColor"]
-- !private ["So16NSObjectProtocolP", "messageFont"]
-- !private ["So16NSObjectProtocolP", "messageLabel"]
-- !private ["So16NSObjectProtocolP", "messageTextAlignment"]
-- !private ["So16NSObjectProtocolP", "pv_heightForImageView"]
-- !private ["So16NSObjectProtocolP", "pv_layoutIfNeededAnimated"]
-- !private ["So16NSObjectProtocolP", "standardView"]
-- !private ["So16NSObjectProtocolP", "text"]
-- !private ["So16NSObjectProtocolP", "textColor"]
-- !private ["So16NSObjectProtocolP", "titleColor"]
-- !private ["So16NSObjectProtocolP", "titleFont"]
-- !private ["So16NSObjectProtocolP", "titleLabel"]
-- !private ["So16NSObjectProtocolP", "titleTextAlignment"]
-- !private ["So16NSObjectProtocolP", "view"]
-- !private ["So16NSObjectProtocolP", "viewDidLayoutSubviews"]
+- !private ["So8NSObjectP", "PopupDialogDefaultView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "constant"]
+- !private ["So8NSObjectP", "image"]
+- !private ["So8NSObjectP", "imageHeightConstraint"]
+- !private ["So8NSObjectP", "imageView"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "loadView"]
+- !private ["So8NSObjectP", "messageColor"]
+- !private ["So8NSObjectP", "messageFont"]
+- !private ["So8NSObjectP", "messageLabel"]
+- !private ["So8NSObjectP", "messageTextAlignment"]
+- !private ["So8NSObjectP", "pv_heightForImageView"]
+- !private ["So8NSObjectP", "pv_layoutIfNeededAnimated"]
+- !private ["So8NSObjectP", "standardView"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "textColor"]
+- !private ["So8NSObjectP", "titleColor"]
+- !private ["So8NSObjectP", "titleFont"]
+- !private ["So8NSObjectP", "titleLabel"]
+- !private ["So8NSObjectP", "titleTextAlignment"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewDidLayoutSubviews"]
+- !private ["11PopupDialog0aB11DefaultViewC", "deinit"]
 - !private ["11PopupDialog0aB11DefaultViewC", "imageHeightConstraint"]
 - !private ["11PopupDialog0aB11DefaultViewC", "imageView"]
 - !private ["11PopupDialog0aB11DefaultViewC", "init"]
@@ -274,7 +284,6 @@ depends-member:
 - ["11PopupDialog0aB21DefaultViewControllerC", "UIColor"]
 - ["11PopupDialog0aB21DefaultViewControllerC", "UIFont"]
 - ["11PopupDialog0aB21DefaultViewControllerC", "UIImage"]
-- ["11PopupDialog0aB21DefaultViewControllerC", "deinit"]
 - ["11PopupDialog0aB21DefaultViewControllerC", "image"]
 - ["11PopupDialog0aB21DefaultViewControllerC", "init"]
 - ["11PopupDialog0aB21DefaultViewControllerC", "loadView"]
@@ -329,6 +338,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "imageHeightConstraint"]
 - !private ["So21UIAppearanceContainerP", "imageView"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "loadView"]
 - !private ["So21UIAppearanceContainerP", "messageColor"]
 - !private ["So21UIAppearanceContainerP", "messageFont"]
@@ -347,6 +357,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLayoutSubviews"]
 - !private ["So18UIContentContainerP", "PopupDialogDefaultView"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "loadView"]
 - !private ["So18UIContentContainerP", "standardView"]
@@ -392,6 +403,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "imageHeightConstraint"]
 - !private ["So18UIFocusEnvironmentP", "imageView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "loadView"]
 - !private ["So18UIFocusEnvironmentP", "messageColor"]
 - !private ["So18UIFocusEnvironmentP", "messageFont"]
@@ -424,6 +436,22 @@ depends-member:
 - !private ["So11UIFocusItemP", "titleFont"]
 - !private ["So11UIFocusItemP", "titleLabel"]
 - !private ["So11UIFocusItemP", "titleTextAlignment"]
+- !private ["So20UIFocusItemContainerP", "image"]
+- !private ["So20UIFocusItemContainerP", "imageHeightConstraint"]
+- !private ["So20UIFocusItemContainerP", "imageView"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "messageColor"]
+- !private ["So20UIFocusItemContainerP", "messageFont"]
+- !private ["So20UIFocusItemContainerP", "messageLabel"]
+- !private ["So20UIFocusItemContainerP", "messageTextAlignment"]
+- !private ["So20UIFocusItemContainerP", "pv_heightForImageView"]
+- !private ["So20UIFocusItemContainerP", "pv_layoutIfNeededAnimated"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "textColor"]
+- !private ["So20UIFocusItemContainerP", "titleColor"]
+- !private ["So20UIFocusItemContainerP", "titleFont"]
+- !private ["So20UIFocusItemContainerP", "titleLabel"]
+- !private ["So20UIFocusItemContainerP", "titleTextAlignment"]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So11UIImageViewC", "pv_heightForImageView"]
 - !private ["So7UILabelC", "text"]
@@ -433,6 +461,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageHeightConstraint"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageView"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "loadView"]
 - !private ["So30UIPasteConfigurationSupportingP", "messageColor"]
@@ -460,6 +489,7 @@ depends-member:
 - !private ["So11UIResponderC", "imageHeightConstraint"]
 - !private ["So11UIResponderC", "imageView"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "loadView"]
 - ["So11UIResponderC", "messageColor"]
 - ["So11UIResponderC", "messageFont"]
@@ -484,6 +514,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "imageHeightConstraint"]
 - !private ["So30UIResponderStandardEditActionsP", "imageView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "loadView"]
 - !private ["So30UIResponderStandardEditActionsP", "messageColor"]
 - !private ["So30UIResponderStandardEditActionsP", "messageFont"]
@@ -503,6 +534,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "PopupDialogDefaultView"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "loadView"]
 - !private ["So16UIStateRestoringP", "standardView"]
 - !private ["So16UIStateRestoringP", "view"]
@@ -512,6 +544,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "imageHeightConstraint"]
 - !private ["So18UITraitEnvironmentP", "imageView"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "loadView"]
 - !private ["So18UITraitEnvironmentP", "messageColor"]
@@ -529,6 +562,29 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "titleTextAlignment"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLayoutSubviews"]
+- !private ["So23UIUserActivityRestoringP", "PopupDialogDefaultView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "image"]
+- !private ["So23UIUserActivityRestoringP", "imageHeightConstraint"]
+- !private ["So23UIUserActivityRestoringP", "imageView"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "loadView"]
+- !private ["So23UIUserActivityRestoringP", "messageColor"]
+- !private ["So23UIUserActivityRestoringP", "messageFont"]
+- !private ["So23UIUserActivityRestoringP", "messageLabel"]
+- !private ["So23UIUserActivityRestoringP", "messageTextAlignment"]
+- !private ["So23UIUserActivityRestoringP", "pv_heightForImageView"]
+- !private ["So23UIUserActivityRestoringP", "pv_layoutIfNeededAnimated"]
+- !private ["So23UIUserActivityRestoringP", "standardView"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "textColor"]
+- !private ["So23UIUserActivityRestoringP", "titleColor"]
+- !private ["So23UIUserActivityRestoringP", "titleFont"]
+- !private ["So23UIUserActivityRestoringP", "titleLabel"]
+- !private ["So23UIUserActivityRestoringP", "titleTextAlignment"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLayoutSubviews"]
 - !private ["So6UIViewC", "image"]
 - !private ["So6UIViewC", "imageHeightConstraint"]
 - !private ["So6UIViewC", "imageView"]
@@ -554,6 +610,7 @@ depends-member:
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "image"]
 - ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "loadView"]
 - ["So16UIViewControllerC", "messageColor"]
 - ["So16UIViewControllerC", "messageFont"]
@@ -589,6 +646,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageHeightConstraint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "loadView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "messageColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "messageFont"]
@@ -608,21 +666,21 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 depends-nominal:
 - !private "So15CALayerDelegateP"
-- !private "SC6CGRectV"
+- !private "So6CGRectV"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
-- "s8HashableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- "SH"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So18NSLayoutConstraintC"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "11PopupDialog0aB11DefaultViewC"
 - "11PopupDialog0aB21DefaultViewControllerC"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -635,6 +693,7 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So11UIImageViewC"
 - !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
@@ -642,6 +701,7 @@ depends-nominal:
 - "So30UIResponderStandardEditActionsP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -649,7 +709,6 @@ depends-nominal:
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/x86_64.swiftmodule"
@@ -673,14 +732,16 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/PopupDialog.build/unextended-module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/DynamicBlurView.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "3fec909a46f4a81e2ddbc2fc92dfb910"

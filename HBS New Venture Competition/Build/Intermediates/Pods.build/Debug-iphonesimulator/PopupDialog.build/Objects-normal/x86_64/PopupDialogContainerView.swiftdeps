@@ -28,6 +28,8 @@ depends-top-level:
 - "CGSize"
 - !private "Dictionary"
 - "Float"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "NSCoder"
 - "NSLayoutConstraint"
 - "PopupDialogContainerView"
@@ -42,9 +44,15 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "init"]
-- !private ["s23BidirectionalCollectionP", "append"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["So17NSLayoutAttributeV", "centerX"]
+- !private ["So17NSLayoutAttributeV", "centerY"]
+- !private ["So22UILayoutConstraintAxisV", "vertical"]
+- !private ["SK", "append"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SB", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So7CALayerC", "shadowColor"]
@@ -87,8 +95,8 @@ depends-member:
 - !private ["So13CAMediaTimingP", "shadowPath"]
 - !private ["So13CAMediaTimingP", "shadowRadius"]
 - !private ["12CoreGraphics7CGFloatV", "init"]
-- !private ["SC6CGRectV", "zero"]
-- !private ["SC6CGSizeV", "init"]
+- !private ["So6CGRectV", "zero"]
+- !private ["So6CGSizeV", "init"]
 - !private ["s7CVarArgP", "CGFloat"]
 - !private ["s7CVarArgP", "CGSize"]
 - !private ["s7CVarArgP", "Float"]
@@ -118,6 +126,7 @@ depends-member:
 - !private ["s7CVarArgP", "distribution"]
 - !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "preferredWidth"]
 - !private ["s7CVarArgP", "setupViews"]
@@ -132,9 +141,11 @@ depends-member:
 - !private ["s7CVarArgP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["s7CVarArgP", "userInterfaceIdiom"]
 - !private ["s7CVarArgP", "white"]
-- !private ["s10CollectionP", "append"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "append"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
 - !private ["s28CustomDebugStringConvertibleP", "Float"]
@@ -163,6 +174,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "distribution"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "preferredWidth"]
 - !private ["s28CustomDebugStringConvertibleP", "setupViews"]
@@ -180,9 +192,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", "CGFloat"]
@@ -214,6 +228,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "distribution"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "preferredWidth"]
 - !private ["s23CustomStringConvertibleP", "setupViews"]
@@ -228,127 +243,138 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["s23CustomStringConvertibleP", "userInterfaceIdiom"]
 - !private ["s23CustomStringConvertibleP", "white"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "append"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "zero"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "append"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "CGFloat"]
-- !private ["s9EquatableP", "CGSize"]
-- !private ["s9EquatableP", "Float"]
-- !private ["s9EquatableP", "NSLayoutConstraint"]
-- !private ["s9EquatableP", "UIColor"]
-- !private ["s9EquatableP", "UIDevice"]
-- !private ["s9EquatableP", "UIStackView"]
-- !private ["s9EquatableP", "UIUserInterfaceIdiom"]
-- !private ["s9EquatableP", "UIView"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "activate"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "append"]
-- !private ["s9EquatableP", "axis"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "black"]
-- !private ["s9EquatableP", "buttonStackView"]
-- !private ["s9EquatableP", "centerX"]
-- !private ["s9EquatableP", "centerY"]
-- !private ["s9EquatableP", "centerYConstraint"]
-- !private ["s9EquatableP", "cgColor"]
-- !private ["s9EquatableP", "clear"]
-- !private ["s9EquatableP", "clipsToBounds"]
-- !private ["s9EquatableP", "constraints"]
-- !private ["s9EquatableP", "container"]
-- !private ["s9EquatableP", "cornerRadius"]
-- !private ["s9EquatableP", "current"]
-- !private ["s9EquatableP", "distribution"]
-- !private ["s9EquatableP", "equal"]
-- !private ["s9EquatableP", "fatalError"]
-- !private ["s9EquatableP", "fillEqually"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "layer"]
-- !private ["s9EquatableP", "pad"]
-- !private ["s9EquatableP", "preferredWidth"]
-- !private ["s9EquatableP", "setupViews"]
-- !private ["s9EquatableP", "shadowColor"]
-- !private ["s9EquatableP", "shadowContainer"]
-- !private ["s9EquatableP", "shadowOffset"]
-- !private ["s9EquatableP", "shadowOpacity"]
-- !private ["s9EquatableP", "shadowPath"]
-- !private ["s9EquatableP", "shadowRadius"]
-- !private ["s9EquatableP", "spacing"]
-- !private ["s9EquatableP", "stackView"]
-- !private ["s9EquatableP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s9EquatableP", "userInterfaceIdiom"]
-- !private ["s9EquatableP", "vertical"]
-- !private ["s9EquatableP", "white"]
-- !private ["s9EquatableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "zero"]
+- !private ["So23UIStackViewDistributionV", "fillEqually"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "zero"]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "Float"]
+- !private ["SQ", "NSLayoutConstraint"]
+- !private ["SQ", "UIColor"]
+- !private ["SQ", "UIDevice"]
+- !private ["SQ", "UIStackView"]
+- !private ["SQ", "UIUserInterfaceIdiom"]
+- !private ["SQ", "UIView"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "activate"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "append"]
+- !private ["SQ", "axis"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "black"]
+- !private ["SQ", "buttonStackView"]
+- !private ["SQ", "centerX"]
+- !private ["SQ", "centerY"]
+- !private ["SQ", "centerYConstraint"]
+- !private ["SQ", "cgColor"]
+- !private ["SQ", "clear"]
+- !private ["SQ", "clipsToBounds"]
+- !private ["SQ", "constraints"]
+- !private ["SQ", "container"]
+- !private ["SQ", "cornerRadius"]
+- !private ["SQ", "current"]
+- !private ["SQ", "distribution"]
+- !private ["SQ", "equal"]
+- !private ["SQ", "fatalError"]
+- !private ["SQ", "fillEqually"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "pad"]
+- !private ["SQ", "preferredWidth"]
+- !private ["SQ", "setupViews"]
+- !private ["SQ", "shadowColor"]
+- !private ["SQ", "shadowContainer"]
+- !private ["SQ", "shadowOffset"]
+- !private ["SQ", "shadowOpacity"]
+- !private ["SQ", "shadowPath"]
+- !private ["SQ", "shadowRadius"]
+- !private ["SQ", "spacing"]
+- !private ["SQ", "stackView"]
+- !private ["SQ", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["SQ", "userInterfaceIdiom"]
+- !private ["SQ", "vertical"]
+- !private ["SQ", "white"]
+- !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["Sf", "init"]
-- !private ["s13FloatingPointP", "init"]
-- !private ["s8HashableP", "CGFloat"]
-- !private ["s8HashableP", "CGSize"]
-- !private ["s8HashableP", "Float"]
-- !private ["s8HashableP", "NSLayoutConstraint"]
-- !private ["s8HashableP", "UIColor"]
-- !private ["s8HashableP", "UIDevice"]
-- !private ["s8HashableP", "UIStackView"]
-- !private ["s8HashableP", "UIUserInterfaceIdiom"]
-- !private ["s8HashableP", "UIView"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "activate"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "axis"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "black"]
-- !private ["s8HashableP", "buttonStackView"]
-- !private ["s8HashableP", "centerX"]
-- !private ["s8HashableP", "centerY"]
-- !private ["s8HashableP", "centerYConstraint"]
-- !private ["s8HashableP", "cgColor"]
-- !private ["s8HashableP", "clear"]
-- !private ["s8HashableP", "clipsToBounds"]
-- !private ["s8HashableP", "constraints"]
-- !private ["s8HashableP", "container"]
-- !private ["s8HashableP", "cornerRadius"]
-- !private ["s8HashableP", "current"]
-- !private ["s8HashableP", "distribution"]
-- !private ["s8HashableP", "equal"]
-- !private ["s8HashableP", "fatalError"]
-- !private ["s8HashableP", "fillEqually"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "layer"]
-- !private ["s8HashableP", "pad"]
-- !private ["s8HashableP", "preferredWidth"]
-- !private ["s8HashableP", "setupViews"]
-- !private ["s8HashableP", "shadowColor"]
-- !private ["s8HashableP", "shadowContainer"]
-- !private ["s8HashableP", "shadowOffset"]
-- !private ["s8HashableP", "shadowOpacity"]
-- !private ["s8HashableP", "shadowPath"]
-- !private ["s8HashableP", "shadowRadius"]
-- !private ["s8HashableP", "spacing"]
-- !private ["s8HashableP", "stackView"]
-- !private ["s8HashableP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s8HashableP", "userInterfaceIdiom"]
-- !private ["s8HashableP", "vertical"]
-- !private ["s8HashableP", "white"]
+- !private ["SF", "init"]
+- !private ["SH", "CGFloat"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "Float"]
+- !private ["SH", "NSLayoutConstraint"]
+- !private ["SH", "UIColor"]
+- !private ["SH", "UIDevice"]
+- !private ["SH", "UIStackView"]
+- !private ["SH", "UIUserInterfaceIdiom"]
+- !private ["SH", "UIView"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "activate"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "append"]
+- !private ["SH", "axis"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "black"]
+- !private ["SH", "buttonStackView"]
+- !private ["SH", "centerX"]
+- !private ["SH", "centerY"]
+- !private ["SH", "centerYConstraint"]
+- !private ["SH", "cgColor"]
+- !private ["SH", "clear"]
+- !private ["SH", "clipsToBounds"]
+- !private ["SH", "constraints"]
+- !private ["SH", "container"]
+- !private ["SH", "cornerRadius"]
+- !private ["SH", "current"]
+- !private ["SH", "distribution"]
+- !private ["SH", "equal"]
+- !private ["SH", "fatalError"]
+- !private ["SH", "fillEqually"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "layer"]
+- !private ["SH", "pad"]
+- !private ["SH", "preferredWidth"]
+- !private ["SH", "setupViews"]
+- !private ["SH", "shadowColor"]
+- !private ["SH", "shadowContainer"]
+- !private ["SH", "shadowOffset"]
+- !private ["SH", "shadowOpacity"]
+- !private ["SH", "shadowPath"]
+- !private ["SH", "shadowRadius"]
+- !private ["SH", "spacing"]
+- !private ["SH", "stackView"]
+- !private ["SH", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["SH", "userInterfaceIdiom"]
+- !private ["SH", "vertical"]
+- !private ["SH", "white"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "append"]
-- !private ["s17MutableCollectionP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "init"]
 - !private ["So8NSCodingP", "CGFloat"]
 - !private ["So8NSCodingP", "CGSize"]
 - !private ["So8NSCodingP", "Float"]
@@ -401,12 +427,9 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "clear"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "white"]
-- !private ["SC17NSLayoutAttributeO", "centerX"]
-- !private ["SC17NSLayoutAttributeO", "centerY"]
 - !private ["So18NSLayoutConstraintC", "activate"]
 - !private ["So18NSLayoutConstraintC", "constraints"]
 - !private ["So18NSLayoutConstraintC", "init"]
-- !private ["SC16NSLayoutRelationO", "equal"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "CGPath"]
@@ -456,47 +479,47 @@ depends-member:
 - !private ["So8NSObjectC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So8NSObjectC", "userInterfaceIdiom"]
 - !private ["So8NSObjectC", "white"]
-- !private ["So16NSObjectProtocolP", "CGFloat"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
-- !private ["So16NSObjectProtocolP", "Float"]
-- !private ["So16NSObjectProtocolP", "NSLayoutConstraint"]
-- !private ["So16NSObjectProtocolP", "UIColor"]
-- !private ["So16NSObjectProtocolP", "UIDevice"]
-- !private ["So16NSObjectProtocolP", "UIStackView"]
-- !private ["So16NSObjectProtocolP", "UIUserInterfaceIdiom"]
-- !private ["So16NSObjectProtocolP", "UIView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "activate"]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "axis"]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "black"]
-- !private ["So16NSObjectProtocolP", "buttonStackView"]
-- !private ["So16NSObjectProtocolP", "centerYConstraint"]
-- !private ["So16NSObjectProtocolP", "cgColor"]
-- !private ["So16NSObjectProtocolP", "clear"]
-- !private ["So16NSObjectProtocolP", "clipsToBounds"]
-- !private ["So16NSObjectProtocolP", "constraints"]
-- !private ["So16NSObjectProtocolP", "container"]
-- !private ["So16NSObjectProtocolP", "cornerRadius"]
-- !private ["So16NSObjectProtocolP", "current"]
-- !private ["So16NSObjectProtocolP", "distribution"]
-- !private ["So16NSObjectProtocolP", "fatalError"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "layer"]
-- !private ["So16NSObjectProtocolP", "preferredWidth"]
-- !private ["So16NSObjectProtocolP", "setupViews"]
-- !private ["So16NSObjectProtocolP", "shadowColor"]
-- !private ["So16NSObjectProtocolP", "shadowContainer"]
-- !private ["So16NSObjectProtocolP", "shadowOffset"]
-- !private ["So16NSObjectProtocolP", "shadowOpacity"]
-- !private ["So16NSObjectProtocolP", "shadowPath"]
-- !private ["So16NSObjectProtocolP", "shadowRadius"]
-- !private ["So16NSObjectProtocolP", "spacing"]
-- !private ["So16NSObjectProtocolP", "stackView"]
-- !private ["So16NSObjectProtocolP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So16NSObjectProtocolP", "userInterfaceIdiom"]
-- !private ["So16NSObjectProtocolP", "white"]
+- !private ["So8NSObjectP", "CGFloat"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "Float"]
+- !private ["So8NSObjectP", "NSLayoutConstraint"]
+- !private ["So8NSObjectP", "UIColor"]
+- !private ["So8NSObjectP", "UIDevice"]
+- !private ["So8NSObjectP", "UIStackView"]
+- !private ["So8NSObjectP", "UIUserInterfaceIdiom"]
+- !private ["So8NSObjectP", "UIView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "activate"]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "axis"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "black"]
+- !private ["So8NSObjectP", "buttonStackView"]
+- !private ["So8NSObjectP", "centerYConstraint"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "clear"]
+- !private ["So8NSObjectP", "clipsToBounds"]
+- !private ["So8NSObjectP", "constraints"]
+- !private ["So8NSObjectP", "container"]
+- !private ["So8NSObjectP", "cornerRadius"]
+- !private ["So8NSObjectP", "current"]
+- !private ["So8NSObjectP", "distribution"]
+- !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "preferredWidth"]
+- !private ["So8NSObjectP", "setupViews"]
+- !private ["So8NSObjectP", "shadowColor"]
+- !private ["So8NSObjectP", "shadowContainer"]
+- !private ["So8NSObjectP", "shadowOffset"]
+- !private ["So8NSObjectP", "shadowOpacity"]
+- !private ["So8NSObjectP", "shadowPath"]
+- !private ["So8NSObjectP", "shadowRadius"]
+- !private ["So8NSObjectP", "spacing"]
+- !private ["So8NSObjectP", "stackView"]
+- !private ["So8NSObjectP", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["So8NSObjectP", "userInterfaceIdiom"]
+- !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "cgColor"]
 - !private ["So14NSSecureCodingP", "clear"]
@@ -508,7 +531,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "shadowPath"]
 - !private ["So14NSSecureCodingP", "shadowRadius"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["s7NumericP", "init"]
+- !private ["Sj", "init"]
 - ["11PopupDialog0aB13ContainerViewC", "Bool"]
 - ["11PopupDialog0aB13ContainerViewC", "CGFloat"]
 - ["11PopupDialog0aB13ContainerViewC", "CGPath"]
@@ -530,7 +553,6 @@ depends-member:
 - ["11PopupDialog0aB13ContainerViewC", "container"]
 - !private ["11PopupDialog0aB13ContainerViewC", "container.storage"]
 - ["11PopupDialog0aB13ContainerViewC", "cornerRadius"]
-- ["11PopupDialog0aB13ContainerViewC", "deinit"]
 - !private ["11PopupDialog0aB13ContainerViewC", "fatalError"]
 - ["11PopupDialog0aB13ContainerViewC", "init"]
 - !private ["11PopupDialog0aB13ContainerViewC", "preferredWidth"]
@@ -545,24 +567,32 @@ depends-member:
 - ["11PopupDialog0aB13ContainerViewC", "shadowRadius"]
 - ["11PopupDialog0aB13ContainerViewC", "stackView"]
 - !private ["11PopupDialog0aB13ContainerViewC", "stackView.storage"]
-- !private ["s22RandomAccessCollectionP", "append"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "centerX"]
-- !private ["s16RawRepresentableP", "centerY"]
-- !private ["s16RawRepresentableP", "equal"]
-- !private ["s16RawRepresentableP", "fillEqually"]
-- !private ["s16RawRepresentableP", "pad"]
-- !private ["s16RawRepresentableP", "vertical"]
-- !private ["s8SequenceP", "append"]
-- !private ["s8SequenceP", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "init"]
+- !private ["Sm", "append"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "centerX"]
+- !private ["SY", "centerY"]
+- !private ["SY", "equal"]
+- !private ["SY", "fillEqually"]
+- !private ["SY", "pad"]
+- !private ["SY", "vertical"]
+- !private ["So16NSLayoutRelationV", "equal"]
+- !private ["ST", "append"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["s12StaticStringV", "init"]
-- !private ["s10StrideableP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["Sx", "init"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "CGFloat"]
 - !private ["So29UIAccessibilityIdentificationP", "CGSize"]
@@ -767,7 +797,34 @@ depends-member:
 - !private ["So11UIFocusItemP", "spacing"]
 - !private ["So11UIFocusItemP", "stackView"]
 - !private ["So11UIFocusItemP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["SC22UILayoutConstraintAxisO", "vertical"]
+- !private ["So20UIFocusItemContainerP", "CGFloat"]
+- !private ["So20UIFocusItemContainerP", "CGSize"]
+- !private ["So20UIFocusItemContainerP", "Float"]
+- !private ["So20UIFocusItemContainerP", "NSLayoutConstraint"]
+- !private ["So20UIFocusItemContainerP", "UIColor"]
+- !private ["So20UIFocusItemContainerP", "UIDevice"]
+- !private ["So20UIFocusItemContainerP", "UIStackView"]
+- !private ["So20UIFocusItemContainerP", "UIUserInterfaceIdiom"]
+- !private ["So20UIFocusItemContainerP", "UIView"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "axis"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "buttonStackView"]
+- !private ["So20UIFocusItemContainerP", "centerYConstraint"]
+- !private ["So20UIFocusItemContainerP", "clipsToBounds"]
+- !private ["So20UIFocusItemContainerP", "container"]
+- !private ["So20UIFocusItemContainerP", "distribution"]
+- !private ["So20UIFocusItemContainerP", "fatalError"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "preferredWidth"]
+- !private ["So20UIFocusItemContainerP", "setupViews"]
+- !private ["So20UIFocusItemContainerP", "shadowContainer"]
+- !private ["So20UIFocusItemContainerP", "shadowRadius"]
+- !private ["So20UIFocusItemContainerP", "spacing"]
+- !private ["So20UIFocusItemContainerP", "stackView"]
+- !private ["So20UIFocusItemContainerP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - !private ["So30UIPasteConfigurationSupportingP", "Float"]
@@ -870,7 +927,6 @@ depends-member:
 - !private ["So11UIStackViewC", "init"]
 - !private ["So11UIStackViewC", "spacing"]
 - !private ["So11UIStackViewC", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["SC23UIStackViewDistributionO", "fillEqually"]
 - !private ["So18UITraitEnvironmentP", "CGFloat"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
 - !private ["So18UITraitEnvironmentP", "Float"]
@@ -899,7 +955,35 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "spacing"]
 - !private ["So18UITraitEnvironmentP", "stackView"]
 - !private ["So18UITraitEnvironmentP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["SC20UIUserInterfaceIdiomO", "pad"]
+- !private ["So23UIUserActivityRestoringP", "CGFloat"]
+- !private ["So23UIUserActivityRestoringP", "CGSize"]
+- !private ["So23UIUserActivityRestoringP", "Float"]
+- !private ["So23UIUserActivityRestoringP", "NSLayoutConstraint"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
+- !private ["So23UIUserActivityRestoringP", "UIDevice"]
+- !private ["So23UIUserActivityRestoringP", "UIStackView"]
+- !private ["So23UIUserActivityRestoringP", "UIUserInterfaceIdiom"]
+- !private ["So23UIUserActivityRestoringP", "UIView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "axis"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "buttonStackView"]
+- !private ["So23UIUserActivityRestoringP", "centerYConstraint"]
+- !private ["So23UIUserActivityRestoringP", "clipsToBounds"]
+- !private ["So23UIUserActivityRestoringP", "container"]
+- !private ["So23UIUserActivityRestoringP", "distribution"]
+- !private ["So23UIUserActivityRestoringP", "fatalError"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "preferredWidth"]
+- !private ["So23UIUserActivityRestoringP", "setupViews"]
+- !private ["So23UIUserActivityRestoringP", "shadowContainer"]
+- !private ["So23UIUserActivityRestoringP", "shadowRadius"]
+- !private ["So23UIUserActivityRestoringP", "spacing"]
+- !private ["So23UIUserActivityRestoringP", "stackView"]
+- !private ["So23UIUserActivityRestoringP", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["So20UIUserInterfaceIdiomV", "pad"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "CGPath"]
@@ -942,8 +1026,6 @@ depends-member:
 - ["So6UIViewC", "stackView"]
 - ["So6UIViewC", "stackView.storage"]
 - !private ["So6UIViewC", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGFloat"]
@@ -978,10 +1060,14 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
@@ -989,6 +1075,9 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Float"]
@@ -1033,29 +1122,35 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
-- !private "s19BinaryFloatingPointP"
+- !private "s13ArrayProtocolP"
+- !private "So17NSLayoutAttributeV"
+- !private "So22UILayoutConstraintAxisV"
+- !private "SK"
+- !private "SB"
 - !private "Sb"
 - !private "So7CALayerC"
 - "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
 - !private "12CoreGraphics7CGFloatV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "So23UIStackViewDistributionV"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -1064,32 +1159,31 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "Sf"
-- !private "s13FloatingPointP"
-- "s8HashableP"
+- !private "SF"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
-- !private "SC17NSLayoutAttributeO"
 - !private "So18NSLayoutConstraintC"
-- !private "SC16NSLayoutRelationO"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "s7NumericP"
+- !private "Sj"
 - "11PopupDialog0aB13ContainerViewC"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "So16NSLayoutRelationV"
+- !private "ST"
 - !private "s13SignedNumericP"
 - !private "s12StaticStringV"
-- !private "s10StrideableP"
+- !private "Sx"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "So29UIAccessibilityIdentificationP"
@@ -1101,16 +1195,15 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
-- !private "SC22UILayoutConstraintAxisO"
+- "So20UIFocusItemContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So11UIStackViewC"
-- !private "SC23UIStackViewDistributionO"
 - "So18UITraitEnvironmentP"
-- !private "SC20UIUserInterfaceIdiomO"
+- "So23UIUserActivityRestoringP"
+- !private "So20UIUserInterfaceIdiomV"
 - "So6UIViewC"
-- !private "s14_ArrayProtocolP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -1124,12 +1217,12 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/x86_64.swiftmodule"
@@ -1153,14 +1246,16 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/PopupDialog.build/unextended-module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/DynamicBlurView.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "2bbdb72f3f16353f2efd8e59bcc8aa68"

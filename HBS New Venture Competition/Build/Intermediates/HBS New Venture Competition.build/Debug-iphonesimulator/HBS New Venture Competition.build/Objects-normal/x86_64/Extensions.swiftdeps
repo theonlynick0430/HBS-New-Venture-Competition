@@ -43,7 +43,9 @@ depends-top-level:
 - !private "CancelButton"
 - "CastingPrecedence"
 - !private "Dictionary"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - !private "NSAttributedString"
 - !private "NSAttributedStringKey"
 - !private "NSNumber"
@@ -72,15 +74,19 @@ depends-member:
 - ["27HBS_New_Venture_Competition9AlertTypeO", "__derived_enum_equals"]
 - ["27HBS_New_Venture_Competition9AlertTypeO", "dataRetrievalFailed"]
 - ["27HBS_New_Venture_Competition9AlertTypeO", "deinit"]
+- ["27HBS_New_Venture_Competition9AlertTypeO", "hash"]
 - ["27HBS_New_Venture_Competition9AlertTypeO", "hashValue"]
 - ["27HBS_New_Venture_Competition9AlertTypeO", "requestFailed"]
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
-- !private ["s13BinaryIntegerP", "NSNumber"]
-- !private ["s13BinaryIntegerP", "NumberFormatter"]
-- !private ["s13BinaryIntegerP", "abs"]
-- !private ["s13BinaryIntegerP", "numberOfDigits"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["So22UILayoutConstraintAxisV", "horizontal"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "subscript"]
+- !private ["Sz", "NSNumber"]
+- !private ["Sz", "NumberFormatter"]
+- !private ["Sz", "abs"]
+- !private ["Sz", "numberOfDigits"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So8CAActionP", "duration"]
 - !private ["So8CAActionP", "init"]
@@ -118,12 +124,12 @@ depends-member:
 - !private ["So19CAPropertyAnimationC", "init"]
 - !private ["So19CAPropertyAnimationC", "timingFunction"]
 - !private ["So19CAPropertyAnimationC", "values"]
-- !private ["SC7CGPointV", "zero"]
-- !private ["SC6CGRectV", "height"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGRectV", "width"]
-- !private ["SC6CGSizeV", "init"]
+- !private ["So7CGPointV", "zero"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGRectV", "width"]
+- !private ["So6CGSizeV", "init"]
 - !private ["s7CVarArgP", "CAKeyframeAnimation"]
 - !private ["s7CVarArgP", "CAMediaTimingFunction"]
 - !private ["s7CVarArgP", "CGRect"]
@@ -151,6 +157,7 @@ depends-member:
 - !private ["s7CVarArgP", "font"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "kCAMediaTimingFunctionLinear"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "main"]
@@ -168,13 +175,15 @@ depends-member:
 - !private ["s7CVarArgP", "values"]
 - !private ["s7CVarArgP", "view"]
 - !private ["11PopupDialog12CancelButtonC", "init"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "NSNumber"]
-- !private ["s10ComparableP", "NumberFormatter"]
-- !private ["s10ComparableP", "abs"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "numberOfDigits"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "NSNumber"]
+- !private ["SL", "NumberFormatter"]
+- !private ["SL", "abs"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "numberOfDigits"]
 - !private ["s28CustomDebugStringConvertibleP", "CAKeyframeAnimation"]
 - !private ["s28CustomDebugStringConvertibleP", "CAMediaTimingFunction"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
@@ -198,6 +207,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "font"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "kCAMediaTimingFunctionLinear"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
@@ -223,6 +233,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "abs"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "numberOfDigits"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
@@ -231,7 +242,10 @@ depends-member:
 - !private ["s17CustomReflectableP", "NumberFormatter"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "abs"]
+- !private ["s17CustomReflectableP", "addButton"]
+- !private ["s17CustomReflectableP", "frame"]
 - !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "numberOfDigits"]
 - !private ["s17CustomReflectableP", "size"]
@@ -265,6 +279,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "font"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "kCAMediaTimingFunctionLinear"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "main"]
@@ -281,86 +296,95 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "timingFunction"]
 - !private ["s23CustomStringConvertibleP", "values"]
 - !private ["s23CustomStringConvertibleP", "view"]
-- !private ["s9DecodableP", "NSNumber"]
-- !private ["s9DecodableP", "NumberFormatter"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "abs"]
-- !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "numberOfDigits"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9DecodableP", "zero"]
-- !private ["s9EncodableP", "NSNumber"]
-- !private ["s9EncodableP", "NumberFormatter"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "abs"]
-- !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "numberOfDigits"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "width"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "CAKeyframeAnimation"]
-- !private ["s9EquatableP", "CAMediaTimingFunction"]
-- !private ["s9EquatableP", "CGRect"]
-- !private ["s9EquatableP", "CGSize"]
-- !private ["s9EquatableP", "CancelButton"]
-- !private ["s9EquatableP", "NSAttributedString"]
-- !private ["s9EquatableP", "NSAttributedStringKey"]
-- !private ["s9EquatableP", "NSNumber"]
-- !private ["s9EquatableP", "NumberFormatter"]
-- !private ["s9EquatableP", "PopupDialog"]
-- !private ["s9EquatableP", "PopupDialogButton"]
-- !private ["s9EquatableP", "Style"]
-- !private ["s9EquatableP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s9EquatableP", "UIGraphicsEndImageContext"]
-- !private ["s9EquatableP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s9EquatableP", "UIRectFill"]
-- !private ["s9EquatableP", "UIScreen"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "abs"]
-- !private ["s9EquatableP", "add"]
-- !private ["s9EquatableP", "addButton"]
-- !private ["s9EquatableP", "attributedPlaceholder"]
-- !private ["s9EquatableP", "bounceDown"]
-- !private ["s9EquatableP", "cgImage"]
-- ["s9EquatableP", "dataRetrievalFailed"]
-- !private ["s9EquatableP", "decimal"]
-- !private ["s9EquatableP", "duration"]
-- !private ["s9EquatableP", "font"]
-- !private ["s9EquatableP", "foregroundColor"]
-- !private ["s9EquatableP", "frame"]
-- ["s9EquatableP", "hashValue"]
-- !private ["s9EquatableP", "height"]
-- !private ["s9EquatableP", "horizontal"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "kCAMediaTimingFunctionLinear"]
-- !private ["s9EquatableP", "layer"]
-- !private ["s9EquatableP", "main"]
-- !private ["s9EquatableP", "nativeBounds"]
-- !private ["s9EquatableP", "numberOfDigits"]
-- !private ["s9EquatableP", "numberStyle"]
-- !private ["s9EquatableP", "placeHolderColor"]
-- !private ["s9EquatableP", "placeholder"]
-- !private ["s9EquatableP", "present"]
-- ["s9EquatableP", "requestFailed"]
-- !private ["s9EquatableP", "setFill"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "string"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "subviews"]
-- !private ["s9EquatableP", "timingFunction"]
-- !private ["s9EquatableP", "values"]
-- !private ["s9EquatableP", "view"]
-- !private ["s9EquatableP", "width"]
-- !private ["s9EquatableP", "zero"]
+- !private ["Se", "NSNumber"]
+- !private ["Se", "NumberFormatter"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "abs"]
+- !private ["Se", "addButton"]
+- !private ["Se", "frame"]
+- !private ["Se", "height"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "numberOfDigits"]
+- !private ["Se", "size"]
+- !private ["Se", "subscript"]
+- !private ["Se", "width"]
+- !private ["Se", "zero"]
+- !private ["SE", "NSNumber"]
+- !private ["SE", "NumberFormatter"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "abs"]
+- !private ["SE", "addButton"]
+- !private ["SE", "frame"]
+- !private ["SE", "height"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "numberOfDigits"]
+- !private ["SE", "size"]
+- !private ["SE", "subscript"]
+- !private ["SE", "width"]
+- !private ["SE", "zero"]
+- !private ["SQ", "CAKeyframeAnimation"]
+- !private ["SQ", "CAMediaTimingFunction"]
+- !private ["SQ", "CGRect"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "CancelButton"]
+- !private ["SQ", "NSAttributedString"]
+- !private ["SQ", "NSAttributedStringKey"]
+- !private ["SQ", "NSNumber"]
+- !private ["SQ", "NumberFormatter"]
+- !private ["SQ", "PopupDialog"]
+- !private ["SQ", "PopupDialogButton"]
+- !private ["SQ", "Style"]
+- !private ["SQ", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["SQ", "UIGraphicsEndImageContext"]
+- !private ["SQ", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["SQ", "UIRectFill"]
+- !private ["SQ", "UIScreen"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "abs"]
+- !private ["SQ", "add"]
+- !private ["SQ", "addButton"]
+- !private ["SQ", "attributedPlaceholder"]
+- !private ["SQ", "bounceDown"]
+- !private ["SQ", "cgImage"]
+- ["SQ", "dataRetrievalFailed"]
+- !private ["SQ", "decimal"]
+- !private ["SQ", "duration"]
+- !private ["SQ", "font"]
+- !private ["SQ", "foregroundColor"]
+- !private ["SQ", "frame"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "height"]
+- !private ["SQ", "horizontal"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "kCAMediaTimingFunctionLinear"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "main"]
+- !private ["SQ", "nativeBounds"]
+- !private ["SQ", "numberOfDigits"]
+- !private ["SQ", "numberStyle"]
+- !private ["SQ", "placeHolderColor"]
+- !private ["SQ", "placeholder"]
+- !private ["SQ", "present"]
+- ["SQ", "requestFailed"]
+- !private ["SQ", "setFill"]
+- !private ["SQ", "size"]
+- !private ["SQ", "string"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "subviews"]
+- !private ["SQ", "timingFunction"]
+- !private ["SQ", "values"]
+- !private ["SQ", "view"]
+- !private ["SQ", "width"]
+- !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s27ExpressibleByBooleanLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "NSNumber"]
@@ -368,66 +392,74 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "abs"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "numberOfDigits"]
+- !private ["s23ExpressibleByNilLiteralP", "addButton"]
+- !private ["s23ExpressibleByNilLiteralP", "frame"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "NSNumber"]
 - !private ["s17FixedWidthIntegerP", "NumberFormatter"]
 - !private ["s17FixedWidthIntegerP", "abs"]
 - !private ["s17FixedWidthIntegerP", "numberOfDigits"]
-- !private ["So9FormatterC", "Style"]
-- !private ["So9FormatterC", "init"]
-- !private ["So9FormatterC", "numberStyle"]
-- !private ["So9FormatterC", "string"]
-- !private ["s8HashableP", "CAKeyframeAnimation"]
-- !private ["s8HashableP", "CAMediaTimingFunction"]
-- !private ["s8HashableP", "CGRect"]
-- !private ["s8HashableP", "CGSize"]
-- !private ["s8HashableP", "CancelButton"]
-- !private ["s8HashableP", "NSAttributedString"]
-- !private ["s8HashableP", "NSAttributedStringKey"]
-- !private ["s8HashableP", "NSNumber"]
-- !private ["s8HashableP", "NumberFormatter"]
-- !private ["s8HashableP", "PopupDialog"]
-- !private ["s8HashableP", "PopupDialogButton"]
-- !private ["s8HashableP", "Style"]
-- !private ["s8HashableP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s8HashableP", "UIGraphicsEndImageContext"]
-- !private ["s8HashableP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s8HashableP", "UIRectFill"]
-- !private ["s8HashableP", "UIScreen"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "abs"]
-- !private ["s8HashableP", "add"]
-- !private ["s8HashableP", "addButton"]
-- !private ["s8HashableP", "attributedPlaceholder"]
-- !private ["s8HashableP", "bounceDown"]
-- !private ["s8HashableP", "cgImage"]
-- ["s8HashableP", "dataRetrievalFailed"]
-- !private ["s8HashableP", "decimal"]
-- !private ["s8HashableP", "duration"]
-- !private ["s8HashableP", "font"]
-- !private ["s8HashableP", "foregroundColor"]
-- !private ["s8HashableP", "frame"]
-- ["s8HashableP", "hashValue"]
-- !private ["s8HashableP", "horizontal"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "kCAMediaTimingFunctionLinear"]
-- !private ["s8HashableP", "layer"]
-- !private ["s8HashableP", "main"]
-- !private ["s8HashableP", "nativeBounds"]
-- !private ["s8HashableP", "numberOfDigits"]
-- !private ["s8HashableP", "numberStyle"]
-- !private ["s8HashableP", "placeHolderColor"]
-- !private ["s8HashableP", "placeholder"]
-- !private ["s8HashableP", "present"]
-- ["s8HashableP", "requestFailed"]
-- !private ["s8HashableP", "setFill"]
-- !private ["s8HashableP", "string"]
-- !private ["s8HashableP", "subviews"]
-- !private ["s8HashableP", "timingFunction"]
-- !private ["s8HashableP", "values"]
-- !private ["s8HashableP", "view"]
+- !private ["So11NSFormatterC", "Style"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "numberStyle"]
+- !private ["So11NSFormatterC", "string"]
+- !private ["SH", "CAKeyframeAnimation"]
+- !private ["SH", "CAMediaTimingFunction"]
+- !private ["SH", "CGRect"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "CancelButton"]
+- !private ["SH", "NSAttributedString"]
+- !private ["SH", "NSAttributedStringKey"]
+- !private ["SH", "NSNumber"]
+- !private ["SH", "NumberFormatter"]
+- !private ["SH", "PopupDialog"]
+- !private ["SH", "PopupDialogButton"]
+- !private ["SH", "Style"]
+- !private ["SH", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["SH", "UIGraphicsEndImageContext"]
+- !private ["SH", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["SH", "UIRectFill"]
+- !private ["SH", "UIScreen"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "abs"]
+- !private ["SH", "add"]
+- !private ["SH", "addButton"]
+- !private ["SH", "attributedPlaceholder"]
+- !private ["SH", "bounceDown"]
+- !private ["SH", "cgImage"]
+- ["SH", "dataRetrievalFailed"]
+- !private ["SH", "decimal"]
+- !private ["SH", "duration"]
+- !private ["SH", "font"]
+- !private ["SH", "foregroundColor"]
+- !private ["SH", "frame"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "horizontal"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "kCAMediaTimingFunctionLinear"]
+- !private ["SH", "layer"]
+- !private ["SH", "main"]
+- !private ["SH", "nativeBounds"]
+- !private ["SH", "numberOfDigits"]
+- !private ["SH", "numberStyle"]
+- !private ["SH", "placeHolderColor"]
+- !private ["SH", "placeholder"]
+- !private ["SH", "present"]
+- ["SH", "requestFailed"]
+- !private ["SH", "setFill"]
+- !private ["SH", "string"]
+- !private ["SH", "subscript"]
+- !private ["SH", "subviews"]
+- !private ["SH", "timingFunction"]
+- !private ["SH", "values"]
+- !private ["SH", "view"]
+- !private ["s6HasherV", "combine"]
 - ["Si", "Int"]
 - !private ["Si", "NSNumber"]
 - !private ["Si", "NumberFormatter"]
@@ -436,20 +468,22 @@ depends-member:
 - ["Si", "digitCount"]
 - !private ["Si", "numberOfDigits"]
 - ["Si", "withCommas"]
+- !private ["So21NSAttributedStringKeya", "foregroundColor"]
 - !private ["s25LosslessStringConvertibleP", "NSNumber"]
 - !private ["s25LosslessStringConvertibleP", "NumberFormatter"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "abs"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "numberOfDigits"]
 - !private ["s10MirrorPathP", "NSNumber"]
 - !private ["s10MirrorPathP", "NumberFormatter"]
 - !private ["s10MirrorPathP", "abs"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "numberOfDigits"]
-- !private ["s17MutableCollectionP", "subscript"]
+- !private ["SM", "subscript"]
 - !private ["So18NSAttributedStringC", "init"]
-- !private ["SC21NSAttributedStringKeyV", "foregroundColor"]
 - !private ["So8NSCodingP", "CAKeyframeAnimation"]
 - !private ["So8NSCodingP", "CAMediaTimingFunction"]
 - !private ["So8NSCodingP", "CGRect"]
@@ -570,43 +604,43 @@ depends-member:
 - !private ["So8NSObjectC", "timingFunction"]
 - !private ["So8NSObjectC", "values"]
 - !private ["So8NSObjectC", "view"]
-- !private ["So16NSObjectProtocolP", "CAKeyframeAnimation"]
-- !private ["So16NSObjectProtocolP", "CAMediaTimingFunction"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
-- !private ["So16NSObjectProtocolP", "CancelButton"]
-- !private ["So16NSObjectProtocolP", "NSAttributedString"]
-- !private ["So16NSObjectProtocolP", "NSAttributedStringKey"]
-- !private ["So16NSObjectProtocolP", "PopupDialog"]
-- !private ["So16NSObjectProtocolP", "PopupDialogButton"]
-- !private ["So16NSObjectProtocolP", "Style"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsEndImageContext"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So16NSObjectProtocolP", "UIRectFill"]
-- !private ["So16NSObjectProtocolP", "UIScreen"]
-- !private ["So16NSObjectProtocolP", "add"]
-- !private ["So16NSObjectProtocolP", "addButton"]
-- !private ["So16NSObjectProtocolP", "attributedPlaceholder"]
-- !private ["So16NSObjectProtocolP", "cgImage"]
-- !private ["So16NSObjectProtocolP", "duration"]
-- !private ["So16NSObjectProtocolP", "font"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "kCAMediaTimingFunctionLinear"]
-- !private ["So16NSObjectProtocolP", "layer"]
-- !private ["So16NSObjectProtocolP", "main"]
-- !private ["So16NSObjectProtocolP", "nativeBounds"]
-- !private ["So16NSObjectProtocolP", "numberStyle"]
-- !private ["So16NSObjectProtocolP", "placeHolderColor"]
-- !private ["So16NSObjectProtocolP", "placeholder"]
-- !private ["So16NSObjectProtocolP", "present"]
-- !private ["So16NSObjectProtocolP", "setFill"]
-- !private ["So16NSObjectProtocolP", "string"]
-- !private ["So16NSObjectProtocolP", "subviews"]
-- !private ["So16NSObjectProtocolP", "timingFunction"]
-- !private ["So16NSObjectProtocolP", "values"]
-- !private ["So16NSObjectProtocolP", "view"]
+- !private ["So8NSObjectP", "CAKeyframeAnimation"]
+- !private ["So8NSObjectP", "CAMediaTimingFunction"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "CancelButton"]
+- !private ["So8NSObjectP", "NSAttributedString"]
+- !private ["So8NSObjectP", "NSAttributedStringKey"]
+- !private ["So8NSObjectP", "PopupDialog"]
+- !private ["So8NSObjectP", "PopupDialogButton"]
+- !private ["So8NSObjectP", "Style"]
+- !private ["So8NSObjectP", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["So8NSObjectP", "UIGraphicsEndImageContext"]
+- !private ["So8NSObjectP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So8NSObjectP", "UIRectFill"]
+- !private ["So8NSObjectP", "UIScreen"]
+- !private ["So8NSObjectP", "add"]
+- !private ["So8NSObjectP", "addButton"]
+- !private ["So8NSObjectP", "attributedPlaceholder"]
+- !private ["So8NSObjectP", "cgImage"]
+- !private ["So8NSObjectP", "duration"]
+- !private ["So8NSObjectP", "font"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "kCAMediaTimingFunctionLinear"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "nativeBounds"]
+- !private ["So8NSObjectP", "numberStyle"]
+- !private ["So8NSObjectP", "placeHolderColor"]
+- !private ["So8NSObjectP", "placeholder"]
+- !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "setFill"]
+- !private ["So8NSObjectP", "string"]
+- !private ["So8NSObjectP", "subviews"]
+- !private ["So8NSObjectP", "timingFunction"]
+- !private ["So8NSObjectP", "values"]
+- !private ["So8NSObjectP", "view"]
 - !private ["So14NSSecureCodingP", "CGRect"]
 - !private ["So14NSSecureCodingP", "CGSize"]
 - !private ["So14NSSecureCodingP", "UIGraphicsBeginImageContextWithOptions"]
@@ -620,43 +654,52 @@ depends-member:
 - !private ["So14NSSecureCodingP", "setFill"]
 - !private ["So14NSSecureCodingP", "timingFunction"]
 - !private ["So14NSSecureCodingP", "values"]
-- !private ["So15NumberFormatterC", "Style"]
-- !private ["So15NumberFormatterC", "init"]
-- !private ["So15NumberFormatterC", "numberStyle"]
-- !private ["So15NumberFormatterC", "string"]
-- !private ["s7NumericP", "NSNumber"]
-- !private ["s7NumericP", "NumberFormatter"]
-- !private ["s7NumericP", "abs"]
-- !private ["s7NumericP", "numberOfDigits"]
+- !private ["So7NSValueC", "init"]
+- !private ["So17NSNumberFormatterC", "Style"]
+- !private ["So17NSNumberFormatterC", "init"]
+- !private ["So17NSNumberFormatterC", "numberStyle"]
+- !private ["So17NSNumberFormatterC", "string"]
+- !private ["Sj", "NSNumber"]
+- !private ["Sj", "NumberFormatter"]
+- !private ["Sj", "abs"]
+- !private ["Sj", "numberOfDigits"]
+- !private ["Sq", "addButton"]
+- !private ["Sq", "frame"]
 - !private ["11PopupDialogAAC", "addButton"]
 - !private ["11PopupDialogAAC", "init"]
 - !private ["11PopupDialog0aB6ButtonC", "init"]
 - !private ["11PopupDialog0aB15TransitionStyleO", "bounceDown"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s16RawRepresentableP", "bounceDown"]
-- !private ["s16RawRepresentableP", "decimal"]
-- !private ["s16RawRepresentableP", "foregroundColor"]
-- !private ["s16RawRepresentableP", "horizontal"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s13SignedIntegerP", "NSNumber"]
-- !private ["s13SignedIntegerP", "NumberFormatter"]
-- !private ["s13SignedIntegerP", "abs"]
-- !private ["s13SignedIntegerP", "numberOfDigits"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "bounceDown"]
+- !private ["SY", "decimal"]
+- !private ["SY", "foregroundColor"]
+- !private ["SY", "horizontal"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "NSNumber"]
+- !private ["SZ", "NumberFormatter"]
+- !private ["SZ", "abs"]
+- !private ["SZ", "numberOfDigits"]
 - !private ["s13SignedNumericP", "NSNumber"]
 - !private ["s13SignedNumericP", "NumberFormatter"]
 - !private ["s13SignedNumericP", "abs"]
 - !private ["s13SignedNumericP", "numberOfDigits"]
-- !private ["s10StrideableP", "NSNumber"]
-- !private ["s10StrideableP", "NumberFormatter"]
-- !private ["s10StrideableP", "abs"]
-- !private ["s10StrideableP", "numberOfDigits"]
+- !private ["Sx", "NSNumber"]
+- !private ["Sx", "NumberFormatter"]
+- !private ["Sx", "abs"]
+- !private ["Sx", "numberOfDigits"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
-- !private ["So15NumberFormatterC5StyleO", "decimal"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["So22NSNumberFormatterStyleV", "decimal"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "CAKeyframeAnimation"]
@@ -794,6 +837,19 @@ depends-member:
 - !private ["So11UIFocusItemP", "placeHolderColor"]
 - !private ["So11UIFocusItemP", "placeholder"]
 - !private ["So11UIFocusItemP", "subviews"]
+- !private ["So20UIFocusItemContainerP", "CAKeyframeAnimation"]
+- !private ["So20UIFocusItemContainerP", "CAMediaTimingFunction"]
+- !private ["So20UIFocusItemContainerP", "NSAttributedString"]
+- !private ["So20UIFocusItemContainerP", "NSAttributedStringKey"]
+- !private ["So20UIFocusItemContainerP", "attributedPlaceholder"]
+- !private ["So20UIFocusItemContainerP", "font"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "kCAMediaTimingFunctionLinear"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "placeHolderColor"]
+- !private ["So20UIFocusItemContainerP", "placeholder"]
+- !private ["So20UIFocusItemContainerP", "subviews"]
 - !private ["So7UIImageC", "CGRect"]
 - ["So7UIImageC", "CGSize"]
 - ["So7UIImageC", "UIColor"]
@@ -817,7 +873,6 @@ depends-member:
 - !private ["So10UIKeyInputP", "font"]
 - !private ["So10UIKeyInputP", "placeHolderColor"]
 - !private ["So10UIKeyInputP", "placeholder"]
-- !private ["SC22UILayoutConstraintAxisO", "horizontal"]
 - !private ["So30UIPasteConfigurationSupportingP", "CAKeyframeAnimation"]
 - !private ["So30UIPasteConfigurationSupportingP", "CAMediaTimingFunction"]
 - !private ["So30UIPasteConfigurationSupportingP", "CancelButton"]
@@ -959,6 +1014,25 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "subviews"]
 - !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So23UIUserActivityRestoringP", "CAKeyframeAnimation"]
+- !private ["So23UIUserActivityRestoringP", "CAMediaTimingFunction"]
+- !private ["So23UIUserActivityRestoringP", "CancelButton"]
+- !private ["So23UIUserActivityRestoringP", "NSAttributedString"]
+- !private ["So23UIUserActivityRestoringP", "NSAttributedStringKey"]
+- !private ["So23UIUserActivityRestoringP", "PopupDialog"]
+- !private ["So23UIUserActivityRestoringP", "PopupDialogButton"]
+- !private ["So23UIUserActivityRestoringP", "addButton"]
+- !private ["So23UIUserActivityRestoringP", "attributedPlaceholder"]
+- !private ["So23UIUserActivityRestoringP", "font"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "kCAMediaTimingFunctionLinear"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "placeHolderColor"]
+- !private ["So23UIUserActivityRestoringP", "placeholder"]
+- !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "subviews"]
+- !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So6UIViewC", "CAKeyframeAnimation"]
 - !private ["So6UIViewC", "CAMediaTimingFunction"]
 - !private ["So6UIViewC", "NSAttributedString"]
@@ -988,7 +1062,6 @@ depends-member:
 - ["So16UIViewControllerC", "issueRemovalAlert"]
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "view"]
-- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s18_BitwiseOperationsP", "NSNumber"]
 - !private ["s18_BitwiseOperationsP", "NumberFormatter"]
 - !private ["s18_BitwiseOperationsP", "abs"]
@@ -1009,12 +1082,16 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "NSNumber"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "NumberFormatter"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "abs"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "numberOfDigits"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "setFill"]
 - !private ["s26_ExpressibleByImageLiteralP", "CGRect"]
@@ -1026,7 +1103,14 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "cgImage"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "NSNumber"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "NumberFormatter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "abs"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "numberOfDigits"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CAKeyframeAnimation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CAMediaTimingFunction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
@@ -1068,8 +1152,11 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "NumberFormatter"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "abs"]
+- !private ["s21_ObjectiveCBridgeableP", "addButton"]
 - !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "frame"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "numberOfDigits"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
@@ -1078,11 +1165,14 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "27HBS_New_Venture_Competition9AlertTypeO"
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
+- !private "s13ArrayProtocolP"
+- !private "So22UILayoutConstraintAxisV"
+- !private "SK"
+- !private "Sz"
 - !private "Sb"
 - !private "So8CAActionP"
 - !private "So11CAAnimationC"
@@ -1092,36 +1182,38 @@ depends-nominal:
 - !private "So13CAMediaTimingP"
 - !private "So21CAMediaTimingFunctionC"
 - !private "So19CAPropertyAnimationC"
-- !private "SC7CGPointV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - !private "s7CVarArgP"
 - !private "11PopupDialog12CancelButtonC"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
-- !private "So9FormatterC"
-- "s8HashableP"
+- !private "So11NSFormatterC"
+- "SH"
+- !private "s6HasherV"
 - "Si"
+- !private "So21NSAttributedStringKeya"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - !private "So18NSAttributedStringC"
-- !private "SC21NSAttributedStringKeyV"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So26NSExtensionRequestHandlingP"
@@ -1131,23 +1223,25 @@ depends-nominal:
 - !private "So16NSMutableCopyingP"
 - !private "So8NSNumberC"
 - "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "So15NumberFormatterC"
-- !private "s7NumericP"
+- !private "So7NSValueC"
+- !private "So17NSNumberFormatterC"
+- !private "Sj"
+- !private "Sq"
 - !private "11PopupDialogAAC"
 - !private "11PopupDialog0aB6ButtonC"
 - !private "11PopupDialog0aB15TransitionStyleO"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
-- !private "s13SignedIntegerP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "SZ"
 - !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- !private "Sx"
 - !private "SS"
-- !private "s14StringProtocolP"
-- !private "So15NumberFormatterC5StyleO"
+- !private "Sy"
+- !private "So22NSNumberFormatterStyleV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -1164,10 +1258,10 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So10UIKeyInputP"
-- !private "SC22UILayoutConstraintAxisO"
 - !private "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
@@ -1182,9 +1276,9 @@ depends-nominal:
 - !private "So17UITextInputTraitsP"
 - !private "So34UITextPasteConfigurationSupportingP"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
-- !private "s14_ArrayProtocolP"
 - !private "s18_BitwiseOperationsP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
@@ -1204,7 +1298,6 @@ depends-nominal:
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/FasterVerificationCode.swiftmodule/x86_64.swiftmodule"
@@ -1227,6 +1320,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
@@ -1280,6 +1375,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
@@ -1301,10 +1397,13 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRQuery.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
@@ -1313,15 +1412,17 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "7a79c4048e23bbd1086dc21589415f62"

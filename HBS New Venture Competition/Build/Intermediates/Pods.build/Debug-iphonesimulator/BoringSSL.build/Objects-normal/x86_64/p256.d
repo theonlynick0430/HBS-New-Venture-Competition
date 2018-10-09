@@ -18,4 +18,6 @@ dependencies: \
   /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/third_party/fiat/../../crypto/fipsmodule/delocate.h \
   /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/third_party/fiat/../../crypto/fipsmodule/../internal.h \
   /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/third_party/fiat/../../crypto/fipsmodule/ec/internal.h \
-  /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/third_party/fiat/../../crypto/fipsmodule/ec/../bn/internal.h
+  /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/third_party/fiat/../../crypto/fipsmodule/ec/../bn/internal.h \
+  /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/third_party/fiat/../../crypto/fipsmodule/ec/../bn/../../internal.h \
+  /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/third_party/fiat/../../crypto/internal.h

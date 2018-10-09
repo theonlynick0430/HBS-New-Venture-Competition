@@ -52,6 +52,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "from"]
 - !private ["s28CustomDebugStringConvertibleP", "inDuration"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "interruptibleAnimator"]
 - ["s28CustomDebugStringConvertibleP", "interruptibleAnimatorForTransition"]
 - !private ["s28CustomDebugStringConvertibleP", "outDuration"]
@@ -60,6 +61,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "UITransitionContextViewControllerKey"]
 - ["s23CustomStringConvertibleP", ""]
@@ -71,54 +73,58 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "from"]
 - !private ["s23CustomStringConvertibleP", "inDuration"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "interruptibleAnimator"]
 - ["s23CustomStringConvertibleP", "interruptibleAnimatorForTransition"]
 - !private ["s23CustomStringConvertibleP", "outDuration"]
 - !private ["s23CustomStringConvertibleP", "to"]
 - ["s23CustomStringConvertibleP", "transitionDuration"]
 - !private ["s23CustomStringConvertibleP", "view"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "UITransitionContextViewControllerKey"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSubview"]
-- ["s9EquatableP", "animateTransition"]
-- ["s9EquatableP", "animationEnded"]
-- !private ["s9EquatableP", "direction"]
-- !private ["s9EquatableP", "from"]
-- ["s9EquatableP", "in"]
-- !private ["s9EquatableP", "inDuration"]
-- !private ["s9EquatableP", "init"]
-- ["s9EquatableP", "interruptibleAnimator"]
-- ["s9EquatableP", "interruptibleAnimatorForTransition"]
-- ["s9EquatableP", "out"]
-- !private ["s9EquatableP", "outDuration"]
-- !private ["s9EquatableP", "to"]
-- ["s9EquatableP", "transitionDuration"]
-- !private ["s9EquatableP", "view"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SQ", "UITransitionContextViewControllerKey"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addSubview"]
+- ["SQ", "animateTransition"]
+- ["SQ", "animationEnded"]
+- !private ["SQ", "direction"]
+- !private ["SQ", "from"]
+- ["SQ", "in"]
+- !private ["SQ", "inDuration"]
+- !private ["SQ", "init"]
+- ["SQ", "interruptibleAnimator"]
+- ["SQ", "interruptibleAnimatorForTransition"]
+- ["SQ", "out"]
+- !private ["SQ", "outDuration"]
+- !private ["SQ", "to"]
+- ["SQ", "transitionDuration"]
+- !private ["SQ", "view"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "UITransitionContextViewControllerKey"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSubview"]
-- ["s8HashableP", "animateTransition"]
-- ["s8HashableP", "animationEnded"]
-- !private ["s8HashableP", "direction"]
-- !private ["s8HashableP", "from"]
-- ["s8HashableP", "in"]
-- !private ["s8HashableP", "inDuration"]
-- !private ["s8HashableP", "init"]
-- ["s8HashableP", "interruptibleAnimator"]
-- ["s8HashableP", "interruptibleAnimatorForTransition"]
-- ["s8HashableP", "out"]
-- !private ["s8HashableP", "outDuration"]
-- !private ["s8HashableP", "to"]
-- ["s8HashableP", "transitionDuration"]
-- !private ["s8HashableP", "view"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "UITransitionContextViewControllerKey"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSubview"]
+- ["SH", "animateTransition"]
+- ["SH", "animationEnded"]
+- !private ["SH", "direction"]
+- !private ["SH", "from"]
+- ["SH", "in"]
+- !private ["SH", "inDuration"]
+- !private ["SH", "init"]
+- ["SH", "interruptibleAnimator"]
+- ["SH", "interruptibleAnimatorForTransition"]
+- ["SH", "out"]
+- !private ["SH", "outDuration"]
+- !private ["SH", "to"]
+- ["SH", "transitionDuration"]
+- !private ["SH", "view"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "view"]
@@ -142,25 +148,26 @@ depends-member:
 - ["So8NSObjectC", "to"]
 - ["So8NSObjectC", "transitionDuration"]
 - !private ["So8NSObjectC", "view"]
-- !private ["So16NSObjectProtocolP", "UITransitionContextViewControllerKey"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- ["So16NSObjectProtocolP", "animateTransition"]
-- ["So16NSObjectProtocolP", "animationEnded"]
-- !private ["So16NSObjectProtocolP", "containerView"]
-- !private ["So16NSObjectProtocolP", "direction"]
-- !private ["So16NSObjectProtocolP", "from"]
-- !private ["So16NSObjectProtocolP", "inDuration"]
-- !private ["So16NSObjectProtocolP", "init"]
-- ["So16NSObjectProtocolP", "interruptibleAnimator"]
-- ["So16NSObjectProtocolP", "interruptibleAnimatorForTransition"]
-- !private ["So16NSObjectProtocolP", "outDuration"]
-- !private ["So16NSObjectProtocolP", "to"]
-- ["So16NSObjectProtocolP", "transitionDuration"]
-- !private ["So16NSObjectProtocolP", "view"]
-- !private ["So16NSObjectProtocolP", "viewController"]
-- !private ["s16RawRepresentableP", "from"]
-- !private ["s16RawRepresentableP", "to"]
+- !private ["So8NSObjectP", "UITransitionContextViewControllerKey"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- ["So8NSObjectP", "animateTransition"]
+- ["So8NSObjectP", "animationEnded"]
+- !private ["So8NSObjectP", "containerView"]
+- !private ["So8NSObjectP", "direction"]
+- !private ["So8NSObjectP", "from"]
+- !private ["So8NSObjectP", "inDuration"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "interruptibleAnimator"]
+- ["So8NSObjectP", "interruptibleAnimatorForTransition"]
+- !private ["So8NSObjectP", "outDuration"]
+- !private ["So8NSObjectP", "to"]
+- ["So8NSObjectP", "transitionDuration"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewController"]
+- !private ["SY", "from"]
+- !private ["SY", "to"]
+- !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
 - ["11PopupDialog18TransitionAnimatorC", "AnimationDirection"]
 - ["11PopupDialog18TransitionAnimatorC", "TimeInterval"]
@@ -189,6 +196,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So11UIResponderC", "addSubview"]
@@ -198,8 +206,10 @@ depends-member:
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - !private ["So18UITraitEnvironmentP", "view"]
-- !private ["SC36UITransitionContextViewControllerKeyV", "from"]
-- !private ["SC36UITransitionContextViewControllerKeyV", "to"]
+- !private ["So36UITransitionContextViewControllerKeya", "from"]
+- !private ["So36UITransitionContextViewControllerKeya", "to"]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So16UIViewControllerC", "view"]
 - !private ["So37UIViewControllerAnimatedTransitioningP", "UITransitionContextViewControllerKey"]
@@ -219,8 +229,13 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "from"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "to"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITransitionContextViewControllerKey"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
@@ -250,20 +265,20 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- !private "s16RawRepresentableP"
+- "So8NSObjectP"
+- !private "SY"
 - !private "s12StaticStringV"
 - "11PopupDialog18TransitionAnimatorC"
 - !private "So29UIAccessibilityIdentificationP"
@@ -274,12 +289,14 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So16UIStateRestoringP"
 - !private "So18UITraitEnvironmentP"
-- !private "SC36UITransitionContextViewControllerKeyV"
+- !private "So36UITransitionContextViewControllerKeya"
+- !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - !private "So16UIViewControllerC"
 - "So37UIViewControllerAnimatedTransitioningP"
@@ -289,12 +306,12 @@ depends-nominal:
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/x86_64.swiftmodule"
@@ -318,14 +335,16 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/PopupDialog.build/unextended-module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphonesimulator/DynamicBlurView.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "08343dd9bc61f6223f52af54616cb48b"

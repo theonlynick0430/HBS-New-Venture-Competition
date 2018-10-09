@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ykU-oY-1ZB">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ykU-oY-1ZB">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="ykU-oY-1ZB" customClass="EventCodeVC" customModule="HBS_New_Venture_Competition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0fx-8s-fCk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-j5-nAC" customClass="VerificationCodeView" customModule="FasterVerificationCode">
-                                <rect key="frame" x="62.5" y="292" width="250" height="50"/>
+                                <rect key="frame" x="82" y="462" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Sdb-TU-9g9"/>
                                     <constraint firstAttribute="width" constant="250" placeholder="YES" id="mNU-PP-Bkf"/>
@@ -53,21 +53,37 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the code to join this event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okM-As-CPf">
+                                <rect key="frame" x="30" y="367" width="354" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="gTf-hR-wT8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gdu-j5-nAC" firstAttribute="centerX" secondItem="5XX-ud-f3x" secondAttribute="centerX" id="4hD-2t-rgz"/>
-                            <constraint firstItem="5XX-ud-f3x" firstAttribute="bottom" secondItem="gdu-j5-nAC" secondAttribute="bottom" constant="325" id="aVF-Dr-Ygo"/>
+                            <constraint firstItem="okM-As-CPf" firstAttribute="leading" secondItem="5XX-ud-f3x" secondAttribute="leading" constant="30" id="KpR-lq-W5a"/>
+                            <constraint firstItem="5XX-ud-f3x" firstAttribute="bottom" secondItem="gdu-j5-nAC" secondAttribute="bottom" constant="350" id="aVF-Dr-Ygo"/>
+                            <constraint firstItem="gdu-j5-nAC" firstAttribute="top" secondItem="okM-As-CPf" secondAttribute="bottom" constant="50" id="d5G-fA-oC6"/>
+                            <constraint firstItem="5XX-ud-f3x" firstAttribute="trailing" secondItem="okM-As-CPf" secondAttribute="trailing" constant="30" id="ukG-xs-4h6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5XX-ud-f3x"/>
                     </view>
                     <connections>
+                        <outlet property="toBottom" destination="aVF-Dr-Ygo" id="XLg-OK-hUz"/>
                         <outlet property="verificationCodeView" destination="gdu-j5-nAC" id="HSc-uh-JMq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaT-i8-ZkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="144"/>
+            <point key="canvasLocation" x="116" y="143.47826086956522"/>
         </scene>
     </scenes>
 </document>

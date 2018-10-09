@@ -14,4 +14,5 @@ dependencies: \
   /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/include/openssl/ex_data.h \
   /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/include/openssl/stack.h \
   /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/include/openssl/type_check.h \
-  /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/crypto/fipsmodule/bn/../delocate.h
+  /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/crypto/fipsmodule/bn/../delocate.h \
+  /Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/BoringSSL/crypto/fipsmodule/../internal.h
