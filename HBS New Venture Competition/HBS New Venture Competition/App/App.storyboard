@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wRh-an-maV">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,6 +22,7 @@
                     <connections>
                         <segue destination="wOc-Yc-PpM" kind="relationship" relationship="viewControllers" id="GNB-If-YHB"/>
                         <segue destination="jBE-IF-MsT" kind="relationship" relationship="viewControllers" id="cga-nl-sjg"/>
+                        <segue destination="PRM-A0-mPP" kind="relationship" relationship="viewControllers" id="xvP-Jg-Lju"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLo-3L-Lqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,11 +34,11 @@
             <objects>
                 <viewController title="Events" id="wOc-Yc-PpM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zz5-UC-ZhZ">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROGRAM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n48-aE-LPn">
-                                <rect key="frame" x="50" y="70" width="600" height="75"/>
+                                <rect key="frame" x="20" y="59" width="150" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Fn9-U7-ect">
                                         <variation key="heightClass=regular-widthClass=regular" constant="75"/>
@@ -54,7 +55,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These events are schedules for today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veA-RU-2K7">
-                                <rect key="frame" x="50" y="165" width="450" height="30"/>
+                                <rect key="frame" x="20" y="104" width="220" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="DrR-zf-gGX">
                                         <variation key="heightClass=regular-widthClass=regular" constant="450"/>
@@ -69,7 +70,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6w-Eo-K54">
-                                <rect key="frame" x="654" y="92" width="90" height="90"/>
+                                <rect key="frame" x="290" y="71" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.65098039215686276" green="0.85490196078431369" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="4sc-Wa-Vu3">
@@ -88,18 +89,18 @@
                                 </variation>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="23W-9I-Cub">
-                                <rect key="frame" x="0.0" y="240" width="834" height="822"/>
+                                <rect key="frame" x="0.0" y="154" width="375" height="575"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="OGD-4U-efg">
-                                        <rect key="frame" x="0.0" y="28" width="834" height="75"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OGD-4U-efg" id="8ok-9I-mfS">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUg-An-EgU">
-                                                    <rect key="frame" x="45" y="15" width="200" height="45"/>
+                                                    <rect key="frame" x="15" y="21" width="115" height="33"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="115" id="OKx-rg-8kA">
                                                             <variation key="heightClass=regular-widthClass=regular" constant="200"/>
@@ -116,7 +117,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Break for networking, judging, and visiting the finalist demo tables" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTe-dq-KHg">
-                                                    <rect key="frame" x="265" y="0.0" width="519" height="74.5"/>
+                                                    <rect key="frame" x="150" y="0.0" width="220" height="74.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -181,11 +182,11 @@
             <objects>
                 <viewController title="Events" id="jBE-IF-MsT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Of-AF-xyu">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUDGES PROFILES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT1-Oo-Lch">
-                                <rect key="frame" x="50" y="70" width="600" height="75"/>
+                                <rect key="frame" x="20" y="59" width="275" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7bb-hB-Bu1">
                                         <variation key="heightClass=regular-widthClass=regular" constant="75"/>
@@ -202,7 +203,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet the judges participating in this event " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsF-uP-yRO">
-                                <rect key="frame" x="50" y="165" width="500" height="30"/>
+                                <rect key="frame" x="20" y="104" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="OWq-Qf-zNW">
                                         <variation key="heightClass=regular-widthClass=regular" constant="500"/>
@@ -217,14 +218,14 @@
                                 </variation>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IKU-gh-PS6">
-                                <rect key="frame" x="0.0" y="240" width="834" height="822"/>
+                                <rect key="frame" x="0.0" y="154" width="375" height="575"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="khm-Kl-OdR">
-                                        <rect key="frame" x="0.0" y="28" width="834" height="110"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="khm-Kl-OdR" id="Vd5-li-CJg">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="109.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109.66666666666667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="84u-bq-wrt">
@@ -235,7 +236,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname Lastname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVy-Fl-Pqq">
-                                                    <rect key="frame" x="95" y="20" width="629" height="35"/>
+                                                    <rect key="frame" x="95" y="15" width="215" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="II8-gc-0s6">
                                                             <variation key="heightClass=regular-widthClass=regular" constant="35"/>
@@ -249,7 +250,7 @@
                                                     </variation>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWF-1P-vXt">
-                                                    <rect key="frame" x="729" y="25" width="60" height="60"/>
+                                                    <rect key="frame" x="315" y="35" width="40" height="40"/>
                                                     <color key="backgroundColor" red="0.19607843137254902" green="0.47843137254901963" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="6bR-8b-WeE">
@@ -268,7 +269,7 @@
                                                     </variation>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a description about other jobs, positions, educations, and interesting facts about this judge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QxT-Xw-J3S">
-                                                    <rect key="frame" x="95" y="55" width="629" height="44.5"/>
+                                                    <rect key="frame" x="95" y="40" width="215" height="59.666666666666657"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -317,15 +318,35 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OOp-Qs-ZyU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="EventsIconGray" selectedImage="EventsIconRed" id="xS8-XU-p8r"/>
+                    <tabBarItem key="tabBarItem" title="" image="JudgesIconGray" selectedImage="JudgesIconRed" id="xS8-XU-p8r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQB-Y0-Wc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-247.19999999999999" y="53.940886699507388"/>
         </scene>
+        <!--Coordinators-->
+        <scene sceneID="t0g-dF-LO6">
+            <objects>
+                <viewController title="Coordinators" id="PRM-A0-mPP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LH9-zV-WuW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nrP-1a-kbo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="CoordinatorsIconGray" selectedImage="CoordinatorsIconRed" id="FhI-Um-t5z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPb-Po-T0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247" y="718"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="CoordinatorsIconGray" width="25" height="25"/>
+        <image name="CoordinatorsIconRed" width="25" height="25"/>
         <image name="EventsIconGray" width="25" height="25"/>
         <image name="EventsIconRed" width="25" height="25"/>
+        <image name="JudgesIconGray" width="25" height="25"/>
+        <image name="JudgesIconRed" width="25" height="25"/>
     </resources>
 </document>
