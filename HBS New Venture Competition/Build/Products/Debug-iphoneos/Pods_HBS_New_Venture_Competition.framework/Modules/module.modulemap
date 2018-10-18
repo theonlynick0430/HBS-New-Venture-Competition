@@ -1,6 +1,0 @@
-framework module Pods_HBS_New_Venture_Competition {
-  umbrella header "Pods-HBS New Venture Competition-umbrella.h"
-
-  export *
-  module * { export * }
-}

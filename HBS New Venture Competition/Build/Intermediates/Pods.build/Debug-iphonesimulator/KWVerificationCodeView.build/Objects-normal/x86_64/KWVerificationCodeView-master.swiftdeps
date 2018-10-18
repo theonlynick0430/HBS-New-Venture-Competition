@@ -1,8 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "a96a9bec6ea10bfbabf338f3770d602f"
-build_time: [1537827022, 249704000]
-inputs:
-  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/KWVerificationCodeView/KWVerificationCodeView/Classes/KWTextFieldView.swift": [1537827004, 0]
-  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/KWVerificationCodeView/KWVerificationCodeView/Classes/KWVerificationCodeView.swift": [1537827004, 0]
-  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/KWVerificationCodeView/KWVerificationCodeView/Classes/Extensions/StringExtension.swift": [1537827004, 0]
-  "/Users/nikhilsridhar/Desktop/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/KWVerificationCodeView/KWVerificationCodeView/Classes/Extensions/UIViewExtension.swift": [1537827004, 0]
