@@ -10,15 +10,15 @@ import UIKit
 
 class CompanyCell: UICollectionViewCell {
     
+    static let identifier = "CompanyCell"
+    
+    //outlets
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var company: Company! {didSet{setData()}}
-    
-    private func setData(){
-        nameLabel.text = company.name
-        descriptionLabel.text = company.description
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
     
 }

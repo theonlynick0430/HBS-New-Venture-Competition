@@ -9,7 +9,10 @@
 import UIKit
 
 class SponsorCell: UITableViewCell {
+    
+    static let identifier = "SponsorCell"
 
+    //outlets
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var websiteLabel: UILabel!
@@ -19,19 +22,8 @@ class SponsorCell: UITableViewCell {
     @IBOutlet weak var repNameLabel: UILabel!
     @IBOutlet weak var repEmailLabel: UILabel!
     
-    var sponsor: Sponsor! {didSet{setData()}}
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-
-    private func setData(){
-        nameLabel.text = sponsor.name
-        websiteLabel.text = sponsor.website.absoluteString
-        prizeLabel.text = sponsor.prize
-        descriptionLabel.text = sponsor.description
-        repNameLabel.text = sponsor.repFirstName + " " + sponsor.repLastName
-        repEmailLabel.text = sponsor.repEmail
     }
 
 }

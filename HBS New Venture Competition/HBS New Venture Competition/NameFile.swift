@@ -14,6 +14,10 @@ struct NameFile {
         static let eventCode = "EventCode"
     }
     
+    struct Segues {
+        static let toCompanyDetail = "SegueToCompanyDetail"
+    }
+    
     struct Firebase{
         
         struct CodeDB{
@@ -46,7 +50,7 @@ struct NameFile {
                     //votes <collection>
             static let votes = "Votes"
                         //vote <document> - deviceID
-            static let deviceID = "DeviceID"
+            static let stars = "Stars"
         }
         
         struct EventDB{

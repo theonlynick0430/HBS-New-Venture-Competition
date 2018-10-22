@@ -9,19 +9,15 @@
 import UIKit
 
 class EventCell: UITableViewCell {
+    
+    static let identifier = "EventCell"
 
+    //outlets
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var event: Event! { didSet { setData() } }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-
-    private func setData(){
-        timeLabel.text = event.time.dateValue().description
-        descriptionLabel.text = event.description
     }
 
 }

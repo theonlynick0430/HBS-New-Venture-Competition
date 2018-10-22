@@ -8,21 +8,19 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- "Bool"
 - "Company"
 - "Int"
 - "String"
 depends-member:
-- ["27HBS_New_Venture_Competition7CompanyC", "Bool"]
 - ["27HBS_New_Venture_Competition7CompanyC", "Int"]
 - ["27HBS_New_Venture_Competition7CompanyC", "String"]
 - ["27HBS_New_Venture_Competition7CompanyC", "companyID"]
 - ["27HBS_New_Venture_Competition7CompanyC", "description"]
 - ["27HBS_New_Venture_Competition7CompanyC", "init"]
-- ["27HBS_New_Venture_Competition7CompanyC", "isVoted"]
 - ["27HBS_New_Venture_Competition7CompanyC", "logoImageURL"]
 - ["27HBS_New_Venture_Competition7CompanyC", "name"]
 - ["27HBS_New_Venture_Competition7CompanyC", "order"]
+- ["27HBS_New_Venture_Competition7CompanyC", "stars"]
 depends-nominal:
 - "27HBS_New_Venture_Competition7CompanyC"
 depends-dynamic-lookup:
@@ -154,4 +152,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "448944986d89ee09202447bec6766bda"
+interface-hash: "d58e5f2744d1c69bceeb9317fd2df0bc"

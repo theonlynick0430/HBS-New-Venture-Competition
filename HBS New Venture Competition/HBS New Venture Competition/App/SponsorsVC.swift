@@ -10,6 +10,7 @@ import UIKit
 
 class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    //outlets
     @IBOutlet weak var tableView: UITableView!
     
     private var sponsors = [Sponsor]() {didSet{tableView.reloadData()}}
@@ -18,33 +19,14 @@ class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        // Do any additional setup after loading the view.
-        
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sponsors.count
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SponsorCell", for: indexPath)
-        if let cell = cell as? SponsorCell{
-            cell.sponsor = sponsors[indexPath.row]
-        }
-        return cell
+        return UITableViewCell()
     }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

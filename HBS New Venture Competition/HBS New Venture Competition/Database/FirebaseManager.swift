@@ -74,10 +74,10 @@ class FirebaseManager{
                 
                 dispatch.enter()
                 self.companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).getDocument(completion: { (document, error) in
-                    if let document = document, document.exists, let data = document.data(), let _ = data[NameFile.Firebase.CompanyDB.deviceID] as? String{
-                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, isVoted: true))
+                    if let document = document, document.exists, let data = document.data(), let stars = data[NameFile.Firebase.CompanyDB.stars] as? Int{
+                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: stars))
                     }else{
-                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, isVoted: false))
+                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: 0))
                     }
                     dispatch.leave()
                 })
@@ -115,13 +115,8 @@ class FirebaseManager{
     }
     
     // Adds a device specific vote to a company
-    public func addVote(_ companyID: String, completionHandler: CompletionHandler? = nil){
-        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).setData([NameFile.Firebase.CompanyDB.deviceID : UIDevice.current.identifierForVendor!.uuidString], completion: completionHandler)
-    }
-    
-    // Removes a device specific vote from company
-    public func removeVote(_ companyID: String, completionHandler: CompletionHandler? = nil){
-        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).delete(completion: completionHandler)
+    public func addVote(_ companyID: String, stars: Int, completionHandler: CompletionHandler? = nil){
+        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).setData([NameFile.Firebase.CompanyDB.stars : stars], completion: completionHandler)
     }
     
     // Fetches all events
