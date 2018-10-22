@@ -1,8 +1,8 @@
 version: "Apple Swift version 4.2 (swiftlang-1000.11.37.1 clang-1000.11.45.1)"
 options: "57dcf15a9a2eb403ecd235cb3452c3c9"
-build_time: [1539821353, 293836000]
+build_time: [1540160114, 860848000]
 inputs:
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/App/SponsorsVC.swift": [1539821206, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/App/SponsorsVC.swift": [1539823469, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/AppDelegate.swift": [1538871773, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/Coordinator.swift": [1537491790, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Database/FirebaseManager.swift": [1537826187, 0]
@@ -17,7 +17,7 @@ inputs:
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/App/EventsVC.swift": [1539821240, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/Judge.swift": [1537506942, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/SponsorCell.swift": [1539819727, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/App/CompaniesVC.swift": [1539821351, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/App/CompaniesVC.swift": [1539823467, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/AppStorage.swift": [1537836318, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/CoordinatorCell.swift": [1539819501, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/HBS New Venture Competition/Objects and Cells/EventCell.swift": [1539819214, 0]
