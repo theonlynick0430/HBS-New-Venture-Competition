@@ -8,7 +8,6 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "=="
-- "BooleanLiteralType"
 - !private "CastingPrecedence"
 - "Company"
 - "CompanyMember"
@@ -20,7 +19,9 @@ depends-top-level:
 - "Event"
 - "FirebaseManager"
 - "Firestore"
-- !private "Int"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
 - "Judge"
 - "NameFile"
 - "Sponsor"
@@ -47,7 +48,6 @@ depends-member:
 - ["s7CVarArgP", "collection"]
 - !private ["s7CVarArgP", "current"]
 - !private ["s7CVarArgP", "data"]
-- !private ["s7CVarArgP", "delete"]
 - !private ["s7CVarArgP", "document"]
 - !private ["s7CVarArgP", "documentID"]
 - !private ["s7CVarArgP", "documents"]
@@ -78,7 +78,6 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition7CompanyC", "init"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "companies"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "description"]
-- !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "deviceID"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "education"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "email"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "firstName"]
@@ -91,6 +90,7 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "phoneNumber"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "position"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "profileImageURL"]
+- !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "stars"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "votes"]
 - !private ["27HBS_New_Venture_Competition13CompanyMemberC", "init"]
 - !private ["SL", "init"]
@@ -106,7 +106,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "collection"]
 - !private ["s28CustomDebugStringConvertibleP", "current"]
 - !private ["s28CustomDebugStringConvertibleP", "data"]
-- !private ["s28CustomDebugStringConvertibleP", "delete"]
 - !private ["s28CustomDebugStringConvertibleP", "document"]
 - !private ["s28CustomDebugStringConvertibleP", "documentID"]
 - !private ["s28CustomDebugStringConvertibleP", "documents"]
@@ -140,7 +139,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "collection"]
 - !private ["s23CustomStringConvertibleP", "current"]
 - !private ["s23CustomStringConvertibleP", "data"]
-- !private ["s23CustomStringConvertibleP", "delete"]
 - !private ["s23CustomStringConvertibleP", "document"]
 - !private ["s23CustomStringConvertibleP", "documentID"]
 - !private ["s23CustomStringConvertibleP", "documents"]
@@ -178,7 +176,6 @@ depends-member:
 - !private ["So18OS_dispatch_objectC", "notify"]
 - !private ["So17OS_dispatch_queueC", "main"]
 - !private ["So20FIRDocumentReferenceC", "collection"]
-- !private ["So20FIRDocumentReferenceC", "delete"]
 - !private ["So20FIRDocumentReferenceC", "getDocument"]
 - !private ["So20FIRDocumentReferenceC", "setData"]
 - !private ["So19FIRDocumentSnapshotC", "data"]
@@ -196,7 +193,6 @@ depends-member:
 - ["SQ", "collection"]
 - !private ["SQ", "current"]
 - !private ["SQ", "data"]
-- !private ["SQ", "delete"]
 - !private ["SQ", "document"]
 - !private ["SQ", "documentID"]
 - !private ["SQ", "documents"]
@@ -253,7 +249,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "EventCodeCallback"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "FirebaseManager"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "Firestore"]
-- !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "Int"]
+- ["27HBS_New_Venture_Competition15FirebaseManagerC", "Int"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "Judge"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "JudgeCallback"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "NameFile"]
@@ -281,7 +277,6 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "judges"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "manager"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "print"]
-- ["27HBS_New_Venture_Competition15FirebaseManagerC", "removeVote"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "sponsors"]
 - ["So12FIRFirestoreC", "collection"]
 - ["So12FIRFirestoreC", "firestore"]
@@ -290,7 +285,6 @@ depends-member:
 - ["SH", "collection"]
 - !private ["SH", "current"]
 - !private ["SH", "data"]
-- !private ["SH", "delete"]
 - !private ["SH", "document"]
 - !private ["SH", "documentID"]
 - !private ["SH", "documents"]
@@ -327,7 +321,6 @@ depends-member:
 - ["So8NSObjectC", "collection"]
 - !private ["So8NSObjectC", "current"]
 - !private ["So8NSObjectC", "data"]
-- !private ["So8NSObjectC", "delete"]
 - !private ["So8NSObjectC", "document"]
 - !private ["So8NSObjectC", "documentID"]
 - !private ["So8NSObjectC", "documents"]
@@ -345,7 +338,6 @@ depends-member:
 - ["So8NSObjectP", "collection"]
 - !private ["So8NSObjectP", "current"]
 - !private ["So8NSObjectP", "data"]
-- !private ["So8NSObjectP", "delete"]
 - !private ["So8NSObjectP", "document"]
 - !private ["So8NSObjectP", "documentID"]
 - !private ["So8NSObjectP", "documents"]
@@ -429,7 +421,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "collection"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "document"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "documentID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "documents"]
@@ -660,4 +651,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "242925e1f5dbd4bf7aae858d52474653"
+interface-hash: "be46b584f4c940c3bdbb330e082c2095"

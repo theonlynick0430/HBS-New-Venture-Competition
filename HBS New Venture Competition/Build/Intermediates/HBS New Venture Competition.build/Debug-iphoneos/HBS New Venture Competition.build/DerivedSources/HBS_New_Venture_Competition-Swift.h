@@ -212,6 +212,7 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition14AsyncImageView")
 
 @class UICollectionView;
 @class UICollectionViewCell;
+@class UIStoryboardSegue;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition11CompaniesVC")
@@ -220,6 +221,7 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition11CompaniesVC")
 - (void)viewDidLoad;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)unwindToCompaniesWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -231,11 +233,55 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition11CompanyCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logoImageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+- (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
+@class UITableViewCell;
+
+SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15CompanyDetailVC")
+@interface CompanyDetailVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
+
+SWIFT_CLASS("_TtC27HBS_New_Venture_Competition17CompanyMemberCell")
+@interface CompanyMemberCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified positionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified educationLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified phoneBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified linkedInBtn;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC27HBS_New_Venture_Competition22CompanyMemberLargeCell")
+@interface CompanyMemberLargeCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified positionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified educationLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified phoneBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified linkedInBtn;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15CoordinatorCell")
 @interface CoordinatorCell : UITableViewCell
@@ -249,7 +295,6 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15CoordinatorCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition14CoordinatorsVC")
 @interface CoordinatorsVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -304,7 +349,7 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition8EventsVC")
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition9JudgeCell")
 @interface JudgeCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImageView;
+@property (nonatomic, weak) IBOutlet AsyncImageView * _Null_unspecified profileImageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified linkedInBtn;
@@ -327,6 +372,22 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition8JudgesVC")
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition11SponsorCell")
 @interface SponsorCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logoImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified websiteLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified prizeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified repProfileImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified repNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified repEmailLabel;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC27HBS_New_Venture_Competition16SponsorLargeCell")
+@interface SponsorLargeCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logoImageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified websiteLabel;

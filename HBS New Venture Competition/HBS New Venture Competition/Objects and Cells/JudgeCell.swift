@@ -13,13 +13,43 @@ class JudgeCell: UITableViewCell {
     static let identifier = "JudgeCell"
     
     //outlets
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileImageView: AsyncImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var linkedInBtn: UIButton!
     
+    //data source
+    var judge: Judge! { didSet{ reloadData() }}
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        //rounds corners
+        profileImageView.layer.masksToBounds = true
+        profileImageView.layer.cornerRadius = profileImageView.frame.width/2
+        linkedInBtn.layer.masksToBounds = true
+        linkedInBtn.layer.cornerRadius = linkedInBtn.frame.width/2
+        
+        //adds borders
+        profileImageView.layer.borderWidth = 1
+        profileImageView.layer.borderColor = UIColor.lightGray.cgColor
+    }
+    
+    private func reloadData(){
+        profileImageView.setFirebaseURL(firebaseURL: judge.profileImageURL)
+        nameLabel.text = "\(judge.firstName) \(judge.lastName)"
+        descriptionLabel.text = judge.description
+        linkedInBtn.addTarget(self, action: #selector(JudgeCell.openLinkedIn(_:)), for: .touchUpInside)
+    }
+    
+    @objc private func openLinkedIn(_ sender: UIButton){
+        if UIApplication.shared.canOpenURL(judge.linkedInURL){
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(judge.linkedInURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(judge.linkedInURL)
+            }
+        }
     }
     
 }

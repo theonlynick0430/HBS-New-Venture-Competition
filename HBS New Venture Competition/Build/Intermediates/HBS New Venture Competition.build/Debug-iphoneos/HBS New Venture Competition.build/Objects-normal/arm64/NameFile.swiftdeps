@@ -4,6 +4,7 @@ provides-top-level:
 provides-nominal:
 - "27HBS_New_Venture_Competition8NameFileV"
 - "27HBS_New_Venture_Competition8NameFileV12UserDefaultsV"
+- "27HBS_New_Venture_Competition8NameFileV6SeguesV"
 - "27HBS_New_Venture_Competition8NameFileV8FirebaseV"
 - "27HBS_New_Venture_Competition8NameFileV8FirebaseV6CodeDBV"
 - "27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV"
@@ -14,6 +15,7 @@ provides-nominal:
 provides-member:
 - ["27HBS_New_Venture_Competition8NameFileV", ""]
 - ["27HBS_New_Venture_Competition8NameFileV12UserDefaultsV", ""]
+- ["27HBS_New_Venture_Competition8NameFileV6SeguesV", ""]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV", ""]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV6CodeDBV", ""]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", ""]
@@ -38,7 +40,6 @@ depends-member:
 - ["Sl", "init"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "companies"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "description"]
-- ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "deviceID"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "education"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "email"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "firstName"]
@@ -52,6 +53,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "phoneNumber"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "position"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "profileImageURL"]
+- ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "stars"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "votes"]
 - ["SL", "init"]
 - ["SL", "init"]
@@ -108,10 +110,13 @@ depends-member:
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["27HBS_New_Venture_Competition8NameFileV", "Firebase"]
+- ["27HBS_New_Venture_Competition8NameFileV", "Segues"]
 - ["27HBS_New_Venture_Competition8NameFileV", "UserDefaults"]
 - ["27HBS_New_Venture_Competition8NameFileV", "init"]
 - ["Sm", "init"]
 - ["Sm", "init"]
+- ["27HBS_New_Venture_Competition8NameFileV6SeguesV", "init"]
+- ["27HBS_New_Venture_Competition8NameFileV6SeguesV", "toCompanyDetail"]
 - ["ST", "init"]
 - ["ST", "init"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "description"]
@@ -174,6 +179,7 @@ depends-nominal:
 - "s10MirrorPathP"
 - "27HBS_New_Venture_Competition8NameFileV"
 - "Sm"
+- "27HBS_New_Venture_Competition8NameFileV6SeguesV"
 - "ST"
 - "27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV"
 - "SS"
@@ -317,4 +323,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1fd7dc61f89dd21beb55d8c939e22eea"
+interface-hash: "932ae54abb64bc3702267e96b355de90"

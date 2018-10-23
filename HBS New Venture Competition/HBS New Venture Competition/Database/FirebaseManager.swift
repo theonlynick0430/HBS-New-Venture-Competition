@@ -179,10 +179,11 @@ class FirebaseManager{
                 let logoImageURL = data[NameFile.Firebase.SponsorDB.logoImageURL] as! String
                 let prize = data[NameFile.Firebase.SponsorDB.prize] as! String
                 let website = URL(string: data[NameFile.Firebase.SponsorDB.website] as! String)!
+                let repProfileImageURL = data[NameFile.Firebase.SponsorDB.repProfileImageURL] as! String
                 let repFirstName = data[NameFile.Firebase.SponsorDB.repFirstName] as! String
                 let repLastName = data[NameFile.Firebase.SponsorDB.repLastName] as! String
                 let repEmail = data[NameFile.Firebase.SponsorDB.repEmail] as! String
-                sponsors.append(Sponsor(name: name, description: description, logoImageURL: logoImageURL, prize: prize, website: website, repFirstName: repFirstName, repLastName: repLastName, repEmail: repEmail))
+                sponsors.append(Sponsor(name: name, description: description, logoImageURL: logoImageURL, prize: prize, website: website, repProfileImageURL: repProfileImageURL, repFirstName: repFirstName, repLastName: repLastName, repEmail: repEmail))
             })
             callback(sponsors, nil)
         }

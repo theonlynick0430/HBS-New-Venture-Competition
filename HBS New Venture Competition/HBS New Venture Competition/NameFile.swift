@@ -81,6 +81,7 @@ struct NameFile {
             static let logoImageURL = "logoImageURL"
             static let prize = "Prize"
             static let website = "Website"
+            static let repProfileImageURL = "RepProfileImageURL"
             static let repFirstName = "RepFirstName"
             static let repLastName = "RepLastName"
             static let repEmail = "RepEmail"

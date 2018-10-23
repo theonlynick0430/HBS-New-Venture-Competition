@@ -16,8 +16,19 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    //data source
+    var event: Event! { didSet{ reloadData() }}
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    private func reloadData(){
+        let eventDate = event.time.dateValue()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:mm a"
+        timeLabel.text = dateFormatter.string(from: eventDate).capitalized
+        descriptionLabel.text = event.description
     }
 
 }
