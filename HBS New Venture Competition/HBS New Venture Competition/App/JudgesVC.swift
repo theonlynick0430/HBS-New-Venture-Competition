@@ -11,9 +11,12 @@ import UIKit
 class JudgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     //outlets
+    @IBOutlet weak var headerLabel: UILabel!
+    @IBOutlet weak var subHeaderLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    private var judges = [Judge]() {didSet{tableView.reloadData()}}
+    //data source
+    private var judges = [Judge]() { didSet{ tableView.reloadData() } }
     
     override func viewDidLoad() {
         super.viewDidLoad()

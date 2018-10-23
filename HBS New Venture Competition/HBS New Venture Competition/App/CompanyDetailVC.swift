@@ -11,7 +11,15 @@ import UIKit
 class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     //outlets
+    @IBOutlet weak var headerLabel: UILabel!
+    @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var logoImageView: AsyncImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    
+    //data source
+    var company: Company!
+    private var companyMembers = [CompanyMember]() { didSet{ tableView.reloadData() } }
     
     override func viewDidLoad() {
         super.viewDidLoad()
