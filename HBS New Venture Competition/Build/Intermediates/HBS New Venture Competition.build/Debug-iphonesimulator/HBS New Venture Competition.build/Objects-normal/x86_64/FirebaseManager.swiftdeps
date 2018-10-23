@@ -385,6 +385,7 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "repEmail"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "repFirstName"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "repLastName"]
+- !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "repProfileImageURL"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "sponsors"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "website"]
 - !private ["SS", "init"]

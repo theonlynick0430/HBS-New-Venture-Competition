@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Cosmos
+import Firebase
 
 class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -27,6 +29,20 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    // MARK: - Essential Functions
+    
+    private var listenerRegistrations = [ListenerRegistration]()
+    
+    private func observeCompanyMembers(){
+        
+    }
+    
+    private func removeCompanyMemberObservers(){
+        
+    }
+    
+    // MARK: - Tableview Delegate and Datasource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -23,6 +24,20 @@ class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    // MARK: - Essential Functions
+    
+    private var listenerRegistrations = [ListenerRegistration]()
+    
+    private func observeSponsors(){
+        
+    }
+    
+    private func removeSponsorObservers(){
+        
+    }
+    
+    // MARK: - Tableview Delegate and Datasource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0

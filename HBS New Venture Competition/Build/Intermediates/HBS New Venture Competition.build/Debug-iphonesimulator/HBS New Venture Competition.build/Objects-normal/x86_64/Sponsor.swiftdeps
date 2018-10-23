@@ -23,6 +23,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition7SponsorC", "repEmail"]
 - ["27HBS_New_Venture_Competition7SponsorC", "repFirstName"]
 - ["27HBS_New_Venture_Competition7SponsorC", "repLastName"]
+- ["27HBS_New_Venture_Competition7SponsorC", "repProfileImageURL"]
 - ["27HBS_New_Venture_Competition7SponsorC", "website"]
 depends-nominal:
 - "27HBS_New_Venture_Competition7SponsorC"
@@ -155,4 +156,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "25c3b8b7243c847890cde48b81c38d3a"
+interface-hash: "e867947f3068f8764a1806c67eb8a065"

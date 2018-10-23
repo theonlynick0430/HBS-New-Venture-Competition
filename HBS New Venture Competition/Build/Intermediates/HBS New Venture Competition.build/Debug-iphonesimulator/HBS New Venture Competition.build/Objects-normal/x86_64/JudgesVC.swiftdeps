@@ -6,6 +6,8 @@ provides-nominal:
 provides-member:
 - ["27HBS_New_Venture_Competition8JudgesVCC", ""]
 provides-dynamic-lookup:
+- "headerLabel"
+- "subHeaderLabel"
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
@@ -16,6 +18,7 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "Judge"
 - "JudgesVC"
+- "UILabel"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewDataSource"
@@ -204,9 +207,11 @@ depends-member:
 - ["27HBS_New_Venture_Competition8JudgesVCC", "IndexPath"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "Int"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "Judge"]
+- ["27HBS_New_Venture_Competition8JudgesVCC", "UILabel"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "UITableView"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "UITableViewCell"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "deinit"]
+- ["27HBS_New_Venture_Competition8JudgesVCC", "headerLabel"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "indexPathForPreferredFocusedView"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "indexPathForPreferredFocusedViewInTableView"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "init"]
@@ -228,6 +233,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition8JudgesVCC", "scrollViewWillEndDragging"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "sectionIndexTitles"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "sectionIndexTitlesForTableView"]
+- ["27HBS_New_Venture_Competition8JudgesVCC", "subHeaderLabel"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "tableView"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "viewDidLoad"]
 - ["27HBS_New_Venture_Competition8JudgesVCC", "viewForZooming"]
@@ -295,10 +301,12 @@ depends-member:
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "Judge"]
+- ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "dataSource"]
 - !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "headerLabel"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
@@ -322,6 +330,7 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
+- ["So8NSObjectC", "subHeaderLabel"]
 - ["So8NSObjectC", "tableView"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
@@ -518,10 +527,12 @@ depends-member:
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "Judge"]
+- ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "dataSource"]
 - !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "headerLabel"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
@@ -545,6 +556,7 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
+- ["So11UIResponderC", "subHeaderLabel"]
 - ["So11UIResponderC", "tableView"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
@@ -762,9 +774,11 @@ depends-member:
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "Judge"]
+- ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "headerLabel"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
@@ -787,6 +801,7 @@ depends-member:
 - ["So16UIViewControllerC", "scrollViewWillEndDragging"]
 - ["So16UIViewControllerC", "sectionIndexTitles"]
 - ["So16UIViewControllerC", "sectionIndexTitlesForTableView"]
+- ["So16UIViewControllerC", "subHeaderLabel"]
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
@@ -1019,4 +1034,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "51d2c2a949d44f044297d308c2b448d9"
+interface-hash: "a44b4cf7a391f4d28a2c4d782ae728a2"

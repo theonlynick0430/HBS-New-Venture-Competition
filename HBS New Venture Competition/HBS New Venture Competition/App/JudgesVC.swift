@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class JudgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -23,6 +24,20 @@ class JudgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    // MARK: - Essential Functions
+    
+    private var listenerRegistrations = [ListenerRegistration]()
+    
+    private func observeJudges(){
+        
+    }
+    
+    private func removeJudgeObservers(){
+        
+    }
+    
+    // MARK: - Tableview Delegate and Datasource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0

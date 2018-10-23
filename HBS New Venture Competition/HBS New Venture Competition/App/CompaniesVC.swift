@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -25,6 +26,20 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         collectionView.delegate = self
         collectionView.dataSource = self
     }
+    
+    // MARK: - Essential Functions
+    
+    private var listenerRegistrations = [ListenerRegistration]()
+    
+    private func observeCompanies(){
+        
+    }
+    
+    private func removeCompanyObservers(){
+        
+    }
+    
+    // MARK: - Tableview Delegate and Datasource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 0
