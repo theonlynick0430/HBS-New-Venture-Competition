@@ -7,6 +7,10 @@ provides-member:
 - ["27HBS_New_Venture_Competition11CompaniesVCC", ""]
 provides-dynamic-lookup:
 - "collectionView"
+- "countBtn"
+- "headerLabel"
+- "searchBar"
+- "subHeaderLabel"
 - "unwindToCompanies"
 - "viewDidLoad"
 depends-top-level:
@@ -17,10 +21,13 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - !private "IntegerLiteralType"
+- "UIButton"
 - "UICollectionView"
 - "UICollectionViewCell"
 - "UICollectionViewDataSource"
 - "UICollectionViewDelegate"
+- "UILabel"
+- "UISearchBar"
 - "UIStoryboardSegue"
 - "UIViewController"
 depends-member:
@@ -66,12 +73,17 @@ depends-member:
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "Company"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "IndexPath"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "Int"]
+- ["27HBS_New_Venture_Competition11CompaniesVCC", "UIButton"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "UICollectionView"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "UICollectionViewCell"]
+- ["27HBS_New_Venture_Competition11CompaniesVCC", "UILabel"]
+- ["27HBS_New_Venture_Competition11CompaniesVCC", "UISearchBar"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "UIStoryboardSegue"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "collectionView"]
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "companies"]
+- ["27HBS_New_Venture_Competition11CompaniesVCC", "countBtn"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "deinit"]
+- ["27HBS_New_Venture_Competition11CompaniesVCC", "headerLabel"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "indexPathForPreferredFocusedView"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "indexTitles"]
@@ -92,6 +104,8 @@ depends-member:
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "scrollViewWillBeginDragging"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "scrollViewWillBeginZooming"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "scrollViewWillEndDragging"]
+- ["27HBS_New_Venture_Competition11CompaniesVCC", "searchBar"]
+- ["27HBS_New_Venture_Competition11CompaniesVCC", "subHeaderLabel"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "unwindToCompanies"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "viewDidLoad"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "viewForZooming"]
@@ -299,13 +313,18 @@ depends-member:
 - ["So8NSObjectC", "Company"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UICollectionView"]
 - ["So8NSObjectC", "UICollectionViewCell"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UISearchBar"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "collectionView"]
 - ["So8NSObjectC", "companies"]
+- ["So8NSObjectC", "countBtn"]
 - !private ["So8NSObjectC", "dataSource"]
 - !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "headerLabel"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So8NSObjectC", "indexTitles"]
@@ -328,6 +347,8 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillBeginDragging"]
 - ["So8NSObjectC", "scrollViewWillBeginZooming"]
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
+- ["So8NSObjectC", "searchBar"]
+- ["So8NSObjectC", "subHeaderLabel"]
 - ["So8NSObjectC", "unwindToCompanies"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
@@ -578,13 +599,18 @@ depends-member:
 - ["So11UIResponderC", "Company"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UICollectionView"]
 - ["So11UIResponderC", "UICollectionViewCell"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UISearchBar"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "collectionView"]
 - ["So11UIResponderC", "companies"]
+- ["So11UIResponderC", "countBtn"]
 - !private ["So11UIResponderC", "dataSource"]
 - !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "headerLabel"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So11UIResponderC", "indexTitles"]
@@ -607,6 +633,8 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillBeginDragging"]
 - ["So11UIResponderC", "scrollViewWillBeginZooming"]
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
+- ["So11UIResponderC", "searchBar"]
+- ["So11UIResponderC", "subHeaderLabel"]
 - ["So11UIResponderC", "unwindToCompanies"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
@@ -770,12 +798,17 @@ depends-member:
 - ["So16UIViewControllerC", "Company"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", "UICollectionView"]
 - ["So16UIViewControllerC", "UICollectionViewCell"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UISearchBar"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "collectionView"]
 - ["So16UIViewControllerC", "companies"]
+- ["So16UIViewControllerC", "countBtn"]
+- ["So16UIViewControllerC", "headerLabel"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So16UIViewControllerC", "indexTitles"]
@@ -797,6 +830,8 @@ depends-member:
 - ["So16UIViewControllerC", "scrollViewWillBeginDragging"]
 - ["So16UIViewControllerC", "scrollViewWillBeginZooming"]
 - ["So16UIViewControllerC", "scrollViewWillEndDragging"]
+- ["So16UIViewControllerC", "searchBar"]
+- ["So16UIViewControllerC", "subHeaderLabel"]
 - ["So16UIViewControllerC", "unwindToCompanies"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
@@ -1029,4 +1064,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e1dc0b3d3c8cb90775aa0437895eca68"
+interface-hash: "1ef26036b39998ed7d902b6ecac783dc"

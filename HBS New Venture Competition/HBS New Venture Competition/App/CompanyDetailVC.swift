@@ -15,6 +15,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var logoImageView: AsyncImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var ratingsView: CosmosView!
     @IBOutlet weak var tableView: UITableView!
     
     //data source

@@ -127,6 +127,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "repEmail"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "repFirstName"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "repLastName"]
+- ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "repProfileImageURL"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "sponsors"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9SponsorDBV", "website"]
 - ["SS", "init"]
@@ -323,4 +324,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "932ae54abb64bc3702267e96b355de90"
+interface-hash: "d081cf135dde313feefba19660eb71fc"

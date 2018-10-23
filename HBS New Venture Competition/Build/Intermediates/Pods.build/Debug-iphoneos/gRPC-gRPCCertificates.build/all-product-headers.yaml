@@ -26,6 +26,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Cosmos-Swift.h",
+          'external-contents': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Cosmos-umbrella.h",
+          'external-contents': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Target Support Files/Cosmos/Cosmos-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/Cosmos/Cosmos.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/Cosmos.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Headers",
       'contents': [
         {
