@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -22,30 +21,48 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.allowsSelection = false
+        let px = 1 / UIScreen.main.scale
+        let frame = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: px)
+        let line = UIView(frame: frame)
+        line.backgroundColor = tableView.separatorColor
+        tableView.tableHeaderView = line
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        //rounds corners
+        arrowBtn.layer.masksToBounds = true
+        arrowBtn.layer.cornerRadius = arrowBtn.frame.width/2
     }
     
     // MARK: - Essential Functions
     
-    private var listenerRegistrations = [ListenerRegistration]()
-    
-    private func observeEvents(){
-        
-    }
-    
-    private func removeEventObservers(){
-        
+    private func fetchEvents(){
+        FirebaseManager.manager.fetchEvents { (events, error) in
+            guard let events = events, error == nil else{
+                self.issueAlert(ofType: .dataRetrievalFailed)
+                return
+            }
+            
+            self.events = events
+        }
     }
     
     // MARK: - Tableview Delegate and Datasource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: EventCell.identifier, for: indexPath)
+        if let cell = cell as? EventCell{
+            cell.event = events[indexPath.row]
+        }
+        return cell
     }
 
 }

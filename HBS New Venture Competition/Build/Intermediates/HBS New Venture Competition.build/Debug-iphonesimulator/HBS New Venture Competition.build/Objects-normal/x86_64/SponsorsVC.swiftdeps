@@ -16,6 +16,7 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - !private "IntegerLiteralType"
+- "ListenerRegistration"
 - "Sponsor"
 - "SponsorsVC"
 - "UILabel"
@@ -32,6 +33,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "reloadData"]
+- ["s7CVarArgP", "ListenerRegistration"]
 - ["s7CVarArgP", "Sponsor"]
 - !private ["s7CVarArgP", "UITableViewCell"]
 - ["s7CVarArgP", ""]
@@ -64,6 +66,7 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - ["Sl", "init"]
+- ["s28CustomDebugStringConvertibleP", "ListenerRegistration"]
 - ["s28CustomDebugStringConvertibleP", "Sponsor"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -99,6 +102,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "delegate"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "reloadData"]
+- ["s23CustomStringConvertibleP", "ListenerRegistration"]
 - ["s23CustomStringConvertibleP", "Sponsor"]
 - !private ["s23CustomStringConvertibleP", "UITableViewCell"]
 - ["s23CustomStringConvertibleP", ""]
@@ -138,6 +142,7 @@ depends-member:
 - !private ["SE", "delegate"]
 - ["SE", "init"]
 - !private ["SE", "reloadData"]
+- ["SQ", "ListenerRegistration"]
 - ["SQ", "Sponsor"]
 - !private ["SQ", "UITableViewCell"]
 - ["SQ", ""]
@@ -173,6 +178,7 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "dataSource"]
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadData"]
+- ["SH", "ListenerRegistration"]
 - ["SH", "Sponsor"]
 - !private ["SH", "UITableViewCell"]
 - ["SH", ""]
@@ -205,6 +211,7 @@ depends-member:
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
 - ["SM", "init"]
+- ["So8NSCodingP", "ListenerRegistration"]
 - ["So8NSCodingP", "Sponsor"]
 - !private ["So8NSCodingP", "UITableViewCell"]
 - ["So8NSCodingP", ""]
@@ -236,6 +243,7 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
+- ["So26NSExtensionRequestHandlingP", "ListenerRegistration"]
 - ["So26NSExtensionRequestHandlingP", "Sponsor"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableViewCell"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -266,6 +274,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "ListenerRegistration"]
 - ["So8NSObjectC", "Sponsor"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UITableView"]
@@ -277,9 +286,12 @@ depends-member:
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "listenerRegistrations"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
+- ["So8NSObjectC", "observeSponsors"]
 - !private ["So8NSObjectC", "reloadData"]
+- ["So8NSObjectC", "removeSponsorObservers"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectC", "scrollViewDidEndDragging"]
@@ -301,6 +313,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- ["So8NSObjectP", "ListenerRegistration"]
 - ["So8NSObjectP", "Sponsor"]
 - !private ["So8NSObjectP", "UITableViewCell"]
 - ["So8NSObjectP", ""]
@@ -340,6 +353,7 @@ depends-member:
 - ["ST", "init"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "IndexPath"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "Int"]
+- ["27HBS_New_Venture_Competition10SponsorsVCC", "ListenerRegistration"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "Sponsor"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "UILabel"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "UITableView"]
@@ -349,8 +363,11 @@ depends-member:
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "indexPathForPreferredFocusedView"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "indexPathForPreferredFocusedViewInTableView"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "init"]
+- !private ["27HBS_New_Venture_Competition10SponsorsVCC", "listenerRegistrations"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "numberOfSections"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "numberOfSectionsInTableView"]
+- !private ["27HBS_New_Venture_Competition10SponsorsVCC", "observeSponsors"]
+- !private ["27HBS_New_Venture_Competition10SponsorsVCC", "removeSponsorObservers"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "scrollViewDidChangeAdjustedContentInset"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "scrollViewDidEndDecelerating"]
 - ["27HBS_New_Venture_Competition10SponsorsVCC", "scrollViewDidEndDragging"]
@@ -380,6 +397,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "reloadData"]
+- ["So21UIAppearanceContainerP", "ListenerRegistration"]
 - ["So21UIAppearanceContainerP", "Sponsor"]
 - !private ["So21UIAppearanceContainerP", "UITableViewCell"]
 - ["So21UIAppearanceContainerP", ""]
@@ -411,6 +429,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- ["So18UIContentContainerP", "ListenerRegistration"]
 - ["So18UIContentContainerP", "Sponsor"]
 - !private ["So18UIContentContainerP", "UITableViewCell"]
 - ["So18UIContentContainerP", ""]
@@ -450,6 +469,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "reloadData"]
+- ["So18UIFocusEnvironmentP", "ListenerRegistration"]
 - ["So18UIFocusEnvironmentP", "Sponsor"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewCell"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -493,6 +513,7 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "delegate"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "ListenerRegistration"]
 - ["So30UIPasteConfigurationSupportingP", "Sponsor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -526,6 +547,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "ListenerRegistration"]
 - ["So11UIResponderC", "Sponsor"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UITableView"]
@@ -537,9 +559,12 @@ depends-member:
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "listenerRegistrations"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
+- ["So11UIResponderC", "observeSponsors"]
 - !private ["So11UIResponderC", "reloadData"]
+- ["So11UIResponderC", "removeSponsorObservers"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So11UIResponderC", "scrollViewDidEndDecelerating"]
 - ["So11UIResponderC", "scrollViewDidEndDragging"]
@@ -561,6 +586,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- ["So30UIResponderStandardEditActionsP", "ListenerRegistration"]
 - ["So30UIResponderStandardEditActionsP", "Sponsor"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -595,6 +621,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "dataSource"]
 - !private ["So12UIScrollViewC", "delegate"]
 - !private ["So12UIScrollViewC", "reloadData"]
+- ["So20UIScrollViewDelegateP", "ListenerRegistration"]
 - ["So20UIScrollViewDelegateP", "Sponsor"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewCell"]
 - ["So20UIScrollViewDelegateP", ""]
@@ -623,6 +650,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
+- ["So16UIStateRestoringP", "ListenerRegistration"]
 - ["So16UIStateRestoringP", "Sponsor"]
 - !private ["So16UIStateRestoringP", "UITableViewCell"]
 - ["So16UIStateRestoringP", ""]
@@ -655,6 +683,7 @@ depends-member:
 - !private ["So11UITableViewC", "delegate"]
 - !private ["So11UITableViewC", "reloadData"]
 - !private ["So15UITableViewCellC", "init"]
+- ["So21UITableViewDataSourceP", "ListenerRegistration"]
 - ["So21UITableViewDataSourceP", "Sponsor"]
 - !private ["So21UITableViewDataSourceP", "UITableViewCell"]
 - ["So21UITableViewDataSourceP", ""]
@@ -680,6 +709,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "tableView"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
+- ["So19UITableViewDelegateP", "ListenerRegistration"]
 - ["So19UITableViewDelegateP", "Sponsor"]
 - !private ["So19UITableViewDelegateP", "UITableViewCell"]
 - ["So19UITableViewDelegateP", ""]
@@ -705,6 +735,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "tableView"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
+- ["So18UITraitEnvironmentP", "ListenerRegistration"]
 - ["So18UITraitEnvironmentP", "Sponsor"]
 - !private ["So18UITraitEnvironmentP", "UITableViewCell"]
 - ["So18UITraitEnvironmentP", ""]
@@ -736,6 +767,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- ["So23UIUserActivityRestoringP", "ListenerRegistration"]
 - ["So23UIUserActivityRestoringP", "Sponsor"]
 - !private ["So23UIUserActivityRestoringP", "UITableViewCell"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -773,6 +805,7 @@ depends-member:
 - !private ["So6UIViewC", "reloadData"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- ["So16UIViewControllerC", "ListenerRegistration"]
 - ["So16UIViewControllerC", "Sponsor"]
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UITableView"]
@@ -783,8 +816,11 @@ depends-member:
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "listenerRegistrations"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
+- ["So16UIViewControllerC", "observeSponsors"]
+- ["So16UIViewControllerC", "removeSponsorObservers"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
 - ["So16UIViewControllerC", "scrollViewDidEndDragging"]
@@ -812,6 +848,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - ["s24_DestructorSafeContainerP", "init"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ListenerRegistration"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Sponsor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -911,6 +948,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/FasterVerificationCode.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
@@ -937,6 +975,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FirebaseFirestore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
@@ -999,6 +1038,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
@@ -1020,6 +1060,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
@@ -1034,4 +1075,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "812fa8438f64d85f54d1706888097f88"
+interface-hash: "096c9a7004df33d6fcfd0c2ad029b88f"

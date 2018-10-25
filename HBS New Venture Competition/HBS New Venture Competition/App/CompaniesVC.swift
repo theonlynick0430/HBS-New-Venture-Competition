@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -23,30 +22,48 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        tableView.allowsSelection = false
+        let px = 1 / UIScreen.main.scale
+        let frame = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: px)
+        let line = UIView(frame: frame)
+        line.backgroundColor = tableView.separatorColor
+        tableView.tableHeaderView = line
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        //rounds corners
+        countBtn.layer.masksToBounds = true
+        countBtn.layer.cornerRadius = countBtn.frame.width/2
     }
     
     // MARK: - Essential Functions
     
-    private var listenerRegistrations = [ListenerRegistration]()
-    
-    private func observeCompanies(){
-        
-    }
-    
-    private func removeCompanyObservers(){
-        
+    private func fetchCompanies(){
+        FirebaseManager.manager.fetchCompanies { (companies, error) in
+            guard let companies = companies, error == nil else{
+                self.issueAlert(ofType: .dataRetrievalFailed)
+                return
+            }
+            
+            self.companies = companies
+        }
     }
     
     // MARK: - Tableview Delegate and Datasource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CompanyCell.identifier, for: indexPath)
+        if let cell = cell as? CompanyCell{
+            cell.company = companies[indexPath.row]
+        }
+        return cell
     }
     
     // MARK: - Navigation

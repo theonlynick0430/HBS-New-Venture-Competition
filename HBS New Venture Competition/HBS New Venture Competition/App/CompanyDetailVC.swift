@@ -8,7 +8,6 @@
 
 import UIKit
 import Cosmos
-import Firebase
 
 class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -26,30 +25,44 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.allowsSelection = false
+        let px = 1 / UIScreen.main.scale
+        let frame = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: px)
+        let line = UIView(frame: frame)
+        line.backgroundColor = tableView.separatorColor
+        tableView.tableHeaderView = line
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     // MARK: - Essential Functions
     
-    private var listenerRegistrations = [ListenerRegistration]()
-    
-    private func observeCompanyMembers(){
-        
-    }
-    
-    private func removeCompanyMemberObservers(){
-        
+    private func fetchCompanyMembers(){
+        FirebaseManager.manager.fetchCompanyMembers(companyID: company.companyID) { (companyMembers, error) in
+            guard let companyMembers = companyMembers, error == nil else{
+                self.issueAlert(ofType: .dataRetrievalFailed)
+                return
+            }
+            
+            self.companyMembers = companyMembers
+        }
     }
     
     // MARK: - Tableview Delegate and Datasource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: CompanyMemberCell.identifier, for: indexPath)
+        if let cell = cell as? CompanyMemberCell{
+            cell.companyMember = companyMembers[indexPath.row]
+        }
+        return cell
     }
 
 }
