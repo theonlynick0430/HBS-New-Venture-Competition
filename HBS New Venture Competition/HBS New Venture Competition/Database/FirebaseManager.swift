@@ -13,6 +13,7 @@ class FirebaseManager{
     
     public typealias CompletionHandler = (Error?) -> Void
     public typealias EventCodeCallback = (String?, Error?) -> Void
+    public typealias CurrentEventCallback = (String?, Error?) -> Void
     public typealias CompanyCallback = ([Company]?, Error?) -> Void
     public typealias CompanyMemberCallback = ([CompanyMember]?, Error?) -> Void
     public typealias EventCallback = ([Event]?, Error?) -> Void
@@ -131,11 +132,26 @@ class FirebaseManager{
             var events = [Event]()
             documents.forEach({ (document) in
                 let data = document.data()
+                let eventID = document.documentID
                 let time = data[NameFile.Firebase.EventDB.time] as! Timestamp
                 let description = data[NameFile.Firebase.EventDB.description] as! String
-                events.append(Event(time: time, description: description))
+                events.append(Event(eventID: eventID, time: time, description: description))
             })
             callback(events, nil)
+        }
+    }
+    
+    // Fetches the current event
+    public func fetchCurrentEvent(_ callback: @escaping CurrentEventCallback){
+        events.document(NameFile.Firebase.EventDB.currentEvent).getDocument { (document, error) in
+            guard let document = document, document.exists, let data = document.data(), error == nil else{
+                print("FIREBASE CURRENT EVENT FETCH ERROR: \(String(describing: error?.localizedDescription))")
+                callback(nil, error)
+                return
+            }
+            
+            let currentEventID = data[NameFile.Firebase.EventDB.currentEventID] as! String
+            callback(currentEventID, nil)
         }
     }
     

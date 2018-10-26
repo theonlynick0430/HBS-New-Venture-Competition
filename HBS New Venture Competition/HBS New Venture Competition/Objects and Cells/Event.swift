@@ -11,11 +11,13 @@ import Firebase
 
 class Event{
     
+    var eventID: String
     var time: Timestamp
     var description: String
     
     //initializer
-    init(time: Timestamp, description: String) {
+    init(eventID: String, time: Timestamp, description: String) {
+        self.eventID = eventID
         self.time = time
         self.description = description
     }

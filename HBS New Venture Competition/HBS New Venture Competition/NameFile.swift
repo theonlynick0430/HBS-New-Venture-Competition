@@ -56,6 +56,9 @@ struct NameFile {
         struct EventDB{
             //events <collection>
             static let events = "Events"
+            static let currentEvent = "CurrentEvent"
+                //current event - "CurrentEvent"
+            static let currentEventID = "CurrentEventID"
                 //event <document> - random ID
             static let time = "Time"
             static let description = "Description"

@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2 (swiftlang-1000.11.37.1 clang-1000.11.45.1)"
 options: "d4fc4c15ba4654bde3c0ffe5de42d065"
-build_time: [1540336494, 983308000]
+build_time: [1540575259, 887917000]
 inputs:
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosAccessibility.swift": [1540336438, 0]
   "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosDefaultSettings.swift": [1540336438, 0]

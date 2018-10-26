@@ -24,6 +24,7 @@
 		581519722159BA0000D8E06D /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581519712159BA0000D8E06D /* AppStorage.swift */; };
 		581519752159BA6300D8E06D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581519742159BA6300D8E06D /* Extensions.swift */; };
 		581519772159BB0200D8E06D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581519762159BB0200D8E06D /* AsyncImageView.swift */; };
+		5863FC7021838080001C0D64 /* CountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5863FC6F21838080001C0D64 /* CountVC.xib */; };
 		586DAE24215317C900C35A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE23215317C900C35A5A /* AppDelegate.swift */; };
 		586DAE29215317C900C35A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586DAE27215317C900C35A5A /* Main.storyboard */; };
 		586DAE2C215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE2A215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld */; };
@@ -43,6 +44,7 @@
 		58AD929F2178016E00AAF2A9 /* SponsorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD929E2178016E00AAF2A9 /* SponsorsVC.swift */; };
 		58AD92A32178019200AAF2A9 /* CoordinatorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD92A22178019200AAF2A9 /* CoordinatorsVC.swift */; };
 		58EB26902153225600C6625C /* NameFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB268F2153225600C6625C /* NameFile.swift */; };
+		58EB365B218385FD00011914 /* CountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB365A218385FD00011914 /* CountVC.swift */; };
 		75220667E1666D2D2580ADFC /* Pods_HBS_New_Venture_Competition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,7 @@
 		581519712159BA0000D8E06D /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
 		581519742159BA6300D8E06D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		581519762159BB0200D8E06D /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		5863FC6F21838080001C0D64 /* CountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountVC.xib; sourceTree = "<group>"; };
 		586DAE20215317C900C35A5A /* HBS New Venture Competition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HBS New Venture Competition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		586DAE23215317C900C35A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		586DAE28215317C900C35A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 		58AD929E2178016E00AAF2A9 /* SponsorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsVC.swift; sourceTree = "<group>"; };
 		58AD92A22178019200AAF2A9 /* CoordinatorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsVC.swift; sourceTree = "<group>"; };
 		58EB268F2153225600C6625C /* NameFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFile.swift; sourceTree = "<group>"; };
+		58EB365A218385FD00011914 /* CountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountVC.swift; sourceTree = "<group>"; };
 		7CF488D4864C78ED917DD4C9 /* Pods-HBS New Venture Competition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBS New Venture Competition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBS_New_Venture_Competition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -181,6 +185,8 @@
 				5815196F2159B9C700D8E06D /* App.storyboard */,
 				58AD92982178012E00AAF2A9 /* EventsVC.swift */,
 				58AD929A2178013A00AAF2A9 /* CompaniesVC.swift */,
+				58EB365A218385FD00011914 /* CountVC.swift */,
+				5863FC6F21838080001C0D64 /* CountVC.xib */,
 				5800167A217E7486000A9DD7 /* CompanyDetailVC.swift */,
 				58AD929C2178014700AAF2A9 /* JudgesVC.swift */,
 				58AD929E2178016E00AAF2A9 /* SponsorsVC.swift */,
@@ -379,6 +385,7 @@
 				581519702159B9C700D8E06D /* App.storyboard in Resources */,
 				586DAE2E215317CB00C35A5A /* Assets.xcassets in Resources */,
 				586DAE29215317C900C35A5A /* Main.storyboard in Resources */,
+				5863FC7021838080001C0D64 /* CountVC.xib in Resources */,
 				5815196A2159956C00D8E06D /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +480,7 @@
 			files = (
 				58AD929F2178016E00AAF2A9 /* SponsorsVC.swift in Sources */,
 				586DAE24215317C900C35A5A /* AppDelegate.swift in Sources */,
+				58EB365B218385FD00011914 /* CountVC.swift in Sources */,
 				5806212421546060006873B2 /* Coordinator.swift in Sources */,
 				5806211A21545DC5006873B2 /* FirebaseManager.swift in Sources */,
 				5806212221546055006873B2 /* Sponsor.swift in Sources */,
@@ -676,7 +684,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GDW3R68F5;
 				INFOPLIST_FILE = "HBS New Venture Competition/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-Competition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -694,7 +705,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GDW3R68F5;
 				INFOPLIST_FILE = "HBS New Venture Competition/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-Competition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -711,7 +725,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture CompetitionTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -728,7 +746,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture CompetitionTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -744,7 +766,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture CompetitionUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -760,7 +786,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = "HBS New Venture CompetitionUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-CompetitionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

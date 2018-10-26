@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -36,6 +37,11 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //rounds corners
         arrowBtn.layer.masksToBounds = true
         arrowBtn.layer.cornerRadius = arrowBtn.frame.width/2
+        
+        arrowBtn.addTarget(self, action: #selector(EventsVC.arrowBtnPressed(_:)), for: .touchUpInside)
+        
+        //setup
+        fetchEvents()
     }
     
     // MARK: - Essential Functions
@@ -48,6 +54,23 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             
             self.events = events
+        }
+    }
+    
+    // MARK: - Helper Functions
+    
+    @objc private func arrowBtnPressed(_ sender: UIButton){
+        FirebaseManager.manager.fetchCurrentEvent { (currentEventID, error) in
+            guard let currentEventID = currentEventID, error == nil else{
+                self.issueAlert(ofType: .dataRetrievalFailed)
+                return
+            }
+            
+            for (index, value) in self.events.enumerated(){
+                if value.eventID == currentEventID{
+                    self.tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .middle, animated: true)
+                }
+            }
         }
     }
     

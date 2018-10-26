@@ -213,6 +213,8 @@ depends-member:
 - !private ["SQ", "uuidString"]
 - !private ["s5ErrorP", "localizedDescription"]
 - !private ["27HBS_New_Venture_Competition5EventC", "init"]
+- !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7EventDBV", "currentEvent"]
+- !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7EventDBV", "currentEventID"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7EventDBV", "description"]
 - ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7EventDBV", "events"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV7EventDBV", "time"]
@@ -240,6 +242,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "CompletionHandler"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "Coordinator"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "CoordinatorCallback"]
+- ["27HBS_New_Venture_Competition15FirebaseManagerC", "CurrentEventCallback"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "DispatchGroup"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "DocumentReference"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "EVENT_CODE_DOC"]
@@ -269,6 +272,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchCompanies"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchCompanyMembers"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchCoordinators"]
+- ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchCurrentEvent"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchEventCode"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchEvents"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchJudges"]
@@ -656,4 +660,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "be46b584f4c940c3bdbb330e082c2095"
+interface-hash: "16f362aebb6eab3f7205e0c74dc2c4a7"

@@ -15,6 +15,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition5EventC", "String"]
 - ["27HBS_New_Venture_Competition5EventC", "Timestamp"]
 - ["27HBS_New_Venture_Competition5EventC", "description"]
+- ["27HBS_New_Venture_Competition5EventC", "eventID"]
 - ["27HBS_New_Venture_Competition5EventC", "init"]
 - ["27HBS_New_Venture_Competition5EventC", "time"]
 depends-nominal:
@@ -152,4 +153,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "08f4b72035920dc882c4598bef443085"
+interface-hash: "366a77ecb1d4c97516ea36514b9af04e"
