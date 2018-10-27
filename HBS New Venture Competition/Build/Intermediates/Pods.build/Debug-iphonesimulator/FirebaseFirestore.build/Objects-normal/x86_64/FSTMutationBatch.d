@@ -1,8 +1,6 @@
 dependencies: \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Model/FSTMutationBatch.mm \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Model/FSTMutationBatch.h \
-  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTTypes.h \
-  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/types.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/document_key.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocumentKey.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/resource_path.h \
@@ -42,6 +40,7 @@ dependencies: \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/comparator_holder.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/snapshot_version.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/timestamp.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/types.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Public/FIRTimestamp.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocument.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/field_path.h \

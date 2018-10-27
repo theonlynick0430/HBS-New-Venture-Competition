@@ -1,8 +1,6 @@
 dependencies: \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTEventManager.mm \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTEventManager.h \
-  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTTypes.h \
-  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/types.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTViewSnapshot.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Remote/FSTRemoteStore.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Remote/FSTRemoteEvent.h \
@@ -47,8 +45,10 @@ dependencies: \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/comparator_holder.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/snapshot_version.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/timestamp.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/types.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/auth/user.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTQuery.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/field_path.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTSyncEngine.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTTypes.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocumentSet.h

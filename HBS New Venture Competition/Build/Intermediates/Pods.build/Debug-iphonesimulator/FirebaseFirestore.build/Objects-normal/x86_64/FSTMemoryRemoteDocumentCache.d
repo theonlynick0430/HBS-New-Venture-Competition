@@ -1,8 +1,6 @@
 dependencies: \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Local/FSTMemoryRemoteDocumentCache.mm \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Local/FSTMemoryRemoteDocumentCache.h \
-  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTTypes.h \
-  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/types.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Local/FSTRemoteDocumentCache.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocumentDictionary.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/third_party/Immutable/FSTImmutableSortedDictionary.h \
@@ -28,6 +26,34 @@ dependencies: \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128_have_intrinsic.inc \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/hashing.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/comparison.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/types.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBProtocolBuffers.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBBootstrap.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBArray.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBRuntimeTypes.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBCodedInputStream.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBCodedOutputStream.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBWireFormat.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBDescriptor.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBDictionary.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBExtensionRegistry.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBMessage.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBRootObject.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBUnknownField.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBUnknownFieldSet.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBUtilities.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/GPBWellKnownTypes.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Protos/objc/firestore/local/MaybeDocument.pbobjc.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Core/FSTQuery.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/field_path.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Local/FSTMemoryPersistence.h \
@@ -35,6 +61,9 @@ dependencies: \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Local/FSTQueryData.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/snapshot_version.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/timestamp.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Local/FSTLocalSerializer.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Local/FSTPersistence.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/auth/user.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/status.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/firestore_errors.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocument.h

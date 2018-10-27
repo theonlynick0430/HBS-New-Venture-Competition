@@ -40,6 +40,7 @@ dependencies: \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/database_id.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/hashing.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Util/FSTDispatchQueue.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/types.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/Source/Util/FSTUsageValidation.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/auth/firebase_credentials_provider_apple.h \
   /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS\ New\ Venture\ Competition/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/memory/memory.h \

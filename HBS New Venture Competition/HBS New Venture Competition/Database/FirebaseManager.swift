@@ -75,10 +75,10 @@ class FirebaseManager{
                 
                 dispatch.enter()
                 self.companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).getDocument(completion: { (document, error) in
-                    if let document = document, document.exists, let data = document.data(), let stars = data[NameFile.Firebase.CompanyDB.stars] as? Int{
-                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: stars))
+                    if let document = document, document.exists, let data = document.data(), let rating = data[NameFile.Firebase.CompanyDB.rating] as? Double{
+                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, rating: rating))
                     }else{
-                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: 0))
+                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, rating: 0))
                     }
                     dispatch.leave()
                 })
@@ -116,8 +116,8 @@ class FirebaseManager{
     }
     
     // Adds a device specific vote to a company
-    public func addVote(_ companyID: String, stars: Int, completionHandler: CompletionHandler? = nil){
-        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).setData([NameFile.Firebase.CompanyDB.stars : stars], completion: completionHandler)
+    public func addVote(_ companyID: String, rating: Double, completionHandler: CompletionHandler? = nil){
+        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.rating).document(UIDevice.current.identifierForVendor!.uuidString).setData([NameFile.Firebase.CompanyDB.rating : rating], completion: completionHandler)
     }
     
     // Fetches all events

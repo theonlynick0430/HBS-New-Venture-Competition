@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import ESPullToRefresh
 import Firebase
 
 class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -32,18 +34,36 @@ class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         line.backgroundColor = tableView.separatorColor
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        //setup
+        setupRefresh()
+        fetchSponsors()
     }
     
     // MARK: - Essential Functions
     
     private func fetchSponsors(){
+        
+        SVProgressHUD.show()
+        
         FirebaseManager.manager.fetchSponsors { (sponsors, error) in
+            SVProgressHUD.dismiss()
             guard let sponsors = sponsors, error == nil else{
                 self.issueAlert(ofType: .dataRetrievalFailed)
                 return
             }
             
             self.sponsors = sponsors
+            self.sponsors.sort(by: { $0.name < $1.name })
+        }
+    }
+    
+    // MARK: - Helper Functions
+    
+    private func setupRefresh(){
+        tableView.es.addPullToRefresh {
+            self.tableView.es.stopPullToRefresh()
+            self.fetchSponsors()
         }
     }
     

@@ -8,6 +8,8 @@
 
 import UIKit
 import Cosmos
+import SVProgressHUD
+import ESPullToRefresh
 
 class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -20,7 +22,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var tableView: UITableView!
     
     //data source
-    var company: Company!
+    var company: Company! { didSet{ fetchCompanyMembers(); loadData() } }
     private var companyMembers = [CompanyMember]() { didSet{ tableView.reloadData() } }
     
     override func viewDidLoad() {
@@ -36,19 +38,60 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         line.backgroundColor = tableView.separatorColor
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        //setup
+        setupRefresh()
+        setupRatings()
     }
     
     // MARK: - Essential Functions
     
     private func fetchCompanyMembers(){
+        
+        SVProgressHUD.show()
+        
         FirebaseManager.manager.fetchCompanyMembers(companyID: company.companyID) { (companyMembers, error) in
+            SVProgressHUD.dismiss()
             guard let companyMembers = companyMembers, error == nil else{
                 self.issueAlert(ofType: .dataRetrievalFailed)
                 return
             }
             
             self.companyMembers = companyMembers
+            self.companyMembers.sort(by: { "\($0.firstName) \($0.lastName)" < "\($1.firstName) \($1.lastName)" })
         }
+    }
+    
+    // MARK: - Helper Functions
+    
+    private func setupRatings(){
+        ratingsView.didFinishTouchingCosmos = { rating in
+            if rating != self.company.rating{
+                FirebaseManager.manager.addVote(self.company.companyID, rating: rating, completionHandler: { (error) in
+                    guard error == nil else{
+                        self.ratingsView.rating = self.company.rating
+                        self.issueAlert(ofType: .requestFailed)
+                        return
+                    }
+                    
+                    self.company.rating = rating
+                })
+            }
+        }
+    }
+    
+    private func setupRefresh(){
+        tableView.es.addPullToRefresh {
+            self.tableView.es.stopPullToRefresh()
+            self.fetchCompanyMembers()
+        }
+    }
+    
+    private func loadData(){
+        headerLabel.text = company.name
+        logoImageView.setFirebaseURL(firebaseURL: company.logoImageURL)
+        descriptionLabel.text = company.description
+        ratingsView.rating = company.rating
     }
     
     // MARK: - Tableview Delegate and Datasource

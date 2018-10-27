@@ -50,7 +50,7 @@ struct NameFile {
                     //votes <collection>
             static let votes = "Votes"
                         //vote <document> - deviceID
-            static let stars = "Stars"
+            static let rating = "Rating"
         }
         
         struct EventDB{

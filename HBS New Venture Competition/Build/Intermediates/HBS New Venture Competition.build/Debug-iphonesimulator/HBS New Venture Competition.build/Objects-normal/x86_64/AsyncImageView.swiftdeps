@@ -12,7 +12,7 @@ depends-top-level:
 - !private "*"
 - "AssignmentPrecedence"
 - "AsyncImageView"
-- "BooleanLiteralType"
+- !private "BooleanLiteralType"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - !private "Storage"
@@ -27,6 +27,7 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition14AsyncImageViewC", "UIColor"]
 - ["27HBS_New_Venture_Competition14AsyncImageViewC", "UIImage"]
 - !private ["27HBS_New_Venture_Competition14AsyncImageViewC", "cached"]
+- ["27HBS_New_Venture_Competition14AsyncImageViewC", "deinit"]
 - ["27HBS_New_Venture_Competition14AsyncImageViewC", "firebaseURL"]
 - !private ["27HBS_New_Venture_Competition14AsyncImageViewC", "image"]
 - ["27HBS_New_Venture_Competition14AsyncImageViewC", "init"]

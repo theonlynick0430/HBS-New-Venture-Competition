@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import ESPullToRefresh
 
 class CoordinatorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -31,18 +33,36 @@ class CoordinatorsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         line.backgroundColor = tableView.separatorColor
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        //setup
+        setupRefresh()
+        fetchCoordinators()
     }
     
     // MARK: - Essential Functions
     
     private func fetchCoordinators(){
+        
+        SVProgressHUD.show()
+        
         FirebaseManager.manager.fetchCoordinators { (coordinators, error) in
+            SVProgressHUD.dismiss()
             guard let coordinators = coordinators, error == nil else{
                 self.issueAlert(ofType: .dataRetrievalFailed)
                 return
             }
             
             self.coordinators = coordinators
+            self.coordinators.sort(by: { "\($0.firstName) \($0.lastName)" < "\($1.firstName) \($1.lastName)" })
+        }
+    }
+    
+    // MARK: - Helper Functions
+    
+    private func setupRefresh(){
+        tableView.es.addPullToRefresh {
+            self.tableView.es.stopPullToRefresh()
+            self.fetchCoordinators()
         }
     }
     

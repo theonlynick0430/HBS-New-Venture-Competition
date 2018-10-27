@@ -8,6 +8,8 @@
 
 import UIKit
 import PopupDialog
+import SVProgressHUD
+import ESPullToRefresh
 
 class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
     
@@ -39,23 +41,36 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         
         //setup
         setupSearchBar()
+        setupRefresh()
         fetchCompanies()
     }
     
     // MARK: - Essential Functions
     
     private func fetchCompanies(){
+        
+        SVProgressHUD.show()
+        
         FirebaseManager.manager.fetchCompanies { (companies, error) in
+            SVProgressHUD.dismiss()
             guard let companies = companies, error == nil else{
                 self.issueAlert(ofType: .dataRetrievalFailed)
                 return
             }
             
             self.companies = companies
+            self.companies.sort(by: { $0.order < $1.order })
         }
     }
     
     // MARK: - Helper Functions
+    
+    private func setupRefresh(){
+        collectionView.es.addPullToRefresh {
+            self.collectionView.es.stopPullToRefresh()
+            self.fetchCompanies()
+        }
+    }
     
     @objc private func countBtnPressed(_ sender: UIButton){
         let countVC = CountVC(nibName: "CountVC", bundle: Bundle.main)

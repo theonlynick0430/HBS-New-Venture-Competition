@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ESPullToRefresh
+import SVProgressHUD
 import Firebase
 
 class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -41,23 +43,36 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         arrowBtn.addTarget(self, action: #selector(EventsVC.arrowBtnPressed(_:)), for: .touchUpInside)
         
         //setup
+        setupRefresh()
         fetchEvents()
     }
     
     // MARK: - Essential Functions
     
     private func fetchEvents(){
+        
+        SVProgressHUD.show()
+        
         FirebaseManager.manager.fetchEvents { (events, error) in
+            SVProgressHUD.dismiss()
             guard let events = events, error == nil else{
                 self.issueAlert(ofType: .dataRetrievalFailed)
                 return
             }
             
             self.events = events
+            self.events.sort(by: { $0.time.dateValue() < $1.time.dateValue() })
         }
     }
     
     // MARK: - Helper Functions
+    
+    private func setupRefresh(){
+        tableView.es.addPullToRefresh {
+            self.tableView.es.stopPullToRefresh()
+            self.fetchEvents()
+        }
+    }
     
     @objc private func arrowBtnPressed(_ sender: UIButton){
         FirebaseManager.manager.fetchCurrentEvent { (currentEventID, error) in
@@ -68,7 +83,10 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             for (index, value) in self.events.enumerated(){
                 if value.eventID == currentEventID{
-                    self.tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .middle, animated: true)
+                    self.tableView.selectRow(at: IndexPath(row: index, section: 0), animated: true, scrollPosition: .top)
+                    Timer.scheduledTimer(withTimeInterval: TimeInterval(exactly: 2)!, repeats: false, block: { (_) in
+                        self.tableView.deselectRow(at: IndexPath(row: index, section: 0), animated: true)
+                    })
                 }
             }
         }

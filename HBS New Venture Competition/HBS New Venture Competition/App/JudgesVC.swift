@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import ESPullToRefresh
 
 class JudgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -31,18 +33,36 @@ class JudgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         line.backgroundColor = tableView.separatorColor
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        //setup
+        setupRefresh()
+        fetchJudges()
     }
     
     // MARK: - Essential Functions
     
     private func fetchJudges(){
+        
+        SVProgressHUD.show()
+        
         FirebaseManager.manager.fetchJudges { (judges, error) in
+            SVProgressHUD.dismiss()
             guard let judges = judges, error == nil else{
                 self.issueAlert(ofType: .dataRetrievalFailed)
                 return
             }
             
             self.judges = judges
+            self.judges.sort(by: { "\($0.firstName) \($0.lastName)" < "\($1.firstName) \($1.lastName)" })
+        }
+    }
+    
+    // MARK: - Helper Functions
+    
+    private func setupRefresh(){
+        tableView.es.addPullToRefresh {
+            self.tableView.es.stopPullToRefresh()
+            self.fetchJudges()
         }
     }
     

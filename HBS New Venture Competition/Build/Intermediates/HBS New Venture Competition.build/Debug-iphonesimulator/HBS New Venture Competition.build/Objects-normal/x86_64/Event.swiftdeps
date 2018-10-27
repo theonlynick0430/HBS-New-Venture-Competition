@@ -14,6 +14,7 @@ depends-top-level:
 depends-member:
 - ["27HBS_New_Venture_Competition5EventC", "String"]
 - ["27HBS_New_Venture_Competition5EventC", "Timestamp"]
+- ["27HBS_New_Venture_Competition5EventC", "deinit"]
 - ["27HBS_New_Venture_Competition5EventC", "description"]
 - ["27HBS_New_Venture_Competition5EventC", "eventID"]
 - ["27HBS_New_Venture_Competition5EventC", "init"]
