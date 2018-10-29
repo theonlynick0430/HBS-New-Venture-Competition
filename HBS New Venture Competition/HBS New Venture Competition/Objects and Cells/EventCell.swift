@@ -27,7 +27,7 @@ class EventCell: UITableViewCell {
         let eventDate = event.time.dateValue()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "h:mm a"
-        timeLabel.text = dateFormatter.string(from: eventDate).capitalized
+        timeLabel.text = dateFormatter.string(from: eventDate)
         descriptionLabel.text = event.description
     }
 

@@ -7,6 +7,7 @@ provides-member:
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
 - !private "=="
 - !private "CastingPrecedence"
 - "Company"
@@ -15,12 +16,13 @@ depends-top-level:
 - !private "Dictionary"
 - !private "DispatchGroup"
 - "DocumentReference"
+- "Double"
 - "Error"
 - "Event"
 - "FirebaseManager"
 - "Firestore"
 - "FloatLiteralType"
-- "Int"
+- !private "Int"
 - "IntegerLiteralType"
 - "Judge"
 - "NameFile"
@@ -90,7 +92,7 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "phoneNumber"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "position"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "profileImageURL"]
-- !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "stars"]
+- !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "rating"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV9CompanyDBV", "votes"]
 - !private ["27HBS_New_Venture_Competition13CompanyMemberC", "init"]
 - !private ["SL", "init"]
@@ -245,6 +247,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "CurrentEventCallback"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "DispatchGroup"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "DocumentReference"]
+- ["27HBS_New_Venture_Competition15FirebaseManagerC", "Double"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "EVENT_CODE_DOC"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "Error"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "Event"]
@@ -252,7 +255,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "EventCodeCallback"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "FirebaseManager"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "Firestore"]
-- ["27HBS_New_Venture_Competition15FirebaseManagerC", "Int"]
+- !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "Int"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "Judge"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "JudgeCallback"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "NameFile"]
@@ -268,7 +271,6 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "companies"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "coordinators"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "database"]
-- ["27HBS_New_Venture_Competition15FirebaseManagerC", "deinit"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "events"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchCompanies"]
 - ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchCompanyMembers"]
@@ -534,6 +536,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/FasterVerificationCode.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -560,6 +563,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FirebaseFirestore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-umbrella.h"
@@ -624,6 +628,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -644,6 +649,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
@@ -661,4 +667,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "16f362aebb6eab3f7205e0c74dc2c4a7"
+interface-hash: "f131407352468b534119d552e17cf016"

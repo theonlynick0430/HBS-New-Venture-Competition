@@ -133,9 +133,11 @@ class FirebaseManager{
             documents.forEach({ (document) in
                 let data = document.data()
                 let eventID = document.documentID
-                let time = data[NameFile.Firebase.EventDB.time] as! Timestamp
-                let description = data[NameFile.Firebase.EventDB.description] as! String
-                events.append(Event(eventID: eventID, time: time, description: description))
+                if eventID != "CurrentEvent"{
+                    let time = data[NameFile.Firebase.EventDB.time] as! Timestamp
+                    let description = data[NameFile.Firebase.EventDB.description] as! String
+                    events.append(Event(eventID: eventID, time: time, description: description))
+                }
             })
             callback(events, nil)
         }

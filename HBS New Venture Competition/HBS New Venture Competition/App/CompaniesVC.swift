@@ -11,7 +11,7 @@ import PopupDialog
 import SVProgressHUD
 import ESPullToRefresh
 
-class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
+class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, UICollectionViewDelegateFlowLayout {
     
     //outlets
     @IBOutlet weak var headerLabel: UILabel!
@@ -111,7 +111,12 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         searchBar.placeholder = "Search companies"
     }
     
-    // MARK: - Tableview Delegate and Datasource
+    // MARK: - Collection View Delegate and Datasource
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        print("I AM HERE")
+        return CGSize(width: view.frame.width-30, height: 125)
+    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -128,9 +133,9 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CompanyCell.identifier, for: indexPath)
         if let cell = cell as? CompanyCell{
             if searchInProgress{
-                cell.company = companies[indexPath.row]
-            }else{
                 cell.company = filteredCompanies[indexPath.row]
+            }else{
+                cell.company = companies[indexPath.row]
             }
         }
         return cell

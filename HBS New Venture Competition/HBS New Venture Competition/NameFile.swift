@@ -81,7 +81,7 @@ struct NameFile {
                 //sponsor <document> - random ID
             static let name = "Name"
             static let description = "Description"
-            static let logoImageURL = "logoImageURL"
+            static let logoImageURL = "LogoImageURL"
             static let prize = "Prize"
             static let website = "Website"
             static let repProfileImageURL = "RepProfileImageURL"

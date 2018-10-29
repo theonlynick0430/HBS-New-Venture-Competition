@@ -15,8 +15,6 @@ depends-top-level:
 - !private "BounceUpTransition"
 - !private "DismissInteractiveTransition"
 - !private "FadeTransition"
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
 - "InteractiveTransition"
 - "NSObject"
 - "PopupDialogTransitionStyle"

@@ -435,6 +435,7 @@ depends-member:
 - ["11PopupDialog0aB6ButtonC", "defaultSeparatorColor"]
 - ["11PopupDialog0aB6ButtonC", "defaultTitleColor"]
 - ["11PopupDialog0aB6ButtonC", "defaultTitleFont"]
+- ["11PopupDialog0aB6ButtonC", "deinit"]
 - ["11PopupDialog0aB6ButtonC", "dismissOnTap"]
 - !private ["11PopupDialog0aB6ButtonC", "fatalError"]
 - ["11PopupDialog0aB6ButtonC", "init"]

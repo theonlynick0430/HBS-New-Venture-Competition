@@ -101,11 +101,19 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CompanyMemberCell.identifier, for: indexPath)
-        if let cell = cell as? CompanyMemberCell{
-            cell.companyMember = companyMembers[indexPath.row]
+        if UIDevice.current.deviceIsiPad{
+            let cell = tableView.dequeueReusableCell(withIdentifier: CompanyMemberLargeCell.identifier, for: indexPath)
+            if let cell = cell as? CompanyMemberLargeCell{
+                cell.companyMember = companyMembers[indexPath.row]
+            }
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: CompanyMemberCell.identifier, for: indexPath)
+            if let cell = cell as? CompanyMemberCell{
+                cell.companyMember = companyMembers[indexPath.row]
+            }
+            return cell
         }
-        return cell
     }
 
 }

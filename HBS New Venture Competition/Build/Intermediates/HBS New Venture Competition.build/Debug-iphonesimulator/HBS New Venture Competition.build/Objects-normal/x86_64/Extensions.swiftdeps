@@ -20,7 +20,8 @@ provides-member:
 - ["So7UIImageC", "init"]
 - ["So16UIViewControllerC", "issueAlert"]
 - ["So16UIViewControllerC", "issueRemovalAlert"]
-- ["So8UIDeviceC", "isLargeDevice"]
+- ["So8UIDeviceC", "deviceIsLarge"]
+- ["So8UIDeviceC", "deviceIsiPad"]
 provides-dynamic-lookup:
 - "placeHolderColor"
 depends-top-level:
@@ -142,6 +143,7 @@ depends-member:
 - !private ["s7CVarArgP", "PopupDialog"]
 - !private ["s7CVarArgP", "PopupDialogButton"]
 - !private ["s7CVarArgP", "Style"]
+- !private ["s7CVarArgP", "UIDevice"]
 - !private ["s7CVarArgP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["s7CVarArgP", "UIGraphicsEndImageContext"]
 - !private ["s7CVarArgP", "UIGraphicsGetImageFromCurrentImageContext"]
@@ -153,6 +155,7 @@ depends-member:
 - !private ["s7CVarArgP", "addButton"]
 - !private ["s7CVarArgP", "attributedPlaceholder"]
 - !private ["s7CVarArgP", "cgImage"]
+- !private ["s7CVarArgP", "current"]
 - !private ["s7CVarArgP", "duration"]
 - !private ["s7CVarArgP", "font"]
 - !private ["s7CVarArgP", "frame"]
@@ -172,6 +175,7 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "subviews"]
 - !private ["s7CVarArgP", "timingFunction"]
+- !private ["s7CVarArgP", "userInterfaceIdiom"]
 - !private ["s7CVarArgP", "values"]
 - !private ["s7CVarArgP", "view"]
 - !private ["11PopupDialog12CancelButtonC", "init"]
@@ -194,6 +198,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "PopupDialog"]
 - !private ["s28CustomDebugStringConvertibleP", "PopupDialogButton"]
 - !private ["s28CustomDebugStringConvertibleP", "Style"]
+- !private ["s28CustomDebugStringConvertibleP", "UIDevice"]
 - !private ["s28CustomDebugStringConvertibleP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "UIGraphicsEndImageContext"]
 - !private ["s28CustomDebugStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
@@ -203,6 +208,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "addButton"]
 - !private ["s28CustomDebugStringConvertibleP", "attributedPlaceholder"]
 - !private ["s28CustomDebugStringConvertibleP", "cgImage"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
 - !private ["s28CustomDebugStringConvertibleP", "duration"]
 - !private ["s28CustomDebugStringConvertibleP", "font"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
@@ -223,6 +229,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "subviews"]
 - !private ["s28CustomDebugStringConvertibleP", "timingFunction"]
+- !private ["s28CustomDebugStringConvertibleP", "userInterfaceIdiom"]
 - !private ["s28CustomDebugStringConvertibleP", "values"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
@@ -264,6 +271,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "PopupDialog"]
 - !private ["s23CustomStringConvertibleP", "PopupDialogButton"]
 - !private ["s23CustomStringConvertibleP", "Style"]
+- !private ["s23CustomStringConvertibleP", "UIDevice"]
 - !private ["s23CustomStringConvertibleP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["s23CustomStringConvertibleP", "UIGraphicsEndImageContext"]
 - !private ["s23CustomStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
@@ -275,6 +283,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addButton"]
 - !private ["s23CustomStringConvertibleP", "attributedPlaceholder"]
 - !private ["s23CustomStringConvertibleP", "cgImage"]
+- !private ["s23CustomStringConvertibleP", "current"]
 - !private ["s23CustomStringConvertibleP", "duration"]
 - !private ["s23CustomStringConvertibleP", "font"]
 - !private ["s23CustomStringConvertibleP", "frame"]
@@ -294,6 +303,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "subviews"]
 - !private ["s23CustomStringConvertibleP", "timingFunction"]
+- !private ["s23CustomStringConvertibleP", "userInterfaceIdiom"]
 - !private ["s23CustomStringConvertibleP", "values"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["Se", "NSNumber"]
@@ -336,6 +346,7 @@ depends-member:
 - !private ["SQ", "PopupDialog"]
 - !private ["SQ", "PopupDialogButton"]
 - !private ["SQ", "Style"]
+- !private ["SQ", "UIDevice"]
 - !private ["SQ", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["SQ", "UIGraphicsEndImageContext"]
 - !private ["SQ", "UIGraphicsGetImageFromCurrentImageContext"]
@@ -349,6 +360,7 @@ depends-member:
 - !private ["SQ", "attributedPlaceholder"]
 - !private ["SQ", "bounceDown"]
 - !private ["SQ", "cgImage"]
+- !private ["SQ", "current"]
 - ["SQ", "dataRetrievalFailed"]
 - !private ["SQ", "decimal"]
 - !private ["SQ", "duration"]
@@ -367,6 +379,7 @@ depends-member:
 - !private ["SQ", "nativeBounds"]
 - !private ["SQ", "numberOfDigits"]
 - !private ["SQ", "numberStyle"]
+- ["SQ", "pad"]
 - !private ["SQ", "placeHolderColor"]
 - !private ["SQ", "placeholder"]
 - !private ["SQ", "present"]
@@ -377,6 +390,7 @@ depends-member:
 - !private ["SQ", "subscript"]
 - !private ["SQ", "subviews"]
 - !private ["SQ", "timingFunction"]
+- !private ["SQ", "userInterfaceIdiom"]
 - !private ["SQ", "values"]
 - !private ["SQ", "view"]
 - !private ["SQ", "width"]
@@ -418,6 +432,7 @@ depends-member:
 - !private ["SH", "PopupDialog"]
 - !private ["SH", "PopupDialogButton"]
 - !private ["SH", "Style"]
+- !private ["SH", "UIDevice"]
 - !private ["SH", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["SH", "UIGraphicsEndImageContext"]
 - !private ["SH", "UIGraphicsGetImageFromCurrentImageContext"]
@@ -431,6 +446,7 @@ depends-member:
 - !private ["SH", "attributedPlaceholder"]
 - !private ["SH", "bounceDown"]
 - !private ["SH", "cgImage"]
+- !private ["SH", "current"]
 - ["SH", "dataRetrievalFailed"]
 - !private ["SH", "decimal"]
 - !private ["SH", "duration"]
@@ -448,6 +464,7 @@ depends-member:
 - !private ["SH", "nativeBounds"]
 - !private ["SH", "numberOfDigits"]
 - !private ["SH", "numberStyle"]
+- ["SH", "pad"]
 - !private ["SH", "placeHolderColor"]
 - !private ["SH", "placeholder"]
 - !private ["SH", "present"]
@@ -457,6 +474,7 @@ depends-member:
 - !private ["SH", "subscript"]
 - !private ["SH", "subviews"]
 - !private ["SH", "timingFunction"]
+- !private ["SH", "userInterfaceIdiom"]
 - !private ["SH", "values"]
 - !private ["SH", "view"]
 - !private ["s6HasherV", "combine"]
@@ -568,6 +586,7 @@ depends-member:
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "Style"]
 - ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UIDevice"]
 - ["So8NSObjectC", "UIFont"]
 - !private ["So8NSObjectC", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So8NSObjectC", "UIGraphicsEndImageContext"]
@@ -582,11 +601,13 @@ depends-member:
 - !private ["So8NSObjectC", "attributedPlaceholder"]
 - !private ["So8NSObjectC", "cgImage"]
 - ["So8NSObjectC", "change"]
+- !private ["So8NSObjectC", "current"]
+- ["So8NSObjectC", "deviceIsLarge"]
+- ["So8NSObjectC", "deviceIsiPad"]
 - !private ["So8NSObjectC", "duration"]
 - !private ["So8NSObjectC", "font"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "init"]
-- ["So8NSObjectC", "isLargeDevice"]
 - ["So8NSObjectC", "issueAlert"]
 - ["So8NSObjectC", "issueRemovalAlert"]
 - !private ["So8NSObjectC", "kCAMediaTimingFunctionLinear"]
@@ -602,6 +623,7 @@ depends-member:
 - !private ["So8NSObjectC", "string"]
 - !private ["So8NSObjectC", "subviews"]
 - !private ["So8NSObjectC", "timingFunction"]
+- !private ["So8NSObjectC", "userInterfaceIdiom"]
 - !private ["So8NSObjectC", "values"]
 - !private ["So8NSObjectC", "view"]
 - !private ["So8NSObjectP", "CAKeyframeAnimation"]
@@ -614,6 +636,7 @@ depends-member:
 - !private ["So8NSObjectP", "PopupDialog"]
 - !private ["So8NSObjectP", "PopupDialogButton"]
 - !private ["So8NSObjectP", "Style"]
+- !private ["So8NSObjectP", "UIDevice"]
 - !private ["So8NSObjectP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So8NSObjectP", "UIGraphicsEndImageContext"]
 - !private ["So8NSObjectP", "UIGraphicsGetImageFromCurrentImageContext"]
@@ -623,6 +646,7 @@ depends-member:
 - !private ["So8NSObjectP", "addButton"]
 - !private ["So8NSObjectP", "attributedPlaceholder"]
 - !private ["So8NSObjectP", "cgImage"]
+- !private ["So8NSObjectP", "current"]
 - !private ["So8NSObjectP", "duration"]
 - !private ["So8NSObjectP", "font"]
 - !private ["So8NSObjectP", "frame"]
@@ -639,6 +663,7 @@ depends-member:
 - !private ["So8NSObjectP", "string"]
 - !private ["So8NSObjectP", "subviews"]
 - !private ["So8NSObjectP", "timingFunction"]
+- !private ["So8NSObjectP", "userInterfaceIdiom"]
 - !private ["So8NSObjectP", "values"]
 - !private ["So8NSObjectP", "view"]
 - !private ["So14NSSecureCodingP", "CGRect"]
@@ -677,6 +702,7 @@ depends-member:
 - !private ["SY", "decimal"]
 - !private ["SY", "foregroundColor"]
 - !private ["SY", "horizontal"]
+- ["SY", "pad"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "subscript"]
@@ -790,8 +816,12 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "placeholder"]
 - !private ["So17UICoordinateSpaceP", "subviews"]
 - ["So8UIDeviceC", "Bool"]
+- !private ["So8UIDeviceC", "UIDevice"]
 - !private ["So8UIDeviceC", "UIScreen"]
-- ["So8UIDeviceC", "isLargeDevice"]
+- !private ["So8UIDeviceC", "current"]
+- ["So8UIDeviceC", "deviceIsLarge"]
+- ["So8UIDeviceC", "deviceIsiPad"]
+- !private ["So8UIDeviceC", "userInterfaceIdiom"]
 - !private ["So13UIDynamicItemP", "CAKeyframeAnimation"]
 - !private ["So13UIDynamicItemP", "CAMediaTimingFunction"]
 - !private ["So13UIDynamicItemP", "NSAttributedString"]
@@ -1033,6 +1063,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "present"]
 - !private ["So23UIUserActivityRestoringP", "subviews"]
 - !private ["So23UIUserActivityRestoringP", "view"]
+- ["So20UIUserInterfaceIdiomV", "pad"]
 - !private ["So6UIViewC", "CAKeyframeAnimation"]
 - !private ["So6UIViewC", "CAMediaTimingFunction"]
 - !private ["So6UIViewC", "NSAttributedString"]
@@ -1121,6 +1152,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "PopupDialog"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "PopupDialogButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Style"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIDevice"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsEndImageContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsGetImageFromCurrentImageContext"]
@@ -1130,6 +1162,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "attributedPlaceholder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "duration"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "font"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
@@ -1146,6 +1179,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subviews"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timingFunction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userInterfaceIdiom"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "values"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["s21_ObjectiveCBridgeableP", "NSNumber"]
@@ -1234,7 +1268,7 @@ depends-nominal:
 - !private "11PopupDialog0aB15TransitionStyleO"
 - !private "Sk"
 - !private "Sm"
-- !private "SY"
+- "SY"
 - !private "ST"
 - !private "SZ"
 - !private "s13SignedNumericP"
@@ -1277,6 +1311,7 @@ depends-nominal:
 - !private "So34UITextPasteConfigurationSupportingP"
 - !private "So18UITraitEnvironmentP"
 - !private "So23UIUserActivityRestoringP"
+- "So20UIUserInterfaceIdiomV"
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "s18_BitwiseOperationsP"
@@ -1302,6 +1337,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/FasterVerificationCode.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -1328,6 +1364,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FirebaseFirestore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-umbrella.h"
@@ -1392,6 +1429,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -1412,6 +1450,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
@@ -1429,4 +1468,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7a79c4048e23bbd1086dc21589415f62"
+interface-hash: "5a8614e91357f84996914b156faf8706"

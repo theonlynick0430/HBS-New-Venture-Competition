@@ -69,16 +69,35 @@ class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Tableview Delegate and Datasource
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if UIDevice.current.deviceIsiPad{
+            return 225
+        }
+        return 275
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sponsors.count
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: SponsorCell.identifier, for: indexPath)
-        if let cell = cell as? SponsorCell{
-            cell.sponsor = sponsors[indexPath.row]
+        if UIDevice.current.deviceIsiPad{
+            let cell = tableView.dequeueReusableCell(withIdentifier: SponsorLargeCell.identifier, for: indexPath)
+            if let cell = cell as? SponsorLargeCell{
+                cell.sponsor = sponsors[indexPath.row]
+            }
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: SponsorCell.identifier, for: indexPath)
+            if let cell = cell as? SponsorCell{
+                cell.sponsor = sponsors[indexPath.row]
+            }
+            return cell
         }
-        return cell
     }
 
 }

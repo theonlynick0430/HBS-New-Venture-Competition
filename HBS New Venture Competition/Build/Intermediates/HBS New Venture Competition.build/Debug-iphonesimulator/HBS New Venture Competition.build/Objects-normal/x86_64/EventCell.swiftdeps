@@ -18,7 +18,6 @@ depends-top-level:
 - "UILabel"
 - "UITableViewCell"
 depends-member:
-- !private ["SK", "capitalized"]
 - ["SK", "init"]
 - ["SK", "init"]
 - !private ["So15CALayerDelegateP", "DateFormatter"]
@@ -34,7 +33,6 @@ depends-member:
 - !private ["s7CVarArgP", "DateFormatter"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "awakeFromNib"]
-- !private ["s7CVarArgP", "capitalized"]
 - !private ["s7CVarArgP", "dateFormat"]
 - !private ["s7CVarArgP", "dateValue"]
 - !private ["s7CVarArgP", "descriptionLabel"]
@@ -45,16 +43,13 @@ depends-member:
 - !private ["s7CVarArgP", "string"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "timeLabel"]
-- !private ["Sl", "capitalized"]
 - ["Sl", "init"]
 - ["Sl", "init"]
-- !private ["SL", "capitalized"]
 - ["SL", "init"]
 - ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
-- !private ["s28CustomDebugStringConvertibleP", "capitalized"]
 - !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - !private ["s28CustomDebugStringConvertibleP", "dateValue"]
 - !private ["s28CustomDebugStringConvertibleP", "description"]
@@ -67,10 +62,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "time"]
 - !private ["s28CustomDebugStringConvertibleP", "timeLabel"]
-- !private ["s29CustomPlaygroundQuickLookableP", "capitalized"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "capitalized"]
 - !private ["s17CustomReflectableP", "description"]
 - ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
@@ -79,7 +72,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "DateFormatter"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
-- !private ["s23CustomStringConvertibleP", "capitalized"]
 - !private ["s23CustomStringConvertibleP", "dateFormat"]
 - !private ["s23CustomStringConvertibleP", "dateValue"]
 - !private ["s23CustomStringConvertibleP", "descriptionLabel"]
@@ -93,13 +85,11 @@ depends-member:
 - !private ["So15NSDateFormatterC", "dateFormat"]
 - !private ["So15NSDateFormatterC", "init"]
 - !private ["So15NSDateFormatterC", "string"]
-- !private ["Se", "capitalized"]
 - !private ["Se", "description"]
 - ["Se", "init"]
 - ["Se", "init"]
 - !private ["Se", "text"]
 - !private ["Se", "time"]
-- !private ["SE", "capitalized"]
 - !private ["SE", "description"]
 - ["SE", "init"]
 - ["SE", "init"]
@@ -108,7 +98,6 @@ depends-member:
 - !private ["SQ", "DateFormatter"]
 - ["SQ", ""]
 - !private ["SQ", "awakeFromNib"]
-- !private ["SQ", "capitalized"]
 - !private ["SQ", "dateFormat"]
 - !private ["SQ", "dateValue"]
 - !private ["SQ", "description"]
@@ -133,16 +122,13 @@ depends-member:
 - ["27HBS_New_Venture_Competition9EventCellC", "init"]
 - !private ["27HBS_New_Venture_Competition9EventCellC", "reloadData"]
 - ["27HBS_New_Venture_Competition9EventCellC", "timeLabel"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "capitalized"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "description"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s23ExpressibleByNilLiteralP", "time"]
-- !private ["s26ExpressibleByStringLiteralP", "capitalized"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "capitalized"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So11NSFormatterC", "dateFormat"]
@@ -151,7 +137,6 @@ depends-member:
 - !private ["SH", "DateFormatter"]
 - ["SH", ""]
 - !private ["SH", "awakeFromNib"]
-- !private ["SH", "capitalized"]
 - !private ["SH", "dateFormat"]
 - !private ["SH", "dateValue"]
 - !private ["SH", "description"]
@@ -164,16 +149,13 @@ depends-member:
 - !private ["SH", "text"]
 - !private ["SH", "time"]
 - !private ["SH", "timeLabel"]
-- !private ["s25LosslessStringConvertibleP", "capitalized"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "capitalized"]
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "DateFormatter"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
-- !private ["So8NSCodingP", "capitalized"]
 - !private ["So8NSCodingP", "dateFormat"]
 - !private ["So8NSCodingP", "descriptionLabel"]
 - !private ["So8NSCodingP", "event"]
@@ -183,19 +165,14 @@ depends-member:
 - !private ["So8NSCodingP", "string"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "timeLabel"]
-- !private ["So9NSCopyingP", "capitalized"]
 - !private ["So9NSCopyingP", "dateFormat"]
 - !private ["So9NSCopyingP", "dateValue"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "string"]
-- !private ["So21NSItemProviderReadingP", "capitalized"]
-- !private ["So21NSItemProviderWritingP", "capitalized"]
-- !private ["So16NSMutableCopyingP", "capitalized"]
 - !private ["So8NSObjectC", "DateFormatter"]
 - ["So8NSObjectC", "Event"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
-- !private ["So8NSObjectC", "capitalized"]
 - !private ["So8NSObjectC", "dateFormat"]
 - !private ["So8NSObjectC", "dateValue"]
 - ["So8NSObjectC", "descriptionLabel"]
@@ -210,7 +187,6 @@ depends-member:
 - !private ["So8NSObjectP", "DateFormatter"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
-- !private ["So8NSObjectP", "capitalized"]
 - !private ["So8NSObjectP", "dateFormat"]
 - !private ["So8NSObjectP", "dateValue"]
 - !private ["So8NSObjectP", "descriptionLabel"]
@@ -221,27 +197,19 @@ depends-member:
 - !private ["So8NSObjectP", "string"]
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "timeLabel"]
-- !private ["So14NSSecureCodingP", "capitalized"]
-- !private ["So8NSStringC", "capitalized"]
 - !private ["Sq", "description"]
 - !private ["Sq", "text"]
 - !private ["Sq", "time"]
-- !private ["Sm", "capitalized"]
 - ["Sm", "init"]
 - ["Sm", "init"]
-- !private ["ST", "capitalized"]
 - ["ST", "init"]
 - ["ST", "init"]
-- !private ["SS", "capitalized"]
 - ["SS", "init"]
 - ["SS", "init"]
-- !private ["Sy", "capitalized"]
 - ["Sy", "init"]
 - ["Sy", "init"]
-- !private ["s16TextOutputStreamP", "capitalized"]
 - ["s16TextOutputStreamP", "init"]
 - ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "capitalized"]
 - ["s20TextOutputStreamableP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["So12FIRTimestampC", "dateValue"]
@@ -422,26 +390,19 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "timeLabel"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "capitalized"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "capitalized"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "capitalized"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "capitalized"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "capitalized"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "capitalized"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "capitalized"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionLabel"]
@@ -452,13 +413,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeLabel"]
-- !private ["s21_ObjectiveCBridgeableP", "capitalized"]
 - !private ["s21_ObjectiveCBridgeableP", "description"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s21_ObjectiveCBridgeableP", "time"]
-- !private ["s16_SwiftStringViewP", "capitalized"]
 - ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -487,13 +446,8 @@ depends-nominal:
 - "s10MirrorPathP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "Sq"
 - "Sm"
 - "ST"
@@ -526,7 +480,6 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s16_SwiftStringViewP"
@@ -536,6 +489,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/FasterVerificationCode.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/DynamicBlurView.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -562,6 +516,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FirebaseFirestore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-umbrella.h"
@@ -626,6 +581,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -646,6 +602,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"

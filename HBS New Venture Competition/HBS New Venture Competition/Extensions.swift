@@ -129,8 +129,17 @@ public extension UIViewController {
 //detects if the user's device is large
 public extension UIDevice {
     
-    var isLargeDevice: Bool {
+    var deviceIsLarge: Bool {
         return UIScreen.main.nativeBounds.height >= 2436
+    }
+    
+    var deviceIsiPad: Bool {
+        switch UIDevice.current.userInterfaceIdiom {
+        case .pad:
+            return true
+        default:
+            return false
+        }
     }
     
 }
