@@ -22,7 +22,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var tableView: UITableView!
     
     //data source
-    var company: Company! { didSet{ fetchCompanyMembers(); loadData() } }
+    var company: Company!
     private var companyMembers = [CompanyMember]() { didSet{ tableView.reloadData() } }
     
     override func viewDidLoad() {
@@ -39,9 +39,15 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         
-        //setup
         setupRefresh()
         setupRatings()
+        loadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //setup
+        fetchCompanyMembers()
     }
     
     // MARK: - Essential Functions
@@ -96,8 +102,16 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     // MARK: - Tableview Delegate and Datasource
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 144
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return companyMembers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

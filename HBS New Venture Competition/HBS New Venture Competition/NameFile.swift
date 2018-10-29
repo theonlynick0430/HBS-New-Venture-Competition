@@ -24,7 +24,7 @@ struct NameFile {
             //codes <collection>
             static let codes = "Codes"
             static let eventCode = "EventCode"
-                //event code <document> - constant
+                //event code <document> - EventCode
             static let code = "Code"
         }
         
@@ -57,7 +57,7 @@ struct NameFile {
             //events <collection>
             static let events = "Events"
             static let currentEvent = "CurrentEvent"
-                //current event - "CurrentEvent"
+                //current event <document> - CurrentEvent
             static let currentEventID = "CurrentEventID"
                 //event <document> - random ID
             static let time = "Time"

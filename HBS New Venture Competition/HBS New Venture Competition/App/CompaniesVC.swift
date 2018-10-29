@@ -24,6 +24,8 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     private var companies = [Company]() { didSet{ collectionView.reloadData() } }
     private var filteredCompanies = [Company]() { didSet{ collectionView.reloadData() } }
     
+    private var selectedCompany: Company!
+    
     private var searchInProgress = false
     
     override func viewDidLoad() {
@@ -32,6 +34,11 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         collectionView.delegate = self
         collectionView.dataSource = self
         searchBar.delegate = self
+        
+        //limits to only vertical scroll
+        collectionView.alwaysBounceVertical = true
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.scrollDirection = .vertical
         
         //rounds corners
         countBtn.layer.masksToBounds = true
@@ -114,7 +121,6 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     // MARK: - Collection View Delegate and Datasource
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print("I AM HERE")
         return CGSize(width: view.frame.width-30, height: 125)
     }
     
@@ -141,6 +147,15 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if searchInProgress{
+            selectedCompany = filteredCompanies[indexPath.row]
+        }else{
+            selectedCompany = companies[indexPath.row]
+        }
+        performSegue(withIdentifier: NameFile.Segues.toCompanyDetail, sender: self)
+    }
+    
     // MARK: - Search Bar Delegate
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -159,7 +174,7 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     
     private var fetchInProgress = false
     
-    //updates the results tabelview when the search text changes
+    //updates the results collectionview when the search text changes
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchInProgress = true
         
@@ -178,5 +193,11 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     // MARK: - Navigation
     
     @IBAction func unwindToCompanies(segue: UIStoryboardSegue) {}
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let companyDetailVC = segue.destination as? CompanyDetailVC{
+            companyDetailVC.company = selectedCompany
+        }
+    }
     
 }

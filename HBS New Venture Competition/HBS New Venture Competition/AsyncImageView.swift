@@ -24,7 +24,6 @@ public class AsyncImageView: UIImageView {
             if let firebaseURL = firebaseURL{
                 let imageRef = Storage.storage().reference(forURL: firebaseURL)
                 imageRef.getData(maxSize: 100*1024*1024, completion: { (data, error) in
-                    print("GETTING PIC DATA")
                     if let data = data{
                         if let image = UIImage(data: data){
                             self.image = image

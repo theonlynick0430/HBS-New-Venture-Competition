@@ -75,7 +75,6 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @objc private func arrowBtnPressed(_ sender: UIButton){
-        print("PLEASE WORK")
         FirebaseManager.manager.fetchCurrentEvent { (currentEventID, error) in
             guard let currentEventID = currentEventID, error == nil else{
                 self.issueAlert(ofType: .dataRetrievalFailed)
@@ -84,7 +83,6 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             for (index, value) in self.events.enumerated(){
                 if value.eventID == currentEventID{
-                    print("YESSSS")
                     self.tableView.allowsSelection = true
                     self.tableView.selectRow(at: IndexPath(row: index, section: 0), animated: true, scrollPosition: .top)
                     Timer.scheduledTimer(withTimeInterval: TimeInterval(exactly: 0.5)!, repeats: false, block: { (_) in

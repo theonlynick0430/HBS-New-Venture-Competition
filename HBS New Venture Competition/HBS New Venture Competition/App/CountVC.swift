@@ -37,9 +37,17 @@ class CountVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "BasicCellID")
+        
         cell.textLabel?.font = UIFont(name: "Avenir-Book", size: 14.0)!
         let number = numbers[indexPath.row]
         cell.textLabel?.text = "\(number)"
+        
+        if number == selectedNumber{
+            cell.accessoryType = .checkmark
+        }else{
+            cell.accessoryType = .none
+        }
+        
         return cell
     }
     
