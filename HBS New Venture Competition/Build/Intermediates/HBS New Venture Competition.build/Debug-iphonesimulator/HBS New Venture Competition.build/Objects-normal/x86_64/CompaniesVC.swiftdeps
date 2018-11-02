@@ -60,7 +60,6 @@ depends-top-level:
 - "UISearchBarDelegate"
 - "UIStoryboardSegue"
 - "UIViewController"
-- !private "print"
 depends-member:
 - !private ["27HBS_New_Venture_Competition9AlertTypeO", "dataRetrievalFailed"]
 - !private ["Sa", "append"]
@@ -184,7 +183,6 @@ depends-member:
 - ["s7CVarArgP", "position"]
 - ["s7CVarArgP", "positionForBar"]
 - !private ["s7CVarArgP", "present"]
-- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
 - !private ["s7CVarArgP", "scrollDirection"]
@@ -286,7 +284,6 @@ depends-member:
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "positionForBar"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "prepare"]
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "present"]
-- !private ["27HBS_New_Venture_Competition11CompaniesVCC", "print"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "scrollViewDidChangeAdjustedContentInset"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "scrollViewDidEndDecelerating"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "scrollViewDidEndDragging"]
@@ -395,7 +392,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "position"]
 - ["s28CustomDebugStringConvertibleP", "positionForBar"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
-- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
@@ -533,7 +529,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "position"]
 - ["s23CustomStringConvertibleP", "positionForBar"]
 - !private ["s23CustomStringConvertibleP", "present"]
-- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "row"]
@@ -704,7 +699,6 @@ depends-member:
 - ["SQ", "position"]
 - ["SQ", "positionForBar"]
 - !private ["SQ", "present"]
-- !private ["SQ", "print"]
 - !private ["SQ", "reloadData"]
 - !private ["SQ", "resignFirstResponder"]
 - !private ["SQ", "row"]
@@ -855,7 +849,6 @@ depends-member:
 - ["SH", "position"]
 - ["SH", "positionForBar"]
 - !private ["SH", "present"]
-- !private ["SH", "print"]
 - !private ["SH", "reloadData"]
 - !private ["SH", "resignFirstResponder"]
 - !private ["SH", "row"]
@@ -973,7 +966,6 @@ depends-member:
 - ["So8NSCodingP", "position"]
 - ["So8NSCodingP", "positionForBar"]
 - !private ["So8NSCodingP", "present"]
-- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "resignFirstResponder"]
 - !private ["So8NSCodingP", "scrollDirection"]
@@ -1053,7 +1045,6 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "position"]
 - ["So26NSExtensionRequestHandlingP", "positionForBar"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
-- !private ["So26NSExtensionRequestHandlingP", "print"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDragging"]
@@ -1161,7 +1152,6 @@ depends-member:
 - ["So8NSObjectC", "positionForBar"]
 - ["So8NSObjectC", "prepare"]
 - !private ["So8NSObjectC", "present"]
-- !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
 - !private ["So8NSObjectC", "scrollDirection"]
@@ -1259,7 +1249,6 @@ depends-member:
 - ["So8NSObjectP", "position"]
 - ["So8NSObjectP", "positionForBar"]
 - !private ["So8NSObjectP", "present"]
-- !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "reloadData"]
 - !private ["So8NSObjectP", "resignFirstResponder"]
 - !private ["So8NSObjectP", "scrollDirection"]
@@ -1482,7 +1471,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "position"]
 - ["So21UIAppearanceContainerP", "positionForBar"]
 - !private ["So21UIAppearanceContainerP", "present"]
-- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "reloadData"]
 - !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
 - !private ["So21UIAppearanceContainerP", "scrollToItem"]
@@ -1559,7 +1547,6 @@ depends-member:
 - ["So24UIBarPositioningDelegateP", "position"]
 - ["So24UIBarPositioningDelegateP", "positionForBar"]
 - !private ["So24UIBarPositioningDelegateP", "present"]
-- !private ["So24UIBarPositioningDelegateP", "print"]
 - ["So24UIBarPositioningDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So24UIBarPositioningDelegateP", "scrollViewDidEndDecelerating"]
 - ["So24UIBarPositioningDelegateP", "scrollViewDidEndDragging"]
@@ -1594,6 +1581,7 @@ depends-member:
 - !private ["So8UIButtonC", "layer"]
 - !private ["So24UICollectionReusableViewC", "company"]
 - !private ["So24UICollectionReusableViewC", "identifier"]
+- !private ["So24UICollectionReusableViewC", "layer"]
 - !private ["So16UICollectionViewC", "alwaysBounceVertical"]
 - !private ["So16UICollectionViewC", "collectionViewLayout"]
 - !private ["So16UICollectionViewC", "dataSource"]
@@ -1604,6 +1592,7 @@ depends-member:
 - !private ["So16UICollectionViewC", "scrollToItem"]
 - !private ["So20UICollectionViewCellC", "company"]
 - !private ["So20UICollectionViewCellC", "identifier"]
+- !private ["So20UICollectionViewCellC", "layer"]
 - !private ["So26UICollectionViewDataSourceP", "Bundle"]
 - !private ["So26UICollectionViewDataSourceP", "CGSize"]
 - !private ["So26UICollectionViewDataSourceP", "CancelButton"]
@@ -1637,7 +1626,6 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "position"]
 - ["So26UICollectionViewDataSourceP", "positionForBar"]
 - !private ["So26UICollectionViewDataSourceP", "present"]
-- !private ["So26UICollectionViewDataSourceP", "print"]
 - ["So26UICollectionViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26UICollectionViewDataSourceP", "scrollViewDidEndDecelerating"]
 - ["So26UICollectionViewDataSourceP", "scrollViewDidEndDragging"]
@@ -1700,7 +1688,6 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "position"]
 - ["So24UICollectionViewDelegateP", "positionForBar"]
 - !private ["So24UICollectionViewDelegateP", "present"]
-- !private ["So24UICollectionViewDelegateP", "print"]
 - ["So24UICollectionViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So24UICollectionViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So24UICollectionViewDelegateP", "scrollViewDidEndDragging"]
@@ -1763,7 +1750,6 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "position"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "positionForBar"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "present"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "print"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewDidEndDecelerating"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewDidEndDragging"]
@@ -1833,7 +1819,6 @@ depends-member:
 - ["So18UIContentContainerP", "position"]
 - ["So18UIContentContainerP", "positionForBar"]
 - !private ["So18UIContentContainerP", "present"]
-- !private ["So18UIContentContainerP", "print"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
 - ["So18UIContentContainerP", "scrollViewDidEndDragging"]
@@ -1969,7 +1954,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "position"]
 - ["So18UIFocusEnvironmentP", "positionForBar"]
 - !private ["So18UIFocusEnvironmentP", "present"]
-- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
 - !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
 - !private ["So18UIFocusEnvironmentP", "scrollToItem"]
@@ -2109,7 +2093,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "position"]
 - ["So30UIPasteConfigurationSupportingP", "positionForBar"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
-- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
 - !private ["So30UIPasteConfigurationSupportingP", "scrollToItem"]
@@ -2211,7 +2194,6 @@ depends-member:
 - ["So11UIResponderC", "positionForBar"]
 - ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "present"]
-- !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "reloadData"]
 - !private ["So11UIResponderC", "resignFirstResponder"]
 - !private ["So11UIResponderC", "scrollToItem"]
@@ -2302,7 +2284,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "position"]
 - ["So30UIResponderStandardEditActionsP", "positionForBar"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
-- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
 - !private ["So30UIResponderStandardEditActionsP", "scrollToItem"]
@@ -2384,7 +2365,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "position"]
 - ["So20UIScrollViewDelegateP", "positionForBar"]
 - !private ["So20UIScrollViewDelegateP", "present"]
-- !private ["So20UIScrollViewDelegateP", "print"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
@@ -2454,7 +2434,6 @@ depends-member:
 - ["So19UISearchBarDelegateP", "position"]
 - ["So19UISearchBarDelegateP", "positionForBar"]
 - !private ["So19UISearchBarDelegateP", "present"]
-- !private ["So19UISearchBarDelegateP", "print"]
 - ["So19UISearchBarDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So19UISearchBarDelegateP", "scrollViewDidEndDecelerating"]
 - ["So19UISearchBarDelegateP", "scrollViewDidEndDragging"]
@@ -2534,7 +2513,6 @@ depends-member:
 - ["So16UIStateRestoringP", "position"]
 - ["So16UIStateRestoringP", "positionForBar"]
 - !private ["So16UIStateRestoringP", "present"]
-- !private ["So16UIStateRestoringP", "print"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDragging"]
@@ -2632,7 +2610,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "position"]
 - ["So18UITraitEnvironmentP", "positionForBar"]
 - !private ["So18UITraitEnvironmentP", "present"]
-- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "reloadData"]
 - !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
 - !private ["So18UITraitEnvironmentP", "scrollToItem"]
@@ -2721,7 +2698,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "position"]
 - ["So23UIUserActivityRestoringP", "positionForBar"]
 - !private ["So23UIUserActivityRestoringP", "present"]
-- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "reloadData"]
 - !private ["So23UIUserActivityRestoringP", "resignFirstResponder"]
 - !private ["So23UIUserActivityRestoringP", "scrollToItem"]
@@ -2831,7 +2807,6 @@ depends-member:
 - ["So16UIViewControllerC", "positionForBar"]
 - ["So16UIViewControllerC", "prepare"]
 - !private ["So16UIViewControllerC", "present"]
-- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
 - ["So16UIViewControllerC", "scrollViewDidEndDragging"]
@@ -2982,7 +2957,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "position"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "positionForBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollDirection"]
@@ -3304,17 +3278,17 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6a7838c2527926ba7d94f6208a0c5e2d"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "fb279f27d249dfb152a31d1748f544fc"

@@ -144,6 +144,11 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
                 cell.company = companies[indexPath.row]
             }
         }
+        
+        //rounds corners
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 10
+        
         return cell
     }
     
