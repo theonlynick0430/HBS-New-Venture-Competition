@@ -15,15 +15,18 @@ import Foundation
 public class AppStorage{
     
     static var eventCode: String?
+    static var displaySplashScreen = true
     
     static func save(){
         let defaults = UserDefaults.standard
         defaults.set(eventCode, forKey: NameFile.UserDefaults.eventCode)
+        defaults.set(displaySplashScreen, forKey: NameFile.UserDefaults.displaySplashScreen)
     }
     
     static func load(){
         let defaults = UserDefaults.standard
         eventCode = defaults.value(forKey: NameFile.UserDefaults.eventCode) as? String
+        displaySplashScreen = defaults.value(forKey: NameFile.UserDefaults.displaySplashScreen) as? Bool ?? false
     }
     
     static func clearUserDefaults() {

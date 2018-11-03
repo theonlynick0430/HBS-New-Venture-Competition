@@ -25,6 +25,9 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        AppStorage.displaySplashScreen = false
+        AppStorage.save()
+        
         tableView.delegate = self
         tableView.dataSource = self
         

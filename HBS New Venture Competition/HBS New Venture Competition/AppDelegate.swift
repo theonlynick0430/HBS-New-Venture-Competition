@@ -31,10 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let appStoryboard: UIStoryboard = UIStoryboard(name: "App", bundle: Bundle.main)
         let introStoryboard: UIStoryboard = UIStoryboard(name: "Intro", bundle: Bundle.main)
-        if let _ = AppStorage.eventCode{
-            window?.rootViewController = appStoryboard.instantiateInitialViewController()
-        }else{
+        if AppStorage.displaySplashScreen{
             window?.rootViewController = introStoryboard.instantiateInitialViewController()
+        }else{
+            window?.rootViewController = appStoryboard.instantiateInitialViewController()
         }
         
         return true

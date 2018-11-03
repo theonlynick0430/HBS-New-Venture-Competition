@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphoneos/DynamicBlurView/DynamicBlurView.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/DynamicBlurView.build/unextended-module.modulemap",
+    }]
+  }]
+}

@@ -70,15 +70,16 @@ class FirebaseManager{
                 let companyID = document.documentID
                 let name = data[NameFile.Firebase.CompanyDB.name] as! String
                 let description = data[NameFile.Firebase.CompanyDB.description] as! String
+                let notes = data[NameFile.Firebase.CompanyDB.notes] as! String
                 let logoImageURL = data[NameFile.Firebase.CompanyDB.logoImageURL] as! String
                 let order = data[NameFile.Firebase.CompanyDB.order] as! Int
                 
                 dispatch.enter()
                 self.companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).getDocument(completion: { (document, error) in
-                    if let document = document, document.exists, let data = document.data(), let rating = data[NameFile.Firebase.CompanyDB.rating] as? Double{
-                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, rating: rating))
+                    if let document = document, document.exists, let data = document.data(), let stars = data[NameFile.Firebase.CompanyDB.stars] as? Double{
+                        companies.append(Company(companyID: companyID, name: name, description: description, notes: notes, logoImageURL: logoImageURL, order: order, stars: stars))
                     }else{
-                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, rating: 0))
+                        companies.append(Company(companyID: companyID, name: name, description: description, notes: notes, logoImageURL: logoImageURL, order: order, stars: 0))
                     }
                     dispatch.leave()
                 })
@@ -117,7 +118,7 @@ class FirebaseManager{
     
     // Adds a device specific vote to a company
     public func addVote(_ companyID: String, rating: Double, completionHandler: CompletionHandler? = nil){
-        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.rating).document(UIDevice.current.identifierForVendor!.uuidString).setData([NameFile.Firebase.CompanyDB.rating : rating], completion: completionHandler)
+        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).setData([NameFile.Firebase.CompanyDB.stars: rating], completion: completionHandler)
     }
     
     // Fetches all events

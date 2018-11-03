@@ -12,6 +12,7 @@ struct NameFile {
     
     struct UserDefaults{
         static let eventCode = "EventCode"
+        static let displaySplashScreen = "DisplaySplashScreen"
     }
     
     struct Segues {
@@ -34,6 +35,7 @@ struct NameFile {
                 //company <document> - random ID
             static let name = "Name"
             static let description = "Description"
+            static let notes = "Notes"
             static let logoImageURL = "LogoImageURL"
             static let order = "Order"
                     //members <collection>
@@ -50,7 +52,7 @@ struct NameFile {
                     //votes <collection>
             static let votes = "Votes"
                         //vote <document> - deviceID
-            static let rating = "Rating"
+            static let stars = "Stars"
         }
         
         struct EventDB{
