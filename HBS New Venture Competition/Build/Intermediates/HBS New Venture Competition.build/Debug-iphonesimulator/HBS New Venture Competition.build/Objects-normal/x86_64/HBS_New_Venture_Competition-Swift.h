@@ -164,7 +164,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import CoreGraphics;
-@import FasterVerificationCode;
 @import Foundation;
 @import UIKit;
 #endif
@@ -355,25 +354,6 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition9EventCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class VerificationCodeView;
-@class NSLayoutConstraint;
-@class UITraitCollection;
-
-SWIFT_CLASS("_TtC27HBS_New_Venture_Competition11EventCodeVC")
-@interface EventCodeVC : UIViewController <VerificationCodeViewDelegate>
-@property (nonatomic, strong) IBOutlet VerificationCodeView * _Null_unspecified verificationCodeView;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified toBottom;
-- (void)viewDidLoad;
-- (void)viewSafeAreaInsetsDidChange;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)keyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
-- (void)verificationCodeInserted:(NSString * _Nonnull)text isComplete:(BOOL)isComplete;
-- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition8EventsVC")
 @interface EventsVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -413,6 +393,24 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition8JudgesVC")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15SplashScreenVC1")
+@interface SplashScreenVC1 : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified continueBtn;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15SplashScreenVC2")
+@interface SplashScreenVC2 : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified continueBtn;
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

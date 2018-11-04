@@ -26,7 +26,7 @@ public class AppStorage{
     static func load(){
         let defaults = UserDefaults.standard
         eventCode = defaults.value(forKey: NameFile.UserDefaults.eventCode) as? String
-        displaySplashScreen = defaults.value(forKey: NameFile.UserDefaults.displaySplashScreen) as? Bool ?? false
+        displaySplashScreen = defaults.value(forKey: NameFile.UserDefaults.displaySplashScreen) as? Bool ?? true
     }
     
     static func clearUserDefaults() {

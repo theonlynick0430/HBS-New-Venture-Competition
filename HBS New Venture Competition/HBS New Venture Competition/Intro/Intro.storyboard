@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ykU-oY-1ZB">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,27 +13,195 @@
         <!--Splash Screen-->
         <scene sceneID="Hre-a5-jjx">
             <objects>
-                <viewController title="Splash Screen" id="ykU-oY-1ZB" customClass="SplashScreenVC" customModule="HBS_New_Venture_Competition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Splash Screen" id="ykU-oY-1ZB" customClass="SplashScreenVC1" customModule="HBS_New_Venture_Competition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0fx-8s-fCk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdz-tf-p3q">
-                                <rect key="frame" x="176" y="271" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Continue"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-we-AcE">
+                                <rect key="frame" x="20" y="547" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.69019607843137254" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wAo-Gh-812"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ACy-jh-raT" kind="show" id="vT9-mA-dR3"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7G-Rj-54s">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oxF-rl-3Je">
+                                        <rect key="frame" x="22.5" y="35" width="330" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="H A R V A R D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ScC-1Y-0RF">
+                                                <rect key="frame" x="0.0" y="0.0" width="96.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gD0-fx-h7x">
+                                                <rect key="frame" x="106.5" y="0.0" width="5" height="40"/>
+                                                <color key="backgroundColor" red="0.59607843140000005" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="V8j-fg-DWV"/>
+                                                    <constraint firstAttribute="width" constant="5" id="ZuQ-vR-Xwb"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B U S I N E S S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8K-uW-ILy">
+                                                <rect key="frame" x="121.5" y="0.0" width="99.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pqg-9q-e8a">
+                                                <rect key="frame" x="231" y="0.0" width="5" height="40"/>
+                                                <color key="backgroundColor" red="0.59607843140000005" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="5" id="F7Z-e8-sSz"/>
+                                                    <constraint firstAttribute="height" constant="40" id="iBl-pp-wKM"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="S C H O O L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeB-XK-WZQ">
+                                                <rect key="frame" x="246" y="0.0" width="84" height="40"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="EWz-ZO-xYL"/>
+                                            <constraint firstAttribute="width" constant="330" id="aBs-3o-iL7"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oxF-rl-3Je" secondAttribute="bottom" constant="15" id="3vn-HJ-Bj0"/>
+                                    <constraint firstItem="oxF-rl-3Je" firstAttribute="centerX" secondItem="C7G-Rj-54s" secondAttribute="centerX" id="YeG-py-JkX"/>
+                                    <constraint firstAttribute="height" constant="90" id="fyq-a5-Vmm"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NVC-high res - alumni" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-tg-Pg4">
+                                <rect key="frame" x="62" y="150" width="251" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="4nl-Ac-Cjr"/>
+                                    <constraint firstAttribute="width" constant="251" id="HNy-E4-ZM3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the competition. Click the button below to enter.  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLQ-G4-koW">
+                                <rect key="frame" x="30" y="376" width="315" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="2r1-bs-rE6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.19215686274509805" green="0.45882352941176469" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.792156862745098" green="0.90980392156862744" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sLQ-G4-koW" firstAttribute="top" secondItem="sHl-tg-Pg4" secondAttribute="bottom" constant="60" id="2rY-q9-zw2"/>
+                            <constraint firstItem="C7G-Rj-54s" firstAttribute="trailing" secondItem="5XX-ud-f3x" secondAttribute="trailing" id="6Ag-Mf-QqK"/>
+                            <constraint firstItem="C7G-Rj-54s" firstAttribute="leading" secondItem="5XX-ud-f3x" secondAttribute="leading" id="BUY-dp-iKU"/>
+                            <constraint firstItem="C7G-Rj-54s" firstAttribute="top" secondItem="0fx-8s-fCk" secondAttribute="top" id="Miq-YF-KVZ"/>
+                            <constraint firstItem="5XX-ud-f3x" firstAttribute="bottom" secondItem="Sot-we-AcE" secondAttribute="bottom" constant="60" id="QhR-OM-Izf"/>
+                            <constraint firstItem="sHl-tg-Pg4" firstAttribute="top" secondItem="C7G-Rj-54s" secondAttribute="bottom" constant="60" id="SCT-y5-duk"/>
+                            <constraint firstItem="5XX-ud-f3x" firstAttribute="trailing" secondItem="Sot-we-AcE" secondAttribute="trailing" constant="20" id="gRs-VL-KY4"/>
+                            <constraint firstItem="5XX-ud-f3x" firstAttribute="trailing" secondItem="sLQ-G4-koW" secondAttribute="trailing" constant="30" id="nwO-Ky-6fm"/>
+                            <constraint firstItem="sLQ-G4-koW" firstAttribute="leading" secondItem="5XX-ud-f3x" secondAttribute="leading" constant="30" id="st2-3k-RId"/>
+                            <constraint firstItem="Sot-we-AcE" firstAttribute="leading" secondItem="5XX-ud-f3x" secondAttribute="leading" constant="20" id="wGk-N4-Puh"/>
+                            <constraint firstItem="sHl-tg-Pg4" firstAttribute="centerX" secondItem="5XX-ud-f3x" secondAttribute="centerX" id="zk1-H2-LN0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5XX-ud-f3x"/>
                     </view>
                     <connections>
-                        <outlet property="continueBtn" destination="qdz-tf-p3q" id="pg2-pO-iZJ"/>
+                        <outlet property="continueBtn" destination="Sot-we-AcE" id="bdX-FD-FWY"/>
+                        <outlet property="continueBtnHeight" destination="wAo-Gh-812" id="Ff0-ro-mzW"/>
+                        <outlet property="headerLabel1" destination="ScC-1Y-0RF" id="dd2-8n-LA5"/>
+                        <outlet property="headerLabel2" destination="e8K-uW-ILy" id="cZ7-wM-01w"/>
+                        <outlet property="headerLabel3" destination="oeB-XK-WZQ" id="jyT-iD-UkQ"/>
+                        <outlet property="headerStackView" destination="oxF-rl-3Je" id="7VO-Q1-U1l"/>
+                        <outlet property="headerStackViewHeight" destination="EWz-ZO-xYL" id="xvZ-9s-I8j"/>
+                        <outlet property="headerStackViewWidth" destination="aBs-3o-iL7" id="p5W-UP-xZH"/>
+                        <outlet property="headerViewHeight" destination="fyq-a5-Vmm" id="g8V-cS-TdK"/>
+                        <outlet property="logoImageView" destination="sHl-tg-Pg4" id="gt6-5t-9U2"/>
+                        <outlet property="logoImageViewHeight" destination="4nl-Ac-Cjr" id="R4N-OR-Nd6"/>
+                        <outlet property="logoImageViewToTop" destination="SCT-y5-duk" id="ws0-zU-EDR"/>
+                        <outlet property="logoImageViewWidth" destination="HNy-E4-ZM3" id="q6D-H5-XOz"/>
+                        <outlet property="promptLabel" destination="sLQ-G4-koW" id="QHj-HG-A2y"/>
+                        <outlet property="promptLabelToTop" destination="2rY-q9-zw2" id="It6-rJ-ouY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaT-i8-ZkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="143.30357142857142"/>
+            <point key="canvasLocation" x="114.40000000000001" y="142.57871064467767"/>
+        </scene>
+        <!--Splash ScreenVC2-->
+        <scene sceneID="tlD-3I-Kyh">
+            <objects>
+                <viewController id="ACy-jh-raT" customClass="SplashScreenVC2" customModule="HBS_New_Venture_Competition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FmQ-4J-Ccn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwd-9E-ERe">
+                                <rect key="frame" x="20" y="547" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.69019607839999997" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="G9H-03-TpN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sng-y0-v9b">
+                                <rect key="frame" x="20" y="55" width="335" height="462"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Welcome to the second Northern California "One Harvard" New Venture Competition. On behalf of myself and my co-organizers, we'd like to thank you for coming today and continuing to engage with the Harvard Alumni entrepreneurial community. Today's event was inspired by a visit by the Harvard i-Lab in July 2017 that brought entrepreneurial alumni from all Harvard schools together. We discussed and brainstormed on how we could strengthen the bonds of the Harvard Alumni start-up ecosystem on a local level to help foster meaningful connections between founders, investors, and mentors. We decided to start by opening up the NorCal regional competition for the Global HBS New Venutre Competition to alumni from all Harvard schools; the reponse was incredible.     
+
+We received 60 company applicants with over 50% of the applicants coning from non-HBS alumni. We aso garnered nationwide attention from Harvard Aumni from multiple regions applying for our competition. We had the unenviable task of narrowing down the competitors to the 19 you will see today. Company details are provided within. 
+
+I would like to personally thank all of our 16 corporate sponsors for contributing to a prize package worth over $400,000 for our competitors. Moreover, a very special thank you to Cooley LLP, our Diamond sponsor, and Ubiquity.vc for allowing us to award cash prizes to our winners. 
+
+I invite you to grab some food and drinks, visit the company tables, and most importantly enjoy yourselves. Thank you for coming!
+
+Sincerely, 
+Maya Krish
+       
+
+                                              </mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81176470588235294" green="0.90588235294117647" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6XE-55-l4o" firstAttribute="bottom" secondItem="Dwd-9E-ERe" secondAttribute="bottom" constant="60" id="Syy-p2-jYg"/>
+                            <constraint firstItem="sng-y0-v9b" firstAttribute="top" secondItem="6XE-55-l4o" secondAttribute="top" constant="35" id="UGW-Qx-xx1"/>
+                            <constraint firstItem="Dwd-9E-ERe" firstAttribute="leading" secondItem="6XE-55-l4o" secondAttribute="leading" constant="20" id="Z6o-Hz-hFb"/>
+                            <constraint firstItem="Dwd-9E-ERe" firstAttribute="top" secondItem="sng-y0-v9b" secondAttribute="bottom" constant="30" id="bvG-jV-Nvg"/>
+                            <constraint firstItem="6XE-55-l4o" firstAttribute="trailing" secondItem="Dwd-9E-ERe" secondAttribute="trailing" constant="20" id="h8q-dN-5A9"/>
+                            <constraint firstItem="6XE-55-l4o" firstAttribute="trailing" secondItem="sng-y0-v9b" secondAttribute="trailing" constant="20" id="kbG-w2-7jR"/>
+                            <constraint firstItem="sng-y0-v9b" firstAttribute="leading" secondItem="6XE-55-l4o" secondAttribute="leading" constant="20" id="tM6-Wi-smo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6XE-55-l4o"/>
+                    </view>
+                    <connections>
+                        <outlet property="continueBtn" destination="Dwd-9E-ERe" id="LyG-nw-7Pg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USR-hX-bG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.92753623188412" y="142.63392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NVC-high res - alumni" width="2400" height="1365"/>
+    </resources>
 </document>

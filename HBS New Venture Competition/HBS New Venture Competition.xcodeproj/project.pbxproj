@@ -42,7 +42,8 @@
 		58AD929D2178014700AAF2A9 /* JudgesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD929C2178014700AAF2A9 /* JudgesVC.swift */; };
 		58AD929F2178016E00AAF2A9 /* SponsorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD929E2178016E00AAF2A9 /* SponsorsVC.swift */; };
 		58AD92A32178019200AAF2A9 /* CoordinatorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD92A22178019200AAF2A9 /* CoordinatorsVC.swift */; };
-		58C4F96D218E36DE00A5947F /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C4F96C218E36DE00A5947F /* SplashScreenVC.swift */; };
+		58C4F96D218E36DE00A5947F /* SplashScreenVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C4F96C218E36DE00A5947F /* SplashScreenVC1.swift */; };
+		58CC3D38218F99EC00334260 /* SplashScreenVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CC3D37218F99EC00334260 /* SplashScreenVC2.swift */; };
 		58EB26902153225600C6625C /* NameFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB268F2153225600C6625C /* NameFile.swift */; };
 		58EB365B218385FD00011914 /* CountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB365A218385FD00011914 /* CountVC.swift */; };
 		75220667E1666D2D2580ADFC /* Pods_HBS_New_Venture_Competition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */; };
@@ -108,7 +109,8 @@
 		58AD929C2178014700AAF2A9 /* JudgesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudgesVC.swift; sourceTree = "<group>"; };
 		58AD929E2178016E00AAF2A9 /* SponsorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsVC.swift; sourceTree = "<group>"; };
 		58AD92A22178019200AAF2A9 /* CoordinatorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsVC.swift; sourceTree = "<group>"; };
-		58C4F96C218E36DE00A5947F /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		58C4F96C218E36DE00A5947F /* SplashScreenVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC1.swift; sourceTree = "<group>"; };
+		58CC3D37218F99EC00334260 /* SplashScreenVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC2.swift; sourceTree = "<group>"; };
 		58EB268F2153225600C6625C /* NameFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFile.swift; sourceTree = "<group>"; };
 		58EB365A218385FD00011914 /* CountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountVC.swift; sourceTree = "<group>"; };
 		7CF488D4864C78ED917DD4C9 /* Pods-HBS New Venture Competition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBS New Venture Competition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,7 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				581519692159956C00D8E06D /* Intro.storyboard */,
-				58C4F96C218E36DE00A5947F /* SplashScreenVC.swift */,
+				58C4F96C218E36DE00A5947F /* SplashScreenVC1.swift */,
+				58CC3D37218F99EC00334260 /* SplashScreenVC2.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -482,8 +485,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58C4F96D218E36DE00A5947F /* SplashScreenVC.swift in Sources */,
+				58C4F96D218E36DE00A5947F /* SplashScreenVC1.swift in Sources */,
 				58AD929F2178016E00AAF2A9 /* SponsorsVC.swift in Sources */,
+				58CC3D38218F99EC00334260 /* SplashScreenVC2.swift in Sources */,
 				586DAE24215317C900C35A5A /* AppDelegate.swift in Sources */,
 				58EB365B218385FD00011914 /* CountVC.swift in Sources */,
 				5806212421546060006873B2 /* Coordinator.swift in Sources */,

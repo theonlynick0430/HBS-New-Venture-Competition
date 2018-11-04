@@ -72,15 +72,15 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     private func setupRatings(){
         ratingsView.didFinishTouchingCosmos = { rating in
-            if rating != self.company.rating{
+            if rating != self.company.stars{
                 FirebaseManager.manager.addVote(self.company.companyID, rating: rating, completionHandler: { (error) in
                     guard error == nil else{
-                        self.ratingsView.rating = self.company.rating
+                        self.ratingsView.rating = self.company.stars
                         self.issueAlert(ofType: .requestFailed)
                         return
                     }
                     
-                    self.company.rating = rating
+                    self.company.stars = rating
                 })
             }
         }
@@ -97,7 +97,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         headerLabel.text = company.name
         logoImageView.setFirebaseURL(firebaseURL: company.logoImageURL)
         descriptionLabel.text = company.description
-        ratingsView.rating = company.rating
+        ratingsView.rating = company.stars
     }
     
     // MARK: - Tableview Delegate and Datasource
