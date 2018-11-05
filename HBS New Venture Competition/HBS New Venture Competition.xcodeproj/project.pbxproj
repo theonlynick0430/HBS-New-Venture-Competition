@@ -25,6 +25,7 @@
 		581519772159BB0200D8E06D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581519762159BB0200D8E06D /* AsyncImageView.swift */; };
 		58207247218FE5A300F5C342 /* EventCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58207246218FE5A300F5C342 /* EventCodeVC.xib */; };
 		58207249218FE5B500F5C342 /* EventCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58207248218FE5B500F5C342 /* EventCodeVC.swift */; };
+		5851B88A2190315A00429A09 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851B8892190315A00429A09 /* NotesVC.swift */; };
 		5863FC7021838080001C0D64 /* CountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5863FC6F21838080001C0D64 /* CountVC.xib */; };
 		586DAE24215317C900C35A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE23215317C900C35A5A /* AppDelegate.swift */; };
 		586DAE29215317C900C35A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586DAE27215317C900C35A5A /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 		581519762159BB0200D8E06D /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		58207246218FE5A300F5C342 /* EventCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCodeVC.xib; sourceTree = "<group>"; };
 		58207248218FE5B500F5C342 /* EventCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCodeVC.swift; sourceTree = "<group>"; };
+		5851B8892190315A00429A09 /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
 		5863FC6F21838080001C0D64 /* CountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountVC.xib; sourceTree = "<group>"; };
 		586DAE20215317C900C35A5A /* HBS New Venture Competition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HBS New Venture Competition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		586DAE23215317C900C35A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				58207248218FE5B500F5C342 /* EventCodeVC.swift */,
 				58207246218FE5A300F5C342 /* EventCodeVC.xib */,
 				5800167A217E7486000A9DD7 /* CompanyDetailVC.swift */,
+				5851B8892190315A00429A09 /* NotesVC.swift */,
 				58AD929C2178014700AAF2A9 /* JudgesVC.swift */,
 				58AD929E2178016E00AAF2A9 /* SponsorsVC.swift */,
 				58AD92A22178019200AAF2A9 /* CoordinatorsVC.swift */,
@@ -502,6 +505,7 @@
 				5806211A21545DC5006873B2 /* FirebaseManager.swift in Sources */,
 				5806212221546055006873B2 /* Sponsor.swift in Sources */,
 				58EB26902153225600C6625C /* NameFile.swift in Sources */,
+				5851B88A2190315A00429A09 /* NotesVC.swift in Sources */,
 				58AD92972178007700AAF2A9 /* CompanyCell.swift in Sources */,
 				58AD92A32178019200AAF2A9 /* CoordinatorsVC.swift in Sources */,
 				580621272154645C006873B2 /* CompanyMember.swift in Sources */,

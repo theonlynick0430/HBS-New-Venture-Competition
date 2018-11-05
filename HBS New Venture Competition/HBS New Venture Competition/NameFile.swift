@@ -17,6 +17,7 @@ struct NameFile {
     
     struct Segues {
         static let toCompanyDetail = "SegueToCompanyDetail"
+        static let toNotes = "SegueToNotes"
     }
     
     struct Firebase{
@@ -35,7 +36,6 @@ struct NameFile {
                 //company <document> - random ID
             static let name = "Name"
             static let description = "Description"
-            static let notes = "Notes"
             static let logoImageURL = "LogoImageURL"
             static let order = "Order"
                     //members <collection>
@@ -49,6 +49,10 @@ struct NameFile {
             static let linkedInURL = "LinkedInURL"
             static let education = "Education"
             static let position = "Position"
+                    //notes <collection>
+            static let notes = "Notes"
+                        //note <document> - deviceID
+            static let note = "Note"
                     //votes <collection>
             static let votes = "Votes"
                         //vote <document> - deviceID

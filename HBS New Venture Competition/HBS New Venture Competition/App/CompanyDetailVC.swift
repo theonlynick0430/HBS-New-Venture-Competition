@@ -17,8 +17,9 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var logoImageView: AsyncImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTV: UITextView!
     @IBOutlet weak var ratingsView: CosmosView!
+    @IBOutlet weak var notesBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     //data source
@@ -96,7 +97,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     private func loadData(){
         headerLabel.text = company.name
         logoImageView.setFirebaseURL(firebaseURL: company.logoImageURL)
-        descriptionLabel.text = company.description
+        descriptionTV.text = company.description
         ratingsView.rating = company.stars
     }
     
@@ -129,5 +130,9 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             return cell
         }
     }
+    
+    // MARK: - Navigation
+    
+    @IBAction func unwindToCompanyDetail(segue: UIStoryboardSegue) {}
 
 }

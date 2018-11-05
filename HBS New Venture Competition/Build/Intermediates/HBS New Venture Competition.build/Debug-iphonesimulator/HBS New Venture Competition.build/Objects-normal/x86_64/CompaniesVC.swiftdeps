@@ -24,6 +24,7 @@ depends-top-level:
 - !private "-"
 - !private "<"
 - !private "=="
+- !private "AppStorage"
 - "AssignmentPrecedence"
 - !private "Bool"
 - "BooleanLiteralType"
@@ -37,6 +38,7 @@ depends-top-level:
 - !private "CompanyDetailVC"
 - !private "CountVC"
 - !private "DefaultButton"
+- !private "EventCodeVC"
 - !private "FirebaseManager"
 - !private "FloatLiteralType"
 - "IndexPath"
@@ -63,6 +65,8 @@ depends-top-level:
 - "UIViewController"
 depends-member:
 - !private ["27HBS_New_Venture_Competition9AlertTypeO", "dataRetrievalFailed"]
+- !private ["27HBS_New_Venture_Competition10AppStorageC", "eventCode"]
+- !private ["27HBS_New_Venture_Competition10AppStorageC", "save"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "enumerated"]
@@ -121,6 +125,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "masksToBounds"]
 - !private ["So6CGRectV", "width"]
 - !private ["So6CGSizeV", "init"]
+- !private ["s7CVarArgP", "AppStorage"]
 - !private ["s7CVarArgP", "Bundle"]
 - !private ["s7CVarArgP", "CGSize"]
 - !private ["s7CVarArgP", "CancelButton"]
@@ -129,6 +134,7 @@ depends-member:
 - !private ["s7CVarArgP", "CompanyCell"]
 - !private ["s7CVarArgP", "CountVC"]
 - !private ["s7CVarArgP", "DefaultButton"]
+- !private ["s7CVarArgP", "EventCodeVC"]
 - !private ["s7CVarArgP", "FirebaseManager"]
 - !private ["s7CVarArgP", "IndexPath"]
 - !private ["s7CVarArgP", "Int"]
@@ -159,6 +165,7 @@ depends-member:
 - !private ["s7CVarArgP", "enumerated"]
 - !private ["s7CVarArgP", "es"]
 - !private ["s7CVarArgP", "estimatedItemSize"]
+- !private ["s7CVarArgP", "executionBlock"]
 - !private ["s7CVarArgP", "fetchCompanies"]
 - !private ["s7CVarArgP", "filter"]
 - !private ["s7CVarArgP", "filteredCompanies"]
@@ -242,6 +249,7 @@ depends-member:
 - !private ["Sl", "row"]
 - !private ["Sl", "sort"]
 - !private ["Sl", "subscript"]
+- !private ["27HBS_New_Venture_Competition11CompaniesVCC", "AppStorage"]
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "Bool"]
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "Bundle"]
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "CGSize"]
@@ -252,6 +260,7 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "CompanyDetailVC"]
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "CountVC"]
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "DefaultButton"]
+- !private ["27HBS_New_Venture_Competition11CompaniesVCC", "EventCodeVC"]
 - !private ["27HBS_New_Venture_Competition11CompaniesVCC", "FirebaseManager"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "IndexPath"]
 - ["27HBS_New_Venture_Competition11CompaniesVCC", "Int"]
@@ -338,6 +347,7 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition7CountVCC", "init"]
 - !private ["27HBS_New_Venture_Competition7CountVCC", "numbers"]
 - !private ["27HBS_New_Venture_Competition7CountVCC", "selectedNumber"]
+- !private ["s28CustomDebugStringConvertibleP", "AppStorage"]
 - !private ["s28CustomDebugStringConvertibleP", "Bundle"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
 - !private ["s28CustomDebugStringConvertibleP", "CancelButton"]
@@ -346,6 +356,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "CompanyCell"]
 - !private ["s28CustomDebugStringConvertibleP", "CountVC"]
 - !private ["s28CustomDebugStringConvertibleP", "DefaultButton"]
+- !private ["s28CustomDebugStringConvertibleP", "EventCodeVC"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseManager"]
 - !private ["s28CustomDebugStringConvertibleP", "IndexPath"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
@@ -375,6 +386,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "enumerated"]
 - !private ["s28CustomDebugStringConvertibleP", "es"]
 - !private ["s28CustomDebugStringConvertibleP", "estimatedItemSize"]
+- !private ["s28CustomDebugStringConvertibleP", "executionBlock"]
 - !private ["s28CustomDebugStringConvertibleP", "fetchCompanies"]
 - !private ["s28CustomDebugStringConvertibleP", "filter"]
 - !private ["s28CustomDebugStringConvertibleP", "filteredCompanies"]
@@ -479,6 +491,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "sort"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "AppStorage"]
 - !private ["s23CustomStringConvertibleP", "Bundle"]
 - !private ["s23CustomStringConvertibleP", "CGSize"]
 - !private ["s23CustomStringConvertibleP", "CancelButton"]
@@ -487,6 +500,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "CompanyCell"]
 - !private ["s23CustomStringConvertibleP", "CountVC"]
 - !private ["s23CustomStringConvertibleP", "DefaultButton"]
+- !private ["s23CustomStringConvertibleP", "EventCodeVC"]
 - !private ["s23CustomStringConvertibleP", "FirebaseManager"]
 - !private ["s23CustomStringConvertibleP", "IndexPath"]
 - !private ["s23CustomStringConvertibleP", "Int"]
@@ -517,6 +531,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "enumerated"]
 - !private ["s23CustomStringConvertibleP", "es"]
 - !private ["s23CustomStringConvertibleP", "estimatedItemSize"]
+- !private ["s23CustomStringConvertibleP", "executionBlock"]
 - !private ["s23CustomStringConvertibleP", "fetchCompanies"]
 - !private ["s23CustomStringConvertibleP", "filter"]
 - !private ["s23CustomStringConvertibleP", "filteredCompanies"]
@@ -651,6 +666,7 @@ depends-member:
 - !private ["SE", "sort"]
 - !private ["SE", "subscript"]
 - !private ["SE", "width"]
+- !private ["SQ", "AppStorage"]
 - !private ["SQ", "Bundle"]
 - !private ["SQ", "CGSize"]
 - !private ["SQ", "CancelButton"]
@@ -659,6 +675,7 @@ depends-member:
 - !private ["SQ", "CompanyCell"]
 - !private ["SQ", "CountVC"]
 - !private ["SQ", "DefaultButton"]
+- !private ["SQ", "EventCodeVC"]
 - !private ["SQ", "FirebaseManager"]
 - !private ["SQ", "IndexPath"]
 - !private ["SQ", "Int"]
@@ -691,6 +708,7 @@ depends-member:
 - !private ["SQ", "enumerated"]
 - !private ["SQ", "es"]
 - !private ["SQ", "estimatedItemSize"]
+- !private ["SQ", "executionBlock"]
 - !private ["SQ", "fetchCompanies"]
 - !private ["SQ", "filter"]
 - !private ["SQ", "filteredCompanies"]
@@ -768,6 +786,9 @@ depends-member:
 - !private ["SQ", "voteBtnPressed"]
 - !private ["SQ", "width"]
 - !private ["So15UIControlEventsV", "touchUpInside"]
+- !private ["27HBS_New_Venture_Competition11EventCodeVCC", "deinit"]
+- !private ["27HBS_New_Venture_Competition11EventCodeVCC", "executionBlock"]
+- !private ["27HBS_New_Venture_Competition11EventCodeVCC", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
@@ -806,6 +827,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "fetchCompanies"]
 - !private ["27HBS_New_Venture_Competition15FirebaseManagerC", "manager"]
+- !private ["SH", "AppStorage"]
 - !private ["SH", "Bundle"]
 - !private ["SH", "CGSize"]
 - !private ["SH", "CancelButton"]
@@ -814,6 +836,7 @@ depends-member:
 - !private ["SH", "CompanyCell"]
 - !private ["SH", "CountVC"]
 - !private ["SH", "DefaultButton"]
+- !private ["SH", "EventCodeVC"]
 - !private ["SH", "FirebaseManager"]
 - !private ["SH", "IndexPath"]
 - !private ["SH", "Int"]
@@ -846,6 +869,7 @@ depends-member:
 - !private ["SH", "enumerated"]
 - !private ["SH", "es"]
 - !private ["SH", "estimatedItemSize"]
+- !private ["SH", "executionBlock"]
 - !private ["SH", "fetchCompanies"]
 - !private ["SH", "filter"]
 - !private ["SH", "filteredCompanies"]
@@ -939,6 +963,7 @@ depends-member:
 - !private ["SM", "row"]
 - !private ["SM", "sort"]
 - !private ["SM", "subscript"]
+- !private ["So8NSCodingP", "AppStorage"]
 - !private ["So8NSCodingP", "Bundle"]
 - !private ["So8NSCodingP", "CGSize"]
 - !private ["So8NSCodingP", "CancelButton"]
@@ -947,6 +972,7 @@ depends-member:
 - !private ["So8NSCodingP", "CompanyCell"]
 - !private ["So8NSCodingP", "CountVC"]
 - !private ["So8NSCodingP", "DefaultButton"]
+- !private ["So8NSCodingP", "EventCodeVC"]
 - !private ["So8NSCodingP", "FirebaseManager"]
 - !private ["So8NSCodingP", "IndexPath"]
 - !private ["So8NSCodingP", "Int"]
@@ -972,6 +998,7 @@ depends-member:
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "es"]
 - !private ["So8NSCodingP", "estimatedItemSize"]
+- !private ["So8NSCodingP", "executionBlock"]
 - !private ["So8NSCodingP", "fetchCompanies"]
 - !private ["So8NSCodingP", "filteredCompanies"]
 - !private ["So8NSCodingP", "frame"]
@@ -1040,6 +1067,7 @@ depends-member:
 - !private ["So9NSCopyingP", "contains"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "lowercased"]
+- !private ["So26NSExtensionRequestHandlingP", "AppStorage"]
 - !private ["So26NSExtensionRequestHandlingP", "Bundle"]
 - !private ["So26NSExtensionRequestHandlingP", "CGSize"]
 - !private ["So26NSExtensionRequestHandlingP", "CancelButton"]
@@ -1048,6 +1076,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "CompanyCell"]
 - !private ["So26NSExtensionRequestHandlingP", "CountVC"]
 - !private ["So26NSExtensionRequestHandlingP", "DefaultButton"]
+- !private ["So26NSExtensionRequestHandlingP", "EventCodeVC"]
 - !private ["So26NSExtensionRequestHandlingP", "FirebaseManager"]
 - !private ["So26NSExtensionRequestHandlingP", "IndexPath"]
 - !private ["So26NSExtensionRequestHandlingP", "Int"]
@@ -1061,6 +1090,8 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "collectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "companies"]
 - !private ["So26NSExtensionRequestHandlingP", "company"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "executionBlock"]
 - !private ["So26NSExtensionRequestHandlingP", "fetchCompanies"]
 - !private ["So26NSExtensionRequestHandlingP", "filteredCompanies"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
@@ -1118,6 +1149,7 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "lowercased"]
 - !private ["So16NSMutableCopyingP", "contains"]
 - !private ["So16NSMutableCopyingP", "lowercased"]
+- !private ["So8NSObjectC", "AppStorage"]
 - !private ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Bundle"]
 - !private ["So8NSObjectC", "CGSize"]
@@ -1128,6 +1160,7 @@ depends-member:
 - !private ["So8NSObjectC", "CompanyDetailVC"]
 - !private ["So8NSObjectC", "CountVC"]
 - !private ["So8NSObjectC", "DefaultButton"]
+- !private ["So8NSObjectC", "EventCodeVC"]
 - !private ["So8NSObjectC", "FirebaseManager"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
@@ -1161,6 +1194,7 @@ depends-member:
 - !private ["So8NSObjectC", "dismiss"]
 - !private ["So8NSObjectC", "es"]
 - !private ["So8NSObjectC", "estimatedItemSize"]
+- !private ["So8NSObjectC", "executionBlock"]
 - ["So8NSObjectC", "fetchCompanies"]
 - ["So8NSObjectC", "fetchInProgress"]
 - ["So8NSObjectC", "filteredCompanies"]
@@ -1232,6 +1266,7 @@ depends-member:
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "voteBtn"]
 - ["So8NSObjectC", "voteBtnPressed"]
+- !private ["So8NSObjectP", "AppStorage"]
 - !private ["So8NSObjectP", "Bundle"]
 - !private ["So8NSObjectP", "CGSize"]
 - !private ["So8NSObjectP", "CancelButton"]
@@ -1240,6 +1275,7 @@ depends-member:
 - !private ["So8NSObjectP", "CompanyCell"]
 - !private ["So8NSObjectP", "CountVC"]
 - !private ["So8NSObjectP", "DefaultButton"]
+- !private ["So8NSObjectP", "EventCodeVC"]
 - !private ["So8NSObjectP", "FirebaseManager"]
 - !private ["So8NSObjectP", "IndexPath"]
 - !private ["So8NSObjectP", "Int"]
@@ -1266,6 +1302,7 @@ depends-member:
 - !private ["So8NSObjectP", "dismiss"]
 - !private ["So8NSObjectP", "es"]
 - !private ["So8NSObjectP", "estimatedItemSize"]
+- !private ["So8NSObjectP", "executionBlock"]
 - !private ["So8NSObjectP", "fetchCompanies"]
 - !private ["So8NSObjectP", "filteredCompanies"]
 - !private ["So8NSObjectP", "frame"]
@@ -1354,6 +1391,7 @@ depends-member:
 - !private ["Sq", "reloadData"]
 - !private ["Sq", "scrollToItem"]
 - !private ["11PopupDialogAAC", "addButton"]
+- !private ["11PopupDialogAAC", "dismiss"]
 - !private ["11PopupDialogAAC", "init"]
 - !private ["11PopupDialog0aB6ButtonC", "init"]
 - !private ["11PopupDialog0aB15TransitionStyleO", "bounceDown"]
@@ -1464,6 +1502,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "show"]
 - !private ["So12UIAppearanceP", "showsCancelButton"]
 - !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "AppStorage"]
 - !private ["So21UIAppearanceContainerP", "Bundle"]
 - !private ["So21UIAppearanceContainerP", "CGSize"]
 - !private ["So21UIAppearanceContainerP", "CancelButton"]
@@ -1472,6 +1511,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "CompanyCell"]
 - !private ["So21UIAppearanceContainerP", "CountVC"]
 - !private ["So21UIAppearanceContainerP", "DefaultButton"]
+- !private ["So21UIAppearanceContainerP", "EventCodeVC"]
 - !private ["So21UIAppearanceContainerP", "FirebaseManager"]
 - !private ["So21UIAppearanceContainerP", "IndexPath"]
 - !private ["So21UIAppearanceContainerP", "Int"]
@@ -1494,6 +1534,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "es"]
+- !private ["So21UIAppearanceContainerP", "executionBlock"]
 - !private ["So21UIAppearanceContainerP", "fetchCompanies"]
 - !private ["So21UIAppearanceContainerP", "filteredCompanies"]
 - !private ["So21UIAppearanceContainerP", "frame"]
@@ -1561,6 +1602,7 @@ depends-member:
 - !private ["So16UIBarPositioningP", "resignFirstResponder"]
 - !private ["So16UIBarPositioningP", "showsCancelButton"]
 - !private ["So16UIBarPositioningP", "text"]
+- !private ["So24UIBarPositioningDelegateP", "AppStorage"]
 - !private ["So24UIBarPositioningDelegateP", "Bundle"]
 - !private ["So24UIBarPositioningDelegateP", "CGSize"]
 - !private ["So24UIBarPositioningDelegateP", "CancelButton"]
@@ -1569,6 +1611,7 @@ depends-member:
 - !private ["So24UIBarPositioningDelegateP", "CompanyCell"]
 - !private ["So24UIBarPositioningDelegateP", "CountVC"]
 - !private ["So24UIBarPositioningDelegateP", "DefaultButton"]
+- !private ["So24UIBarPositioningDelegateP", "EventCodeVC"]
 - !private ["So24UIBarPositioningDelegateP", "FirebaseManager"]
 - !private ["So24UIBarPositioningDelegateP", "IndexPath"]
 - !private ["So24UIBarPositioningDelegateP", "Int"]
@@ -1642,6 +1685,7 @@ depends-member:
 - !private ["So20UICollectionViewCellC", "company"]
 - !private ["So20UICollectionViewCellC", "identifier"]
 - !private ["So20UICollectionViewCellC", "layer"]
+- !private ["So26UICollectionViewDataSourceP", "AppStorage"]
 - !private ["So26UICollectionViewDataSourceP", "Bundle"]
 - !private ["So26UICollectionViewDataSourceP", "CGSize"]
 - !private ["So26UICollectionViewDataSourceP", "CancelButton"]
@@ -1650,6 +1694,7 @@ depends-member:
 - !private ["So26UICollectionViewDataSourceP", "CompanyCell"]
 - !private ["So26UICollectionViewDataSourceP", "CountVC"]
 - !private ["So26UICollectionViewDataSourceP", "DefaultButton"]
+- !private ["So26UICollectionViewDataSourceP", "EventCodeVC"]
 - !private ["So26UICollectionViewDataSourceP", "FirebaseManager"]
 - !private ["So26UICollectionViewDataSourceP", "IndexPath"]
 - !private ["So26UICollectionViewDataSourceP", "Int"]
@@ -1707,6 +1752,7 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "viewForZoomingInScrollView"]
 - !private ["So26UICollectionViewDataSourceP", "voteBtn"]
 - !private ["So26UICollectionViewDataSourceP", "voteBtnPressed"]
+- !private ["So24UICollectionViewDelegateP", "AppStorage"]
 - !private ["So24UICollectionViewDelegateP", "Bundle"]
 - !private ["So24UICollectionViewDelegateP", "CGSize"]
 - !private ["So24UICollectionViewDelegateP", "CancelButton"]
@@ -1715,6 +1761,7 @@ depends-member:
 - !private ["So24UICollectionViewDelegateP", "CompanyCell"]
 - !private ["So24UICollectionViewDelegateP", "CountVC"]
 - !private ["So24UICollectionViewDelegateP", "DefaultButton"]
+- !private ["So24UICollectionViewDelegateP", "EventCodeVC"]
 - !private ["So24UICollectionViewDelegateP", "FirebaseManager"]
 - !private ["So24UICollectionViewDelegateP", "IndexPath"]
 - !private ["So24UICollectionViewDelegateP", "Int"]
@@ -1772,6 +1819,7 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "viewForZoomingInScrollView"]
 - !private ["So24UICollectionViewDelegateP", "voteBtn"]
 - !private ["So24UICollectionViewDelegateP", "voteBtnPressed"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "AppStorage"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "Bundle"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "CGSize"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "CancelButton"]
@@ -1780,6 +1828,7 @@ depends-member:
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "CompanyCell"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "CountVC"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "DefaultButton"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "EventCodeVC"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "FirebaseManager"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "IndexPath"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "Int"]
@@ -1843,6 +1892,7 @@ depends-member:
 - !private ["So22UICollectionViewLayoutC", "estimatedItemSize"]
 - !private ["So22UICollectionViewLayoutC", "itemSize"]
 - !private ["So22UICollectionViewLayoutC", "scrollDirection"]
+- !private ["So18UIContentContainerP", "AppStorage"]
 - !private ["So18UIContentContainerP", "Bundle"]
 - !private ["So18UIContentContainerP", "CGSize"]
 - !private ["So18UIContentContainerP", "CancelButton"]
@@ -1851,6 +1901,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "CompanyCell"]
 - !private ["So18UIContentContainerP", "CountVC"]
 - !private ["So18UIContentContainerP", "DefaultButton"]
+- !private ["So18UIContentContainerP", "EventCodeVC"]
 - !private ["So18UIContentContainerP", "FirebaseManager"]
 - !private ["So18UIContentContainerP", "IndexPath"]
 - !private ["So18UIContentContainerP", "Int"]
@@ -1864,6 +1915,8 @@ depends-member:
 - ["So18UIContentContainerP", "collectionView"]
 - !private ["So18UIContentContainerP", "companies"]
 - !private ["So18UIContentContainerP", "company"]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "executionBlock"]
 - !private ["So18UIContentContainerP", "fetchCompanies"]
 - !private ["So18UIContentContainerP", "filteredCompanies"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
@@ -1967,6 +2020,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "show"]
 - !private ["So13UIDynamicItemP", "showsCancelButton"]
 - !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "AppStorage"]
 - !private ["So18UIFocusEnvironmentP", "Bundle"]
 - !private ["So18UIFocusEnvironmentP", "CGSize"]
 - !private ["So18UIFocusEnvironmentP", "CancelButton"]
@@ -1975,6 +2029,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "CompanyCell"]
 - !private ["So18UIFocusEnvironmentP", "CountVC"]
 - !private ["So18UIFocusEnvironmentP", "DefaultButton"]
+- !private ["So18UIFocusEnvironmentP", "EventCodeVC"]
 - !private ["So18UIFocusEnvironmentP", "FirebaseManager"]
 - !private ["So18UIFocusEnvironmentP", "IndexPath"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
@@ -1997,6 +2052,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "es"]
+- !private ["So18UIFocusEnvironmentP", "executionBlock"]
 - !private ["So18UIFocusEnvironmentP", "fetchCompanies"]
 - !private ["So18UIFocusEnvironmentP", "filteredCompanies"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
@@ -2109,6 +2165,7 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - !private ["So30UIFocusItemScrollableContainerP", "scrollToItem"]
 - !private ["So6UIFontC", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "AppStorage"]
 - !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - !private ["So30UIPasteConfigurationSupportingP", "CancelButton"]
@@ -2117,6 +2174,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "CompanyCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "CountVC"]
 - !private ["So30UIPasteConfigurationSupportingP", "DefaultButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "EventCodeVC"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseManager"]
 - !private ["So30UIPasteConfigurationSupportingP", "IndexPath"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
@@ -2139,6 +2197,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "es"]
+- !private ["So30UIPasteConfigurationSupportingP", "executionBlock"]
 - !private ["So30UIPasteConfigurationSupportingP", "fetchCompanies"]
 - !private ["So30UIPasteConfigurationSupportingP", "filteredCompanies"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
@@ -2200,6 +2259,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "voteBtn"]
 - !private ["So30UIPasteConfigurationSupportingP", "voteBtnPressed"]
+- !private ["So11UIResponderC", "AppStorage"]
 - !private ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Bundle"]
 - !private ["So11UIResponderC", "CGSize"]
@@ -2210,6 +2270,7 @@ depends-member:
 - !private ["So11UIResponderC", "CompanyDetailVC"]
 - !private ["So11UIResponderC", "CountVC"]
 - !private ["So11UIResponderC", "DefaultButton"]
+- !private ["So11UIResponderC", "EventCodeVC"]
 - !private ["So11UIResponderC", "FirebaseManager"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
@@ -2239,6 +2300,7 @@ depends-member:
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "dismiss"]
 - !private ["So11UIResponderC", "es"]
+- !private ["So11UIResponderC", "executionBlock"]
 - ["So11UIResponderC", "fetchCompanies"]
 - ["So11UIResponderC", "fetchInProgress"]
 - ["So11UIResponderC", "filteredCompanies"]
@@ -2305,6 +2367,7 @@ depends-member:
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "voteBtn"]
 - ["So11UIResponderC", "voteBtnPressed"]
+- !private ["So30UIResponderStandardEditActionsP", "AppStorage"]
 - !private ["So30UIResponderStandardEditActionsP", "Bundle"]
 - !private ["So30UIResponderStandardEditActionsP", "CGSize"]
 - !private ["So30UIResponderStandardEditActionsP", "CancelButton"]
@@ -2313,6 +2376,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "CompanyCell"]
 - !private ["So30UIResponderStandardEditActionsP", "CountVC"]
 - !private ["So30UIResponderStandardEditActionsP", "DefaultButton"]
+- !private ["So30UIResponderStandardEditActionsP", "EventCodeVC"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseManager"]
 - !private ["So30UIResponderStandardEditActionsP", "IndexPath"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
@@ -2335,6 +2399,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "es"]
+- !private ["So30UIResponderStandardEditActionsP", "executionBlock"]
 - !private ["So30UIResponderStandardEditActionsP", "fetchCompanies"]
 - !private ["So30UIResponderStandardEditActionsP", "filteredCompanies"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
@@ -2404,6 +2469,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "es"]
 - !private ["So12UIScrollViewC", "reloadData"]
 - !private ["So12UIScrollViewC", "scrollToItem"]
+- !private ["So20UIScrollViewDelegateP", "AppStorage"]
 - !private ["So20UIScrollViewDelegateP", "Bundle"]
 - !private ["So20UIScrollViewDelegateP", "CGSize"]
 - !private ["So20UIScrollViewDelegateP", "CancelButton"]
@@ -2412,6 +2478,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "CompanyCell"]
 - !private ["So20UIScrollViewDelegateP", "CountVC"]
 - !private ["So20UIScrollViewDelegateP", "DefaultButton"]
+- !private ["So20UIScrollViewDelegateP", "EventCodeVC"]
 - !private ["So20UIScrollViewDelegateP", "FirebaseManager"]
 - !private ["So20UIScrollViewDelegateP", "IndexPath"]
 - !private ["So20UIScrollViewDelegateP", "Int"]
@@ -2479,6 +2546,7 @@ depends-member:
 - !private ["So11UISearchBarC", "resignFirstResponder"]
 - !private ["So11UISearchBarC", "showsCancelButton"]
 - !private ["So11UISearchBarC", "text"]
+- !private ["So19UISearchBarDelegateP", "AppStorage"]
 - !private ["So19UISearchBarDelegateP", "Bundle"]
 - !private ["So19UISearchBarDelegateP", "CGSize"]
 - !private ["So19UISearchBarDelegateP", "CancelButton"]
@@ -2487,6 +2555,7 @@ depends-member:
 - !private ["So19UISearchBarDelegateP", "CompanyCell"]
 - !private ["So19UISearchBarDelegateP", "CountVC"]
 - !private ["So19UISearchBarDelegateP", "DefaultButton"]
+- !private ["So19UISearchBarDelegateP", "EventCodeVC"]
 - !private ["So19UISearchBarDelegateP", "FirebaseManager"]
 - !private ["So19UISearchBarDelegateP", "IndexPath"]
 - !private ["So19UISearchBarDelegateP", "Int"]
@@ -2555,6 +2624,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "scrollToItem"]
+- !private ["So16UIStateRestoringP", "AppStorage"]
 - !private ["So16UIStateRestoringP", "Bundle"]
 - !private ["So16UIStateRestoringP", "CGSize"]
 - !private ["So16UIStateRestoringP", "CancelButton"]
@@ -2563,6 +2633,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "CompanyCell"]
 - !private ["So16UIStateRestoringP", "CountVC"]
 - !private ["So16UIStateRestoringP", "DefaultButton"]
+- !private ["So16UIStateRestoringP", "EventCodeVC"]
 - !private ["So16UIStateRestoringP", "FirebaseManager"]
 - !private ["So16UIStateRestoringP", "IndexPath"]
 - !private ["So16UIStateRestoringP", "Int"]
@@ -2576,6 +2647,8 @@ depends-member:
 - ["So16UIStateRestoringP", "collectionView"]
 - !private ["So16UIStateRestoringP", "companies"]
 - !private ["So16UIStateRestoringP", "company"]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "executionBlock"]
 - !private ["So16UIStateRestoringP", "fetchCompanies"]
 - !private ["So16UIStateRestoringP", "filteredCompanies"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
@@ -2642,6 +2715,7 @@ depends-member:
 - !private ["So17UITextInputTraitsP", "resignFirstResponder"]
 - !private ["So17UITextInputTraitsP", "showsCancelButton"]
 - !private ["So17UITextInputTraitsP", "text"]
+- !private ["So18UITraitEnvironmentP", "AppStorage"]
 - !private ["So18UITraitEnvironmentP", "Bundle"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
 - !private ["So18UITraitEnvironmentP", "CancelButton"]
@@ -2650,6 +2724,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "CompanyCell"]
 - !private ["So18UITraitEnvironmentP", "CountVC"]
 - !private ["So18UITraitEnvironmentP", "DefaultButton"]
+- !private ["So18UITraitEnvironmentP", "EventCodeVC"]
 - !private ["So18UITraitEnvironmentP", "FirebaseManager"]
 - !private ["So18UITraitEnvironmentP", "IndexPath"]
 - !private ["So18UITraitEnvironmentP", "Int"]
@@ -2672,6 +2747,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "es"]
+- !private ["So18UITraitEnvironmentP", "executionBlock"]
 - !private ["So18UITraitEnvironmentP", "fetchCompanies"]
 - !private ["So18UITraitEnvironmentP", "filteredCompanies"]
 - !private ["So18UITraitEnvironmentP", "frame"]
@@ -2733,6 +2809,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "voteBtn"]
 - !private ["So18UITraitEnvironmentP", "voteBtnPressed"]
+- !private ["So23UIUserActivityRestoringP", "AppStorage"]
 - !private ["So23UIUserActivityRestoringP", "Bundle"]
 - !private ["So23UIUserActivityRestoringP", "CGSize"]
 - !private ["So23UIUserActivityRestoringP", "CancelButton"]
@@ -2741,6 +2818,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "CompanyCell"]
 - !private ["So23UIUserActivityRestoringP", "CountVC"]
 - !private ["So23UIUserActivityRestoringP", "DefaultButton"]
+- !private ["So23UIUserActivityRestoringP", "EventCodeVC"]
 - !private ["So23UIUserActivityRestoringP", "FirebaseManager"]
 - !private ["So23UIUserActivityRestoringP", "IndexPath"]
 - !private ["So23UIUserActivityRestoringP", "Int"]
@@ -2763,6 +2841,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "dismiss"]
 - !private ["So23UIUserActivityRestoringP", "es"]
+- !private ["So23UIUserActivityRestoringP", "executionBlock"]
 - !private ["So23UIUserActivityRestoringP", "fetchCompanies"]
 - !private ["So23UIUserActivityRestoringP", "filteredCompanies"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
@@ -2844,6 +2923,7 @@ depends-member:
 - !private ["So6UIViewC", "show"]
 - !private ["So6UIViewC", "showsCancelButton"]
 - !private ["So6UIViewC", "text"]
+- !private ["So16UIViewControllerC", "AppStorage"]
 - !private ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "Bundle"]
 - !private ["So16UIViewControllerC", "CGSize"]
@@ -2854,6 +2934,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "CompanyDetailVC"]
 - !private ["So16UIViewControllerC", "CountVC"]
 - !private ["So16UIViewControllerC", "DefaultButton"]
+- !private ["So16UIViewControllerC", "EventCodeVC"]
 - !private ["So16UIViewControllerC", "FirebaseManager"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
@@ -2875,6 +2956,8 @@ depends-member:
 - ["So16UIViewControllerC", "collectionView"]
 - ["So16UIViewControllerC", "companies"]
 - !private ["So16UIViewControllerC", "company"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- !private ["So16UIViewControllerC", "executionBlock"]
 - ["So16UIViewControllerC", "fetchCompanies"]
 - ["So16UIViewControllerC", "fetchInProgress"]
 - ["So16UIViewControllerC", "filteredCompanies"]
@@ -2931,6 +3014,8 @@ depends-member:
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", "voteBtn"]
 - ["So16UIViewControllerC", "voteBtnPressed"]
+- !private ["22FasterVerificationCode0bC12ViewDelegateP", "executionBlock"]
+- !private ["22FasterVerificationCode0bC12ViewDelegateP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "alwaysBounceVertical"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "change"]
@@ -2991,6 +3076,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "sort"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AppStorage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CancelButton"]
@@ -2999,6 +3085,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CompanyCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CountVC"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DefaultButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EventCodeVC"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
@@ -3025,6 +3112,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "es"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "estimatedItemSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "executionBlock"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchCompanies"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "filteredCompanies"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
@@ -3123,6 +3211,7 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "lowercased"]
 depends-nominal:
 - !private "27HBS_New_Venture_Competition9AlertTypeO"
+- !private "27HBS_New_Venture_Competition10AppStorageC"
 - "Sa"
 - "s13ArrayProtocolP"
 - !private "So22UILayoutConstraintAxisV"
@@ -3154,6 +3243,7 @@ depends-nominal:
 - "SE"
 - "SQ"
 - !private "So15UIControlEventsV"
+- !private "27HBS_New_Venture_Competition11EventCodeVCC"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -3238,6 +3328,7 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "22FasterVerificationCode0bC12ViewDelegateP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -3254,6 +3345,7 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/FasterVerificationCode.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
@@ -3277,6 +3369,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FirebaseFirestore-umbrella.h"
@@ -3344,6 +3437,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
@@ -3361,6 +3455,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Modules/module.modulemap"

@@ -7,9 +7,10 @@ provides-member:
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", ""]
 provides-dynamic-lookup:
 - "backBtn"
-- "descriptionLabel"
+- "descriptionTV"
 - "headerLabel"
 - "logoImageView"
+- "notesBtn"
 - "numberOfSections"
 - "ratingsView"
 - "tableView"
@@ -48,6 +49,7 @@ depends-top-level:
 - "UITableViewCell"
 - "UITableViewDataSource"
 - "UITableViewDelegate"
+- "UITextView"
 - !private "UIView"
 - "UIViewController"
 - "UnicodeScalarType"
@@ -115,7 +117,7 @@ depends-member:
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
-- !private ["s7CVarArgP", "descriptionLabel"]
+- !private ["s7CVarArgP", "descriptionTV"]
 - !private ["s7CVarArgP", "deviceIsiPad"]
 - !private ["s7CVarArgP", "didFinishTouchingCosmos"]
 - !private ["s7CVarArgP", "dismiss"]
@@ -198,12 +200,13 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition15CompanyDetailVCC", "UIScreen"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "UITableView"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "UITableViewCell"]
+- ["27HBS_New_Venture_Competition15CompanyDetailVCC", "UITextView"]
 - !private ["27HBS_New_Venture_Competition15CompanyDetailVCC", "UIView"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "backBtn"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "company"]
 - !private ["27HBS_New_Venture_Competition15CompanyDetailVCC", "companyMembers"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "deinit"]
-- ["27HBS_New_Venture_Competition15CompanyDetailVCC", "descriptionLabel"]
+- ["27HBS_New_Venture_Competition15CompanyDetailVCC", "descriptionTV"]
 - !private ["27HBS_New_Venture_Competition15CompanyDetailVCC", "fetchCompanyMembers"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "headerLabel"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "indexPathForPreferredFocusedView"]
@@ -212,6 +215,7 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition15CompanyDetailVCC", "issueAlert"]
 - !private ["27HBS_New_Venture_Competition15CompanyDetailVCC", "loadData"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "logoImageView"]
+- ["27HBS_New_Venture_Competition15CompanyDetailVCC", "notesBtn"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "numberOfSections"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "numberOfSectionsInTableView"]
 - ["27HBS_New_Venture_Competition15CompanyDetailVCC", "ratingsView"]
@@ -270,7 +274,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "description"]
-- !private ["s28CustomDebugStringConvertibleP", "descriptionLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "descriptionTV"]
 - !private ["s28CustomDebugStringConvertibleP", "deviceIsiPad"]
 - !private ["s28CustomDebugStringConvertibleP", "didFinishTouchingCosmos"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
@@ -385,7 +389,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
-- !private ["s23CustomStringConvertibleP", "descriptionLabel"]
+- !private ["s23CustomStringConvertibleP", "descriptionTV"]
 - !private ["s23CustomStringConvertibleP", "deviceIsiPad"]
 - !private ["s23CustomStringConvertibleP", "didFinishTouchingCosmos"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
@@ -479,6 +483,7 @@ depends-member:
 - !private ["15ESPullToRefresh20ESExtensionsProviderP", "separatorColor"]
 - !private ["15ESPullToRefresh20ESExtensionsProviderP", "tableFooterView"]
 - !private ["15ESPullToRefresh20ESExtensionsProviderP", "tableHeaderView"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "text"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "allowsSelection"]
 - !private ["SE", "companyID"]
@@ -531,7 +536,7 @@ depends-member:
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "description"]
-- !private ["SQ", "descriptionLabel"]
+- !private ["SQ", "descriptionTV"]
 - !private ["SQ", "deviceIsiPad"]
 - !private ["SQ", "didFinishTouchingCosmos"]
 - !private ["SQ", "dismiss"]
@@ -649,7 +654,7 @@ depends-member:
 - !private ["SH", "delegate"]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "description"]
-- !private ["SH", "descriptionLabel"]
+- !private ["SH", "descriptionTV"]
 - !private ["SH", "deviceIsiPad"]
 - !private ["SH", "didFinishTouchingCosmos"]
 - !private ["SH", "dismiss"]
@@ -736,7 +741,7 @@ depends-member:
 - !private ["So8NSCodingP", "dataSource"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
-- !private ["So8NSCodingP", "descriptionLabel"]
+- !private ["So8NSCodingP", "descriptionTV"]
 - !private ["So8NSCodingP", "didFinishTouchingCosmos"]
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "es"]
@@ -796,7 +801,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "company"]
 - !private ["So26NSExtensionRequestHandlingP", "companyMembers"]
-- !private ["So26NSExtensionRequestHandlingP", "descriptionLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "descriptionTV"]
 - !private ["So26NSExtensionRequestHandlingP", "fetchCompanyMembers"]
 - !private ["So26NSExtensionRequestHandlingP", "headerLabel"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
@@ -850,6 +855,7 @@ depends-member:
 - !private ["So8NSObjectC", "UIScreen"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "UITextView"]
 - !private ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "allowsSelection"]
 - ["So8NSObjectC", "backBtn"]
@@ -861,7 +867,7 @@ depends-member:
 - !private ["So8NSObjectC", "dataSource"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
-- ["So8NSObjectC", "descriptionLabel"]
+- ["So8NSObjectC", "descriptionTV"]
 - !private ["So8NSObjectC", "deviceIsiPad"]
 - !private ["So8NSObjectC", "didFinishTouchingCosmos"]
 - !private ["So8NSObjectC", "dismiss"]
@@ -878,6 +884,7 @@ depends-member:
 - ["So8NSObjectC", "loadData"]
 - ["So8NSObjectC", "logoImageView"]
 - !private ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "notesBtn"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectC", "rating"]
@@ -931,7 +938,7 @@ depends-member:
 - !private ["So8NSObjectP", "dataSource"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
-- !private ["So8NSObjectP", "descriptionLabel"]
+- !private ["So8NSObjectP", "descriptionTV"]
 - !private ["So8NSObjectP", "deviceIsiPad"]
 - !private ["So8NSObjectP", "didFinishTouchingCosmos"]
 - !private ["So8NSObjectP", "dismiss"]
@@ -1086,7 +1093,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "dataSource"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
-- !private ["So21UIAppearanceContainerP", "descriptionLabel"]
+- !private ["So21UIAppearanceContainerP", "descriptionTV"]
 - !private ["So21UIAppearanceContainerP", "didFinishTouchingCosmos"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "es"]
@@ -1146,7 +1153,7 @@ depends-member:
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "company"]
 - !private ["So18UIContentContainerP", "companyMembers"]
-- !private ["So18UIContentContainerP", "descriptionLabel"]
+- !private ["So18UIContentContainerP", "descriptionTV"]
 - !private ["So18UIContentContainerP", "fetchCompanyMembers"]
 - !private ["So18UIContentContainerP", "headerLabel"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
@@ -1252,7 +1259,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
-- !private ["So18UIFocusEnvironmentP", "descriptionLabel"]
+- !private ["So18UIFocusEnvironmentP", "descriptionTV"]
 - !private ["So18UIFocusEnvironmentP", "didFinishTouchingCosmos"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "es"]
@@ -1350,9 +1357,11 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "separatorColor"]
 - !private ["So30UIFocusItemScrollableContainerP", "tableFooterView"]
 - !private ["So30UIFocusItemScrollableContainerP", "tableHeaderView"]
+- !private ["So30UIFocusItemScrollableContainerP", "text"]
 - !private ["So27UIGestureRecognizerDelegateP", "companyMember"]
 - !private ["So27UIGestureRecognizerDelegateP", "identifier"]
 - !private ["So11UIImageViewC", "setFirebaseURL"]
+- !private ["So10UIKeyInputP", "text"]
 - !private ["So7UILabelC", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - ["So30UIPasteConfigurationSupportingP", "CompanyMember"]
@@ -1372,7 +1381,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
-- !private ["So30UIPasteConfigurationSupportingP", "descriptionLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "descriptionTV"]
 - !private ["So30UIPasteConfigurationSupportingP", "didFinishTouchingCosmos"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "es"]
@@ -1439,6 +1448,7 @@ depends-member:
 - !private ["So11UIResponderC", "UIScreen"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- ["So11UIResponderC", "UITextView"]
 - !private ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "allowsSelection"]
 - ["So11UIResponderC", "backBtn"]
@@ -1449,7 +1459,7 @@ depends-member:
 - !private ["So11UIResponderC", "dataSource"]
 - !private ["So11UIResponderC", "delegate"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
-- ["So11UIResponderC", "descriptionLabel"]
+- ["So11UIResponderC", "descriptionTV"]
 - !private ["So11UIResponderC", "didFinishTouchingCosmos"]
 - !private ["So11UIResponderC", "dismiss"]
 - !private ["So11UIResponderC", "es"]
@@ -1464,6 +1474,7 @@ depends-member:
 - !private ["So11UIResponderC", "issueAlert"]
 - ["So11UIResponderC", "loadData"]
 - ["So11UIResponderC", "logoImageView"]
+- ["So11UIResponderC", "notesBtn"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
 - !private ["So11UIResponderC", "rating"]
@@ -1515,7 +1526,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
-- !private ["So30UIResponderStandardEditActionsP", "descriptionLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "descriptionTV"]
 - !private ["So30UIResponderStandardEditActionsP", "didFinishTouchingCosmos"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "es"]
@@ -1575,6 +1586,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "separatorColor"]
 - !private ["So12UIScrollViewC", "tableFooterView"]
 - !private ["So12UIScrollViewC", "tableHeaderView"]
+- !private ["So12UIScrollViewC", "text"]
 - !private ["So20UIScrollViewDelegateP", "CGRect"]
 - ["So20UIScrollViewDelegateP", "CompanyMember"]
 - !private ["So20UIScrollViewDelegateP", "CompanyMemberCell"]
@@ -1587,7 +1599,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "company"]
 - !private ["So20UIScrollViewDelegateP", "companyMembers"]
-- !private ["So20UIScrollViewDelegateP", "descriptionLabel"]
+- !private ["So20UIScrollViewDelegateP", "descriptionTV"]
 - !private ["So20UIScrollViewDelegateP", "fetchCompanyMembers"]
 - !private ["So20UIScrollViewDelegateP", "headerLabel"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
@@ -1640,7 +1652,7 @@ depends-member:
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "company"]
 - !private ["So16UIStateRestoringP", "companyMembers"]
-- !private ["So16UIStateRestoringP", "descriptionLabel"]
+- !private ["So16UIStateRestoringP", "descriptionTV"]
 - !private ["So16UIStateRestoringP", "fetchCompanyMembers"]
 - !private ["So16UIStateRestoringP", "headerLabel"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
@@ -1699,7 +1711,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "company"]
 - !private ["So21UITableViewDataSourceP", "companyMembers"]
-- !private ["So21UITableViewDataSourceP", "descriptionLabel"]
+- !private ["So21UITableViewDataSourceP", "descriptionTV"]
 - !private ["So21UITableViewDataSourceP", "fetchCompanyMembers"]
 - !private ["So21UITableViewDataSourceP", "headerLabel"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedView"]
@@ -1742,7 +1754,7 @@ depends-member:
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "company"]
 - !private ["So19UITableViewDelegateP", "companyMembers"]
-- !private ["So19UITableViewDelegateP", "descriptionLabel"]
+- !private ["So19UITableViewDelegateP", "descriptionTV"]
 - !private ["So19UITableViewDelegateP", "fetchCompanyMembers"]
 - !private ["So19UITableViewDelegateP", "headerLabel"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedView"]
@@ -1773,6 +1785,12 @@ depends-member:
 - ["So19UITableViewDelegateP", "tableView"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So10UITextViewC", "text"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
 - ["So18UITraitEnvironmentP", "CompanyMember"]
 - !private ["So18UITraitEnvironmentP", "CompanyMemberCell"]
@@ -1791,7 +1809,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "dataSource"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
-- !private ["So18UITraitEnvironmentP", "descriptionLabel"]
+- !private ["So18UITraitEnvironmentP", "descriptionTV"]
 - !private ["So18UITraitEnvironmentP", "didFinishTouchingCosmos"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "es"]
@@ -1859,7 +1877,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "dataSource"]
 - !private ["So23UIUserActivityRestoringP", "delegate"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
-- !private ["So23UIUserActivityRestoringP", "descriptionLabel"]
+- !private ["So23UIUserActivityRestoringP", "descriptionTV"]
 - !private ["So23UIUserActivityRestoringP", "didFinishTouchingCosmos"]
 - !private ["So23UIUserActivityRestoringP", "dismiss"]
 - !private ["So23UIUserActivityRestoringP", "es"]
@@ -1946,12 +1964,13 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIScreen"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
+- ["So16UIViewControllerC", "UITextView"]
 - !private ["So16UIViewControllerC", "UIView"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "backBtn"]
 - ["So16UIViewControllerC", "company"]
 - ["So16UIViewControllerC", "companyMembers"]
-- ["So16UIViewControllerC", "descriptionLabel"]
+- ["So16UIViewControllerC", "descriptionTV"]
 - ["So16UIViewControllerC", "fetchCompanyMembers"]
 - ["So16UIViewControllerC", "headerLabel"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
@@ -1961,6 +1980,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "issueAlert"]
 - ["So16UIViewControllerC", "loadData"]
 - ["So16UIViewControllerC", "logoImageView"]
+- ["So16UIViewControllerC", "notesBtn"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - ["So16UIViewControllerC", "ratingsView"]
@@ -2044,7 +2064,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionTV"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceIsiPad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didFinishTouchingCosmos"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
@@ -2195,6 +2215,7 @@ depends-nominal:
 - !private "So30UIFocusItemScrollableContainerP"
 - !private "So27UIGestureRecognizerDelegateP"
 - !private "So11UIImageViewC"
+- !private "So10UIKeyInputP"
 - !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -2208,6 +2229,12 @@ depends-nominal:
 - !private "So15UITableViewCellC"
 - "So21UITableViewDataSourceP"
 - "So19UITableViewDelegateP"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- !private "So10UITextViewC"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
@@ -2228,6 +2255,7 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/FasterVerificationCode.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/x86_64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/Cosmos.swiftmodule/x86_64.swiftmodule"
@@ -2251,6 +2279,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FirebaseFirestore-umbrella.h"
@@ -2318,6 +2347,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Headers/FasterVerificationCode-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Headers/Cosmos-Swift.h"
@@ -2335,6 +2365,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Modules/module.modulemap"
@@ -2357,4 +2388,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5a3d968925d2a379d943a8567eb2a4a7"
+interface-hash: "b61b0dff7de145a8410e6eb5d65bf3f4"

@@ -14,6 +14,7 @@ class FirebaseManager{
     public typealias CompletionHandler = (Error?) -> Void
     public typealias EventCodeCallback = (String?, Error?) -> Void
     public typealias CurrentEventCallback = (String?, Error?) -> Void
+    public typealias NotesCallback = (String?, Error?) -> Void
     public typealias CompanyCallback = ([Company]?, Error?) -> Void
     public typealias CompanyMemberCallback = ([CompanyMember]?, Error?) -> Void
     public typealias EventCallback = ([Event]?, Error?) -> Void
@@ -70,16 +71,15 @@ class FirebaseManager{
                 let companyID = document.documentID
                 let name = data[NameFile.Firebase.CompanyDB.name] as! String
                 let description = data[NameFile.Firebase.CompanyDB.description] as! String
-                let notes = data[NameFile.Firebase.CompanyDB.notes] as! String
                 let logoImageURL = data[NameFile.Firebase.CompanyDB.logoImageURL] as! String
                 let order = data[NameFile.Firebase.CompanyDB.order] as! Int
                 
                 dispatch.enter()
                 self.companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).getDocument(completion: { (document, error) in
                     if let document = document, document.exists, let data = document.data(), let stars = data[NameFile.Firebase.CompanyDB.stars] as? Double{
-                        companies.append(Company(companyID: companyID, name: name, description: description, notes: notes, logoImageURL: logoImageURL, order: order, stars: stars))
+                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: stars))
                     }else{
-                        companies.append(Company(companyID: companyID, name: name, description: description, notes: notes, logoImageURL: logoImageURL, order: order, stars: 0))
+                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: 0))
                     }
                     dispatch.leave()
                 })
@@ -88,6 +88,25 @@ class FirebaseManager{
                 callback(companies, nil)
             })
         }
+    }
+    
+    // Fetches the notes of a company taken by this device
+    public func fetchNotes(companyID: String, callback: @escaping NotesCallback){
+        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.notes).document(UIDevice.current.identifierForVendor!.uuidString).getDocument { (document, error) in
+            guard let document = document, document.exists, let data = document.data(), error == nil else{
+                print("FIREBASE NOTES FETCH ERROR: \(String(describing: error?.localizedDescription))")
+                callback(nil, error)
+                return
+            }
+            
+            let notes = data[NameFile.Firebase.CompanyDB.note] as! String
+            callback(notes, nil)
+        }
+    }
+    
+    // Adds the notes of a company taken by this device
+    public func addNotes(companyID: String, notes: String, completionHandler: CompletionHandler? = nil){
+        companies.document(companyID).collection(NameFile.Firebase.CompanyDB.notes).document(UIDevice.current.identifierForVendor!.uuidString).setData([NameFile.Firebase.CompanyDB.note: notes], completion: completionHandler)
     }
     
     // Fetches all members inside a company
