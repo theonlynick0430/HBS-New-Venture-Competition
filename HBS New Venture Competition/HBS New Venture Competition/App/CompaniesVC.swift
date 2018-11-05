@@ -88,7 +88,21 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     }
     
     @objc private func voteBtnPressed(_ sender: UIButton){
-        
+        if let _ = AppStorage.eventCode{
+            let popup = PopupDialog(title: "You're set", message: "Voting has already been enabled on this device", image: nil, buttonAlignment: .horizontal, transitionStyle: .bounceDown, preferredWidth: self.view.frame.width - 100, tapGestureDismissal: true, panGestureDismissal: false, hideStatusBar: false, completion: nil)
+            popup.addButton(CancelButton(title: "OK", height: 60, dismissOnTap: true, action: nil))
+            self.present(popup, animated: true, completion: nil)
+        }else{
+            let eventCodeVC = EventCodeVC(nibName: "EventCodeVC", bundle: Bundle.main)
+            let popup = PopupDialog(viewController: eventCodeVC, buttonAlignment: .horizontal, transitionStyle: .bounceDown, preferredWidth: self.view.frame.width-100, tapGestureDismissal: true, panGestureDismissal: false, hideStatusBar: false, completion: nil)
+            popup.addButton(CancelButton(title: "CANCEL", height: 60, dismissOnTap: true, action: nil))
+            eventCodeVC.executionBlock = { eventCode in
+                AppStorage.eventCode = eventCode
+                AppStorage.save()
+                popup.dismiss()
+            }
+            self.present(popup, animated: true, completion: nil)
+        }
     }
     
     @objc private func searchBtnPressed(_ sender: UIButton){

@@ -7,24 +7,65 @@
 //
 
 import UIKit
+import FasterVerificationCode
+import SVProgressHUD
 
-class EventCodeVC: UIViewController {
-
+class EventCodeVC: UIViewController, VerificationCodeViewDelegate {
+    
+    //outlets
+    @IBOutlet weak var verificationCodeView: VerificationCodeView!
+    
+    var executionBlock: ((String) -> Void)!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        verificationCodeView.delegate = self
+        
+        verificationCodeView.setLabelNumber(5)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Verification Code View Delegate
+    
+    func verificationCodeInserted(_ text: String, isComplete: Bool){
+        
+        SVProgressHUD.show()
+        
+        verify(eventCode: text) { (verified, error) in
+            SVProgressHUD.dismiss()
+            self.verificationCodeView.showError = false
+            guard let verified = verified, error == nil else{
+                SVProgressHUD.showError(withStatus: "Request denied")
+                return
+            }
+            
+            if verified{
+                SVProgressHUD.showSuccess(withStatus: "Voting enabled")
+                self.executionBlock(self.dbEventCode!)
+            }else{
+                self.verificationCodeView.showError = true
+            }
+        }
     }
-    */
+    
+    // MARK: - Essential Functions
+    
+    private var dbEventCode: String?
+    
+    private func verify(eventCode: String, callback: @escaping (Bool?, Error?) -> Void){
+        if let dbEventCode = dbEventCode{
+            callback(eventCode == dbEventCode, nil)
+        }else{
+            FirebaseManager.manager.fetchEventCode { (dbEventCode, error) in
+                guard let dbEventCode = dbEventCode, error == nil else{
+                    callback(nil, error)
+                    return
+                }
+                
+                self.dbEventCode = dbEventCode
+                callback(eventCode == dbEventCode, nil)
+            }
+        }
+    }
 
 }

@@ -10,33 +10,89 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventCodeVC" customModule="HBS_New_Venture_Competition" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventCodeVC" customModule="HBS_New_Venture_Competition" customModuleProvider="target">
+            <connections>
+                <outlet property="verificationCodeView" destination="kKq-s5-gIg" id="4jO-2l-elm"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kKq-s5-gIg">
-                    <rect key="frame" x="30" y="166" width="240" height="49"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.9192116857" green="0.44375103160000001" blue="0.34760433200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0u-Yz-FcP">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKq-s5-gIg" customClass="VerificationCodeView" customModule="FasterVerificationCode">
+                            <rect key="frame" x="12.5" y="170" width="275" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="RLZ-sB-hF5"/>
+                                <constraint firstAttribute="width" constant="275" placeholder="YES" id="fVg-yh-HRB"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="labelWidth">
+                                    <real key="value" value="35"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="labelSpacing">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="labelBorderColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="labelErrorColor">
+                                    <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="labelTextColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderHeigth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="labelHasBorder" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isNumeric" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNl-Np-hpa">
+                            <rect key="frame" x="87.5" y="50" width="125" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Wg7-be-XO9"/>
+                                <constraint firstAttribute="width" constant="125" id="vrU-je-vnb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the code for this event to enable voting capabilities" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cts-9X-zKy">
+                            <rect key="frame" x="32.5" y="95" width="235" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Brb-Ih-Og2"/>
+                                <constraint firstAttribute="width" constant="235" id="bM0-qG-V4g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="3i2-o1-CRe"/>
+                        <constraint firstItem="kKq-s5-gIg" firstAttribute="top" secondItem="cts-9X-zKy" secondAttribute="bottom" constant="35" id="BUk-mQ-BGf"/>
+                        <constraint firstItem="hNl-Np-hpa" firstAttribute="centerX" secondItem="D0u-Yz-FcP" secondAttribute="centerX" id="JJz-kg-7mF"/>
+                        <constraint firstAttribute="height" constant="300" id="Lcy-S6-YMG"/>
+                        <constraint firstItem="kKq-s5-gIg" firstAttribute="centerX" secondItem="D0u-Yz-FcP" secondAttribute="centerX" id="Rcj-Qn-oPq"/>
+                        <constraint firstItem="hNl-Np-hpa" firstAttribute="top" secondItem="D0u-Yz-FcP" secondAttribute="top" constant="50" id="lGe-CC-473"/>
+                        <constraint firstItem="cts-9X-zKy" firstAttribute="top" secondItem="hNl-Np-hpa" secondAttribute="bottom" constant="10" id="qYh-gk-vDB"/>
+                        <constraint firstItem="cts-9X-zKy" firstAttribute="centerX" secondItem="D0u-Yz-FcP" secondAttribute="centerX" id="s2Q-Cj-2gr"/>
+                    </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNl-Np-hpa">
-                    <rect key="frame" x="104" y="90" width="86" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the code for this event to enable voting capabilities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cts-9X-zKy">
-                    <rect key="frame" x="16" y="119" width="345" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="D0u-Yz-FcP" secondAttribute="bottom" id="E0D-cl-86g"/>
+                <constraint firstItem="D0u-Yz-FcP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Seb-tm-65p"/>
+                <constraint firstAttribute="trailing" secondItem="D0u-Yz-FcP" secondAttribute="trailing" id="Vs6-D6-0j6"/>
+                <constraint firstItem="D0u-Yz-FcP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="h5D-BL-Xbz"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="25.600000000000001" y="48.575712143928037"/>

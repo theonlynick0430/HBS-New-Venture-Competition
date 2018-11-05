@@ -40,7 +40,8 @@ class SponsorLargeCell: UITableViewCell {
     private func reloadData(){
         logoImageView.setFirebaseURL(firebaseURL: sponsor.logoImageURL)
         nameLabel.text = sponsor.name
-        websiteLabel.text = sponsor.website.absoluteString
+        websiteLabel.attributedText = NSAttributedString(string: sponsor.website.absoluteString, attributes:
+            [.underlineStyle: NSUnderlineStyle.styleSingle.rawValue])
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SponsorLargeCell.openWebsite(_:)))
         websiteLabel.isUserInteractionEnabled = true
         websiteLabel.addGestureRecognizer(tapGestureRecognizer)
@@ -48,7 +49,8 @@ class SponsorLargeCell: UITableViewCell {
         descriptionTV.text = sponsor.description
         repProfileImageView.setFirebaseURL(firebaseURL: sponsor.repProfileImageURL)
         repNameLabel.text = "\(sponsor.repFirstName) \(sponsor.repLastName)"
-        repEmailLabel.text = sponsor.repEmail
+        repEmailLabel.attributedText = NSAttributedString(string: sponsor.repEmail, attributes:
+            [.underlineStyle: NSUnderlineStyle.styleSingle.rawValue])
         let tapGestureRecognizer2 = UITapGestureRecognizer(target: self, action: #selector(SponsorLargeCell.openEmail(_:)))
         repEmailLabel.isUserInteractionEnabled = true
         repEmailLabel.addGestureRecognizer(tapGestureRecognizer2)

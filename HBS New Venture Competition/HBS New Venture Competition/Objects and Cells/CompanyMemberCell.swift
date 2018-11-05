@@ -41,7 +41,8 @@ class CompanyMemberCell: UITableViewCell {
     private func reloadData(){
         profileImageView.setFirebaseURL(firebaseURL: companyMember.profileImageURL)
         nameLabel.text = "\(companyMember.firstName) \(companyMember.lastName)"
-        emailLabel.text = companyMember.email
+        emailLabel.attributedText = NSAttributedString(string: companyMember.email, attributes:
+            [.underlineStyle: NSUnderlineStyle.styleSingle.rawValue])
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CompanyMemberCell.openEmail(_:)))
         emailLabel.isUserInteractionEnabled = true
         emailLabel.addGestureRecognizer(tapGestureRecognizer)
