@@ -12,6 +12,7 @@ class SplashScreenVC2: UIViewController {
 
     //outlets
     @IBOutlet weak var continueBtn: UIButton!
+    @IBOutlet weak var letterTV: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,9 @@ class SplashScreenVC2: UIViewController {
         
         //rounds corners
         continueBtn.layer.masksToBounds = true
-        continueBtn.layer.cornerRadius = continueBtn.frame.width/12
+        continueBtn.layer.cornerRadius = continueBtn.frame.width/14
+        letterTV.layer.masksToBounds = true
+        letterTV.layer.cornerRadius = 10
     }
     
     // MARK: - Navigation

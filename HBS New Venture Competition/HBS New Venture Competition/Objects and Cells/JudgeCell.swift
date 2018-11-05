@@ -15,7 +15,7 @@ class JudgeCell: UITableViewCell {
     //outlets
     @IBOutlet weak var profileImageView: AsyncImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTV: UITextView!
     @IBOutlet weak var linkedInBtn: UIButton!
     
     //data source
@@ -38,7 +38,7 @@ class JudgeCell: UITableViewCell {
     private func reloadData(){
         profileImageView.setFirebaseURL(firebaseURL: judge.profileImageURL)
         nameLabel.text = "\(judge.firstName) \(judge.lastName)"
-        descriptionLabel.text = judge.description
+        descriptionTV.text = judge.description
         linkedInBtn.addTarget(self, action: #selector(JudgeCell.openLinkedIn(_:)), for: .touchUpInside)
     }
     

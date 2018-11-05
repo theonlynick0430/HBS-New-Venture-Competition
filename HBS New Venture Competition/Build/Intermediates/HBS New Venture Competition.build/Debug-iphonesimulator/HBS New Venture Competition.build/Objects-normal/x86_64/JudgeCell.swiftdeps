@@ -7,7 +7,7 @@ provides-member:
 - ["27HBS_New_Venture_Competition9JudgeCellC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
-- "descriptionLabel"
+- "descriptionTV"
 - "linkedInBtn"
 - "nameLabel"
 - "openLinkedIn"
@@ -28,6 +28,7 @@ depends-top-level:
 - !private "UIColor"
 - "UILabel"
 - "UITableViewCell"
+- "UITextView"
 - !private "UnicodeScalarType"
 depends-member:
 - !private ["27HBS_New_Venture_Competition14AsyncImageViewC", "deinit"]
@@ -47,7 +48,7 @@ depends-member:
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
-- !private ["So15CALayerDelegateP", "descriptionLabel"]
+- !private ["So15CALayerDelegateP", "descriptionTV"]
 - !private ["So15CALayerDelegateP", "frame"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "init"]
@@ -77,7 +78,7 @@ depends-member:
 - !private ["s7CVarArgP", "canOpenURL"]
 - !private ["s7CVarArgP", "cgColor"]
 - !private ["s7CVarArgP", "cornerRadius"]
-- !private ["s7CVarArgP", "descriptionLabel"]
+- !private ["s7CVarArgP", "descriptionTV"]
 - !private ["s7CVarArgP", "frame"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
@@ -111,7 +112,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "cgColor"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "description"]
-- !private ["s28CustomDebugStringConvertibleP", "descriptionLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "descriptionTV"]
 - !private ["s28CustomDebugStringConvertibleP", "firstName"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -164,7 +165,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "canOpenURL"]
 - !private ["s23CustomStringConvertibleP", "cgColor"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
-- !private ["s23CustomStringConvertibleP", "descriptionLabel"]
+- !private ["s23CustomStringConvertibleP", "descriptionTV"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
@@ -196,6 +197,7 @@ depends-member:
 - !private ["Se", "setFirebaseURL"]
 - !private ["Se", "text"]
 - !private ["Se", "width"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "text"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "addTarget"]
 - !private ["SE", "description"]
@@ -223,7 +225,7 @@ depends-member:
 - !private ["SQ", "cgColor"]
 - !private ["SQ", "cornerRadius"]
 - !private ["SQ", "description"]
-- !private ["SQ", "descriptionLabel"]
+- !private ["SQ", "descriptionTV"]
 - !private ["SQ", "firstName"]
 - !private ["SQ", "frame"]
 - ["SQ", "init"]
@@ -279,7 +281,7 @@ depends-member:
 - !private ["SH", "cgColor"]
 - !private ["SH", "cornerRadius"]
 - !private ["SH", "description"]
-- !private ["SH", "descriptionLabel"]
+- !private ["SH", "descriptionTV"]
 - !private ["SH", "firstName"]
 - !private ["SH", "frame"]
 - ["SH", "init"]
@@ -313,8 +315,9 @@ depends-member:
 - ["27HBS_New_Venture_Competition9JudgeCellC", "UIButton"]
 - !private ["27HBS_New_Venture_Competition9JudgeCellC", "UIColor"]
 - ["27HBS_New_Venture_Competition9JudgeCellC", "UILabel"]
+- ["27HBS_New_Venture_Competition9JudgeCellC", "UITextView"]
 - ["27HBS_New_Venture_Competition9JudgeCellC", "awakeFromNib"]
-- ["27HBS_New_Venture_Competition9JudgeCellC", "descriptionLabel"]
+- ["27HBS_New_Venture_Competition9JudgeCellC", "descriptionTV"]
 - ["27HBS_New_Venture_Competition9JudgeCellC", "identifier"]
 - ["27HBS_New_Venture_Competition9JudgeCellC", "init"]
 - ["27HBS_New_Venture_Competition9JudgeCellC", "judge"]
@@ -338,7 +341,7 @@ depends-member:
 - !private ["So8NSCodingP", "borderWidth"]
 - !private ["So8NSCodingP", "cgColor"]
 - !private ["So8NSCodingP", "cornerRadius"]
-- !private ["So8NSCodingP", "descriptionLabel"]
+- !private ["So8NSCodingP", "descriptionTV"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
@@ -366,6 +369,7 @@ depends-member:
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UITextView"]
 - !private ["So8NSObjectC", "addTarget"]
 - ["So8NSObjectC", "awakeFromNib"]
 - !private ["So8NSObjectC", "borderColor"]
@@ -373,7 +377,7 @@ depends-member:
 - !private ["So8NSObjectC", "canOpenURL"]
 - !private ["So8NSObjectC", "cgColor"]
 - !private ["So8NSObjectC", "cornerRadius"]
-- ["So8NSObjectC", "descriptionLabel"]
+- ["So8NSObjectC", "descriptionTV"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "identifier"]
 - ["So8NSObjectC", "init"]
@@ -403,7 +407,7 @@ depends-member:
 - !private ["So8NSObjectP", "canOpenURL"]
 - !private ["So8NSObjectP", "cgColor"]
 - !private ["So8NSObjectP", "cornerRadius"]
-- !private ["So8NSObjectP", "descriptionLabel"]
+- !private ["So8NSObjectP", "descriptionTV"]
 - !private ["So8NSObjectP", "frame"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
@@ -462,7 +466,7 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "addTarget"]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
-- !private ["So29UIAccessibilityIdentificationP", "descriptionLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "descriptionTV"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
@@ -481,7 +485,7 @@ depends-member:
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "addTarget"]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
-- !private ["So12UIAppearanceP", "descriptionLabel"]
+- !private ["So12UIAppearanceP", "descriptionTV"]
 - !private ["So12UIAppearanceP", "frame"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "init"]
@@ -500,7 +504,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
-- !private ["So21UIAppearanceContainerP", "descriptionLabel"]
+- !private ["So21UIAppearanceContainerP", "descriptionTV"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
@@ -532,7 +536,7 @@ depends-member:
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "addTarget"]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
-- !private ["So17UICoordinateSpaceP", "descriptionLabel"]
+- !private ["So17UICoordinateSpaceP", "descriptionTV"]
 - !private ["So17UICoordinateSpaceP", "frame"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
@@ -551,7 +555,7 @@ depends-member:
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "addTarget"]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
-- !private ["So13UIDynamicItemP", "descriptionLabel"]
+- !private ["So13UIDynamicItemP", "descriptionTV"]
 - !private ["So13UIDynamicItemP", "frame"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "init"]
@@ -570,7 +574,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
-- !private ["So18UIFocusEnvironmentP", "descriptionLabel"]
+- !private ["So18UIFocusEnvironmentP", "descriptionTV"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
@@ -589,7 +593,7 @@ depends-member:
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "addTarget"]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
-- !private ["So11UIFocusItemP", "descriptionLabel"]
+- !private ["So11UIFocusItemP", "descriptionTV"]
 - !private ["So11UIFocusItemP", "frame"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "init"]
@@ -608,7 +612,7 @@ depends-member:
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "addTarget"]
 - !private ["So20UIFocusItemContainerP", "awakeFromNib"]
-- !private ["So20UIFocusItemContainerP", "descriptionLabel"]
+- !private ["So20UIFocusItemContainerP", "descriptionTV"]
 - !private ["So20UIFocusItemContainerP", "frame"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "init"]
@@ -621,12 +625,13 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "reloadData"]
 - !private ["So20UIFocusItemContainerP", "setFirebaseURL"]
 - !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So30UIFocusItemScrollableContainerP", "text"]
 - !private ["So27UIGestureRecognizerDelegateP", "JudgeCell"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIApplication"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIColor"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
-- !private ["So27UIGestureRecognizerDelegateP", "descriptionLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "descriptionTV"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "judge"]
@@ -638,6 +643,7 @@ depends-member:
 - !private ["So11UIImageViewC", "frame"]
 - !private ["So11UIImageViewC", "layer"]
 - !private ["So11UIImageViewC", "setFirebaseURL"]
+- !private ["So10UIKeyInputP", "text"]
 - !private ["So7UILabelC", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "JudgeCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
@@ -646,7 +652,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
 - !private ["So30UIPasteConfigurationSupportingP", "canOpenURL"]
-- !private ["So30UIPasteConfigurationSupportingP", "descriptionLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "descriptionTV"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -669,10 +675,11 @@ depends-member:
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UITextView"]
 - !private ["So11UIResponderC", "addTarget"]
 - ["So11UIResponderC", "awakeFromNib"]
 - !private ["So11UIResponderC", "canOpenURL"]
-- ["So11UIResponderC", "descriptionLabel"]
+- ["So11UIResponderC", "descriptionTV"]
 - !private ["So11UIResponderC", "frame"]
 - ["So11UIResponderC", "identifier"]
 - ["So11UIResponderC", "init"]
@@ -696,7 +703,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "canOpenURL"]
-- !private ["So30UIResponderStandardEditActionsP", "descriptionLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "descriptionTV"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -712,6 +719,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "setFirebaseURL"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So12UIScrollViewC", "text"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "frame"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
@@ -722,9 +730,10 @@ depends-member:
 - ["So15UITableViewCellC", "UIButton"]
 - !private ["So15UITableViewCellC", "UIColor"]
 - ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", "UITextView"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
-- ["So15UITableViewCellC", "descriptionLabel"]
+- ["So15UITableViewCellC", "descriptionTV"]
 - ["So15UITableViewCellC", "identifier"]
 - ["So15UITableViewCellC", "init"]
 - !private ["So15UITableViewCellC", "init"]
@@ -734,13 +743,19 @@ depends-member:
 - ["So15UITableViewCellC", "openLinkedIn"]
 - ["So15UITableViewCellC", "profileImageView"]
 - ["So15UITableViewCellC", "reloadData"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So10UITextViewC", "text"]
 - !private ["So18UITraitEnvironmentP", "JudgeCell"]
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addTarget"]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
-- !private ["So18UITraitEnvironmentP", "descriptionLabel"]
+- !private ["So18UITraitEnvironmentP", "descriptionTV"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -760,7 +775,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "addTarget"]
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
 - !private ["So23UIUserActivityRestoringP", "canOpenURL"]
-- !private ["So23UIUserActivityRestoringP", "descriptionLabel"]
+- !private ["So23UIUserActivityRestoringP", "descriptionTV"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
@@ -783,9 +798,10 @@ depends-member:
 - ["So6UIViewC", "UIButton"]
 - !private ["So6UIViewC", "UIColor"]
 - ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "UITextView"]
 - !private ["So6UIViewC", "addTarget"]
 - ["So6UIViewC", "awakeFromNib"]
-- ["So6UIViewC", "descriptionLabel"]
+- ["So6UIViewC", "descriptionTV"]
 - !private ["So6UIViewC", "frame"]
 - ["So6UIViewC", "identifier"]
 - ["So6UIViewC", "init"]
@@ -805,7 +821,7 @@ depends-member:
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "descriptionLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "descriptionTV"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
@@ -842,7 +858,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "canOpenURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionTV"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -892,6 +908,7 @@ depends-nominal:
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "Se"
+- !private "15ESPullToRefresh20ESExtensionsProviderP"
 - "SE"
 - "SQ"
 - !private "So15UIControlEventsV"
@@ -937,14 +954,23 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
 - "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
 - "So27UIGestureRecognizerDelegateP"
 - !private "So11UIImageViewC"
+- !private "So10UIKeyInputP"
 - !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So15UITableViewCellC"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- !private "So10UITextViewC"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
@@ -1092,4 +1118,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8f04a4624f62d56aa9951b0acab751a6"
+interface-hash: "25c12aa19fc289a4af61754041576b54"

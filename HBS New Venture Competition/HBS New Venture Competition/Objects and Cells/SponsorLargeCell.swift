@@ -16,8 +16,8 @@ class SponsorLargeCell: UITableViewCell {
     @IBOutlet weak var logoImageView: AsyncImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var websiteLabel: UILabel!
-    @IBOutlet weak var prizeLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTV: UITextView!
+    @IBOutlet weak var prizeTV: UITextView!
     @IBOutlet weak var repProfileImageView: AsyncImageView!
     @IBOutlet weak var repNameLabel: UILabel!
     @IBOutlet weak var repEmailLabel: UILabel!
@@ -44,8 +44,8 @@ class SponsorLargeCell: UITableViewCell {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SponsorLargeCell.openWebsite(_:)))
         websiteLabel.isUserInteractionEnabled = true
         websiteLabel.addGestureRecognizer(tapGestureRecognizer)
-        prizeLabel.text = sponsor.prize
-        descriptionLabel.text = sponsor.description
+        prizeTV.text = sponsor.prize
+        descriptionTV.text = sponsor.description
         repProfileImageView.setFirebaseURL(firebaseURL: sponsor.repProfileImageURL)
         repNameLabel.text = "\(sponsor.repFirstName) \(sponsor.repLastName)"
         repEmailLabel.text = sponsor.repEmail

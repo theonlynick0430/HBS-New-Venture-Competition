@@ -344,11 +344,12 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition7CountVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextView;
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition9EventCell")
 @interface EventCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTV;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -362,7 +363,6 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition8EventsVC")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified arrowBtn;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -375,7 +375,7 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition9JudgeCell")
 @interface JudgeCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet AsyncImageView * _Null_unspecified profileImageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTV;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified linkedInBtn;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -389,7 +389,6 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition8JudgesVC")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified subHeaderLabel;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -397,10 +396,26 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition8JudgesVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSLayoutConstraint;
+@class UIStackView;
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15SplashScreenVC1")
 @interface SplashScreenVC1 : UIViewController
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified headerViewHeight;
+@property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified headerStackView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified headerStackViewWidth;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified headerStackViewHeight;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headerLabel1;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headerLabel2;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headerLabel3;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logoImageView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified logoImageViewToTop;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified logoImageViewWidth;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified logoImageViewHeight;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified promptLabel;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified promptLabelToTop;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified continueBtn;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified continueBtnHeight;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -410,6 +425,7 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15SplashScreenVC1")
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15SplashScreenVC2")
 @interface SplashScreenVC2 : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified continueBtn;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified letterTV;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -422,7 +438,7 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition11SponsorCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified websiteLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified prizeLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTV;
 @property (nonatomic, weak) IBOutlet AsyncImageView * _Null_unspecified repProfileImageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified repNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified repEmailLabel;
@@ -454,13 +470,14 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition10SponsorsVC")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified subHeaderLabel;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 

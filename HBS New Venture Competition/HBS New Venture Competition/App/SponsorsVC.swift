@@ -34,6 +34,8 @@ class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         line.backgroundColor = tableView.separatorColor
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+        tableView.estimatedRowHeight = 300
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         //setup
         setupRefresh()
@@ -68,13 +70,6 @@ class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     // MARK: - Tableview Delegate and Datasource
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if UIDevice.current.deviceIsiPad{
-            return 225
-        }
-        return 275
-    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

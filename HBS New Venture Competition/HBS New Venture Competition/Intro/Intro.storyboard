@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-we-AcE">
-                                <rect key="frame" x="20" y="547" width="335" height="60"/>
+                                <rect key="frame" x="20" y="567" width="335" height="55"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.69019607843137254" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="wAo-Gh-812"/>
+                                    <constraint firstAttribute="height" constant="55" id="wAo-Gh-812"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -36,45 +36,45 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oxF-rl-3Je">
-                                        <rect key="frame" x="22.5" y="35" width="330" height="40"/>
+                                        <rect key="frame" x="22.5" y="40" width="330" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="H A R V A R D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ScC-1Y-0RF">
-                                                <rect key="frame" x="0.0" y="0.0" width="96.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="96.5" height="35"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gD0-fx-h7x">
-                                                <rect key="frame" x="106.5" y="0.0" width="5" height="40"/>
+                                                <rect key="frame" x="106.5" y="0.0" width="3" height="35"/>
                                                 <color key="backgroundColor" red="0.59607843140000005" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="V8j-fg-DWV"/>
-                                                    <constraint firstAttribute="width" constant="5" id="ZuQ-vR-Xwb"/>
+                                                    <constraint firstAttribute="height" constant="35" id="V8j-fg-DWV"/>
+                                                    <constraint firstAttribute="width" constant="3" id="ZuQ-vR-Xwb"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B U S I N E S S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8K-uW-ILy">
-                                                <rect key="frame" x="121.5" y="0.0" width="99.5" height="40"/>
+                                                <rect key="frame" x="119.5" y="0.0" width="103.5" height="35"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pqg-9q-e8a">
-                                                <rect key="frame" x="231" y="0.0" width="5" height="40"/>
+                                                <rect key="frame" x="233" y="0.0" width="3" height="35"/>
                                                 <color key="backgroundColor" red="0.59607843140000005" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="5" id="F7Z-e8-sSz"/>
-                                                    <constraint firstAttribute="height" constant="40" id="iBl-pp-wKM"/>
+                                                    <constraint firstAttribute="width" constant="3" id="F7Z-e8-sSz"/>
+                                                    <constraint firstAttribute="height" constant="35" id="iBl-pp-wKM"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="S C H O O L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeB-XK-WZQ">
-                                                <rect key="frame" x="246" y="0.0" width="84" height="40"/>
+                                                <rect key="frame" x="246" y="0.0" width="84" height="35"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="EWz-ZO-xYL"/>
+                                            <constraint firstAttribute="height" constant="35" id="EWz-ZO-xYL"/>
                                             <constraint firstAttribute="width" constant="330" id="aBs-3o-iL7"/>
                                         </constraints>
                                     </stackView>
@@ -109,7 +109,7 @@
                             <constraint firstItem="C7G-Rj-54s" firstAttribute="trailing" secondItem="5XX-ud-f3x" secondAttribute="trailing" id="6Ag-Mf-QqK"/>
                             <constraint firstItem="C7G-Rj-54s" firstAttribute="leading" secondItem="5XX-ud-f3x" secondAttribute="leading" id="BUY-dp-iKU"/>
                             <constraint firstItem="C7G-Rj-54s" firstAttribute="top" secondItem="0fx-8s-fCk" secondAttribute="top" id="Miq-YF-KVZ"/>
-                            <constraint firstItem="5XX-ud-f3x" firstAttribute="bottom" secondItem="Sot-we-AcE" secondAttribute="bottom" constant="60" id="QhR-OM-Izf"/>
+                            <constraint firstItem="5XX-ud-f3x" firstAttribute="bottom" secondItem="Sot-we-AcE" secondAttribute="bottom" constant="45" id="QhR-OM-Izf"/>
                             <constraint firstItem="sHl-tg-Pg4" firstAttribute="top" secondItem="C7G-Rj-54s" secondAttribute="bottom" constant="60" id="SCT-y5-duk"/>
                             <constraint firstItem="5XX-ud-f3x" firstAttribute="trailing" secondItem="Sot-we-AcE" secondAttribute="trailing" constant="20" id="gRs-VL-KY4"/>
                             <constraint firstItem="5XX-ud-f3x" firstAttribute="trailing" secondItem="sLQ-G4-koW" secondAttribute="trailing" constant="30" id="nwO-Ky-6fm"/>
@@ -150,18 +150,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwd-9E-ERe">
-                                <rect key="frame" x="20" y="547" width="335" height="60"/>
+                                <rect key="frame" x="20" y="567" width="335" height="55"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.69019607839999997" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="G9H-03-TpN"/>
+                                    <constraint firstAttribute="height" constant="55" id="G9H-03-TpN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sng-y0-v9b">
-                                <rect key="frame" x="20" y="55" width="335" height="462"/>
+                                <rect key="frame" x="20" y="55" width="335" height="482"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <mutableString key="text">Welcome to the second Northern California "One Harvard" New Venture Competition. On behalf of myself and my co-organizers, we'd like to thank you for coming today and continuing to engage with the Harvard Alumni entrepreneurial community. Today's event was inspired by a visit by the Harvard i-Lab in July 2017 that brought entrepreneurial alumni from all Harvard schools together. We discussed and brainstormed on how we could strengthen the bonds of the Harvard Alumni start-up ecosystem on a local level to help foster meaningful connections between founders, investors, and mentors. We decided to start by opening up the NorCal regional competition for the Global HBS New Venutre Competition to alumni from all Harvard schools; the reponse was incredible.     
 
@@ -182,7 +182,7 @@ Maya Krish
                         </subviews>
                         <color key="backgroundColor" red="0.81176470588235294" green="0.90588235294117647" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6XE-55-l4o" firstAttribute="bottom" secondItem="Dwd-9E-ERe" secondAttribute="bottom" constant="60" id="Syy-p2-jYg"/>
+                            <constraint firstItem="6XE-55-l4o" firstAttribute="bottom" secondItem="Dwd-9E-ERe" secondAttribute="bottom" constant="45" id="Syy-p2-jYg"/>
                             <constraint firstItem="sng-y0-v9b" firstAttribute="top" secondItem="6XE-55-l4o" secondAttribute="top" constant="35" id="UGW-Qx-xx1"/>
                             <constraint firstItem="Dwd-9E-ERe" firstAttribute="leading" secondItem="6XE-55-l4o" secondAttribute="leading" constant="20" id="Z6o-Hz-hFb"/>
                             <constraint firstItem="Dwd-9E-ERe" firstAttribute="top" secondItem="sng-y0-v9b" secondAttribute="bottom" constant="30" id="bvG-jV-Nvg"/>
@@ -194,6 +194,7 @@ Maya Krish
                     </view>
                     <connections>
                         <outlet property="continueBtn" destination="Dwd-9E-ERe" id="LyG-nw-7Pg"/>
+                        <outlet property="letterTV" destination="sng-y0-v9b" id="JXm-XF-2EE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USR-hX-bG7" userLabel="First Responder" sceneMemberID="firstResponder"/>

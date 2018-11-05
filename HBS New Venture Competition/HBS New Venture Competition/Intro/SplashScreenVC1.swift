@@ -32,7 +32,7 @@ class SplashScreenVC1: UIViewController {
         
         //rounds corners
         continueBtn.layer.masksToBounds = true
-        continueBtn.layer.cornerRadius = continueBtn.frame.width/12
+        continueBtn.layer.cornerRadius = continueBtn.frame.width/14
         
         switch UIDevice.deviceType {
         case .smalliPhone:
@@ -43,13 +43,11 @@ class SplashScreenVC1: UIViewController {
             logoImageViewWidth.constant = 200
             logoImageViewHeight.constant = 120
             promptLabelToTop.constant = 40
-            continueBtn.titleLabel?.font = UIFont(name: "Avenir-Medium", size: 18)
         case .largeiPhone:
             headerViewHeight.constant = 120
             logoImageViewToTop.constant = 130
             logoImageViewWidth.constant = 300
             logoImageViewHeight.constant = 200
-            promptLabelToTop.constant = 100
         case .iPhone:
             break
         case .iPad:

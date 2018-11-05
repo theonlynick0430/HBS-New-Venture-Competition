@@ -14,7 +14,7 @@ class EventCell: UITableViewCell {
 
     //outlets
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTV: UITextView!
     
     //data source
     var event: Event! { didSet{ reloadData() }}
@@ -28,7 +28,7 @@ class EventCell: UITableViewCell {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "h:mm a"
         timeLabel.text = dateFormatter.string(from: eventDate)
-        descriptionLabel.text = event.description
+        descriptionTV.text = event.description
     }
 
 }

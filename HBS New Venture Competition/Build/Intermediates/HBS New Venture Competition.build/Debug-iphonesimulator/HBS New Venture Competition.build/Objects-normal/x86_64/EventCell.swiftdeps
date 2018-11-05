@@ -7,7 +7,7 @@ provides-member:
 - ["27HBS_New_Venture_Competition9EventCellC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
-- "descriptionLabel"
+- "descriptionTV"
 - "timeLabel"
 depends-top-level:
 - "AssignmentPrecedence"
@@ -17,13 +17,14 @@ depends-top-level:
 - "StringLiteralType"
 - "UILabel"
 - "UITableViewCell"
+- "UITextView"
 depends-member:
 - ["SK", "init"]
 - ["SK", "init"]
 - !private ["So15CALayerDelegateP", "DateFormatter"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
-- !private ["So15CALayerDelegateP", "descriptionLabel"]
+- !private ["So15CALayerDelegateP", "descriptionTV"]
 - !private ["So15CALayerDelegateP", "event"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "init"]
@@ -35,7 +36,7 @@ depends-member:
 - !private ["s7CVarArgP", "awakeFromNib"]
 - !private ["s7CVarArgP", "dateFormat"]
 - !private ["s7CVarArgP", "dateValue"]
-- !private ["s7CVarArgP", "descriptionLabel"]
+- !private ["s7CVarArgP", "descriptionTV"]
 - !private ["s7CVarArgP", "event"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
@@ -53,7 +54,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - !private ["s28CustomDebugStringConvertibleP", "dateValue"]
 - !private ["s28CustomDebugStringConvertibleP", "description"]
-- !private ["s28CustomDebugStringConvertibleP", "descriptionLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "descriptionTV"]
 - !private ["s28CustomDebugStringConvertibleP", "event"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -74,7 +75,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
 - !private ["s23CustomStringConvertibleP", "dateFormat"]
 - !private ["s23CustomStringConvertibleP", "dateValue"]
-- !private ["s23CustomStringConvertibleP", "descriptionLabel"]
+- !private ["s23CustomStringConvertibleP", "descriptionTV"]
 - !private ["s23CustomStringConvertibleP", "event"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
@@ -90,6 +91,7 @@ depends-member:
 - ["Se", "init"]
 - !private ["Se", "text"]
 - !private ["Se", "time"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "text"]
 - !private ["SE", "description"]
 - ["SE", "init"]
 - ["SE", "init"]
@@ -101,7 +103,7 @@ depends-member:
 - !private ["SQ", "dateFormat"]
 - !private ["SQ", "dateValue"]
 - !private ["SQ", "description"]
-- !private ["SQ", "descriptionLabel"]
+- !private ["SQ", "descriptionTV"]
 - !private ["SQ", "event"]
 - ["SQ", "init"]
 - ["SQ", "init"]
@@ -115,8 +117,9 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition9EventCellC", "DateFormatter"]
 - ["27HBS_New_Venture_Competition9EventCellC", "Event"]
 - ["27HBS_New_Venture_Competition9EventCellC", "UILabel"]
+- ["27HBS_New_Venture_Competition9EventCellC", "UITextView"]
 - ["27HBS_New_Venture_Competition9EventCellC", "awakeFromNib"]
-- ["27HBS_New_Venture_Competition9EventCellC", "descriptionLabel"]
+- ["27HBS_New_Venture_Competition9EventCellC", "descriptionTV"]
 - ["27HBS_New_Venture_Competition9EventCellC", "event"]
 - ["27HBS_New_Venture_Competition9EventCellC", "identifier"]
 - ["27HBS_New_Venture_Competition9EventCellC", "init"]
@@ -140,7 +143,7 @@ depends-member:
 - !private ["SH", "dateFormat"]
 - !private ["SH", "dateValue"]
 - !private ["SH", "description"]
-- !private ["SH", "descriptionLabel"]
+- !private ["SH", "descriptionTV"]
 - !private ["SH", "event"]
 - ["SH", "init"]
 - ["SH", "init"]
@@ -157,7 +160,7 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "dateFormat"]
-- !private ["So8NSCodingP", "descriptionLabel"]
+- !private ["So8NSCodingP", "descriptionTV"]
 - !private ["So8NSCodingP", "event"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
@@ -172,10 +175,11 @@ depends-member:
 - !private ["So8NSObjectC", "DateFormatter"]
 - ["So8NSObjectC", "Event"]
 - ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UITextView"]
 - ["So8NSObjectC", "awakeFromNib"]
 - !private ["So8NSObjectC", "dateFormat"]
 - !private ["So8NSObjectC", "dateValue"]
-- ["So8NSObjectC", "descriptionLabel"]
+- ["So8NSObjectC", "descriptionTV"]
 - ["So8NSObjectC", "event"]
 - ["So8NSObjectC", "identifier"]
 - ["So8NSObjectC", "init"]
@@ -189,7 +193,7 @@ depends-member:
 - !private ["So8NSObjectP", "awakeFromNib"]
 - !private ["So8NSObjectP", "dateFormat"]
 - !private ["So8NSObjectP", "dateValue"]
-- !private ["So8NSObjectP", "descriptionLabel"]
+- !private ["So8NSObjectP", "descriptionTV"]
 - !private ["So8NSObjectP", "event"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
@@ -216,7 +220,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "DateFormatter"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
-- !private ["So29UIAccessibilityIdentificationP", "descriptionLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "descriptionTV"]
 - !private ["So29UIAccessibilityIdentificationP", "event"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
@@ -226,7 +230,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "DateFormatter"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
-- !private ["So12UIAppearanceP", "descriptionLabel"]
+- !private ["So12UIAppearanceP", "descriptionTV"]
 - !private ["So12UIAppearanceP", "event"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "init"]
@@ -236,7 +240,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "DateFormatter"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
-- !private ["So21UIAppearanceContainerP", "descriptionLabel"]
+- !private ["So21UIAppearanceContainerP", "descriptionTV"]
 - !private ["So21UIAppearanceContainerP", "event"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
@@ -247,7 +251,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "DateFormatter"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
-- !private ["So17UICoordinateSpaceP", "descriptionLabel"]
+- !private ["So17UICoordinateSpaceP", "descriptionTV"]
 - !private ["So17UICoordinateSpaceP", "event"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
@@ -257,7 +261,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "DateFormatter"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
-- !private ["So13UIDynamicItemP", "descriptionLabel"]
+- !private ["So13UIDynamicItemP", "descriptionTV"]
 - !private ["So13UIDynamicItemP", "event"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "init"]
@@ -267,7 +271,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "DateFormatter"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
-- !private ["So18UIFocusEnvironmentP", "descriptionLabel"]
+- !private ["So18UIFocusEnvironmentP", "descriptionTV"]
 - !private ["So18UIFocusEnvironmentP", "event"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
@@ -277,7 +281,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "DateFormatter"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
-- !private ["So11UIFocusItemP", "descriptionLabel"]
+- !private ["So11UIFocusItemP", "descriptionTV"]
 - !private ["So11UIFocusItemP", "event"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "init"]
@@ -287,27 +291,29 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "DateFormatter"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "awakeFromNib"]
-- !private ["So20UIFocusItemContainerP", "descriptionLabel"]
+- !private ["So20UIFocusItemContainerP", "descriptionTV"]
 - !private ["So20UIFocusItemContainerP", "event"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "reloadData"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So20UIFocusItemContainerP", "timeLabel"]
+- !private ["So30UIFocusItemScrollableContainerP", "text"]
 - !private ["So27UIGestureRecognizerDelegateP", "DateFormatter"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
-- !private ["So27UIGestureRecognizerDelegateP", "descriptionLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "descriptionTV"]
 - !private ["So27UIGestureRecognizerDelegateP", "event"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "reloadData"]
 - !private ["So27UIGestureRecognizerDelegateP", "timeLabel"]
+- !private ["So10UIKeyInputP", "text"]
 - !private ["So7UILabelC", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "DateFormatter"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
-- !private ["So30UIPasteConfigurationSupportingP", "descriptionLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "descriptionTV"]
 - !private ["So30UIPasteConfigurationSupportingP", "event"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -317,8 +323,9 @@ depends-member:
 - !private ["So11UIResponderC", "DateFormatter"]
 - ["So11UIResponderC", "Event"]
 - ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UITextView"]
 - ["So11UIResponderC", "awakeFromNib"]
-- ["So11UIResponderC", "descriptionLabel"]
+- ["So11UIResponderC", "descriptionTV"]
 - ["So11UIResponderC", "event"]
 - ["So11UIResponderC", "identifier"]
 - ["So11UIResponderC", "init"]
@@ -329,29 +336,37 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "DateFormatter"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
-- !private ["So30UIResponderStandardEditActionsP", "descriptionLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "descriptionTV"]
 - !private ["So30UIResponderStandardEditActionsP", "event"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "timeLabel"]
+- !private ["So12UIScrollViewC", "text"]
 - !private ["So15UITableViewCellC", "DateFormatter"]
 - ["So15UITableViewCellC", "Event"]
 - ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", "UITextView"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
-- ["So15UITableViewCellC", "descriptionLabel"]
+- ["So15UITableViewCellC", "descriptionTV"]
 - ["So15UITableViewCellC", "event"]
 - ["So15UITableViewCellC", "identifier"]
 - ["So15UITableViewCellC", "init"]
 - !private ["So15UITableViewCellC", "init"]
 - ["So15UITableViewCellC", "reloadData"]
 - ["So15UITableViewCellC", "timeLabel"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So10UITextViewC", "text"]
 - !private ["So18UITraitEnvironmentP", "DateFormatter"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
-- !private ["So18UITraitEnvironmentP", "descriptionLabel"]
+- !private ["So18UITraitEnvironmentP", "descriptionTV"]
 - !private ["So18UITraitEnvironmentP", "event"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -361,7 +376,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "DateFormatter"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
-- !private ["So23UIUserActivityRestoringP", "descriptionLabel"]
+- !private ["So23UIUserActivityRestoringP", "descriptionTV"]
 - !private ["So23UIUserActivityRestoringP", "event"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
@@ -371,8 +386,9 @@ depends-member:
 - !private ["So6UIViewC", "DateFormatter"]
 - ["So6UIViewC", "Event"]
 - ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "UITextView"]
 - ["So6UIViewC", "awakeFromNib"]
-- ["So6UIViewC", "descriptionLabel"]
+- ["So6UIViewC", "descriptionTV"]
 - ["So6UIViewC", "event"]
 - ["So6UIViewC", "identifier"]
 - ["So6UIViewC", "init"]
@@ -383,7 +399,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "DateFormatter"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "descriptionLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "descriptionTV"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "event"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
@@ -405,7 +421,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateValue"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionTV"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "event"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -432,6 +448,7 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - !private "So15NSDateFormatterC"
 - "Se"
+- !private "15ESPullToRefresh20ESExtensionsProviderP"
 - "SE"
 - "SQ"
 - !private "27HBS_New_Venture_Competition5EventC"
@@ -465,12 +482,21 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
 - "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
 - "So27UIGestureRecognizerDelegateP"
+- !private "So10UIKeyInputP"
 - !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
 - "So15UITableViewCellC"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- !private "So10UITextViewC"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
@@ -616,4 +642,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d07084b6bb2adac1e7615bac24bd803c"
+interface-hash: "093e1ec7fcaadb17234f3dcd4d555af5"

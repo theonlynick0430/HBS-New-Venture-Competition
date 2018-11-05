@@ -33,6 +33,8 @@ class JudgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         line.backgroundColor = tableView.separatorColor
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         //setup
         setupRefresh()
@@ -67,11 +69,7 @@ class JudgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     // MARK: - Tableview Delegate and Datasource
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
-    }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
