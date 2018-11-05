@@ -16,7 +16,8 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     //outlets
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var subHeaderLabel: UILabel!
-    @IBOutlet weak var countBtn: UIButton!
+    @IBOutlet weak var searchBtn: UIButton!
+    @IBOutlet weak var voteBtn: UIButton!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -39,12 +40,19 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         collectionView.alwaysBounceVertical = true
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.scrollDirection = .vertical
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout{
+            flowLayout.estimatedItemSize = CGSize(width: view.frame.width, height: 125)
+            flowLayout.itemSize = UICollectionViewFlowLayoutAutomaticSize
+        }
         
         //rounds corners
-        countBtn.layer.masksToBounds = true
-        countBtn.layer.cornerRadius = countBtn.frame.width/2
+        voteBtn.layer.masksToBounds = true
+        voteBtn.layer.cornerRadius = 5
+        searchBtn.layer.masksToBounds = true
+        searchBtn.layer.cornerRadius = 5
         
-        countBtn.addTarget(self, action: #selector(CompaniesVC.countBtnPressed(_:)), for: .touchUpInside)
+        voteBtn.addTarget(self, action: #selector(CompaniesVC.voteBtnPressed(_:)), for: .touchUpInside)
+        searchBtn.addTarget(self, action: #selector(CompaniesVC.searchBtnPressed(_:)), for: .touchUpInside)
         
         //setup
         setupSearchBar()
@@ -79,7 +87,11 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         }
     }
     
-    @objc private func countBtnPressed(_ sender: UIButton){
+    @objc private func voteBtnPressed(_ sender: UIButton){
+        
+    }
+    
+    @objc private func searchBtnPressed(_ sender: UIButton){
         let countVC = CountVC(nibName: "CountVC", bundle: Bundle.main)
         var numbers = [Int]()
         if searchInProgress{
@@ -119,10 +131,6 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     }
     
     // MARK: - Collection View Delegate and Datasource
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width-30, height: 125)
-    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

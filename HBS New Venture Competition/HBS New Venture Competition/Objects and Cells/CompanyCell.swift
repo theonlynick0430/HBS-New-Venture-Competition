@@ -15,7 +15,7 @@ class CompanyCell: UICollectionViewCell {
     //outlets
     @IBOutlet weak var logoImageView: AsyncImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTV: UITextView!
     
     //data source
     var company: Company! { didSet{ reloadData() }}
@@ -27,7 +27,7 @@ class CompanyCell: UICollectionViewCell {
     private func reloadData(){
         logoImageView.setFirebaseURL(firebaseURL: company.logoImageURL)
         nameLabel.text = company.name
-        descriptionLabel.text = company.description
+        descriptionTV.text = company.description
     }
     
 }

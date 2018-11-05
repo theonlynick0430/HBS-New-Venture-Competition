@@ -1,0 +1,10 @@
+framework module FasterVerificationCode {
+  umbrella header "FasterVerificationCode-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module FasterVerificationCode.__Swift {
+    exclude header "FasterVerificationCode-Swift.h"
+}
