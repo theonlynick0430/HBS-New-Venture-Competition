@@ -6,8 +6,11 @@ PODS:
     - BoringSSL/Interface (= 10.0.6)
   - BoringSSL/Interface (10.0.6)
   - Cosmos (17.0.0)
+  - Crashlytics (3.11.0):
+    - Fabric (~> 1.8.0)
   - DynamicBlurView (2.0.2)
   - ESPullToRefresh (2.7)
+  - Fabric (1.8.0)
   - FasterVerificationCode (0.1.0)
   - Firebase/Auth (5.10.0):
     - Firebase/CoreOnly
@@ -132,7 +135,9 @@ PODS:
 
 DEPENDENCIES:
   - Cosmos (~> 17.0)
+  - Crashlytics
   - ESPullToRefresh
+  - Fabric
   - FasterVerificationCode
   - Firebase/Auth
   - Firebase/Core
@@ -145,8 +150,10 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BoringSSL
     - Cosmos
+    - Crashlytics
     - DynamicBlurView
     - ESPullToRefresh
+    - Fabric
     - FasterVerificationCode
     - Firebase
     - FirebaseAnalytics
@@ -173,8 +180,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   Cosmos: 309e489f21ffc91a1eeecfebef7f817cd2fcfba6
+  Crashlytics: 1448070c1d2731ab71ea7c3faf84ac0f69657287
   DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
   ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  Fabric: 4ac1cdfef3004ccd83ce0959b91eda8a6e37df72
   FasterVerificationCode: 1cf0ba4be4d4fe595107367a7b8c042b2403395c
   Firebase: 6691d47562a780c26281ce8464518faafc90c610
   FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
@@ -198,6 +207,6 @@ SPEC CHECKSUMS:
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: b1e94918c0ed90905faf976e86881fcb0ed09932
+PODFILE CHECKSUM: fb159af8b812f488dc8631898d8b4b0b8fef0ce7
 
 COCOAPODS: 1.5.3
