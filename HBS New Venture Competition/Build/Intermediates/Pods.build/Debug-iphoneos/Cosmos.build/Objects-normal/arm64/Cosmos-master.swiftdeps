@@ -1,0 +1,19 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "520e269327d00275cab2e330a2324c8d"
+build_time: [1542244171, 739673000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosAccessibility.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosDefaultSettings.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosLayerHelper.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosLayers.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosLocalizedRating.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosRating.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosSettings.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosSize.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosText.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosTouch.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/Helpers/CosmosTouchTarget.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/CosmosView.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/Helpers/RightToLeft.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/StarFillMode.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Cosmos/Cosmos/StarLayer.swift": [1542241495, 0]
