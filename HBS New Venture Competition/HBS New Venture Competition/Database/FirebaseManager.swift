@@ -93,9 +93,14 @@ class FirebaseManager{
     // Fetches the notes of a company taken by this device
     public func fetchNotes(companyID: String, callback: @escaping NotesCallback){
         companies.document(companyID).collection(NameFile.Firebase.CompanyDB.notes).document(UIDevice.current.identifierForVendor!.uuidString).getDocument { (document, error) in
-            guard let document = document, document.exists, let data = document.data(), error == nil else{
+            guard let document = document, error == nil else{
                 print("FIREBASE NOTES FETCH ERROR: \(String(describing: error?.localizedDescription))")
                 callback(nil, error)
+                return
+            }
+            
+            guard document.exists, let data = document.data() else{
+                callback("", nil)
                 return
             }
             

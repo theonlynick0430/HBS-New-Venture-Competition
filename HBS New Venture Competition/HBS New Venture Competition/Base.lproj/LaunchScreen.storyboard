@@ -19,31 +19,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NVC-high res - alumni" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-po-WwC">
-                                <rect key="frame" x="117" y="366" width="600" height="400"/>
+                                <rect key="frame" x="192" y="195" width="450" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="310" id="chi-eW-Irb">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="450"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="210" id="uxl-9P-jPg">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transparent_logo_one harvard_12_school_copy" translatesAutoresizingMaskIntoConstraints="NO" id="NzM-VG-mJG">
+                                <rect key="frame" x="192" y="595" width="450" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="758-9u-By6">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="290" id="OCU-ce-2O0">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="450"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.81176470590000005" green="0.90588235289999997" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NzM-VG-mJG" firstAttribute="top" secondItem="Eba-po-WwC" secondAttribute="bottom" constant="50" id="2kq-Nm-fdN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
                             <constraint firstItem="Eba-po-WwC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N1N-sA-8MG"/>
-                            <constraint firstItem="Eba-po-WwC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yzq-d2-kLI"/>
+                            <constraint firstItem="NzM-VG-mJG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OMc-6F-yka"/>
+                            <constraint firstItem="Eba-po-WwC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="vfW-Tl-5Yc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
         </scene>
     </scenes>
     <resources>
         <image name="NVC-high res - alumni" width="2400" height="1365"/>
+        <image name="transparent_logo_one harvard_12_school_copy" width="724" height="599"/>
     </resources>
 </document>

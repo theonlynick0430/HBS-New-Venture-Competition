@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "be5693a2d0f35e04c5a045d35a56ba59"
-build_time: [1542244172, 248118000]
-inputs:
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FasterVerificationCode/FasterVerificationCode/Classes/StringExtension.swift": [1542241495, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FasterVerificationCode/FasterVerificationCode/Classes/VerificationCodeFields.swift": [1542241495, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FasterVerificationCode/FasterVerificationCode/Classes/VerificationCodeView.swift": [1542241495, 0]

@@ -40,6 +40,12 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         
+        //rounds corners
+        notesBtn.layer.masksToBounds = true
+        notesBtn.layer.cornerRadius = notesBtn.frame.width/10
+        
+        notesBtn.addTarget(self, action: #selector(CompanyDetailVC.segueToNotes(_:)), for: .touchUpInside)
+        
         setupRefresh()
         setupRatings()
         loadData()
@@ -133,6 +139,16 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     // MARK: - Navigation
     
+    @objc private func segueToNotes(_ sender: UIButton){
+        performSegue(withIdentifier: NameFile.Segues.toNotes, sender: sender)
+    }
+    
     @IBAction func unwindToCompanyDetail(segue: UIStoryboardSegue) {}
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let notesVC = segue.destination as? NotesVC{
+            notesVC.company = company
+        }
+    }
 
 }

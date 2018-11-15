@@ -31,7 +31,7 @@ class NotesVC: UIViewController, UITextViewDelegate {
     }
     
     private func fetchNotes(){
-        
+
         SVProgressHUD.show()
         
         FirebaseManager.manager.fetchNotes(companyID: company.companyID) { (notes, error) in
@@ -42,12 +42,28 @@ class NotesVC: UIViewController, UITextViewDelegate {
             }
             
             self.notesTV.text = notes
+            if notes.count == 0{
+                self.notesTV.text = "Enter your notes here..."
+                self.notesTV.textColor = UIColor.lightGray
+            }
         }
     }
     
     // MARK: - UITextViewDelegate
     
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if notesTV.textColor == UIColor.lightGray {
+            notesTV.text = nil
+            notesTV.textColor = UIColor.black
+        }
+    }
+    
     func textViewDidEndEditing(_ textView: UITextView) {
+        
+        if notesTV.text.isEmpty {
+            notesTV.text = "Enter your notes here..."
+            notesTV.textColor = UIColor.lightGray
+        }
         
         SVProgressHUD.show()
         
