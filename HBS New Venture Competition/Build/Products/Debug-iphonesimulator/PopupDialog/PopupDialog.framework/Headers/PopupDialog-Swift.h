@@ -279,18 +279,10 @@ SWIFT_CLASS("_TtC11PopupDialog24PopupDialogContainerView")
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The corner radius of the popup view
 @property (nonatomic) float cornerRadius;
-/// Enable / disable shadow rendering of the container
+/// Enable / disable shadow rendering
 @property (nonatomic) BOOL shadowEnabled;
-/// Color of the container shadow
+/// The shadow color
 @property (nonatomic, strong) UIColor * _Nullable shadowColor;
-/// Radius of the container shadow
-@property (nonatomic) CGFloat shadowRadius;
-/// Opacity of the the container shadow
-@property (nonatomic) float shadowOpacity;
-/// Offset of the the container shadow
-@property (nonatomic) CGSize shadowOffset;
-/// Path of the the container shadow
-@property (nonatomic) CGPathRef _Nullable shadowPath;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end

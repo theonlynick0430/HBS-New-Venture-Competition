@@ -298,6 +298,7 @@
 				586DAE1D215317C900C35A5A /* Frameworks */,
 				586DAE1E215317C900C35A5A /* Resources */,
 				B9499C5D503B2F9BE93F7C71 /* [CP] Embed Pods Frameworks */,
+				58CDBD51219F71FB004FB9FD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -420,13 +421,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		58CDBD51219F71FB004FB9FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" fc11ffb1c50053ab45cffe4cdec94e26277f2456 8ce383ad1dc667210569cfbb49a66c053ae8e508bd26c2d8a274bb2d8cc68601\n";
+		};
 		B9499C5D503B2F9BE93F7C71 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
@@ -467,7 +486,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HBS New Venture Competition/Pods-HBS New Venture Competition-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CEF2BDB594B24396FEEA8D51 /* [CP] Check Pods Manifest.lock */ = {

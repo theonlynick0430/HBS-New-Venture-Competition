@@ -7,7 +7,7 @@ target 'HBS New Venture Competition' do
 
   # Pods for HBS New Venture Competition
   
-    # Testing
+    #Testing
     pod 'Fabric'
     pod 'Crashlytics'
 
@@ -20,7 +20,7 @@ target 'HBS New Venture Competition' do
     # UI
     pod 'FasterVerificationCode'
     pod 'SVProgressHUD'
-    pod 'PopupDialog', '~> 0.8'
+    pod 'PopupDialog', '0.8'
     pod 'Cosmos', '~> 17.0'
     pod 'ESPullToRefresh'
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62D2E5FBA38439BE71BF5F20558C4939"
+               BlueprintIdentifier = "75D8E8A8FD4DEDB8FD1AD75CBCBB62F8"
                BuildableName = "FasterVerificationCode.bundle"
                BlueprintName = "FasterVerificationCode-FasterVerificationCode"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62D2E5FBA38439BE71BF5F20558C4939"
+            BlueprintIdentifier = "75D8E8A8FD4DEDB8FD1AD75CBCBB62F8"
             BuildableName = "FasterVerificationCode.bundle"
             BlueprintName = "FasterVerificationCode-FasterVerificationCode"
             ReferencedContainer = "container:Pods.xcodeproj">

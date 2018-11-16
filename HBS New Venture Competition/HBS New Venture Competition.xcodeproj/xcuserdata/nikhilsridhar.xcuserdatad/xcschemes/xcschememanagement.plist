@@ -12,7 +12,25 @@
 		<key>HBS New Venture Competition.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>33</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>586DAE1F215317C900C35A5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586DAE36215317CB00C35A5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586DAE41215317CB00C35A5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -16,11 +16,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AppDelegate"
 - !private "AppStorage"
+- !private "Array"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "Bundle"
 - "CastingPrecedence"
+- !private "Crashlytics"
+- !private "Fabric"
 - !private "FirebaseApp"
 - !private "Firestore"
 - "FloatLiteralType"
@@ -39,6 +42,8 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition11AppDelegateC", "AppStorage"]
 - ["27HBS_New_Venture_Competition11AppDelegateC", "Bool"]
 - !private ["27HBS_New_Venture_Competition11AppDelegateC", "Bundle"]
+- !private ["27HBS_New_Venture_Competition11AppDelegateC", "Crashlytics"]
+- !private ["27HBS_New_Venture_Competition11AppDelegateC", "Fabric"]
 - !private ["27HBS_New_Venture_Competition11AppDelegateC", "FirebaseApp"]
 - !private ["27HBS_New_Venture_Competition11AppDelegateC", "Firestore"]
 - !private ["27HBS_New_Venture_Competition11AppDelegateC", "NSError"]
@@ -76,6 +81,8 @@ depends-member:
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - !private ["s7CVarArgP", "AppStorage"]
 - !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "Crashlytics"]
+- !private ["s7CVarArgP", "Fabric"]
 - !private ["s7CVarArgP", "FirebaseApp"]
 - !private ["s7CVarArgP", "Firestore"]
 - !private ["s7CVarArgP", "NSPersistentContainer"]
@@ -112,12 +119,15 @@ depends-member:
 - !private ["s7CVarArgP", "userInfo"]
 - !private ["s7CVarArgP", "viewContext"]
 - ["s7CVarArgP", "window"]
+- !private ["s7CVarArgP", "with"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "AppStorage"]
 - !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "Crashlytics"]
+- !private ["s28CustomDebugStringConvertibleP", "Fabric"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
 - !private ["s28CustomDebugStringConvertibleP", "Firestore"]
 - !private ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
@@ -153,6 +163,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "userInfo"]
 - !private ["s28CustomDebugStringConvertibleP", "viewContext"]
 - ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "with"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -161,6 +172,8 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "AppStorage"]
 - !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "Crashlytics"]
+- !private ["s23CustomStringConvertibleP", "Fabric"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
 - !private ["s23CustomStringConvertibleP", "Firestore"]
 - !private ["s23CustomStringConvertibleP", "NSPersistentContainer"]
@@ -197,6 +210,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "userInfo"]
 - !private ["s23CustomStringConvertibleP", "viewContext"]
 - ["s23CustomStringConvertibleP", "window"]
+- !private ["s23CustomStringConvertibleP", "with"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
@@ -205,6 +219,8 @@ depends-member:
 - !private ["SE", "init"]
 - !private ["SQ", "AppStorage"]
 - !private ["SQ", "Bundle"]
+- !private ["SQ", "Crashlytics"]
+- !private ["SQ", "Fabric"]
 - !private ["SQ", "FirebaseApp"]
 - !private ["SQ", "Firestore"]
 - !private ["SQ", "NSPersistentContainer"]
@@ -241,6 +257,7 @@ depends-member:
 - !private ["SQ", "userInfo"]
 - !private ["SQ", "viewContext"]
 - ["SQ", "window"]
+- !private ["SQ", "with"]
 - !private ["s5ErrorP", "userInfo"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -249,12 +266,15 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So6FabricC", "with"]
 - !private ["So6FIRAppC", "configure"]
 - !private ["So12FIRFirestoreC", "firestore"]
 - !private ["So12FIRFirestoreC", "settings"]
 - !private ["So20FIRFirestoreSettingsC", "areTimestampsInSnapshotsEnabled"]
 - !private ["SH", "AppStorage"]
 - !private ["SH", "Bundle"]
+- !private ["SH", "Crashlytics"]
+- !private ["SH", "Fabric"]
 - !private ["SH", "FirebaseApp"]
 - !private ["SH", "Firestore"]
 - !private ["SH", "NSPersistentContainer"]
@@ -291,6 +311,7 @@ depends-member:
 - !private ["SH", "userInfo"]
 - !private ["SH", "viewContext"]
 - ["SH", "window"]
+- !private ["SH", "with"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -310,6 +331,8 @@ depends-member:
 - !private ["So8NSObjectC", "AppStorage"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Bundle"]
+- !private ["So8NSObjectC", "Crashlytics"]
+- !private ["So8NSObjectC", "Fabric"]
 - !private ["So8NSObjectC", "FirebaseApp"]
 - !private ["So8NSObjectC", "Firestore"]
 - !private ["So8NSObjectC", "NSError"]
@@ -349,8 +372,11 @@ depends-member:
 - !private ["So8NSObjectC", "userInfo"]
 - !private ["So8NSObjectC", "viewContext"]
 - ["So8NSObjectC", "window"]
+- !private ["So8NSObjectC", "with"]
 - !private ["So8NSObjectP", "AppStorage"]
 - !private ["So8NSObjectP", "Bundle"]
+- !private ["So8NSObjectP", "Crashlytics"]
+- !private ["So8NSObjectP", "Fabric"]
 - !private ["So8NSObjectP", "FirebaseApp"]
 - !private ["So8NSObjectP", "Firestore"]
 - !private ["So8NSObjectP", "NSPersistentContainer"]
@@ -386,6 +412,7 @@ depends-member:
 - !private ["So8NSObjectP", "userInfo"]
 - !private ["So8NSObjectP", "viewContext"]
 - ["So8NSObjectP", "window"]
+- !private ["So8NSObjectP", "with"]
 - !private ["So21NSPersistentContainerC", "init"]
 - !private ["So21NSPersistentContainerC", "loadPersistentStores"]
 - !private ["So21NSPersistentContainerC", "viewContext"]
@@ -409,6 +436,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - !private ["So21UIApplicationDelegateP", "AppStorage"]
 - !private ["So21UIApplicationDelegateP", "Bundle"]
+- !private ["So21UIApplicationDelegateP", "Crashlytics"]
+- !private ["So21UIApplicationDelegateP", "Fabric"]
 - !private ["So21UIApplicationDelegateP", "FirebaseApp"]
 - !private ["So21UIApplicationDelegateP", "Firestore"]
 - !private ["So21UIApplicationDelegateP", "NSPersistentContainer"]
@@ -437,6 +466,8 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "rootViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "AppStorage"]
 - !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
+- !private ["So30UIPasteConfigurationSupportingP", "Crashlytics"]
+- !private ["So30UIPasteConfigurationSupportingP", "Fabric"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
 - !private ["So30UIPasteConfigurationSupportingP", "Firestore"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
@@ -464,6 +495,8 @@ depends-member:
 - !private ["So11UIResponderC", "AppStorage"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Bundle"]
+- !private ["So11UIResponderC", "Crashlytics"]
+- !private ["So11UIResponderC", "Fabric"]
 - !private ["So11UIResponderC", "FirebaseApp"]
 - !private ["So11UIResponderC", "Firestore"]
 - !private ["So11UIResponderC", "NSError"]
@@ -495,6 +528,8 @@ depends-member:
 - ["So11UIResponderC", "window"]
 - !private ["So30UIResponderStandardEditActionsP", "AppStorage"]
 - !private ["So30UIResponderStandardEditActionsP", "Bundle"]
+- !private ["So30UIResponderStandardEditActionsP", "Crashlytics"]
+- !private ["So30UIResponderStandardEditActionsP", "Fabric"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
 - !private ["So30UIResponderStandardEditActionsP", "Firestore"]
 - !private ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
@@ -524,6 +559,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - !private ["So23UIUserActivityRestoringP", "AppStorage"]
 - !private ["So23UIUserActivityRestoringP", "Bundle"]
+- !private ["So23UIUserActivityRestoringP", "Crashlytics"]
+- !private ["So23UIUserActivityRestoringP", "Fabric"]
 - !private ["So23UIUserActivityRestoringP", "FirebaseApp"]
 - !private ["So23UIUserActivityRestoringP", "Firestore"]
 - !private ["So23UIUserActivityRestoringP", "NSPersistentContainer"]
@@ -564,6 +601,8 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AppStorage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Crashlytics"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Fabric"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Firestore"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
@@ -599,6 +638,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "with"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -626,6 +666,7 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So6FabricC"
 - !private "So6FIRAppC"
 - !private "So12FIRFirestoreC"
 - !private "So20FIRFirestoreSettingsC"
@@ -715,6 +756,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Fabric/iOS/Fabric.framework/Headers/Fabric.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
@@ -722,6 +764,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSStackFrame.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRFirestore.h"
@@ -730,6 +773,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSLogging.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
@@ -761,13 +805,17 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/Crashlytics.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Fabric/iOS/Fabric.framework/Headers/FABAttributes.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSAttributes.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/Answers.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
@@ -782,13 +830,16 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSReport.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Headers/DynamicBlurView.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/ANSCompatibility.h"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Fabric/iOS/Fabric.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FasterVerificationCode/FasterVerificationCode.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
@@ -797,6 +848,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/Crashlytics/iOS/Crashlytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/Cosmos/Cosmos.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Build/Products/Debug-iphonesimulator/DynamicBlurView/DynamicBlurView.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
@@ -812,4 +864,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9ee1d30b9c81161f678627d16873d304"
+interface-hash: "6de0d7663f29a20c90179d1c66f014bd"

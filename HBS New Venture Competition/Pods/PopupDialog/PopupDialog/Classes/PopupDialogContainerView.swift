@@ -47,16 +47,14 @@ final public class PopupDialogContainerView: UIView {
             container.layer.cornerRadius = radius
         }
     }
-    
-    // MARK: Shadow related
 
-    /// Enable / disable shadow rendering of the container
+    /// Enable / disable shadow rendering
     @objc public dynamic var shadowEnabled: Bool {
         get { return shadowContainer.layer.shadowRadius > 0 }
-        set { shadowContainer.layer.shadowRadius = newValue ? shadowRadius : 0 }
+        set { shadowContainer.layer.shadowRadius = newValue ? 5 : 0 }
     }
 
-    /// Color of the container shadow
+    /// The shadow color
     @objc public dynamic var shadowColor: UIColor? {
         get {
             guard let color = shadowContainer.layer.shadowColor else {
@@ -66,31 +64,7 @@ final public class PopupDialogContainerView: UIView {
         }
         set { shadowContainer.layer.shadowColor = newValue?.cgColor }
     }
-    
-    /// Radius of the container shadow
-    @objc public dynamic var shadowRadius: CGFloat {
-        get { return shadowContainer.layer.shadowRadius }
-        set { shadowContainer.layer.shadowRadius = newValue }
-    }
-    
-    /// Opacity of the the container shadow
-    @objc public dynamic var shadowOpacity: Float {
-        get { return shadowContainer.layer.shadowOpacity }
-        set { shadowContainer.layer.shadowOpacity = newValue }
-    }
-    
-    /// Offset of the the container shadow
-    @objc public dynamic var shadowOffset: CGSize {
-        get { return shadowContainer.layer.shadowOffset }
-        set { shadowContainer.layer.shadowOffset = newValue }
-    }
-    
-    /// Path of the the container shadow
-    @objc public dynamic var shadowPath: CGPath? {
-        get { return shadowContainer.layer.shadowPath}
-        set { shadowContainer.layer.shadowPath = newValue }
-    }
-    
+
     // MARK: - Views
 
     /// The shadow container is the basic view of the PopupDialog

@@ -12,6 +12,26 @@
 		<data>
 		ATgtPrx5Iaay+IsyxWkTOfoeqGw=
 		</data>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		NxbgJkYAp4e2JBanB56Pg4Kb3M8=
+		</data>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		Wywf/x+qlakWAJDdAlI6HXtdYs4=
+		</data>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		uIPZOIn2hfDRq8hM1+1N1rkNA2Q=
+		</data>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
 		<key>gRPCCertificates.bundle/roots.pem</key>
 		<data>
 		5NFWUZRVI0qqLVcZd3qjE3hlVc0=
@@ -28,6 +48,61 @@
 			<key>hash2</key>
 			<data>
 			+T7cAjenbSeFwWGpifH7XRSVaKmiFq7g6pzSYL00ZtU=
+			</data>
+		</dict>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NxbgJkYAp4e2JBanB56Pg4Kb3M8=
+			</data>
+			<key>hash2</key>
+			<data>
+			gXQjGGrQXSAr8PyFwBMkRbkF8ccvyGMOx4wqjFUjWNI=
+			</data>
+		</dict>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OnX22wWFKRSOFN1+obRynMCeyXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wywf/x+qlakWAJDdAlI6HXtdYs4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OE+MXze/Q65YbsWFeOQ5ozZeMMHS0Nllc9IoaMIjOMA=
+			</data>
+		</dict>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uIPZOIn2hfDRq8hM1+1N1rkNA2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			XH/7hmBg/OPP2rWZt8mvdrRsQ3gTzkeOS1/eHrs/vcc=
+			</data>
+		</dict>
+		<key>gRPCCertificates.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>gRPCCertificates.bundle/roots.pem</key>

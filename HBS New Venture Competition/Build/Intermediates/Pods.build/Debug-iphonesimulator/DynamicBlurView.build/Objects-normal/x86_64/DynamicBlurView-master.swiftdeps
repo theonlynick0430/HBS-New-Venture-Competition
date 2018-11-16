@@ -1,11 +1,11 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "be7a9c5937e8b9591829931161184f8b"
-build_time: [1542253163, 91985000]
+build_time: [1542404873, 935288000]
 inputs:
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/BlurLayer.swift": [1542241495, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/CaptureQuality.swift": [1542241495, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/CGContext+CGImage.swift": [1542241495, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/CGImage+Accelerate.swift": [1542241495, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.swift": [1542241495, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/TrackingMode.swift": [1542241495, 0]
-  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/UIImage+Blur.swift": [1542241495, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/BlurLayer.swift": [1542404405, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/CaptureQuality.swift": [1542404405, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/CGContext+CGImage.swift": [1542404405, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/CGImage+Accelerate.swift": [1542404405, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.swift": [1542404405, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/TrackingMode.swift": [1542404405, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition/HBS New Venture Competition/Pods/DynamicBlurView/DynamicBlurView/UIImage+Blur.swift": [1542404405, 0]

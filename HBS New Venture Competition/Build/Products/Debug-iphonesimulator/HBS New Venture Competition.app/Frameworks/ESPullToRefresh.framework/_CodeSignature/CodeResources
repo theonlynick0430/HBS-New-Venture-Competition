@@ -8,6 +8,26 @@
 		<data>
 		w2K5RXzMJCbjgdhrM+HurBUmtNI=
 		</data>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		C/UNQOKOyVUo7vDd0iPEjRpVOBg=
+		</data>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		eEw9wDOA7WybtH7/A7iaVsQHIEI=
+		</data>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		B/AJlKfZRHNE0ve+tZ0BFuajBzE=
+		</data>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
 		<key>ESPullToRefresh.bundle/icon_pull_to_refresh_arrow@2x.png</key>
 		<data>
 		fvdnI/JYuH+PO9oRVhyH0Ipsp1I=
@@ -28,6 +48,61 @@
 			<key>hash2</key>
 			<data>
 			Hb6MRCY6wzG7q3so9NPM0xPy6UXCbtI5nig07sQUPzc=
+			</data>
+		</dict>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C/UNQOKOyVUo7vDd0iPEjRpVOBg=
+			</data>
+			<key>hash2</key>
+			<data>
+			sKVl2CSkfUXeRQ2Q9ZagUo4bF2CBkKENCQHoXPo3HHs=
+			</data>
+		</dict>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OnX22wWFKRSOFN1+obRynMCeyXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eEw9wDOA7WybtH7/A7iaVsQHIEI=
+			</data>
+			<key>hash2</key>
+			<data>
+			8Vaefy7SIb/P52DOkS7ulKgX190C1Ksg2yzCNNyhDtA=
+			</data>
+		</dict>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B/AJlKfZRHNE0ve+tZ0BFuajBzE=
+			</data>
+			<key>hash2</key>
+			<data>
+			pierGrhJQ2YEiNmyvfvO+0//wiS/BCpcME0AIZttmx0=
+			</data>
+		</dict>
+		<key>ESPullToRefresh.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>ESPullToRefresh.bundle/icon_pull_to_refresh_arrow@2x.png</key>
