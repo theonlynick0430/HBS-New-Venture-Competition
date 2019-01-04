@@ -21,9 +21,13 @@ class SplashScreenVC2: UIViewController {
         
         //rounds corners
         continueBtn.layer.masksToBounds = true
-        continueBtn.layer.cornerRadius = continueBtn.frame.width/14
+        continueBtn.layer.cornerRadius = 25
         letterTV.layer.masksToBounds = true
         letterTV.layer.cornerRadius = 10
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.letterTV.setContentOffset(.zero, animated: false)
     }
     
     // MARK: - Navigation

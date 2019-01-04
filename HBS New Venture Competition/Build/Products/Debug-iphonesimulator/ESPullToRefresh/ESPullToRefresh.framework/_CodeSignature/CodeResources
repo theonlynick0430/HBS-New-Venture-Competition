@@ -6,11 +6,11 @@
 	<dict>
 		<key>ESPullToRefresh.bundle/Info.plist</key>
 		<data>
-		w2K5RXzMJCbjgdhrM+HurBUmtNI=
+		aefmhSe3HklvORtGK/+DZVCQkUI=
 		</data>
 		<key>ESPullToRefresh.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		C/UNQOKOyVUo7vDd0iPEjRpVOBg=
+		Dwm47i/Wypg6R/P0HtkZdWD5rkk=
 		</data>
 		<key>ESPullToRefresh.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ESPullToRefresh.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		eEw9wDOA7WybtH7/A7iaVsQHIEI=
+		bi2AbGbXHe/I/5aEHhJpcl7Dpwo=
 		</data>
 		<key>ESPullToRefresh.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HP7yKjuxV+NGQI8lEuKW0Xs1Nrw=
+		kNQ/jGM2Qg6hk5C/OOubfryy9Gk=
 		</data>
 		<key>Modules/ESPullToRefresh.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -63,22 +63,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w2K5RXzMJCbjgdhrM+HurBUmtNI=
+			aefmhSe3HklvORtGK/+DZVCQkUI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hb6MRCY6wzG7q3so9NPM0xPy6UXCbtI5nig07sQUPzc=
+			g7oVBWN8sOmLzzjypUkw9CCBdH5iy3v+bKL0X0fWigU=
 			</data>
 		</dict>
 		<key>ESPullToRefresh.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C/UNQOKOyVUo7vDd0iPEjRpVOBg=
+			Dwm47i/Wypg6R/P0HtkZdWD5rkk=
 			</data>
 			<key>hash2</key>
 			<data>
-			sKVl2CSkfUXeRQ2Q9ZagUo4bF2CBkKENCQHoXPo3HHs=
+			QScRU08HMD51esf4HDO9y6RiRb5vLRVAo/vu+Y6EqyM=
 			</data>
 		</dict>
 		<key>ESPullToRefresh.bundle/_CodeSignature/CodeRequirements</key>
@@ -96,11 +96,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eEw9wDOA7WybtH7/A7iaVsQHIEI=
+			bi2AbGbXHe/I/5aEHhJpcl7Dpwo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Vaefy7SIb/P52DOkS7ulKgX190C1Ksg2yzCNNyhDtA=
+			Z5EQjAYG/klgMLR3pbKZRIgmU7CU0CtL1PhqQYw4NBQ=
 			</data>
 		</dict>
 		<key>ESPullToRefresh.bundle/_CodeSignature/CodeResources</key>

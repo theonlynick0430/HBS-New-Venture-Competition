@@ -104,6 +104,7 @@ depends-member:
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV13CoordinatorDBV", "firstName"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV13CoordinatorDBV", "lastName"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV13CoordinatorDBV", "linkedInURL"]
+- !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV13CoordinatorDBV", "organization"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV13CoordinatorDBV", "position"]
 - !private ["27HBS_New_Venture_Competition8NameFileV8FirebaseV13CoordinatorDBV", "profileImageURL"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]

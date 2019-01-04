@@ -11,6 +11,7 @@ import UIKit
 class SplashScreenVC1: UIViewController {
     
     //outlets
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var headerStackView: UIStackView!
     @IBOutlet weak var headerStackViewWidth: NSLayoutConstraint!
@@ -19,9 +20,9 @@ class SplashScreenVC1: UIViewController {
     @IBOutlet weak var headerLabel2: UILabel!
     @IBOutlet weak var headerLabel3: UILabel!
     @IBOutlet weak var logoImageView: UIImageView!
-    @IBOutlet weak var logoImageViewToTop: NSLayoutConstraint!
     @IBOutlet weak var logoImageViewWidth: NSLayoutConstraint!
     @IBOutlet weak var logoImageViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var logoImageToCenter: NSLayoutConstraint!
     @IBOutlet weak var promptLabel: UILabel!
     @IBOutlet weak var promptLabelToTop: NSLayoutConstraint!
     @IBOutlet weak var continueBtn: UIButton!
@@ -32,22 +33,20 @@ class SplashScreenVC1: UIViewController {
         
         //rounds corners
         continueBtn.layer.masksToBounds = true
-        continueBtn.layer.cornerRadius = continueBtn.frame.width/14
+        continueBtn.layer.cornerRadius = 25
         
         switch UIDevice.deviceType {
         case .smalliPhone:
-            headerStackViewHeight.constant = 30
-            headerLabel1.font = UIFont(name: "Avenir-Medium", size: 11)
-            headerLabel2.font = UIFont(name: "Avenir-Medium", size: 11)
-            headerLabel3.font = UIFont(name: "Avenir-Medium", size: 11)
-            logoImageViewWidth.constant = 200
-            logoImageViewHeight.constant = 120
-            promptLabelToTop.constant = 40
+            promptLabelToTop.constant = 30
+            logoImageToCenter.constant = -60
+            headerViewHeight.constant = 75
+            headerStackViewWidth.constant = 310
+            headerLabel1.font = UIFont(name: "Avenir-Medium", size: 13)
+            headerLabel2.font = UIFont(name: "Avenir-Medium", size: 13)
+            headerLabel3.font = UIFont(name: "Avenir-Medium", size: 13)
+            headerView.layoutIfNeeded()
         case .largeiPhone:
-            headerViewHeight.constant = 120
-            logoImageViewToTop.constant = 130
-            logoImageViewWidth.constant = 300
-            logoImageViewHeight.constant = 200
+            break
         case .iPhone:
             break
         case .iPad:

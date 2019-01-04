@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,27 +15,27 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NVC-high res - alumni" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-po-WwC">
-                                <rect key="frame" x="192" y="195" width="450" height="300"/>
+                                <rect key="frame" x="62.666666666666657" y="236" width="249.99999999999997" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="310" id="chi-eW-Irb">
+                                    <constraint firstAttribute="width" constant="250" id="chi-eW-Irb">
                                         <variation key="heightClass=regular-widthClass=regular" constant="450"/>
                                     </constraint>
-                                    <constraint firstAttribute="height" constant="210" id="uxl-9P-jPg">
+                                    <constraint firstAttribute="height" constant="150" id="uxl-9P-jPg">
                                         <variation key="heightClass=regular-widthClass=regular" constant="300"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transparent_logo_one harvard_12_school_copy" translatesAutoresizingMaskIntoConstraints="NO" id="NzM-VG-mJG">
-                                <rect key="frame" x="192" y="595" width="450" height="300"/>
+                                <rect key="frame" x="62.666666666666657" y="436" width="249.99999999999997" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="185" id="758-9u-By6">
+                                    <constraint firstAttribute="height" constant="150" id="758-9u-By6">
                                         <variation key="heightClass=regular-widthClass=regular" constant="300"/>
                                     </constraint>
-                                    <constraint firstAttribute="width" constant="290" id="OCU-ce-2O0">
+                                    <constraint firstAttribute="width" constant="250" id="OCU-ce-2O0">
                                         <variation key="heightClass=regular-widthClass=regular" constant="450"/>
                                     </constraint>
                                 </constraints>
@@ -48,9 +48,7 @@
                             </constraint>
                             <constraint firstItem="Eba-po-WwC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N1N-sA-8MG"/>
                             <constraint firstItem="NzM-VG-mJG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OMc-6F-yka"/>
-                            <constraint firstItem="Eba-po-WwC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="vfW-Tl-5Yc">
-                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
-                            </constraint>
+                            <constraint firstItem="Eba-po-WwC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="niw-qe-lFt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

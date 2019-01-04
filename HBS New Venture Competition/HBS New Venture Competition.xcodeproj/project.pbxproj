@@ -25,6 +25,11 @@
 		581519772159BB0200D8E06D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581519762159BB0200D8E06D /* AsyncImageView.swift */; };
 		58207247218FE5A300F5C342 /* EventCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58207246218FE5A300F5C342 /* EventCodeVC.xib */; };
 		58207249218FE5B500F5C342 /* EventCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58207248218FE5B500F5C342 /* EventCodeVC.swift */; };
+		5832B16F21CF4B13002601E7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832B16E21CF4B13002601E7 /* CoreMedia.framework */; };
+		5832B17121CF4B19002601E7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832B17021CF4B19002601E7 /* CoreMotion.framework */; };
+		5832B17321CF4B1F002601E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832B17221CF4B1F002601E7 /* AVFoundation.framework */; };
+		5832B17521CF4B25002601E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832B17421CF4B25002601E7 /* SystemConfiguration.framework */; };
+		5832B17721CF4B2D002601E7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832B17621CF4B2D002601E7 /* OpenGLES.framework */; };
 		5851B88A2190315A00429A09 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851B8892190315A00429A09 /* NotesVC.swift */; };
 		5863FC7021838080001C0D64 /* CountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5863FC6F21838080001C0D64 /* CountVC.xib */; };
 		586DAE24215317C900C35A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE23215317C900C35A5A /* AppDelegate.swift */; };
@@ -89,6 +94,11 @@
 		581519762159BB0200D8E06D /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		58207246218FE5A300F5C342 /* EventCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCodeVC.xib; sourceTree = "<group>"; };
 		58207248218FE5B500F5C342 /* EventCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCodeVC.swift; sourceTree = "<group>"; };
+		5832B16E21CF4B13002601E7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5832B17021CF4B19002601E7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5832B17221CF4B1F002601E7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5832B17421CF4B25002601E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5832B17621CF4B2D002601E7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5851B8892190315A00429A09 /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
 		5863FC6F21838080001C0D64 /* CountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountVC.xib; sourceTree = "<group>"; };
 		586DAE20215317C900C35A5A /* HBS New Venture Competition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HBS New Venture Competition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +138,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5832B17721CF4B2D002601E7 /* OpenGLES.framework in Frameworks */,
+				5832B17521CF4B25002601E7 /* SystemConfiguration.framework in Frameworks */,
+				5832B17321CF4B1F002601E7 /* AVFoundation.framework in Frameworks */,
+				5832B17121CF4B19002601E7 /* CoreMotion.framework in Frameworks */,
+				5832B16F21CF4B13002601E7 /* CoreMedia.framework in Frameworks */,
 				75220667E1666D2D2580ADFC /* Pods_HBS_New_Venture_Competition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +287,11 @@
 		AE57729582C64C730E47E2BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5832B17621CF4B2D002601E7 /* OpenGLES.framework */,
+				5832B17421CF4B25002601E7 /* SystemConfiguration.framework */,
+				5832B17221CF4B1F002601E7 /* AVFoundation.framework */,
+				5832B17021CF4B19002601E7 /* CoreMotion.framework */,
+				5832B16E21CF4B13002601E7 /* CoreMedia.framework */,
 				B9A3235CDC403E74EE0FAA0D /* Pods_HBS_New_Venture_Competition.framework */,
 			);
 			name = Frameworks;
@@ -727,9 +747,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HBS\\ New\\ Venture\\ Competition",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-Competition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -748,9 +776,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HBS\\ New\\ Venture\\ Competition",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HBS.HBS-New-Venture-Competition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

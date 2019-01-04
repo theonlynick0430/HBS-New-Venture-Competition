@@ -97,17 +97,17 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="oxF-rl-3Je" secondAttribute="bottom" constant="15" id="3vn-HJ-Bj0">
+                                    <constraint firstAttribute="bottom" secondItem="oxF-rl-3Je" secondAttribute="bottom" constant="10" id="3vn-HJ-Bj0">
                                         <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                                     </constraint>
                                     <constraint firstItem="oxF-rl-3Je" firstAttribute="centerX" secondItem="C7G-Rj-54s" secondAttribute="centerX" id="YeG-py-JkX"/>
-                                    <constraint firstAttribute="height" constant="90" id="fyq-a5-Vmm">
+                                    <constraint firstAttribute="height" constant="100" id="fyq-a5-Vmm">
                                         <variation key="heightClass=regular-widthClass=regular" constant="120"/>
                                     </constraint>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NVC-high res - alumni" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-tg-Pg4">
-                                <rect key="frame" x="117" y="270" width="600" height="300"/>
+                                <rect key="frame" x="117" y="316" width="600" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="165" id="4nl-Ac-Cjr">
                                         <variation key="heightClass=regular-widthClass=regular" constant="300"/>
@@ -118,7 +118,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the competition. Click the button below to enter.  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLQ-G4-koW">
-                                <rect key="frame" x="160" y="720" width="514" height="90"/>
+                                <rect key="frame" x="160" y="766" width="514" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="2r1-bs-rE6"/>
                                 </constraints>
@@ -135,14 +135,12 @@
                             <constraint firstItem="sLQ-G4-koW" firstAttribute="top" secondItem="sHl-tg-Pg4" secondAttribute="bottom" constant="60" id="2rY-q9-zw2">
                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
+                            <constraint firstItem="sHl-tg-Pg4" firstAttribute="centerY" secondItem="5XX-ud-f3x" secondAttribute="centerY" constant="-100" id="3Y0-3C-i9I"/>
                             <constraint firstItem="C7G-Rj-54s" firstAttribute="trailing" secondItem="5XX-ud-f3x" secondAttribute="trailing" id="6Ag-Mf-QqK"/>
                             <constraint firstItem="C7G-Rj-54s" firstAttribute="leading" secondItem="5XX-ud-f3x" secondAttribute="leading" id="BUY-dp-iKU"/>
                             <constraint firstItem="C7G-Rj-54s" firstAttribute="top" secondItem="0fx-8s-fCk" secondAttribute="top" id="Miq-YF-KVZ"/>
                             <constraint firstItem="5XX-ud-f3x" firstAttribute="bottom" secondItem="Sot-we-AcE" secondAttribute="bottom" constant="45" id="QhR-OM-Izf">
                                 <variation key="heightClass=regular-widthClass=regular" constant="75"/>
-                            </constraint>
-                            <constraint firstItem="sHl-tg-Pg4" firstAttribute="top" secondItem="C7G-Rj-54s" secondAttribute="bottom" constant="60" id="SCT-y5-duk">
-                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
                             <constraint firstItem="5XX-ud-f3x" firstAttribute="trailing" secondItem="Sot-we-AcE" secondAttribute="trailing" constant="20" id="gRs-VL-KY4">
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
@@ -163,16 +161,17 @@
                     <connections>
                         <outlet property="continueBtn" destination="Sot-we-AcE" id="bdX-FD-FWY"/>
                         <outlet property="continueBtnHeight" destination="wAo-Gh-812" id="Ff0-ro-mzW"/>
-                        <outlet property="headerLabel1" destination="ScC-1Y-0RF" id="dd2-8n-LA5"/>
-                        <outlet property="headerLabel2" destination="e8K-uW-ILy" id="cZ7-wM-01w"/>
-                        <outlet property="headerLabel3" destination="oeB-XK-WZQ" id="jyT-iD-UkQ"/>
+                        <outlet property="headerLabel1" destination="ScC-1Y-0RF" id="r23-Yh-ZwY"/>
+                        <outlet property="headerLabel2" destination="e8K-uW-ILy" id="gWM-NH-sFJ"/>
+                        <outlet property="headerLabel3" destination="oeB-XK-WZQ" id="jeX-8p-wi7"/>
                         <outlet property="headerStackView" destination="oxF-rl-3Je" id="7VO-Q1-U1l"/>
-                        <outlet property="headerStackViewHeight" destination="EWz-ZO-xYL" id="xvZ-9s-I8j"/>
-                        <outlet property="headerStackViewWidth" destination="aBs-3o-iL7" id="p5W-UP-xZH"/>
-                        <outlet property="headerViewHeight" destination="fyq-a5-Vmm" id="g8V-cS-TdK"/>
+                        <outlet property="headerStackViewHeight" destination="EWz-ZO-xYL" id="ggo-e7-Jkl"/>
+                        <outlet property="headerStackViewWidth" destination="aBs-3o-iL7" id="nG2-bN-mdS"/>
+                        <outlet property="headerView" destination="C7G-Rj-54s" id="6h0-pw-4Y0"/>
+                        <outlet property="headerViewHeight" destination="fyq-a5-Vmm" id="vhV-cR-uqi"/>
+                        <outlet property="logoImageToCenter" destination="3Y0-3C-i9I" id="eV7-9R-dKl"/>
                         <outlet property="logoImageView" destination="sHl-tg-Pg4" id="gt6-5t-9U2"/>
                         <outlet property="logoImageViewHeight" destination="4nl-Ac-Cjr" id="R4N-OR-Nd6"/>
-                        <outlet property="logoImageViewToTop" destination="SCT-y5-duk" id="ws0-zU-EDR"/>
                         <outlet property="logoImageViewWidth" destination="HNy-E4-ZM3" id="q6D-H5-XOz"/>
                         <outlet property="promptLabel" destination="sLQ-G4-koW" id="QHj-HG-A2y"/>
                         <outlet property="promptLabelToTop" destination="2rY-q9-zw2" id="It6-rJ-ouY"/>

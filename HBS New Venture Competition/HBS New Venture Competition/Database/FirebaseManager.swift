@@ -248,7 +248,7 @@ class FirebaseManager{
                 let lastName = data[NameFile.Firebase.CoordinatorDB.lastName] as! String
                 let profileImageURL = data[NameFile.Firebase.CoordinatorDB.profileImageURL] as! String
                 let position = data[NameFile.Firebase.CoordinatorDB.position] as! String
-                let organization = data[NameFile.Firebase.CoordinatorDB.position] as! String
+                let organization = data[NameFile.Firebase.CoordinatorDB.organization] as! String
                 let linkedInURL = URL(string: data[NameFile.Firebase.CoordinatorDB.linkedInURL] as! String)!
                 coordinators.append(Coordinator(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL, position: position, organization: organization, linkedInURL: linkedInURL))
             })

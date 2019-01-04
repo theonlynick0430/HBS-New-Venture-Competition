@@ -422,11 +422,13 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition7NotesVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
 @class NSLayoutConstraint;
 @class UIStackView;
 
 SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15SplashScreenVC1")
 @interface SplashScreenVC1 : UIViewController
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified headerView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified headerViewHeight;
 @property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified headerStackView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified headerStackViewWidth;
@@ -435,9 +437,9 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15SplashScreenVC1")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headerLabel2;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headerLabel3;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logoImageView;
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified logoImageViewToTop;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified logoImageViewWidth;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified logoImageViewHeight;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified logoImageToCenter;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified promptLabel;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified promptLabelToTop;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified continueBtn;
@@ -453,6 +455,7 @@ SWIFT_CLASS("_TtC27HBS_New_Venture_Competition15SplashScreenVC2")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified continueBtn;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified letterTV;
 - (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

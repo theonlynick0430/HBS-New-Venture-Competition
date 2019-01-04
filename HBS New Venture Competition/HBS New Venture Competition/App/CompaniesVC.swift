@@ -41,7 +41,7 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.scrollDirection = .vertical
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout{
-            flowLayout.estimatedItemSize = CGSize(width: view.frame.width, height: 125)
+            flowLayout.estimatedItemSize = CGSize(width: view.frame.width-20, height: 125)
             flowLayout.itemSize = UICollectionViewFlowLayoutAutomaticSize
         }
         
@@ -125,13 +125,15 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
             if self.searchInProgress{
                 for (index, value) in self.filteredCompanies.enumerated(){
                     if value.order == countVC.selectedNumber{
-                        self.collectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .top, animated: true)
+                        self.collectionView.selectItem(at: IndexPath(row: index, section: 0), animated: true, scrollPosition: .top)
+                            self.collectionView.delegate?.collectionView!(self.collectionView, didSelectItemAt: IndexPath(row: index, section: 0))
                     }
                 }
             }else{
                 for (index, value) in self.companies.enumerated(){
                     if value.order == countVC.selectedNumber{
-                        self.collectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .top, animated: true)
+                        self.collectionView.selectItem(at: IndexPath(row: index, section: 0), animated: true, scrollPosition: .top)
+                        self.collectionView.delegate?.collectionView!(self.collectionView, didSelectItemAt: IndexPath(row: index, section: 0))
                     }
                 }
             }
