@@ -30,6 +30,7 @@
 		5832B17321CF4B1F002601E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832B17221CF4B1F002601E7 /* AVFoundation.framework */; };
 		5832B17521CF4B25002601E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832B17421CF4B25002601E7 /* SystemConfiguration.framework */; };
 		5832B17721CF4B2D002601E7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832B17621CF4B2D002601E7 /* OpenGLES.framework */; };
+		584ECA5321EF08260073DBC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 584ECA5221EF08260073DBC8 /* GoogleService-Info.plist */; };
 		5851B88A2190315A00429A09 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851B8892190315A00429A09 /* NotesVC.swift */; };
 		5863FC7021838080001C0D64 /* CountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5863FC6F21838080001C0D64 /* CountVC.xib */; };
 		586DAE24215317C900C35A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE23215317C900C35A5A /* AppDelegate.swift */; };
@@ -39,7 +40,6 @@
 		586DAE31215317CB00C35A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586DAE2F215317CB00C35A5A /* LaunchScreen.storyboard */; };
 		586DAE3C215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE3B215317CB00C35A5A /* HBS_New_Venture_CompetitionTests.swift */; };
 		586DAE47215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DAE46215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift */; };
-		5884F65C21531FA700CEA744 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5884F65B21531FA600CEA744 /* GoogleService-Info.plist */; };
 		58AD928F2177FCCF00AAF2A9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD928E2177FCCF00AAF2A9 /* EventCell.swift */; };
 		58AD92912177FCDA00AAF2A9 /* JudgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD92902177FCDA00AAF2A9 /* JudgeCell.swift */; };
 		58AD92932177FCE800AAF2A9 /* SponsorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD92922177FCE800AAF2A9 /* SponsorCell.swift */; };
@@ -99,6 +99,7 @@
 		5832B17221CF4B1F002601E7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5832B17421CF4B25002601E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5832B17621CF4B2D002601E7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		584ECA5221EF08260073DBC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5851B8892190315A00429A09 /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
 		5863FC6F21838080001C0D64 /* CountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountVC.xib; sourceTree = "<group>"; };
 		586DAE20215317C900C35A5A /* HBS New Venture Competition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HBS New Venture Competition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +115,6 @@
 		586DAE42215317CB00C35A5A /* HBS New Venture CompetitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HBS New Venture CompetitionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		586DAE46215317CB00C35A5A /* HBS_New_Venture_CompetitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBS_New_Venture_CompetitionUITests.swift; sourceTree = "<group>"; };
 		586DAE48215317CB00C35A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5884F65B21531FA600CEA744 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58AD928E2177FCCF00AAF2A9 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		58AD92902177FCDA00AAF2A9 /* JudgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudgeCell.swift; sourceTree = "<group>"; };
 		58AD92922177FCE800AAF2A9 /* SponsorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorCell.swift; sourceTree = "<group>"; };
@@ -259,8 +259,8 @@
 				586DAE27215317C900C35A5A /* Main.storyboard */,
 				586DAE2F215317CB00C35A5A /* LaunchScreen.storyboard */,
 				586DAE32215317CB00C35A5A /* Info.plist */,
-				5884F65B21531FA600CEA744 /* GoogleService-Info.plist */,
 				586DAE2A215317C900C35A5A /* HBS_New_Venture_Competition.xcdatamodeld */,
+				584ECA5221EF08260073DBC8 /* GoogleService-Info.plist */,
 				586DAE2D215317CB00C35A5A /* Assets.xcassets */,
 			);
 			path = "HBS New Venture Competition";
@@ -414,7 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586DAE31215317CB00C35A5A /* LaunchScreen.storyboard in Resources */,
-				5884F65C21531FA700CEA744 /* GoogleService-Info.plist in Resources */,
+				584ECA5321EF08260073DBC8 /* GoogleService-Info.plist in Resources */,
 				581519702159B9C700D8E06D /* App.storyboard in Resources */,
 				586DAE2E215317CB00C35A5A /* Assets.xcassets in Resources */,
 				586DAE29215317C900C35A5A /* Main.storyboard in Resources */,
