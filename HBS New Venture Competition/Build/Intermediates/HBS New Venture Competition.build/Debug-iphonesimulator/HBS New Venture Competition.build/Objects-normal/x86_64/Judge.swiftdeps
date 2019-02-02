@@ -14,6 +14,7 @@ depends-top-level:
 depends-member:
 - ["27HBS_New_Venture_Competition5JudgeC", "String"]
 - ["27HBS_New_Venture_Competition5JudgeC", "URL"]
+- ["27HBS_New_Venture_Competition5JudgeC", "deinit"]
 - ["27HBS_New_Venture_Competition5JudgeC", "description"]
 - ["27HBS_New_Venture_Competition5JudgeC", "firstName"]
 - ["27HBS_New_Venture_Competition5JudgeC", "init"]
