@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/Cosmos.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		7YoOgTfDIeyqcmyBzKA6HgS+FnM=
+		12TwDW3qBHSPiYCGZX56brfCCKs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7YoOgTfDIeyqcmyBzKA6HgS+FnM=
+			12TwDW3qBHSPiYCGZX56brfCCKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			1aMMGwMYBrvnTrUGp2C4YwL3LQL6BvCkTWDux6bqYeY=
+			DM0YjwUC3IK9kpPwKlsSxcmuIzG+hAb6u5KUQ8bzWxQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

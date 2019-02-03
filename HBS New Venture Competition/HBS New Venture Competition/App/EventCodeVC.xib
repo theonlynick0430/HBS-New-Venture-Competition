@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventCodeVC" customModule="HBS_New_Venture_Competition" customModuleProvider="target">
             <connections>
                 <outlet property="verificationCodeView" destination="kKq-s5-gIg" id="4jO-2l-elm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="oFS-Lc-R1M"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

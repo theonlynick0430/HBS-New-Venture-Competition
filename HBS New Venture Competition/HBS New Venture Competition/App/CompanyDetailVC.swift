@@ -10,6 +10,7 @@ import UIKit
 import Cosmos
 import SVProgressHUD
 import ESPullToRefresh
+import PopupDialog
 
 class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -79,16 +80,23 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     private func setupRatings(){
         ratingsView.didFinishTouchingCosmos = { rating in
-            if rating != self.company.stars{
-                FirebaseManager.manager.addVote(self.company.companyID, rating: rating, completionHandler: { (error) in
-                    guard error == nil else{
-                        self.ratingsView.rating = self.company.stars
-                        self.issueAlert(ofType: .requestFailed)
-                        return
-                    }
-                    
-                    self.company.stars = rating
-                })
+            if AppStorage.eventCode != nil{
+                if rating != self.company.stars{
+                    FirebaseManager.manager.addVote(self.company.companyID, rating: rating, completionHandler: { (error) in
+                        guard error == nil else{
+                            self.ratingsView.rating = self.company.stars
+                            self.issueAlert(ofType: .requestFailed)
+                            return
+                        }
+                        
+                        self.company.stars = rating
+                    })
+                }
+            }else{
+                self.ratingsView.rating = self.company.stars
+                let popup = PopupDialog(title: "Invalid", message: "Voting is not enabled on this device. To enable it, go to the the startups tab, click the Vote button in the upper right hand corner, and enter the event code.", image: nil, buttonAlignment: .horizontal, transitionStyle: .bounceDown, preferredWidth: self.view.frame.width - 100, tapGestureDismissal: true, panGestureDismissal: false, hideStatusBar: false, completion: nil)
+                popup.addButton(CancelButton(title: "OK", height: 60, dismissOnTap: true, action: nil))
+                self.present(popup, animated: true, completion: nil)
             }
         }
     }

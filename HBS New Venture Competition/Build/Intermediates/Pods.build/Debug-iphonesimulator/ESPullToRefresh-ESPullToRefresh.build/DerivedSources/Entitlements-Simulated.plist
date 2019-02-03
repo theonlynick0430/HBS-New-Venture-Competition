@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>C5P6F492NS.org.cocoapods.ESPullToRefresh</string>
+	<string>6T7NPLA55U.org.cocoapods.ESPullToRefresh</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>C5P6F492NS.org.cocoapods.ESPullToRefresh</string>
+		<string>6T7NPLA55U.org.cocoapods.ESPullToRefresh</string>
 	</array>
 </dict>
 </plist>

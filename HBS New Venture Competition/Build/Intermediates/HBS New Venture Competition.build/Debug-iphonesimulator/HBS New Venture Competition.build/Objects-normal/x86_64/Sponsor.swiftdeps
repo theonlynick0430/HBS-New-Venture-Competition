@@ -14,7 +14,6 @@ depends-top-level:
 depends-member:
 - ["27HBS_New_Venture_Competition7SponsorC", "String"]
 - ["27HBS_New_Venture_Competition7SponsorC", "URL"]
-- ["27HBS_New_Venture_Competition7SponsorC", "deinit"]
 - ["27HBS_New_Venture_Competition7SponsorC", "description"]
 - ["27HBS_New_Venture_Competition7SponsorC", "init"]
 - ["27HBS_New_Venture_Competition7SponsorC", "logoImageURL"]

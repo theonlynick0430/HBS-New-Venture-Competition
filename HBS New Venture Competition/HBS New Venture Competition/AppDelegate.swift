@@ -39,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             window?.rootViewController = appStoryboard.instantiateInitialViewController()
         }
-        window?.rootViewController = introStoryboard.instantiateInitialViewController()
         
         return true
     }

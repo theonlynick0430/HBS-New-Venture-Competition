@@ -16,8 +16,8 @@ class SponsorCell: UITableViewCell {
     @IBOutlet weak var logoImageView: AsyncImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var websiteLabel: UILabel!
-    @IBOutlet weak var prizeTV: UITextView!
     @IBOutlet weak var descriptionTV: UITextView!
+    @IBOutlet weak var prizeTV: UITextView!
     @IBOutlet weak var repProfileImageView: AsyncImageView!
     @IBOutlet weak var repNameLabel: UILabel!
     @IBOutlet weak var repEmailLabel: UILabel!

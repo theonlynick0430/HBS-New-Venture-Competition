@@ -23,7 +23,7 @@ depends-top-level:
 - !private "Dictionary"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - !private "UIApplication"
 - "UIButton"
 - !private "UIColor"
@@ -117,7 +117,6 @@ depends-member:
 - ["27HBS_New_Venture_Competition15CoordinatorCellC", "UILabel"]
 - ["27HBS_New_Venture_Competition15CoordinatorCellC", "awakeFromNib"]
 - ["27HBS_New_Venture_Competition15CoordinatorCellC", "coordinator"]
-- ["27HBS_New_Venture_Competition15CoordinatorCellC", "deinit"]
 - ["27HBS_New_Venture_Competition15CoordinatorCellC", "identifier"]
 - ["27HBS_New_Venture_Competition15CoordinatorCellC", "init"]
 - ["27HBS_New_Venture_Competition15CoordinatorCellC", "linkedInBtn"]

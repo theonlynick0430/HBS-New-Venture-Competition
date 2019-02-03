@@ -1,0 +1,47 @@
+dependencies: \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/src/cpp/client/create_channel_internal.cc \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/Target\ Support\ Files/gRPC-C++/gRPC-C++-prefix.pch \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/channel.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/grpc.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/support/port_platform.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/port_platform.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/status.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/status.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/byte_buffer.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/byte_buffer.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/grpc_types.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/compression_types.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/gpr_types.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/slice.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/gpr_slice.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/slice_buffer.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/slice.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/support/sync.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/sync.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/sync_generic.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/atm.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/atm_gcc_atomic.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/sync_posix.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/connectivity_state.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/propagation_bits.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/support/time.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/call.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/call.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/byte_buffer.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/config.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/core_codegen_interface.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/impl/codegen/byte_buffer_reader.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/status.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/status_code_enum.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/serialization_traits.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/slice.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/string_ref.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/call_hook.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/client_context.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/create_auth_context.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/security/auth_context.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/metadata_map.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/time.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/completion_queue_tag.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/channel_interface.h \
+  /Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS\ New\ Venture\ Competition/Pods/gRPC-C++/include/grpcpp/impl/codegen/grpc_library.h

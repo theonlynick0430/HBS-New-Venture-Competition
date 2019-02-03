@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Build/Products/Debug-iphoneos/FasterVerificationCode/FasterVerificationCode.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Build/Intermediates/Pods.build/Debug-iphoneos/FasterVerificationCode.build/unextended-module.modulemap",
+    }]
+  }]
+}

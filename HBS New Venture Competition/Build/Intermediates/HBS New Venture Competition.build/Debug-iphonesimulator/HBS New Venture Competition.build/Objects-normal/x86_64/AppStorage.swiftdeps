@@ -24,6 +24,7 @@ depends-member:
 - ["27HBS_New_Venture_Competition10AppStorageC", "String"]
 - !private ["27HBS_New_Venture_Competition10AppStorageC", "UserDefaults"]
 - ["27HBS_New_Venture_Competition10AppStorageC", "clearUserDefaults"]
+- ["27HBS_New_Venture_Competition10AppStorageC", "deinit"]
 - ["27HBS_New_Venture_Competition10AppStorageC", "displaySplashScreen"]
 - ["27HBS_New_Venture_Competition10AppStorageC", "eventCode"]
 - ["27HBS_New_Venture_Competition10AppStorageC", "init"]

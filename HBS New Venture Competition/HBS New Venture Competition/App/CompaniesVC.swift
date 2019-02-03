@@ -40,10 +40,10 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         collectionView.alwaysBounceVertical = true
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.scrollDirection = .vertical
-        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout{
-            flowLayout.estimatedItemSize = CGSize(width: view.frame.width-20, height: 125)
-            flowLayout.itemSize = UICollectionViewFlowLayoutAutomaticSize
-        }
+//        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout{
+//            flowLayout.estimatedItemSize = CGSize(width: view.frame.width-50, height: 50)
+//            flowLayout.itemSize = UICollectionViewFlowLayoutAutomaticSize
+//        }
         
         //rounds corners
         voteBtn.layer.masksToBounds = true
@@ -174,6 +174,40 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         cell.layer.cornerRadius = 10
         
         return cell
+    }
+    
+    private func getHeightForTV(width: CGFloat, text: String, font: UIFont) -> CGFloat {
+        let tempTV = UITextView(frame: CGRect(x: 0, y: 0, width: width, height: 5))
+        tempTV.text = text
+        tempTV.font = font
+        let size = tempTV.sizeThatFits(CGSize(width: tempTV.frame.size.width, height: CGFloat.greatestFiniteMagnitude))
+        var frame = tempTV.frame
+        frame.size.height = size.height
+        tempTV.frame = frame
+        return tempTV.frame.height
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = view.frame.width-151
+        var height: CGFloat = 0
+        if UIDevice.current.deviceIsiPad{
+            let font = UIFont(name: "Avenir-Book", size: 14)!
+            if searchInProgress{
+                height = getHeightForTV(width: width, text: filteredCompanies[indexPath.row].description, font: font)
+            }else{
+                height = getHeightForTV(width: width, text: companies[indexPath.row].description, font: font)
+            }
+            height += 35
+        }else{
+            let font = UIFont(name: "Avenir-Book", size: 12)!
+            if searchInProgress{
+                height = getHeightForTV(width: width, text: filteredCompanies[indexPath.row].description, font: font)
+            }else{
+                height = getHeightForTV(width: width, text: companies[indexPath.row].description, font: font)
+            }
+            height += 35
+        }
+        return CGSize(width: view.frame.width-30, height: max(height, 120))
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
