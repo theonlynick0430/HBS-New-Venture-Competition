@@ -21,6 +21,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var descriptionTV: UITextView!
     @IBOutlet weak var ratingsView: CosmosView!
     @IBOutlet weak var notesBtn: UIButton!
+    @IBOutlet weak var websiteBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     //data source
@@ -46,6 +47,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         notesBtn.layer.cornerRadius = notesBtn.frame.width/10
         
         notesBtn.addTarget(self, action: #selector(CompanyDetailVC.segueToNotes(_:)), for: .touchUpInside)
+        websiteBtn.addTarget(self, action: #selector(CompanyDetailVC.openWebsite(_:)), for: .touchUpInside)
         
         setupRefresh()
         setupRatings()
@@ -77,6 +79,16 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     // MARK: - Helper Functions
+
+    @objc private func openWebsite(_ sender: UIButton){
+        if UIApplication.shared.canOpenURL(company.website){
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(company.website, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(company.website)
+            }
+        }
+    }
     
     private func setupRatings(){
         ratingsView.didFinishTouchingCosmos = { rating in

@@ -73,13 +73,14 @@ class FirebaseManager{
                 let description = data[NameFile.Firebase.CompanyDB.description] as! String
                 let logoImageURL = data[NameFile.Firebase.CompanyDB.logoImageURL] as! String
                 let order = data[NameFile.Firebase.CompanyDB.order] as! Int
+                let website = URL(string: data[NameFile.Firebase.CompanyDB.website] as! String)!
                 
                 dispatch.enter()
                 self.companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).document(UIDevice.current.identifierForVendor!.uuidString).getDocument(completion: { (document, error) in
                     if let document = document, document.exists, let data = document.data(), let stars = data[NameFile.Firebase.CompanyDB.stars] as? Double{
-                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: stars))
+                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: stars, website: website))
                     }else{
-                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: 0))
+                        companies.append(Company(companyID: companyID, name: name, description: description, logoImageURL: logoImageURL, order: order, stars: 0, website: website))
                     }
                     dispatch.leave()
                 })

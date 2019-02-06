@@ -49,6 +49,7 @@ struct NameFile {
             static let linkedInURL = "LinkedInURL"
             static let education = "Education"
             static let position = "Position"
+            static let website = "Website"
                     //notes <collection>
             static let notes = "Notes"
                         //note <document> - deviceID
