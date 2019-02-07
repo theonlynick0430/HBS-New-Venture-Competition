@@ -45,6 +45,8 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         //rounds corners
         notesBtn.layer.masksToBounds = true
         notesBtn.layer.cornerRadius = notesBtn.frame.width/10
+        websiteBtn.layer.masksToBounds = true
+        websiteBtn.layer.cornerRadius = websiteBtn.frame.width/10
         
         notesBtn.addTarget(self, action: #selector(CompanyDetailVC.segueToNotes(_:)), for: .touchUpInside)
         websiteBtn.addTarget(self, action: #selector(CompanyDetailVC.openWebsite(_:)), for: .touchUpInside)
