@@ -15,14 +15,16 @@ class Judge{
     var profileImageURL: String
     var linkedInURL: URL
     var description: String
+    var order: Int
     
     //initializer
-    init(firstName: String, lastName: String, profileImageURL: String, linkedInURL: URL, description: String) {
+    init(firstName: String, lastName: String, profileImageURL: String, linkedInURL: URL, description: String, order: Int) {
         self.firstName = firstName
         self.lastName = lastName
         self.profileImageURL = profileImageURL
         self.linkedInURL = linkedInURL
         self.description = description
+        self.order = order
     }
     
 }

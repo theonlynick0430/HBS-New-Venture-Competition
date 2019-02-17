@@ -19,9 +19,10 @@ class Sponsor{
     var repFirstName: String
     var repLastName: String
     var repEmail: String
+    var order: Int
     
     //initializer
-    init(name: String, description: String, logoImageURL: String, prize: String, website: URL, repProfileImageURL: String, repFirstName: String, repLastName: String, repEmail: String) {
+    init(name: String, description: String, logoImageURL: String, prize: String, website: URL, repProfileImageURL: String, repFirstName: String, repLastName: String, repEmail: String, order: Int) {
         self.name = name
         self.description = description
         self.logoImageURL = logoImageURL
@@ -31,6 +32,7 @@ class Sponsor{
         self.repFirstName = repFirstName
         self.repLastName = repLastName
         self.repEmail = repEmail
+        self.order = order
     }
     
 }

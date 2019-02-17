@@ -16,15 +16,17 @@ class Coordinator{
     var position: String
     var organization: String
     var linkedInURL: URL
+    var order: Int
     
     //initializer
-    init(firstName: String, lastName: String, profileImageURL: String, position: String, organization: String, linkedInURL: URL) {
+    init(firstName: String, lastName: String, profileImageURL: String, position: String, organization: String, linkedInURL: URL, order: Int) {
         self.firstName = firstName
         self.lastName = lastName
         self.profileImageURL = profileImageURL
         self.position = position
         self.organization = organization
         self.linkedInURL = linkedInURL
+        self.order = order
     }
     
 }

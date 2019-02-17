@@ -135,7 +135,8 @@ class FirebaseManager{
                 let linkedInURL = URL(string: data[NameFile.Firebase.CompanyDB.linkedInURL] as! String)!
                 let education = data[NameFile.Firebase.CompanyDB.education] as! String
                 let position = data[NameFile.Firebase.CompanyDB.position] as! String
-                companyMembers.append(CompanyMember(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL, email: email, phoneNumber: phoneNumber, linkedInURL: linkedInURL, education: education, position: position))
+                let order = data[NameFile.Firebase.CompanyDB.memberOrder] as! Int
+                companyMembers.append(CompanyMember(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL, email: email, phoneNumber: phoneNumber, linkedInURL: linkedInURL, education: education, position: position, order: order))
             })
             callback(companyMembers, nil)
         }
@@ -200,7 +201,8 @@ class FirebaseManager{
                 let profileImageURL = data[NameFile.Firebase.JudgeDB.profileImageURL] as! String
                 let linkedInURL = URL(string: data[NameFile.Firebase.JudgeDB.linkedInURL] as! String)!
                 let description = data[NameFile.Firebase.JudgeDB.description] as! String
-                judges.append(Judge(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL, linkedInURL: linkedInURL, description: description))
+                let order = data[NameFile.Firebase.JudgeDB.order] as! Int
+                judges.append(Judge(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL, linkedInURL: linkedInURL, description: description, order: order))
             })
             callback(judges, nil)
         }
@@ -227,7 +229,8 @@ class FirebaseManager{
                 let repFirstName = data[NameFile.Firebase.SponsorDB.repFirstName] as! String
                 let repLastName = data[NameFile.Firebase.SponsorDB.repLastName] as! String
                 let repEmail = data[NameFile.Firebase.SponsorDB.repEmail] as! String
-                sponsors.append(Sponsor(name: name, description: description, logoImageURL: logoImageURL, prize: prize, website: website, repProfileImageURL: repProfileImageURL, repFirstName: repFirstName, repLastName: repLastName, repEmail: repEmail))
+                let order = data[NameFile.Firebase.SponsorDB.order] as! Int
+                sponsors.append(Sponsor(name: name, description: description, logoImageURL: logoImageURL, prize: prize, website: website, repProfileImageURL: repProfileImageURL, repFirstName: repFirstName, repLastName: repLastName, repEmail: repEmail, order: order))
             })
             callback(sponsors, nil)
         }
@@ -251,7 +254,8 @@ class FirebaseManager{
                 let position = data[NameFile.Firebase.CoordinatorDB.position] as! String
                 let organization = data[NameFile.Firebase.CoordinatorDB.organization] as! String
                 let linkedInURL = URL(string: data[NameFile.Firebase.CoordinatorDB.linkedInURL] as! String)!
-                coordinators.append(Coordinator(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL, position: position, organization: organization, linkedInURL: linkedInURL))
+                let order = data[NameFile.Firebase.CoordinatorDB.order] as! Int
+                coordinators.append(Coordinator(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL, position: position, organization: organization, linkedInURL: linkedInURL, order: order))
             })
             callback(coordinators, nil)
         }

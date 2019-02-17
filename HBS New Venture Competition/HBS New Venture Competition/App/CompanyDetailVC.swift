@@ -23,6 +23,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var notesBtn: UIButton!
     @IBOutlet weak var websiteBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var toImageConstraint: NSLayoutConstraint!
     
     //data source
     var company: Company!
@@ -47,6 +48,10 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         notesBtn.layer.cornerRadius = notesBtn.frame.width/10
         websiteBtn.layer.masksToBounds = true
         websiteBtn.layer.cornerRadius = websiteBtn.frame.width/10
+        
+        if UIDevice.deviceType == .smalliPhone{
+            toImageConstraint.constant = 0
+        }
         
         notesBtn.addTarget(self, action: #selector(CompanyDetailVC.segueToNotes(_:)), for: .touchUpInside)
         websiteBtn.addTarget(self, action: #selector(CompanyDetailVC.openWebsite(_:)), for: .touchUpInside)
@@ -76,7 +81,7 @@ class CompanyDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             }
             
             self.companyMembers = companyMembers
-            self.companyMembers.sort(by: { "\($0.firstName) \($0.lastName)" < "\($1.firstName) \($1.lastName)" })
+            self.companyMembers.sort(by: { $0.order < $1.order })
         }
     }
     

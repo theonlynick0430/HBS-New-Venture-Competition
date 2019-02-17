@@ -35,24 +35,10 @@ class SplashScreenVC1: UIViewController {
         continueBtn.layer.masksToBounds = true
         continueBtn.layer.cornerRadius = 25
         
-        switch UIDevice.deviceType {
-        case .smalliPhone:
-            promptLabelToTop.constant = 30
-            logoImageToCenter.constant = -60
-            headerViewHeight.constant = 75
-            headerStackViewWidth.constant = 310
-            headerLabel1.font = UIFont(name: "Avenir-Medium", size: 13)
-            headerLabel2.font = UIFont(name: "Avenir-Medium", size: 13)
-            headerLabel3.font = UIFont(name: "Avenir-Medium", size: 13)
-            headerView.layoutIfNeeded()
-        case .largeiPhone:
-            break
-        case .iPhone:
-            break
-        case .iPad:
-            break
-        case .none:
-            break
+        view.layoutIfNeeded()
+        
+        if UIDevice.deviceType == .smalliPhone{
+            headerViewHeight.constant = 0
         }
     }
     

@@ -50,6 +50,7 @@ struct NameFile {
             static let education = "Education"
             static let position = "Position"
             static let website = "Website"
+            static let memberOrder = "Order"
                     //notes <collection>
             static let notes = "Notes"
                         //note <document> - deviceID
@@ -80,6 +81,7 @@ struct NameFile {
             static let profileImageURL = "ProfileImageURL"
             static let linkedInURL = "LinkedInURL"
             static let description = "Description"
+            static let order = "Order"
         }
         
         struct SponsorDB{
@@ -95,6 +97,7 @@ struct NameFile {
             static let repFirstName = "RepFirstName"
             static let repLastName = "RepLastName"
             static let repEmail = "RepEmail"
+            static let order = "Order"
         }
         
         struct CoordinatorDB{
@@ -107,6 +110,7 @@ struct NameFile {
             static let position = "Position"
             static let organization = "Organization"
             static let linkedInURL = "LinkedInURL"
+            static let order = "Order"
         }
         
     }

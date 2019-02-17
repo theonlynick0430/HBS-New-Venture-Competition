@@ -56,7 +56,7 @@ class SponsorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             
             self.sponsors = sponsors
-            self.sponsors.sort(by: { $0.name < $1.name })
+            self.sponsors.sort(by: { $0.order < $1.order })
         }
     }
     

@@ -18,9 +18,10 @@ class CompanyMember{
     var linkedInURL: URL
     var education: String
     var position: String
+    var order: Int
     
     //initializer
-    init(firstName: String, lastName: String, profileImageURL: String, email: String, phoneNumber: String, linkedInURL: URL, education: String, position: String) {
+    init(firstName: String, lastName: String, profileImageURL: String, email: String, phoneNumber: String, linkedInURL: URL, education: String, position: String, order: Int) {
         self.firstName = firstName
         self.lastName = lastName
         self.profileImageURL = profileImageURL
@@ -29,6 +30,7 @@ class CompanyMember{
         self.linkedInURL = linkedInURL
         self.education = education
         self.position = position
+        self.order = order
     }
     
 }

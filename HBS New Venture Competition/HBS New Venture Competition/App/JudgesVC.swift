@@ -55,7 +55,7 @@ class JudgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             
             self.judges = judges
-            self.judges.sort(by: { "\($0.firstName) \($0.lastName)" < "\($1.firstName) \($1.lastName)" })
+            self.judges.sort(by: { $0.order < $1.order })
         }
     }
     
