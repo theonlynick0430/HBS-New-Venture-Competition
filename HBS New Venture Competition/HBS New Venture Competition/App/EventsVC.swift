@@ -18,8 +18,6 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var subHeaderLabel: UILabel!
     @IBOutlet weak var arrowBtn: UIButton!
     @IBOutlet weak var toSubHeaderConstraint: NSLayoutConstraint!
-    @IBOutlet weak var arrowBtnWidthConstraint: NSLayoutConstraint!
-    @IBOutlet weak var arrowBtnHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     
     //data source
@@ -42,11 +40,14 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.tableHeaderView = line
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         tableView.estimatedRowHeight = 100
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableViewAutomaticDimension 
         
         //rounds corners
         arrowBtn.layer.masksToBounds = true
         arrowBtn.layer.cornerRadius = arrowBtn.frame.width/2
+        if UIDevice.deviceType == .iPad{
+           arrowBtn.layer.cornerRadius = 75/2
+        }
         
         if UIDevice.deviceType == .smalliPhone{
             toSubHeaderConstraint.constant = 0

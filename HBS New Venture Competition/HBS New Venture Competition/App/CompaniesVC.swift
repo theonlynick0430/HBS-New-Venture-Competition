@@ -191,13 +191,16 @@ class CompaniesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         let width = view.frame.width-151
         var height: CGFloat = 0
         if UIDevice.current.deviceIsiPad{
-            let font = UIFont(name: "Avenir-Book", size: 14)!
+            let font = UIFont(name: "Avenir-Book", size: 18)!
             if searchInProgress{
                 height = getHeightForTV(width: width, text: filteredCompanies[indexPath.row].description, font: font)
             }else{
                 height = getHeightForTV(width: width, text: companies[indexPath.row].description, font: font)
+                print("HEIGHT")
+                print(companies[indexPath.row].name)
+                print(height)
             }
-            height += 35
+            height += 85
         }else{
             let font = UIFont(name: "Avenir-Book", size: 12)!
             if searchInProgress{

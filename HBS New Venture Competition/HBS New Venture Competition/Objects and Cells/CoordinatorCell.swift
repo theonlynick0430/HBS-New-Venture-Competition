@@ -30,6 +30,10 @@ class CoordinatorCell: UITableViewCell {
         profileImageView.layer.cornerRadius = profileImageView.frame.width/2
         linkedInBtn.layer.masksToBounds = true
         linkedInBtn.layer.cornerRadius = linkedInBtn.frame.width/2
+        if UIDevice.deviceType == .iPad{
+            profileImageView.layer.cornerRadius = 75/2
+            linkedInBtn.layer.cornerRadius = 30
+        }
         
         //adds borders
         profileImageView.layer.borderWidth = 1
