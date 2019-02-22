@@ -18,7 +18,6 @@ class SponsorLargeCell: UITableViewCell {
     @IBOutlet weak var websiteLabel: UILabel!
     @IBOutlet weak var descriptionTV: UITextView!
     @IBOutlet weak var prizeTV: UITextView!
-    @IBOutlet weak var repProfileImageView: AsyncImageView!
     @IBOutlet weak var repNameLabel: UILabel!
     @IBOutlet weak var repEmailLabel: UILabel!
     
@@ -27,14 +26,6 @@ class SponsorLargeCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        //rounds corners
-        repProfileImageView.layer.masksToBounds = true
-        repProfileImageView.layer.cornerRadius = repProfileImageView.frame.width/2
-        
-        //adds borders
-        repProfileImageView.layer.borderWidth = 1
-        repProfileImageView.layer.borderColor = UIColor.lightGray.cgColor
     }
     
     private func reloadData(){
@@ -47,7 +38,6 @@ class SponsorLargeCell: UITableViewCell {
         websiteLabel.addGestureRecognizer(tapGestureRecognizer)
         prizeTV.text = sponsor.prize
         descriptionTV.text = sponsor.description
-        repProfileImageView.setFirebaseURL(firebaseURL: sponsor.repProfileImageURL)
         repNameLabel.text = "\(sponsor.repFirstName) \(sponsor.repLastName)"
         repEmailLabel.attributedText = NSAttributedString(string: sponsor.repEmail, attributes:
             [.underlineStyle: NSUnderlineStyle.styleSingle.rawValue])
