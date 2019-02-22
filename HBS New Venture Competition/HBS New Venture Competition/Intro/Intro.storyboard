@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ykU-oY-1ZB">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController title="Splash Screen" id="ykU-oY-1ZB" customClass="SplashScreenVC1" customModule="HBS_New_Venture_Competition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0fx-8s-fCk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-we-AcE">
-                                <rect key="frame" x="20" y="762" width="374" height="55"/>
+                                <rect key="frame" x="20" y="678" width="335" height="55"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.69019607843137254" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="wAo-Gh-812">
@@ -38,13 +38,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7G-Rj-54s">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oxF-rl-3Je">
-                                        <rect key="frame" x="42" y="55" width="330" height="35"/>
+                                        <rect key="frame" x="22.666666666666657" y="55" width="330" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="H A R V A R D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ScC-1Y-0RF">
-                                                <rect key="frame" x="0.0" y="0.0" width="96.5" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="96.333333333333329" height="35"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gD0-fx-h7x">
-                                                <rect key="frame" x="106.5" y="0.0" width="3" height="35"/>
+                                                <rect key="frame" x="106.33333333333333" y="0.0" width="3" height="35"/>
                                                 <color key="backgroundColor" red="0.59607843140000005" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="V8j-fg-DWV"/>
@@ -61,7 +61,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B U S I N E S S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8K-uW-ILy">
-                                                <rect key="frame" x="119.5" y="0.0" width="103.5" height="35"/>
+                                                <rect key="frame" x="119.33333333333331" y="0.0" width="104" height="35"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -70,7 +70,7 @@
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pqg-9q-e8a">
-                                                <rect key="frame" x="233" y="0.0" width="3" height="35"/>
+                                                <rect key="frame" x="233.33333333333334" y="0.0" width="3" height="35"/>
                                                 <color key="backgroundColor" red="0.59607843140000005" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="3" id="F7Z-e8-sSz"/>
@@ -78,7 +78,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="S C H O O L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeB-XK-WZQ">
-                                                <rect key="frame" x="246" y="0.0" width="84" height="35"/>
+                                                <rect key="frame" x="246.33333333333334" y="0.0" width="83.666666666666657" height="35"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -107,7 +107,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NVC-high res - alumni" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-tg-Pg4">
-                                <rect key="frame" x="82" y="270.5" width="250" height="165"/>
+                                <rect key="frame" x="62.666666666666657" y="228.66666666666663" width="249.99999999999997" height="165"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="165" id="4nl-Ac-Cjr">
                                         <variation key="heightClass=regular-widthClass=regular" constant="300"/>
@@ -118,7 +118,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the competition. Click the button below to enter.  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLQ-G4-koW">
-                                <rect key="frame" x="30" y="495.5" width="354" height="90"/>
+                                <rect key="frame" x="30" y="453.66666666666669" width="315" height="90.000000000000057"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="2r1-bs-rE6"/>
                                 </constraints>
@@ -186,11 +186,11 @@
             <objects>
                 <viewController id="ACy-jh-raT" customClass="SplashScreenVC2" customModule="HBS_New_Venture_Competition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FmQ-4J-Ccn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwd-9E-ERe">
-                                <rect key="frame" x="20" y="762" width="374" height="55"/>
+                                <rect key="frame" x="20" y="678" width="335" height="55"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.69019607839999997" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="G9H-03-TpN">
@@ -206,23 +206,23 @@
                                 </variation>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sng-y0-v9b">
-                                <rect key="frame" x="20" y="79" width="374" height="653"/>
+                                <rect key="frame" x="20" y="79" width="335" height="569"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Welcome to our second annual Northern California One Harvard New Venture Competition (1HNVC). On behalf of myself and my co-organizers, we'd like to thank you for coming today and continuing to engage with the Harvard Alumni entrepreneurial community. 1HNVC provides us an opportunity to strengthen the bonds of the Harvard Alumni start-up ecosystem on a local level and foster meaningful connections between founders, investors, and mentors. 
+                                <mutableString key="text">Welcome to our second annual Northern California One Harvard New Venture Competition (1HNVC). Thank you for coming today and continuing to engage with the broader Harvard Alumni entrepreneurial community. 
 
-Expanding the NorCal regional competition for the Global HBS New Venture Competition to include alumni from all Harvard schools is gaining traction.  This year, we received an outstanding lineup of 43 startup applicants with about 45% coming from non-HBS alumni and a handful of Harvard Alumni joining from regions outside the Bay Area. We had the unenviable task of narrowing the competitors to the 15 you will see today. 
+This year, we received an outstanding lineup of 43 startup applicants with nearly half coming from non-HBS alumni and a handful of Harvard Alumni joining from regions outside the Bay Area. We had the daunting task of narrowing the competitors to the 15 you will see today. 
 
 I would like to personally thank all 11 of our corporate sponsors for contributing to a prize package worth over $1 million for our competitors. Moreover, a very special thank you to Cooley LLP, our Premier Legal Sponsor, and Microsoft, our Premier Event Sponsor, for their substantial cash contributions and for hosting our event.
 
-We hope you enjoy this special evening of wining, dining, and networking!  Do not forget to visit our entrepreneurial tables.  Thank you and welcome!
+We hope you enjoy this special opportunity to meet tomorrow's best and brightest.  The next time you see these startups, you'll be reading about them in Fast Company.
 
-Sincerely, 
+Sincerely
 ￼Maya Krish
 2019 1HNVC Chair</mutableString>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
                                 </variation>
                             </textView>
                         </subviews>
