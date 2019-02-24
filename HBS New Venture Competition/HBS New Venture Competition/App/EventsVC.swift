@@ -58,6 +58,9 @@ class EventsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //setup
         setupRefresh()
         fetchEvents()
+        
+        //EVENT USE ONLY
+        FirebaseManager.manager.fetchCompanyVotes()
     }
     
     // MARK: - Essential Functions

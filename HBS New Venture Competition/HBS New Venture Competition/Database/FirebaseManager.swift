@@ -260,4 +260,35 @@ class FirebaseManager{
         }
     }
     
+    //EVENT USE ONLY
+    public func fetchCompanyVotes(){
+        companies.getDocuments { (snapshot, error) in
+            guard let documents = snapshot?.documents, error == nil else{
+                print("ERROR1")
+                return
+            }
+            
+            documents.forEach({ (document) in
+                let data = document.data()
+                let companyID = document.documentID
+                let name = data[NameFile.Firebase.CompanyDB.name] as! String
+                self.companies.document(companyID).collection(NameFile.Firebase.CompanyDB.votes).getDocuments(completion: { (snapshot, error) in
+                    guard let documents = snapshot?.documents, error == nil else{
+                        print("ERROR2")
+                        return
+                    }
+                    
+                    var totalStars = 0.0
+                    documents.forEach({ (document) in
+                        let stars = document.data()[NameFile.Firebase.CompanyDB.stars] as!Double
+                        totalStars += stars
+                    })
+                    print(name)
+                    print(totalStars/Double(documents.count))
+                    print("-----------------------")
+                })
+            })
+        }
+    }
+    
 }
