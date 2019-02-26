@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 import Firebase
 
+let imageCache = NSCache<NSString, AnyObject>()
+
 public class AsyncImageView: UIImageView {
     
     var placeholderImage: UIImage?
-    
-    private var cached = false
     
     var firebaseURL: String? {
         didSet{
@@ -26,6 +26,7 @@ public class AsyncImageView: UIImageView {
                 imageRef.getData(maxSize: 100*1024*1024, completion: { (data, error) in
                     if let data = data{
                         if let image = UIImage(data: data){
+                            imageCache.setObject(image, forKey: firebaseURL as NSString)
                             self.image = image
                         }
                     }
@@ -34,11 +35,15 @@ public class AsyncImageView: UIImageView {
         }
     }
     
-    func setFirebaseURL(firebaseURL: String?, placeholderImage: UIImage? = UIImage(color: UIColor.lightGray)) {
-        if !cached || (self.firebaseURL != firebaseURL){
+    func setFirebaseURL(firebaseURL: String, placeholderImage: UIImage? = UIImage(color: UIColor.lightGray)) {
+        if let cachedImage = imageCache.object(forKey: firebaseURL as NSString) as? UIImage{
+            self.image = cachedImage
+            return
+        }
+        
+        if self.firebaseURL != firebaseURL{
             self.placeholderImage = placeholderImage
             self.firebaseURL = firebaseURL
-            cached = true
         }
     }
     
