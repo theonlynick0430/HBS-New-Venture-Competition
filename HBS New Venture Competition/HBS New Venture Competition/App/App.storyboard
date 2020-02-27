@@ -57,7 +57,7 @@
                                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="47"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Microsoft, Sunnyvale, February 28, 2019" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veA-RU-2K7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCSF Genentech Hall, SF, March 4, 2020" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veA-RU-2K7">
                                 <rect key="frame" x="20" y="104" width="240" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="DrR-zf-gGX">
@@ -600,7 +600,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsor Company Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h55-lR-PgX">
-                                                    <rect key="frame" x="229.99999999999997" y="45" width="300.33333333333326" height="28"/>
+                                                    <rect key="frame" x="230" y="45" width="300" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="5dw-tN-11F"/>
                                                         <constraint firstAttribute="height" constant="28" id="h7J-Pf-uA8"/>
@@ -610,13 +610,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname Lastname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzY-So-k2Q">
-                                                    <rect key="frame" x="545.33333333333326" y="50" width="236.66666666666663" height="27.666666666666671"/>
+                                                    <rect key="frame" x="545" y="50" width="236.66666666666663" height="27.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1jU-ev-oqo">
-                                                    <rect key="frame" x="545.33333333333326" y="80.666666666666671" width="236.66666666666663" height="25"/>
+                                                    <rect key="frame" x="545" y="80.666666666666671" width="236.66666666666663" height="25"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="somerepemail@example.com">
                                                             <attributes>
@@ -630,7 +630,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oB9-a2-elA">
-                                                    <rect key="frame" x="229.99999999999997" y="83" width="300.33333333333326" height="21"/>
+                                                    <rect key="frame" x="230" y="83" width="300" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="5ze-B1-F3g"/>
                                                     </constraints>
@@ -1325,7 +1325,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate on value proposition, GTM strategy, team, &amp; investing potential" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bk-wt-2yR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate on value proposition, GTM strategy, team, &amp; economic model" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bk-wt-2yR">
                                 <rect key="frame" x="115" y="111" width="220" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Gsr-k2-TA0"/>

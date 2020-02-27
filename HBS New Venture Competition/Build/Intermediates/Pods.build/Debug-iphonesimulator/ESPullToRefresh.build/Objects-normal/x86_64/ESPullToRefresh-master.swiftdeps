@@ -1,0 +1,12 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "0136c751ee1a1f0d56839bbace72f6eb"
+build_time: [1582788363, 401441000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Pods/ESPullToRefresh/Sources/ES.swift": [1547685861, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Pods/ESPullToRefresh/Sources/ESPullToRefresh+Manager.swift": [1547685861, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Pods/ESPullToRefresh/Sources/ESPullToRefresh.swift": [1547685861, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Pods/ESPullToRefresh/Sources/ESRefreshAnimator.swift": [1547685861, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Pods/ESPullToRefresh/Sources/ESRefreshComponent.swift": [1547685861, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Pods/ESPullToRefresh/Sources/Animator/ESRefreshFooterAnimator.swift": [1547685861, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Pods/ESPullToRefresh/Sources/Animator/ESRefreshHeaderAnimator.swift": [1547685861, 0]
+  "/Users/nikhilsridhar/Desktop/HBS/HBS-New-Venture-Competition-iOS/HBS New Venture Competition/Pods/ESPullToRefresh/Sources/ESRefreshProtocol.swift": [1547685861, 0]
